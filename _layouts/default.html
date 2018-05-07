@@ -8,6 +8,12 @@ layout: compress
     {% include head.html %}
   </head>
   <body>
+    {% include sidebar.html %}
+    {% include navbar.html %}
     {{ content }}
+    {% if page.right-sidebar %}
+      {% include right-sidebar.html %}
+    {% endif %}
+    {% include footer.html %}
   </body>
 </html>
