@@ -1,0 +1,18 @@
+.sidebar{
+  width: 180px;
+  height: 100%;
+  position: fixed;
+  top:0;
+  padding: 2vh;
+  background: #f9f9f9;
+}
+.sidebar .menu-list{
+  font-size: 12.5px;
+  letter-spacing: 0.2px;
+}
+.sidebar .menu-list li a{
+  display: block;
+  padding: 8px 1px;
+  color: #222;
+  text-decoration: none;
+}
