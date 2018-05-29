@@ -27,6 +27,10 @@ h6{
   font-size: 1.3rem;
 }
 
+.list.inline{
+  padding-left: 0;
+}
+
 .list.inline li{
   margin-right: 1em;
   display: inline-block;
