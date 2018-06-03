@@ -14,3 +14,11 @@ body,html{
   top: 0;
   padding: 0 30px;
 }
+.element-btn{
+  margin: 20px 30px;
+  width: calc(33.33% - 60px);
+}
+.flex{
+  display: flex;
+  flex-wrap: wrap;
+}
