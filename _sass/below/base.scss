@@ -9,7 +9,16 @@ https://github.com/innusource/below/blob/master/LICENSE
 
 html {
   -webkit-text-size-adjust: 100%;
+  box-sizing: border-box;
+  -ms-overflow-style: scrollbar;
 }
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
 
 body {
   padding: 0;
