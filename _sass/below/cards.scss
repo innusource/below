@@ -4,9 +4,15 @@
   border:1px solid #eee;
   border-radius: 6px;
   position: relative;
-  padding: 0.8rem 2.5rem;
+  .card-body{
+    padding: 0.8rem 2.5rem;
+  }
   p{
     color: #666;
+  }
+  img{
+    max-width: 100%;
+    border-radius: 6px 6px 0 0;
   }
 }
 .card.black,.card.green,.card.blue,.card.dark-blue{
