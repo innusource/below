@@ -1,7 +1,7 @@
 .btn{
-  color: #222;
+  color: $black-two;
   text-decoration: none;
-  border:2px solid #eee;
+  border:2px solid $light-gray;
   -moz-transition: all 0.4s ease;
   -o-transition: all 0.4s ease;
   -webkit-transition: all 0.4s ease;
@@ -10,21 +10,14 @@
   text-align: center;
   padding: 0.4rem 1.8rem;
   margin: 0.5rem;
-}
-.btn:hover{
-  background: #eee;
-}
-.btn:focus{
-  outline:0;
+  &:hover{background: $light-gray;}
+  &:focus{outline:0;}
 }
 .btn.simple{
   padding: 4px 0;
   border:none;
   border-bottom: 1px solid transparent;
-}
-.btn.simple:hover{
-  border-bottom:1px solid rgba(0,0,0,0.3);
-  background: transparent;
+  &:hover{border-bottom:1px solid rgba(0,0,0,0.3);background: transparent;}
 }
 .btn.rounded{
   border-radius: 6px;
@@ -39,6 +32,10 @@
   line-height: 1;
   box-sizing: border-box;
   padding: 1.3em 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &:hover{transform: rotate(180deg);}
 }
 .btn.circle.medium{
   width: 6rem;
@@ -55,9 +52,6 @@
   height: 7rem;
   padding: 2.45em 0;
 }
-.btn.circle:hover{
-  transform: rotate(180deg);
-}
 .btn.medium{
   padding: 0.8rem 2.15rem;
 }
@@ -69,26 +63,18 @@
   color: #fff;
 }
 .btn.green{
-  background: #27ae60;
-}
-.btn.green:hover{
-  background:#2ecc71;
+  background: $green;
+  &:hover { background:$green-hover; }
 }
 .btn.blue{
-  background: #2980b9;
-}
-.btn.blue:hover{
-  background: #3498db;
+  background: $blue;
+  &:hover { background: $blue-hover; }
 }
 .btn.dark-blue{
-  background: #2c3e50;
-}
-.btn.dark-blue:hover{
-  background: #34495e;
+  background: $dark-blue;
+  &:hover { background: $dark-blue-hover; }
 }
 .btn.black{
-  background: #000;
-}
-.btn.black:hover{
-  background: #222;
+  background: $black;
+  &:hover { background: $black-two; }
 }
