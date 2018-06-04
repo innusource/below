@@ -1,5 +1,5 @@
 h1, h2, h3, h4, h5, h6{
-  font-weight: 300;
+  font-weight: $light;
   margin: 0.5em 0;
 }
 
@@ -42,9 +42,8 @@ h6{
 }
 
 blockquote{
-  border-left:3px solid #ddd;
+  border-left:4px solid #ddd;
   padding: 15px 20px;
   color: #666;
-  font-size: 14px;
   margin: 5px;
 }
