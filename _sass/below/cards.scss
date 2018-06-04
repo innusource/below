@@ -3,18 +3,40 @@
   background: #fff;
   border:1px solid #eee;
   border-radius: 6px;
-  font-size: 0.9rem;
+  position: relative;
+  padding: 0.8rem 2.5rem;
+  p{
+    color: #666;
+  }
 }
-.card .header{
-  font-weight: 600;
-  padding: 0.8rem 1rem;
-  background: #f9f9f9;
-  border-bottom:1px solid #eee;
+.card.black,.card.green,.card.blue,.card.dark-blue{
+  &:before {
+    content: "";
+    width: 6px;
+    height: 50%;
+    position: absolute;
+    border-radius: 0 3px 3px 0;
+    top: 25%;
+    left:0;
+  }
 }
-.card .body{
-  padding: 2rem 1rem;
+.card.black{
+  &:before{
+    background: $black;
+  }
 }
-.card .footer{
-  padding: 0.5rem 1rem;
-  border-top: 1px solid #eee;
+.card.blue{
+  &:before{
+    background: $blue;
+  }
+}
+.card.dark-blue{
+  &:before{
+    background: $dark-blue;
+  }
+}
+.card.green{
+  &:before{
+    background: $green;
+  }
 }

@@ -14,9 +14,15 @@ body,html{
   top: 0;
   padding: 0 30px;
 }
+.element-card,.element-btn{
+  margin: 15px;
+}
+.element-card{
+  width: calc(50% - 30px);
+  display: inline-block;
+}
 .element-btn{
-  margin: 20px 30px;
-  width: calc(33.33% - 60px);
+  width: calc(33.33% - 30px);
 }
 .flex{
   display: flex;
