@@ -8,8 +8,10 @@
   transition: all 0.4s ease;
   display: inline-block;
   text-align: center;
-  padding: 0.4rem 1.8rem;
+  padding: 0.55rem 1.8rem;
   margin: 0.5rem;
+  font-weight: 600;
+  font-size: 0.8rem;
   &:hover{background: $light-gray;}
   &:focus{outline:0;}
 }
@@ -31,7 +33,7 @@
   border-radius: 50%;
   line-height: 1;
   box-sizing: border-box;
-  padding: 1.3em 0;
+  padding: 1.3em 0.4em;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -40,17 +42,10 @@
 .btn.circle.medium{
   width: 6rem;
   height: 6rem;
-  padding: 1.8em 0;
-}
-.btn.circle.medium{
-  width: 6rem;
-  height: 6rem;
-  padding: 1.8em 0;
 }
 .btn.circle.big{
   width: 7rem;
   height: 7rem;
-  padding: 2.45em 0;
 }
 .btn.medium{
   padding: 0.8rem 2.15rem;
@@ -58,23 +53,73 @@
 .btn.big{
   padding: 1.15rem 2.5rem;
 }
-.btn.black,.btn.dark-blue,.btn.blue,.btn.green{
-  border:none;
-  color: #fff;
+.btn.black,.btn.dark-blue,.btn.blue,.btn.green,.btn.yellow,.btn.red{
+  &:hover{color: #fff;}
 }
 .btn.green{
-  background: $green;
-  &:hover { background:$green-hover; }
+  border-color: $green;
+  color: $green;
+  &:hover { background:$green; }
 }
 .btn.blue{
-  background: $blue;
-  &:hover { background: $blue-hover; }
+  border-color: $blue;
+  color: $blue;
+  &:hover { background: $blue; }
 }
 .btn.dark-blue{
-  background: $dark-blue;
-  &:hover { background: $dark-blue-hover; }
+  border-color: $dark-blue;
+  color: $dark-blue;
+  &:hover { background: $dark-blue; }
+}
+.btn.yellow{
+  border-color: $yellow;
+  color: $yellow;
+  &:hover { background: $yellow; }
+}
+.btn.red{
+  border-color: $red;
+  color: $red;
+  &:hover { background: $red; }
 }
 .btn.black{
+  border-color: $black;
+  color: $black;
+  &:hover { background: $black; }
+}
+.btn.fill{
+  background: #eee;
+  &:hover{background:#ddd;border-color:#ddd;}
+}
+.btn.black.fill,.btn.dark-blue.fill,.btn.blue.fill,.btn.green.fill,.btn.yellow.fill,.btn.red.fill{
+  color: #fff;
+}
+.btn.green.fill{
+  border-color: $green;
+  background: $green;
+  &:hover { background:$green-hover; border-color:$green-hover; }
+}
+.btn.blue.fill{
+  border-color: $blue;
+  background: $blue;
+  &:hover { background: $blue-hover; border-color:$blue-hover;}
+}
+.btn.dark-blue.fill{
+  border-color: $dark-blue;
+  background: $dark-blue;
+  &:hover { background: $dark-blue-hover; border-color:$dark-blue-hover; }
+}
+.btn.yellow.fill{
+  border-color: $yellow;
+  background:$yellow;
+  &:hover { background: $yellow-two; border-color: $yellow-two;}
+}
+.btn.red.fill{
+  border-color: $red;
+  background:$red;
+  &:hover { background: $red-two;border-color: $red-two; }
+}
+.btn.black.fill{
+  border-color: $black;
   background: $black;
-  &:hover { background: $black-two; }
+  &:hover { background: $black-two;border-color: $black-two; }
 }
