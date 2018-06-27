@@ -1,3 +1,9 @@
+.pure-menu-heading a{
+  font-size: 1.8rem;
+  text-decoration: none;
+  font-weight: 600;
+  color: #222;
+}
 .sidebar{
   width: 180px;
   height: 100%;
@@ -13,6 +19,10 @@
 .sidebar .menu-list li a{
   display: block;
   padding: 8px 1px;
-  color: #222;
+  color: #666;
   text-decoration: none;
+}
+.sidebar .menu-list li a:hover,
+.sidebar .menu-list li a.active{
+  color: #222;
 }
