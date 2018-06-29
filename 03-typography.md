@@ -2,6 +2,7 @@
 layout: default
 permalink: typography/
 title: Typography
+toc: true
 ---
 
 ## Typography
@@ -17,50 +18,37 @@ title: Typography
 {% endcapture %}
 {% include example.html content=example %}
 
-<h3>Paragraph</h3>
+### Paragraph
 {% capture example %}
 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sed sem aliquam, iaculis neque in, aliquet lorem. Mauris tristique iaculis dui, at tempus dolor vulputate id.</p>
 {% endcapture %}
 {% include example.html content=example %}
 
-<h3>Lists</h3>
-<h4>Remove default style</h4>
+### Lists
+#### Remove default style
+{% capture example %}
 <ul class="list clean">
-  <li>First element</li>
-  <li>Second element</li>
-  <li>Third element</li>
+<li>First element</li>
+<li>Second element</li>
+<li>Third element</li>
 </ul>
+{% endcapture %}
+{% include example.html content=example %}
 
-{% highlight html %}
-<ul class="list clean">
-  <li>First element</li>
-  <li>Second element</li>
-  <li>Third element</li>
-</ul>
-{% endhighlight %}
-
-<h4>Inline Lists</h4>
+#### Inline Lists
+{% capture example %}
 <ul class="list inline">
-  <li>First element</li>
-  <li>Second element</li>
-  <li>Third element</li>
+<li>First element</li>
+<li>Second element</li>
+<li>Third element</li>
 </ul>
+{% endcapture %}
+{% include example.html content=example %}
 
-{% highlight html %}
-<ul class="list inline">
-  <li>First element</li>
-  <li>Second element</li>
-  <li>Third element</li>
-</ul>
-{% endhighlight %}
-
-<h3>Blockquotes</h3>
+### Blockquotes
+{% capture example %}
 <blockquote>
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.
 </blockquote>
-
-{% highlight html %}
-<blockquote>
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.
-</blockquote>
-{% endhighlight %}
+{% endcapture %}
+{% include example.html content=example %}
