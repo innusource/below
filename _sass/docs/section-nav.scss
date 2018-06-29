@@ -1,22 +1,25 @@
+.toc{
+    height: 100vh;
+    position: sticky;
+    order: 2;
+    top: 0;
+    overflow-y: auto;
+}
 .section-nav{
-  width: 180px;
-  height: 100%;
-  position: fixed;
-  top:0;
-  padding: 2vh;
-  background: #f9f9f9;
-  .menu-list{
-      font-size: 12.5px;
-      letter-spacing: 0.2px;
-  }
-  .menu-list li a{
-      display: block;
-      padding: 8px 1px;
-      color: #666;
-      text-decoration: none;
-  }
-  .menu-list li a:hover,
-  .menu-list li a.active{
+    padding: 2vh;
+    background: #f9f9f9;
+    .menu-list{
+        font-size: 12.5px;
+        letter-spacing: 0.2px;
+    }
+    li a{
+        display: block;
+        padding: 8px 1px;
+        color: #666;
+        text-decoration: none;
+    }
+  li a:hover,
+  li a.active{
       color: #222;
   }
 }

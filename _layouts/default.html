@@ -3,19 +3,24 @@ layout: compress
 ---
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    {% include head.html %}
-  </head>
-  <body>
-    <div class="container-fluid">
-        <div class="row">
-            {% include sidebar.html %}
-            <div class="col-12 col-md-9 col-xl-8">
-                {{ content }}
+    <head>
+        <meta charset="utf-8">
+        {% include head.html %}
+    </head>
+    <body>
+        <div class="container-fluid">
+            <div class="row">
+                {% include sidebar.html %}
+                {% if page.toc %}
+                    <div class="col-xl-2 toc">
+                        {{ content | toc_only }}
+                    </div>
+                {% endif %}
+                <div class="col-12 col-md-9 col-xl-8 content">
+                    {{ content }}
+                </div>
             </div>
         </div>
-    </div>
-    {% include footer.html %}
-  </body>
+        {% include footer.html %}
+    </body>
 </html>
