@@ -5,9 +5,9 @@ title: Typography
 toc: true
 ---
 
-## Typography
+# Typography
 
-### Headings
+## Headings
 {% capture example %}
 <h1>Title h1</h1>
 <h2>Title h2</h2>
@@ -18,14 +18,14 @@ toc: true
 {% endcapture %}
 {% include example.html content=example %}
 
-### Paragraph
+## Paragraph
 {% capture example %}
 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sed sem aliquam, iaculis neque in, aliquet lorem. Mauris tristique iaculis dui, at tempus dolor vulputate id.</p>
 {% endcapture %}
 {% include example.html content=example %}
 
-### Lists
-#### Remove default style
+## Lists
+### Remove default style
 {% capture example %}
 <ul class="list clean">
 <li>First element</li>
@@ -35,7 +35,7 @@ toc: true
 {% endcapture %}
 {% include example.html content=example %}
 
-#### Inline Lists
+### Inline Lists
 {% capture example %}
 <ul class="list inline">
 <li>First element</li>
@@ -45,7 +45,7 @@ toc: true
 {% endcapture %}
 {% include example.html content=example %}
 
-### Blockquotes
+## Blockquotes
 {% capture example %}
 <blockquote>
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.
