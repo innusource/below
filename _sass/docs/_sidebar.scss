@@ -5,25 +5,23 @@
     color: #222;
 }
 .sidebar{
-    width: 180px;
-    height: 100%;
-    position: fixed;
+    height: 100vh;
+    position: sticky;
+    z-index: 1000;
     top:0;
     padding: 2vh;
     background: #f9f9f9;
     .menu-list{
         font-size: 12.5px;
         letter-spacing: 0.2px;
-        li{
-            a{
-                display: block;
-                padding: 8px 1px;
-                color: #666;
-                text-decoration: none;
-                &:hover,
-                &.active{
-                    color: #222;
-                }
+        li a{
+            display: block;
+            padding: 8px 1px;
+            color: #666;
+            text-decoration: none;
+            &:hover,
+            &.active{
+                color: #222;
             }
         }
     }
