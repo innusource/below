@@ -25,11 +25,25 @@ sass:
   sass_dir: _sass
   style: :compressed
 
+# Dependencies
 markdown: kramdown
+highlighter: rouge
+
+kramdown:
+    auto_ids: true
+
 plugins:
   - jekyll-feed
+  - jekyll-toc
 
 exclude:
   - Gemfile
   - Gemfile.lock
   - vendor
+  - LICENSE
+  - README.MD
+  - .gitignore
+
+toc:
+  min_level: 2
+  max_level: 4
