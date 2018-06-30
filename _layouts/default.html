@@ -13,7 +13,7 @@ layout: compress
                 {% include sidebar.html %}
                 {% if page.toc %}
                     <div class="col-xl-2 toc">
-                        {{ content | toc_only }}
+                        {% include toc.html html=content %}
                     </div>
                 {% endif %}
                 <div class="col-12 col-md-9 col-xl-8 content">
