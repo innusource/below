@@ -2,6 +2,7 @@
 layout: default
 permalink: cards/
 title: Cards
+toc: true
 ---
 
 <h3>Cards</h3>

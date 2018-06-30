@@ -2,12 +2,12 @@
 layout: default
 permalink: tables/
 title: Tables
+toc: true
 ---
+# Tables
 
-<h3>Tables</h3>
-
-<h4>Default</h4>
-
+## Default
+{% capture example %}
 <table class="table">
   <thead>
     <tr>
@@ -38,42 +38,12 @@ title: Tables
     </tr>
   </tbody>
 </table>
-{% highlight html %}
-<table class="table">
-  <thead>
-    <tr>
-      <th>#</th>
-      <th>First</th>
-      <th>Last</th>
-      <th>GitHub</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>1</th>
-      <td>Milton</td>
-      <td>Olaf</td>
-      <td>miltonolaf</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>Jesus</td>
-      <td>T.</td>
-      <td>jestov</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>Isaac</td>
-      <td>B.</td>
-      <td>Isaac343</td>
-    </tr>
-  </tbody>
-</table>
-{% endhighlight %}
+{% endcapture %}
+{% include example.html content=example %}
 
 
 
-<h4>Bordered Tables</h4>
+## Bordered Tables
 
 <h6>Border out</h6>
 <table class="table bordered">
@@ -159,7 +129,7 @@ title: Tables
 </table>
 {% endhighlight %}
 
-<h4>Striped Rows</h4>
+## Striped Rows
 <table class="table striped">
   <thead>
     <tr>
@@ -201,7 +171,7 @@ title: Tables
 </table>
 {% endhighlight %}
 
-<h4>Borderless Table</h4>
+## Borderless Table
 <table class="table borderless">
   <thead>
     <tr>

@@ -2,6 +2,7 @@
 layout: default
 permalink: grid/
 title: Grid
+toc: true
 ---
 <div class="container">
   <div class="row">
