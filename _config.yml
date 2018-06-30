@@ -34,7 +34,6 @@ kramdown:
 
 plugins:
   - jekyll-feed
-  - jekyll-toc
 
 exclude:
   - Gemfile
@@ -43,7 +42,3 @@ exclude:
   - LICENSE
   - README.MD
   - .gitignore
-
-toc:
-  min_level: 2
-  max_level: 4

@@ -3,7 +3,6 @@ source "https://rubygems.org"
 group :development, :test do
     gem "jekyll", "~> 3.8.1"
     gem "jekyll-feed", "~> 0.6"
-    gem 'jekyll-toc'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
