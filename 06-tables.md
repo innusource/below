@@ -45,7 +45,7 @@ toc: true
 
 ## Bordered Tables
 
-<h6>Border out</h6>
+### Border out
 <table class="table bordered">
   <thead>
     <tr>
@@ -87,7 +87,7 @@ toc: true
 </table>
 {% endhighlight %}
 
-<h6>Border in all the cols and rows</h6>
+### Border in all the cols and rows
 <table class="table bordered-all">
   <thead>
     <tr>
