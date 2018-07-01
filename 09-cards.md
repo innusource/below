@@ -5,9 +5,9 @@ title: Cards
 toc: true
 ---
 
-<h3>Cards</h3>
+# Cards
 
-<h4>Default</h4>
+### Default
 <div class="element-card">
   <div class="card">
     <div class="card-body">
@@ -29,7 +29,7 @@ toc: true
 {% endhighlight %}
 </div>
 
-<h4>Colors Cards</h4>
+### Colors Cards
 <div class="element-card">
   <div class="card blue">
     <div class="card-body">
@@ -105,7 +105,7 @@ toc: true
 </div>
 
 
-<h4>Card with image</h4>
+### Card with image
 <div class="element-card">
   <div class="card">
     <img src="/assets/img/img.jpg">

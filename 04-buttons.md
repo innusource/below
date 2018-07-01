@@ -2,10 +2,11 @@
 layout: default
 permalink: buttons/
 title: Buttons
+toc: true
 ---
 
-<h3>Buttons</h3>
-<h4>Styles</h4>
+# Buttons
+### Styles
 <div class="flex">
   <div class="element-btn">
     <a href="#" class="btn simple">Simple</a>
@@ -29,7 +30,7 @@ title: Buttons
   </div>
 </div>
 
-<h4>Sizes</h4>
+### Sizes
 <div class="flex">
   <div class="element-btn">
     <a href="#" class="btn">By Default</a>
@@ -60,7 +61,7 @@ title: Buttons
   </div>
 </div>
 
-<h4>Colors</h4>
+### Colors
 <div class="flex">
   <div class="element-btn">
     <a href="#" class="btn">Default</a>
@@ -92,7 +93,7 @@ title: Buttons
   </div>
 </div>
 
-<h4>Color's Fill</h4>
+### Color's Fill
 <div class="flex">
   <div class="element-btn">
     <a href="#" class="btn fill">Default</a>

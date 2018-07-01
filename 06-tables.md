@@ -6,7 +6,7 @@ toc: true
 ---
 # Tables
 
-## Default
+### Default
 {% capture example %}
 <table class="table">
   <thead>
@@ -43,9 +43,9 @@ toc: true
 
 
 
-## Bordered Tables
+### Bordered Tables
 
-### Border out
+#### Border out
 <table class="table bordered">
   <thead>
     <tr>
@@ -87,7 +87,7 @@ toc: true
 </table>
 {% endhighlight %}
 
-### Border in all the cols and rows
+#### Border in all the cols and rows
 <table class="table bordered-all">
   <thead>
     <tr>
@@ -129,7 +129,7 @@ toc: true
 </table>
 {% endhighlight %}
 
-## Striped Rows
+### Striped Rows
 <table class="table striped">
   <thead>
     <tr>
@@ -171,7 +171,7 @@ toc: true
 </table>
 {% endhighlight %}
 
-## Borderless Table
+### Borderless Table
 <table class="table borderless">
   <thead>
     <tr>
