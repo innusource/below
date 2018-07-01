@@ -9,12 +9,11 @@
     position: sticky;
     z-index: 1000;
     top: 0;
-    padding: 2vh;
-    background: #f9f9f9;
+    padding: 2.5vh 2vw;
+    border-right: 1px solid #eee;
     overflow-y: auto;
     .menu-list{
-        font-size: 12.5px;
-        letter-spacing: 0.2px;
+        font-size: 14px;
         li a{
             display: block;
             padding: 8px 1px;
