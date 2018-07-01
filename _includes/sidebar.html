@@ -3,7 +3,7 @@
     <ul class="menu-list list clean">
         {% for node in site.data.sidebar %}
             <li>
-                <a href="{{ site.url }}/{{ node | downcase | replace: ' ', '-' }}">{{ node }}</a>
+                <a href="{{ site.url }}/{{ node | downcase | replace: ' ', '-' }}" {% if node == page.title %}class="active"{% endif %}>{{ node }}</a>
             </li>
         {% endfor %}
     </ul>
