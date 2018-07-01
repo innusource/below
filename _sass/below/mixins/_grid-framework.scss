@@ -22,8 +22,7 @@
         @extend %grid-column;
       }
     }
-    .col#{$infix},
-    .col#{$infix}-auto {
+    .col#{$infix}{
       @extend %grid-column;
     }
 
@@ -34,11 +33,6 @@
         flex-grow: 1;
         max-width: 100%;
       }
-      .col#{$infix}-auto {
-        flex: 0 0 auto;
-        width: auto;
-        max-width: none; // Reset earlier grid tiers
-      }
 
       @for $i from 1 through $columns {
         .col#{$infix}-#{$i} {
@@ -46,13 +40,6 @@
         }
       }
 
-      .order#{$infix}-first { order: -1; }
-
-      .order#{$infix}-last { order: $columns + 1; }
-
-      @for $i from 0 through $columns {
-        .order#{$infix}-#{$i} { order: $i; }
-      }
 
       // `$columns - 1` because offsetting by the width of an entire row isn't possible
       @for $i from 0 through ($columns - 1) {
@@ -64,4 +51,7 @@
       }
     }
   }
+  .order-first { order: -1; }
+
+  .order-last { order: $columns + 1; }
 }
