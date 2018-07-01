@@ -4,22 +4,25 @@
     order: 2;
     top: 0;
     overflow-y: auto;
-}
-.section-nav{
-    padding: 2vh;
-    background: #f9f9f9;
-    .menu-list{
+    border-left: 1px solid #eee;
+    padding: 1vh 3vh;
+    ul{
+        list-style: none;
+        padding-left: 15px;
         font-size: 12.5px;
-        letter-spacing: 0.2px;
+        li{
+            a{
+                display: block;
+                color: #888;
+                text-decoration: none;
+                padding: 4px 1px;
+                &:hover{
+                    color: #444;
+                }
+            }
+        }
+        &:first-child{
+            padding-left: 0;
+        }
     }
-    li a{
-        display: block;
-        padding: 8px 1px;
-        color: #666;
-        text-decoration: none;
-    }
-  li a:hover,
-  li a.active{
-      color: #222;
-  }
 }
