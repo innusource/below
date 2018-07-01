@@ -1,49 +1,49 @@
-h1, h2, h3, h4, h5, h6{
-  font-weight: normal;
-  margin: 0.5em 0;
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6{
+    font-weight: normal;
+    margin: 0.5em 0;
 }
 
-h1{
-  font-size: 2.8rem;
+h1, .h1{
+    font-size: 2.8rem;
 }
 
-h2{
-  font-size: 2.5rem;
+h2, .h2{
+    font-size: 2.5rem;
 }
 
-h3{
-  font-size: 2.2rem;
+h3, .h3{
+    font-size: 2.2rem;
 }
 
-h4{
-  font-size: 1.9rem;
+h4, .h4{
+    font-size: 1.9rem;
 }
 
-h5{
-  font-size: 1.6rem;
+h5, .h5{
+    font-size: 1.6rem;
 }
 
-h6{
-  font-size: 1.3rem;
+h6, .h6{
+    font-size: 1.3rem;
 }
 
 .list.inline{
-  padding-left: 0;
-}
-
-.list.inline li{
-  margin-right: 1em;
-  display: inline-block;
+    padding-left: 0;
+    li{
+        margin-right: 1em;
+        display: inline-block;
+    }
 }
 
 .list.clean{
-  padding-left: 0;
-  list-style: none;
+    padding-left: 0;
+    list-style: none;
 }
 
 blockquote{
-  border-left:4px solid #ddd;
-  padding: 15px 20px;
-  color: #666;
-  margin: 5px;
+    border-left:4px solid #ddd;
+    padding: 15px 20px;
+    color: #666;
+    margin: 5px;
 }
