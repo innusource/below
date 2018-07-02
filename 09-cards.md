@@ -8,7 +8,6 @@ toc: true
 # Cards
 
 ### Default
-<div class="element-card">
   <div class="card">
     <div class="card-body">
       <div class="h4">Title</div>
@@ -17,8 +16,7 @@ toc: true
       </p>
     </div>
   </div>
-</div>
-<div class="element-card">
+
 {% highlight html %}
 <div class="card">
   <div class="card-body">
@@ -27,7 +25,6 @@ toc: true
   </div>
 </div>
 {% endhighlight %}
-</div>
 
 ### Colors Cards
 <div class="element-card">
