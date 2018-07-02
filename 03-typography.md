@@ -7,6 +7,10 @@ toc: true
 
 # Typography
 
+### Typeface
+
+Below uses **Inter UI a free and open source font family**. It's a typeface specially designed for user interfaces with focus on high legibility of small-to-medium sized text on computer screens. Inter UI can be accessed and downloaded [here](https://github.com/rsms/inter).
+
 ### Headings
 {% capture example %}
 <h1>Title h1 <small>2.8rem</small></h1>
