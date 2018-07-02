@@ -34,6 +34,10 @@
     "scss",
     "stylus"
   ],
+  "files": [
+    "dist/",
+    "_scss/"
+  ],
   "devDependencies": {
     "autoprefixer": "^6.5.4",
     "backstopjs": "^3.3.1",
