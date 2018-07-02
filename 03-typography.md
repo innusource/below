@@ -32,9 +32,9 @@ Below uses **Inter UI a free and open source font family**. It's a typeface spec
 #### Remove default style
 {% capture example %}
 <ul class="list clean">
-<li>First element</li>
-<li>Second element</li>
-<li>Third element</li>
+    <li>First element</li>
+    <li>Second element</li>
+    <li>Third element</li>
 </ul>
 {% endcapture %}
 {% include example.html content=example %}
@@ -42,9 +42,9 @@ Below uses **Inter UI a free and open source font family**. It's a typeface spec
 #### Inline Lists
 {% capture example %}
 <ul class="list inline">
-<li>First element</li>
-<li>Second element</li>
-<li>Third element</li>
+    <li>First element</li>
+    <li>Second element</li>
+    <li>Third element</li>
 </ul>
 {% endcapture %}
 {% include example.html content=example %}
@@ -52,7 +52,7 @@ Below uses **Inter UI a free and open source font family**. It's a typeface spec
 ### Blockquotes
 {% capture example %}
 <blockquote>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.
 </blockquote>
 {% endcapture %}
 {% include example.html content=example %}
