@@ -16,12 +16,6 @@
   &:hover{background: $light-gray;}
   &:focus{outline:0;}
 }
-.btn.simple{
-  padding: 4px 0;
-  border:none;
-  border-bottom: 1px solid transparent;
-  &:hover{border-bottom:1px solid rgba(0,0,0,0.3);background: transparent;}
-}
 .btn.rounded{
   border-radius: 6px;
 }
@@ -85,6 +79,12 @@
   border-color: $black;
   color: $black;
   &:hover { background: $black; }
+}
+.btn.simple{
+  padding: 4px;
+  border:none;
+  border-bottom: 1px solid transparent;
+  &:hover{border-bottom:1px solid rgba(0,0,0,0.3);background: transparent;color: inherit;}
 }
 .btn.fill{
   background: #eee;
