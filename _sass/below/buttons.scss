@@ -10,6 +10,7 @@
   text-align: center;
   padding: 0.55rem 1.8rem;
   margin: 0.5rem;
+  cursor: pointer;
   font-weight: 600;
   font-size: 0.8rem;
   &:hover{background: $light-gray;}
@@ -34,7 +35,7 @@
   line-height: 1;
   box-sizing: border-box;
   padding: 1.3em 0.4em;
-  display: flex;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
 }
