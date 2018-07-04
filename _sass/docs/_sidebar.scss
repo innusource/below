@@ -2,7 +2,7 @@
     font-size: 1.8rem;
     text-decoration: none;
     font-weight: 600;
-    color: $black-two;
+    color: #222;
 }
 .sidebar{
     height: 100vh;
@@ -10,7 +10,7 @@
     z-index: 1000;
     top: 0;
     padding: 2.5vh 2vw;
-    border-right: 1px solid $light-gray;
+    border-right: 1px solid #eee;
     overflow-y: auto;
     .menu-list{
         font-size: 14px;
@@ -21,7 +21,7 @@
             text-decoration: none;
             &:hover,
             &.active{
-                color: $black-two;
+                color: #222;
             }
         }
     }
