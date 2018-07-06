@@ -46,6 +46,7 @@ toc: true
 ### Bordered Tables
 
 #### Border out
+{% capture example %}
 <table class="table bordered">
   <thead>
     <tr>
@@ -76,18 +77,11 @@ toc: true
     </tr>
   </tbody>
 </table>
-{% highlight html %}
-<table class="table bordered">
-  <thead>
-    ...
-  </thead>
-  <tbody>
-    ...
-  </tbody>
-</table>
-{% endhighlight %}
+{% endcapture %}
+{% include example.html content=example %}
 
 #### Border in all the cols and rows
+{% capture example %}
 <table class="table bordered-all">
   <thead>
     <tr>
@@ -118,18 +112,11 @@ toc: true
     </tr>
   </tbody>
 </table>
-{% highlight html %}
-<table class="table bordered-all">
-  <thead>
-    ...
-  </thead>
-  <tbody>
-    ...
-  </tbody>
-</table>
-{% endhighlight %}
+{% endcapture %}
+{% include example.html content=example %}
 
 ### Striped Rows
+{% capture example %}
 <table class="table striped">
   <thead>
     <tr>
@@ -160,18 +147,11 @@ toc: true
     </tr>
   </tbody>
 </table>
-{% highlight html %}
-<table class="table striped">
-  <thead>
-    ...
-  </thead>
-  <tbody>
-    ...
-  </tbody>
-</table>
-{% endhighlight %}
+{% endcapture %}
+{% include example.html content=example %}
 
 ### Borderless Table
+{% capture example %}
 <table class="table borderless">
   <thead>
     <tr>
@@ -202,13 +182,5 @@ toc: true
     </tr>
   </tbody>
 </table>
-{% highlight html %}
-<table class="table borderless">
-  <thead>
-    ...
-  </thead>
-  <tbody>
-    ...
-  </tbody>
-</table>
-{% endhighlight %}
+{% endcapture %}
+{% include example.html content=example %}

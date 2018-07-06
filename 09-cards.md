@@ -8,120 +8,77 @@ toc: true
 # Cards
 
 ### Default
-  <div class="card">
-    <div class="card-body">
-      <div class="h4">Title</div>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sed sem aliquam, iaculis neque in, aliquet lorem. Mauris tristique iaculis dui, at tempus dolor vulputate id. Praesent ante metus, feugiat quis erat eu, auctor dictum tellus.
-      </p>
-    </div>
-  </div>
-
-{% highlight html %}
+{% capture example %}
 <div class="card">
   <div class="card-body">
     <div class="h4">Title</div>
-    <p>...</p>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sed sem aliquam, iaculis neque in, aliquet lorem. Mauris tristique iaculis dui, at tempus dolor vulputate id. Praesent ante metus, feugiat quis erat eu, auctor dictum tellus.
+    </p>
   </div>
 </div>
-{% endhighlight %}
+{% endcapture %}
+{% include example.html content=example %}
 
 ### Colors Cards
-<div class="element-card">
-  <div class="card blue">
-    <div class="card-body">
-      <div class="h4">Title</div>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sed sem aliquam, iaculis neque in, aliquet lorem. Mauris tristique iaculis dui, at tempus dolor vulputate id. Praesent ante metus, feugiat quis erat eu, auctor dictum tellus.
-      </p>
+{% capture example %}
+<div class="row">
+<div class="col-sm-6">
+    <div class="card blue">
+        <div class="card-body">
+            <div class="h4">Blue Card</div>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sed sem aliquam, iaculis neque in, aliquet lorem. Mauris tristique iaculis dui, at tempus dolor vulputate id.
+            </p>
+        </div>
     </div>
-  </div>
-
-{% highlight html %}
-<div class="card blue">
-  <div class="card-body">
-    <div class="h4">Title</div>
-    <p>...</p>
-  </div>
 </div>
-{% endhighlight %}
-</div>
-<div class="element-card">
-  <div class="card green">
-    <div class="card-body">
-      <div class="h4">Title</div>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sed sem aliquam, iaculis neque in, aliquet lorem. Mauris tristique iaculis dui, at tempus dolor vulputate id. Praesent ante metus, feugiat quis erat eu, auctor dictum tellus.
-      </p>
+<div class="col-sm-6">
+    <div class="card green">
+        <div class="card-body">
+            <div class="h4">Green Card</div>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sed sem aliquam, iaculis neque in, aliquet lorem. Mauris tristique iaculis dui, at tempus dolor vulputate id.
+            </p>
+        </div>
     </div>
-  </div>
-{% highlight html %}
-<div class="card green">
-  <div class="card-body">
-    <div class="h4">Title</div>
-    <p>...</p>
-  </div>
 </div>
-{% endhighlight %}
-</div>
-<div class="element-card">
-  <div class="card dark-blue">
-    <div class="card-body">
-      <div class="h4">Title</div>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sed sem aliquam, iaculis neque in, aliquet lorem. Mauris tristique iaculis dui, at tempus dolor vulputate id. Praesent ante metus, feugiat quis erat eu, auctor dictum tellus.
-      </p>
+<div class="col-sm-6">
+    <div class="card dark-blue">
+        <div class="card-body">
+            <div class="h4">Dark Blue Card</div>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sed sem aliquam, iaculis neque in, aliquet lorem. Mauris tristique iaculis dui, at tempus dolor vulputate id.
+            </p>
+        </div>
     </div>
-  </div>
-{% highlight html %}
-<div class="card dark-blue">
-  <div class="card-body">
-    <div class="h4">Title</div>
-    <p>...</p>
-  </div>
 </div>
-{% endhighlight %}
-</div>
-<div class="element-card">
-  <div class="card black">
-    <div class="card-body">
-      <div class="h4">Title</div>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sed sem aliquam, iaculis neque in, aliquet lorem. Mauris tristique iaculis dui, at tempus dolor vulputate id. Praesent ante metus, feugiat quis erat eu, auctor dictum tellus.
-      </p>
+<div class="col-sm-6">
+    <div class="card black">
+        <div class="card-body">
+            <div class="h4">Black Card</div>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sed sem aliquam, iaculis neque in, aliquet lorem. Mauris tristique iaculis dui, at tempus dolor vulputate id.
+            </p>
+        </div>
     </div>
-  </div>
-{% highlight html %}
-<div class="card black">
-  <div class="card-body">
-    <div class="h4">Title</div>
-    <p>...</p>
-  </div>
 </div>
-{% endhighlight %}
 </div>
-
+{% endcapture %}
+{% include example.html content=example %}
 
 ### Card with image
-<div class="element-card">
-  <div class="card">
-    <img src="/assets/img/img.jpg">
-    <div class="card-body">
-      <div class="h4">Title</div>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sed sem aliquam, iaculis neque in, aliquet lorem. Mauris tristique iaculis dui, at tempus dolor vulputate id. Praesent ante metus, feugiat quis erat eu, auctor dictum tellus.
-      </p>
+{% capture example %}
+<div class="col-sm-6">
+    <div class="card">
+        <img src="/assets/img/img.jpeg">
+        <div class="card-body">
+            <div class="h4">Title</div>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sed sem aliquam, iaculis neque in, aliquet lorem. Mauris tristique iaculis dui, at tempus dolor vulputate id. Praesent ante metus, feugiat quis erat eu, auctor dictum tellus.
+            </p>
+        </div>
     </div>
-  </div>
 </div>
-<div class="element-card">
-{% highlight html %}
-<div class="card">
-  <img src="your-image-here.jpg">
-  <div class="card-body">
-    <div class="h4">Title</div>
-    <p>...</p>
-  </div>
-</div>
-{% endhighlight %}
-</div>
+{% endcapture %}
+{% include example.html content=example %}
