@@ -40,5 +40,10 @@ exclude:
   - Gemfile.lock
   - vendor
   - LICENSE
-  - README.MD
+  - README.md
   - .gitignore
+  - node_modules
+  - package.json
+  - package-lock.json
+  - dist
+  - CNAME
