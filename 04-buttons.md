@@ -43,8 +43,6 @@ For all color cases (except default): the simple button take class color for tex
 <a class="btn">Default</a>
 <a class="btn green">Green Button</a>
 <a class="btn blue">Blue Button</a>
-<a class="btn dark-blue">Dark Blue</a>
-<a class="btn yellow">Yellow Button</a>
 <a class="btn red">Red Button</a>
 <a class="btn black">Black</a>
 {% endcapture %}
@@ -55,8 +53,6 @@ For all color cases (except default): the simple button take class color for tex
 <a class="btn fill">Default</a>
 <a class="btn green fill">Green Button</a>
 <a class="btn blue fill">Blue Button</a>
-<a class="btn dark-blue fill">Dark Blue</a>
-<a class="btn yellow fill">Yellow Button</a>
 <a class="btn red fill">Red Button</a>
 <a class="btn black fill">Black</a>
 {% endcapture %}

@@ -47,7 +47,7 @@
 .btn.big{
   padding: 1.15rem 2.5rem;
 }
-.btn.black,.btn.dark-blue,.btn.blue,.btn.green,.btn.yellow,.btn.red{
+.btn.black,.btn.blue,.btn.green,.btn.red{
   &:hover{color: #fff;}
 }
 .btn.green{
@@ -59,16 +59,6 @@
   border-color: $blue;
   color: $blue;
   &:hover { background: $blue; }
-}
-.btn.dark-blue{
-  border-color: $dark-blue;
-  color: $dark-blue;
-  &:hover { background: $dark-blue; }
-}
-.btn.yellow{
-  border-color: $yellow;
-  color: $yellow;
-  &:hover { background: $yellow; }
 }
 .btn.red{
   border-color: $red;
@@ -90,7 +80,7 @@
   background: #eee;
   &:hover{background:#ddd;border-color:#ddd;}
 }
-.btn.black.fill,.btn.dark-blue.fill,.btn.blue.fill,.btn.green.fill,.btn.yellow.fill,.btn.red.fill{
+.btn.black.fill,.btn.blue.fill,.btn.green.fill,.btn.red.fill{
   color: #fff;
 }
 .btn.green.fill{
@@ -102,16 +92,6 @@
   border-color: $blue;
   background: $blue;
   &:hover { background: $blue-hover; border-color:$blue-hover;}
-}
-.btn.dark-blue.fill{
-  border-color: $dark-blue;
-  background: $dark-blue;
-  &:hover { background: $dark-blue-hover; border-color:$dark-blue-hover; }
-}
-.btn.yellow.fill{
-  border-color: $yellow;
-  background:$yellow;
-  &:hover { background: $yellow-two; border-color: $yellow-two;}
 }
 .btn.red.fill{
   border-color: $red;
