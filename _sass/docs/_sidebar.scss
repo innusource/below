@@ -19,9 +19,12 @@
             padding: 8px 1px;
             color: #666;
             text-decoration: none;
-            &:hover,
+            &:hover{
+                color: #222;
+            }
             &.active{
                 color: #222;
+                font-weight: $bold;
             }
         }
     }
