@@ -16,7 +16,7 @@
     border-radius: 6px 6px 0 0;
   }
 }
-.card.black,.card.green,.card.blue,.card.dark-blue{
+.card.black,.card.green,.card.blue,.card.red{
   &:before {
     content: "";
     width: 6px;
@@ -37,9 +37,9 @@
     background: $blue;
   }
 }
-.card.dark-blue{
+.card.red{
   &:before{
-    background: $dark-blue;
+    background: $red;
   }
 }
 .card.green{

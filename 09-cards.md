@@ -44,9 +44,9 @@ toc: true
     </div>
 </div>
 <div class="col-sm-6">
-    <div class="card dark-blue">
+    <div class="card red">
         <div class="card-body">
-            <div class="h4">Dark Blue Card</div>
+            <div class="h4">Red Card</div>
             <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sed sem aliquam, iaculis neque in, aliquet lorem. Mauris tristique iaculis dui, at tempus dolor vulputate id.
             </p>
