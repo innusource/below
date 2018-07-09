@@ -31,14 +31,14 @@ h6, .h6{
 .list{
     &.inline{
         padding-left: 0;
+        li{
+            margin-right: 1em;
+            display: inline-block;
+        }
     }
     &.clean{
         padding-left: 0;
         list-style: none;
-    }
-    li{
-        margin-right: 1em;
-        display: inline-block;
     }
 }
 
