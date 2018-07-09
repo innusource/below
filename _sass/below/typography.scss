@@ -28,21 +28,22 @@ h6, .h6{
     font-size: 1.3rem;
 }
 
-.list.inline{
-    padding-left: 0;
+.list{
+    &.inline{
+        padding-left: 0;
+    }
+    &.clean{
+        padding-left: 0;
+        list-style: none;
+    }
     li{
         margin-right: 1em;
         display: inline-block;
     }
 }
 
-.list.clean{
-    padding-left: 0;
-    list-style: none;
-}
-
 blockquote{
-    border-left:4px solid #ddd;
+    border-left: 4px solid #ddd;
     padding: 15px 20px;
     color: $black-three;
     margin: 5px;
