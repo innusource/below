@@ -7,7 +7,7 @@ toc: true
 
 # Buttons
 
-### Styles
+### Types
 
 {% capture example %}
 <a class="btn simple">Simple</a>
