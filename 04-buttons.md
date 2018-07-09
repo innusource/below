@@ -12,6 +12,7 @@ toc: true
 {% capture example %}
 <a class="btn simple">Simple</a>
 <a class="btn">Default</a>
+<a class="btn disabled">Disabled</a>
 <a class="btn rounded">Rounded</a>
 <a class="btn super-rounded">Super Rounded</a>
 <a class="btn circle"><span>Circle Button</span></a>
