@@ -1,4 +1,4 @@
-body,html{
+body, html{
   height: 100%;
   padding: 0;
   margin: 0;
@@ -8,18 +8,13 @@ body,html{
 }
 .content{
   order: 1;
-}
-.element-card,.element-btn{
-  margin: 15px;
-}
-.element-card{
-  width: calc(50% - 30px);
-  display: inline-block;
-}
-.element-btn{
-  width: calc(33.33% - 30px);
-}
-.flex{
-  display: flex;
-  flex-wrap: wrap;
+  padding: 0 30px;
+  > h1:first-of-type{
+      background: #f9f9f9;
+      margin: 0px -30px;
+      margin-bottom: 30px;
+      padding: 30px;
+      font-weight: 600;
+      border-bottom: 1px solid #eee;
+  }
 }
