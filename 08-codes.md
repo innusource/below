@@ -10,12 +10,16 @@ toc: true
 
 Use **<pre>** tag for a snippet code.
 
-{% highlight html %}
-<h1>A cool h1 title for an snippet example...</h1>
-<div class="example">
-    <h2>My h2 title</h2>
-</div>
-{% endhighlight %}
+{% capture example %}
+<pre>
+.below{
+    background: white;
+    color: black;
+}
+</pre>
+{% endcapture %}
+{% include example.html content=example %}
+
 
 ### Keyboard Input
 
