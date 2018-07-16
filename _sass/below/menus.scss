@@ -1,4 +1,4 @@
-.nav{
+.menu{
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
@@ -6,4 +6,100 @@
     padding-left: 0;
     margin-bottom: 0;
     list-style: none;
+    a{
+        display: block;
+        padding: 0.5rem 1rem;
+        -moz-transition: all 0.4s ease;
+        -o-transition: all 0.4s ease;
+        -webkit-transition: all 0.4s ease;
+        transition: all 0.4s ease;
+        &.active{
+            font-weight: 600;
+        }
+        &.disabled{
+            cursor: not-allowed;
+            opacity: 0.7;
+            &:hover{
+                opacity: 0.7;
+            }
+        }
+    }
+    &.center{
+        -ms-flex-pack: center;
+        justify-content: center;
+    }
+    &.right{
+        -ms-flex-pack: end;
+        justify-content: flex-end;
+    }
+    &.vertical{
+        flex-direction: column;
+        -ms-flex-direction: column;
+    }
+    &.underline{
+        a{
+            margin: 0.5rem 1rem;
+            padding: 0;
+            border-bottom: 2px solid transparent;
+            &:hover{
+                border-bottom: 2px solid #eee;
+            }
+            &.active{
+                border-bottom: 2px solid;
+            }
+            &.disabled{
+                border-bottom: 2px solid transparent;
+            }
+        }
+    }
+    &.tabs{
+        a{
+            border-bottom: 2px solid #eee;
+            &:hover{
+                background: #f9f9f9;
+                border-color: $blue;
+            }
+            &.active{
+                background: $blue;
+                color: #fff;
+                border-color: $blue;
+            }
+            &.disabled{
+                &:hover{
+                    background: transparent;
+                    border-color: #eee;
+                }
+            }
+        }
+    }
+    &.stacked{
+        a{
+            border: 2px solid;
+            border-right: none;
+            &:hover{
+                background: $blue;
+                color: #fff;
+                border-color: $blue;
+            }
+            &.active{
+                background: $blue;
+                color: #fff;
+                border-color: $blue;
+            }
+            &.disabled{
+                &:hover{
+                    border-left: 2px solid $blue;
+                    color: $blue;
+                    background: transparent;
+                }
+            }
+            &:first-child{
+                border-radius: 3px 0 0 3px;
+            }
+            &:last-of-type{
+                border-radius: 0 3px 3px 0;
+                border-right: 2px solid $blue;
+            }
+        }
+    }
 }
