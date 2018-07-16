@@ -37,8 +37,11 @@ hr {
 
 
 a {
-    color: #000;
-    background-color: transparent;
+    color: #2980b9;
+    text-decoration: none;
+    &:hover{
+        color: darken( #2980b9, 5% );
+    }
 }
 
 abbr[title] {
@@ -118,6 +121,10 @@ button:-moz-focusring,
 [type="reset"]:-moz-focusring,
 [type="submit"]:-moz-focusring {
   outline: 1px dotted ButtonText;
+}
+
+dl, ol, ul{
+    margin-top: 0;
 }
 
 fieldset {
