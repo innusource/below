@@ -82,6 +82,22 @@ toc: true
 {% endcapture %}
 {% include example.html content=example %}
 
+#### Vertical
+
+{% capture example %}
+<div class="row">
+    <div class="col-3">
+        <nav class="menu tabs vertical">
+            <a class="active" href="#">Active</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a class="disabled" href="#">Disabled</a>
+            </nav>
+    </div>
+</div>
+{% endcapture %}
+{% include example.html content=example %}
+
 ### Stacked
 
 {% capture example %}
@@ -91,5 +107,21 @@ toc: true
     <a href="#">Link</a>
     <a class="disabled" href="#">Disabled</a>
 </nav>
+{% endcapture %}
+{% include example.html content=example %}
+
+#### Vertical
+
+{% capture example %}
+<div class="row">
+    <div class="col-3">
+        <nav class="menu stacked vertical">
+            <a class="active" href="#">Active</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a class="disabled" href="#">Disabled</a>
+            </nav>
+    </div>
+</div>
 {% endcapture %}
 {% include example.html content=example %}

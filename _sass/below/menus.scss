@@ -35,6 +35,30 @@
     &.vertical{
         flex-direction: column;
         -ms-flex-direction: column;
+        &.tabs{
+            a{
+                border-bottom: none;
+                border-left: 2px solid;
+                &.disabled{
+                    &:hover{
+                        border-color: $blue;
+                    }
+                }
+            }
+        }
+        &.stacked{
+            a{
+                border-bottom: none;
+                border-right: 2px solid;
+                &:first-child{
+                    border-radius: 3px 3px 0 0;
+                }
+                &:last-of-type{
+                    border-radius: 0 0 3px 3px;
+                    border-bottom: 2px solid $blue;
+                }
+            }
+        }
     }
     &.underline{
         a{
