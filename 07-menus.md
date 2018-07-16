@@ -92,7 +92,7 @@ toc: true
             <a href="#">Link</a>
             <a href="#">Link</a>
             <a class="disabled" href="#">Disabled</a>
-            </nav>
+        </nav>
     </div>
 </div>
 {% endcapture %}
@@ -120,7 +120,7 @@ toc: true
             <a href="#">Link</a>
             <a href="#">Link</a>
             <a class="disabled" href="#">Disabled</a>
-            </nav>
+        </nav>
     </div>
 </div>
 {% endcapture %}
