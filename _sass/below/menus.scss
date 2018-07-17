@@ -24,15 +24,15 @@
             }
         }
     }
-    &.center{
+    &.center-menu{
         -ms-flex-pack: center;
         justify-content: center;
     }
-    &.right{
+    &.right-menu{
         -ms-flex-pack: end;
         justify-content: flex-end;
     }
-    &.vertical{
+    &.vertical-menu{
         flex-direction: column;
         -ms-flex-direction: column;
         &.tabs{

@@ -7,7 +7,7 @@ toc: true
 
 # Menus
 
-### Default Menu
+### Menu
 
 {% capture example %}
 <nav class="menu">
@@ -24,7 +24,7 @@ toc: true
 #### Centered Menu
 
 {% capture example %}
-<nav class="menu center">
+<nav class="menu center-menu">
     <a class="active" href="#">Active</a>
     <a href="#">Link</a>
     <a href="#">Link</a>
@@ -36,7 +36,7 @@ toc: true
 #### Right-aligned Menu
 
 {% capture example %}
-<nav class="menu right">
+<nav class="menu right-menu">
     <a class="active" href="#">Active</a>
     <a href="#">Link</a>
     <a href="#">Link</a>
@@ -49,7 +49,7 @@ toc: true
 ### Vertical Menu
 
 {% capture example %}
-<nav class="menu vertical">
+<nav class="menu vertical-menu">
     <a class="active" href="#">Active</a>
     <a href="#">Link</a>
     <a href="#">Link</a>
@@ -75,7 +75,7 @@ toc: true
 {% capture example %}
 <div class="row">
     <div class="col-3">
-        <nav class="menu tabs vertical">
+        <nav class="menu tabs vertical-menu">
             <a class="active" href="#">Active</a>
             <a href="#">Link</a>
             <a href="#">Link</a>
@@ -103,7 +103,7 @@ toc: true
 {% capture example %}
 <div class="row">
     <div class="col-3">
-        <nav class="menu stacked vertical">
+        <nav class="menu stacked vertical-menu">
             <a class="active" href="#">Active</a>
             <a href="#">Link</a>
             <a href="#">Link</a>
