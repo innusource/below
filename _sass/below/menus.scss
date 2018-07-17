@@ -62,7 +62,7 @@
     }
     &.tabs{
         a{
-            border-bottom: 2px solid #eee;
+            border-bottom: 2px solid $light-gray;
             &:hover{
                 background: #f9f9f9;
                 border-color: $blue;
@@ -75,7 +75,7 @@
             &.disabled{
                 &:hover{
                     background: transparent;
-                    border-color: #eee;
+                    border-color: $light-gray;
                 }
             }
         }
