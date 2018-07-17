@@ -58,18 +58,6 @@ toc: true
 {% endcapture %}
 {% include example.html content=example %}
 
-### Underline
-
-{% capture example %}
-<nav class="menu underline">
-    <a class="active" href="#">Active</a>
-    <a href="#">Link</a>
-    <a href="#">Link</a>
-    <a class="disabled" href="#">Disabled</a>
-</nav>
-{% endcapture %}
-{% include example.html content=example %}
-
 ### Tabs
 
 {% capture example %}

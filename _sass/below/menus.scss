@@ -60,22 +60,6 @@
             }
         }
     }
-    &.underline{
-        a{
-            margin: 0.5rem 1rem;
-            padding: 0;
-            border-bottom: 2px solid transparent;
-            &:hover{
-                border-bottom: 2px solid #eee;
-            }
-            &.active{
-                border-bottom: 2px solid;
-            }
-            &.disabled{
-                border-bottom: 2px solid transparent;
-            }
-        }
-    }
     &.tabs{
         a{
             border-bottom: 2px solid #eee;
