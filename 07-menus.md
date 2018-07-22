@@ -7,15 +7,15 @@ toc: true
 
 # Menus
 
-### Menu
+### Default Menu
 
 {% capture example %}
-<nav class="menu">
-    <a class="active" href="#">Active</a>
-    <a href="#">Link</a>
-    <a href="#">Link</a>
-    <a class="disabled" href="#">Disabled</a>
-</nav>
+<ul class="menu">
+    <li><a href="#" class="active">Active</a></li>
+    <li><a href="#" class="disabled">Disabled</a></li>
+    <li><a href="#">Link</a></li>
+    <li><a href="#">Link</a></li>
+</ul>
 {% endcapture %}
 {% include example.html content=example %}
 
@@ -24,49 +24,67 @@ toc: true
 #### Centered Menu
 
 {% capture example %}
-<nav class="menu center-menu">
-    <a class="active" href="#">Active</a>
-    <a href="#">Link</a>
-    <a href="#">Link</a>
-    <a class="disabled" href="#">Disabled</a>
-</nav>
+<ul class="menu center-menu">
+    <li><a href="#" class="active">Active</a></li>
+    <li><a href="#">Link</a></li>
+    <li><a href="#">Link</a></li>
+    <li><a href="#" class="disabled">Disabled</a></li>
+</ul>
 {% endcapture %}
 {% include example.html content=example %}
 
 #### Right-aligned Menu
 
 {% capture example %}
-<nav class="menu right-menu">
-    <a class="active" href="#">Active</a>
-    <a href="#">Link</a>
-    <a href="#">Link</a>
-    <a class="disabled" href="#">Disabled</a>
+<ul class="menu right-menu">
+    <li><a href="#" class="active">Active</a></li>
+    <li><a href="#">Link</a></li>
+    <li><a href="#">Link</a></li>
+    <li><a href="#" class="disabled">Disabled</a></li>
+</ul>
+{% endcapture %}
+{% include example.html content=example %}
+
+### Navbar
+
+{% capture example %}
+<nav class="menu-nav space-between">
+    <ul>
+        <li><a href="#" class="badge">Below</a></li>
+        <li><a href="#" class="active">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+    </ul>
+    <ul>
+        <li><a href="#">GitHub</a></li>
+        <li><a href="#">Twitter</a></li>
+        <li><a href="#">Dribble</a></li>
+    </ul>
 </nav>
 {% endcapture %}
 {% include example.html content=example %}
 
-
 ### Vertical Menu
 
 {% capture example %}
-<nav class="menu vertical-menu">
-    <a class="active" href="#">Active</a>
+<ul class="menu vertical-menu">
+    <a href="#" class="active">Active</a>
     <a href="#">Link</a>
     <a href="#">Link</a>
-    <a class="disabled" href="#">Disabled</a>
-</nav>
+    <a href="#" class="disabled">Disabled</a>
+</ul>
 {% endcapture %}
 {% include example.html content=example %}
 
 ### Tabs
 
 {% capture example %}
-<nav class="menu tabs">
-    <a class="active" href="#">Active</a>
+<ul class="menu tabs">
+    <a href="#" class="active">Active</a>
     <a href="#">Link</a>
     <a href="#">Link</a>
-    <a class="disabled" href="#">Disabled</a>
-</nav>
+    <a href="#" class="disabled">Disabled</a>
+</ul>
 {% endcapture %}
 {% include example.html content=example %}
 
@@ -75,12 +93,12 @@ toc: true
 {% capture example %}
 <div class="row">
     <div class="col-3">
-        <nav class="menu tabs vertical-menu">
-            <a class="active" href="#">Active</a>
+        <ul class="menu tabs vertical-menu">
+            <a href="#" class="active">Active</a>
             <a href="#">Link</a>
             <a href="#">Link</a>
-            <a class="disabled" href="#">Disabled</a>
-        </nav>
+            <a href="#" class="disabled">Disabled</a>
+        </ul>
     </div>
 </div>
 {% endcapture %}
@@ -89,12 +107,12 @@ toc: true
 ### Stacked
 
 {% capture example %}
-<nav class="menu stacked">
-    <a class="active" href="#">Active</a>
+<ul class="menu stacked">
+    <a href="#" class="active">Active</a>
     <a href="#">Link</a>
     <a href="#">Link</a>
-    <a class="disabled" href="#">Disabled</a>
-</nav>
+    <a href="#" class="disabled">Disabled</a>
+</ul>
 {% endcapture %}
 {% include example.html content=example %}
 
@@ -103,12 +121,12 @@ toc: true
 {% capture example %}
 <div class="row">
     <div class="col-3">
-        <nav class="menu stacked vertical-menu">
-            <a class="active" href="#">Active</a>
+        <ul class="menu stacked vertical-menu">
+            <a href="#" class="active">Active</a>
             <a href="#">Link</a>
             <a href="#">Link</a>
-            <a class="disabled" href="#">Disabled</a>
-        </nav>
+            <a href="#" class="disabled">Disabled</a>
+        </ul>
     </div>
 </div>
 {% endcapture %}
