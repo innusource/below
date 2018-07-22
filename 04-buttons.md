@@ -10,51 +10,51 @@ toc: true
 ### Types
 
 {% capture example %}
-<a class="btn simple">Simple</a>
-<a class="btn">Default</a>
-<a class="btn disabled">Disabled</a>
-<a class="btn rounded">Rounded</a>
-<a class="btn super-rounded">Super Rounded</a>
-<a class="btn circle"><span>Circle Button</span></a>
+<button class="btn btn-btn-simple">Simple</button>
+<button class="btn">Default</button>
+<button class="btn btn-disabled">Disabled</button>
+<button class="btn btn-round">Rounded</button>
+<button class="btn btn-super-round">Super Rounded</button>
+<button class="btn btn-circle"><span>Circle Button</span></button>
 {% endcapture %}
 {% include example.html content=example %}
 
 ### Sizes
 
 {% capture example %}
-<a class="btn">By Default</a>
-<a class="btn medium">Medium</a>
-<a class="btn big">Big Button</a>
+<button class="btn">By Default</button>
+<button class="btn btn-medium">Medium</button>
+<button class="btn btn-big">Big Button</button>
 {% endcapture %}
 {% include example.html content=example %}
 
 #### Sizes for circle button
 
 {% capture example %}
-<a class="btn circle"><span>Circle Default</span></a>
-<a class="btn circle medium"><span>Circle Medium</span></a>
-<a class="btn circle big"><span>Circle Big</span></a>
+<button class="btn btn-circle"><span>Circle Default</span></button>
+<button class="btn btn-circle btn-medium"><span>Circle Medium</span></button>
+<button class="btn btn-circle btn-big"><span>Circle Big</span></button>
 {% endcapture %}
 {% include example.html content=example %}
 
 ### Colors
 For all color cases (except default): the simple button take class color for text and transparent for background.
 {% capture example %}
-<a class="btn simple green">Simple Green</a>
-<a class="btn">Default</a>
-<a class="btn green">Green Button</a>
-<a class="btn blue">Blue Button</a>
-<a class="btn red">Red Button</a>
-<a class="btn black">Black</a>
+<button class="btn btn-simple btn-green">Simple Green</button>
+<button class="btn">Default</button>
+<button class="btn btn-green">Green Button</button>
+<button class="btn btn-blue">Blue Button</button>
+<button class="btn btn-red">Red Button</button>
+<button class="btn btn-black">Black</button>
 {% endcapture %}
 {% include example.html content=example %}
 
 ### Color's Fill
 {% capture example %}
-<a class="btn fill">Default</a>
-<a class="btn green fill">Green Button</a>
-<a class="btn blue fill">Blue Button</a>
-<a class="btn red fill">Red Button</a>
-<a class="btn black fill">Black</a>
+<button class="btn btn-fill">Default</button>
+<button class="btn btn-green btn-fill">Green Button</button>
+<button class="btn btn-blue btn-fill">Blue Button</button>
+<button class="btn btn-red btn-fill">Red Button</button>
+<button class="btn btn-black btn-fill">Black</button>
 {% endcapture %}
 {% include example.html content=example %}
