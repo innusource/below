@@ -1,4 +1,4 @@
-.menu{
+.menu, .menu-nav,.menu-nav > ul{
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
@@ -6,6 +6,8 @@
     padding-left: 0;
     margin-bottom: 0;
     list-style: none;
+}
+.menu, .menu-nav > ul{
     a{
         display: block;
         padding: 0.5rem 1rem;
@@ -23,14 +25,6 @@
                 opacity: 0.7;
             }
         }
-    }
-    &.center-menu{
-        -ms-flex-pack: center;
-        justify-content: center;
-    }
-    &.right-menu{
-        -ms-flex-pack: end;
-        justify-content: flex-end;
     }
     &.vertical-menu{
         flex-direction: column;
@@ -110,4 +104,19 @@
             }
         }
     }
+    .badge{
+        color: #222;
+        font-weight: 700;
+    }
+}
+.center-menu{
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+.right-menu{
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+}
+.space-between{
+    justify-content: space-between;
 }
