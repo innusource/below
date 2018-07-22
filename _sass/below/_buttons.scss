@@ -1,119 +1,144 @@
 .btn{
-  color: $black-two;
-  text-decoration: none;
-  border:2px solid $light-gray;
-  -moz-transition: all 0.4s ease;
-  -o-transition: all 0.4s ease;
-  -webkit-transition: all 0.4s ease;
-  transition: all 0.4s ease;
-  display: inline-block;
-  text-align: center;
-  padding: 0.55rem 1.8rem;
-  cursor: pointer;
-  font-weight: 600;
-  font-size: 0.8rem;
-  &:hover{ background: $light-gray; color: $black-two; }
-  &:focus{ outline: 0; }
-  &.rounded{ border-radius: 6px; }
-  &.super-rounded{ border-radius: 45px; }
-  &.circle{
-      width: 5rem;
-      height: 5rem;
-      border-radius: 50%;
-      line-height: 1;
-      padding: 1.3em 0.4em;
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      &.medium{
-          width: 6rem;
-          height: 6rem;
-      }
-      &.big{
-          width: 7rem;
-          height: 7rem;
-      }
-  }
-  &.disabled{
-      cursor: not-allowed;
-      opacity: 0.5;
-      &:hover{ background: inherit; }
-  }
-  &.medium{ padding: 0.8rem 2.15rem; }
-  &.big{ padding: 1.15rem 2.5rem; }
-  &.green{
-      border-color: $green;
-      color: $green;
-      &:hover{ background:$green; }
-  }
-  &.blue{
-      border-color: $blue;
-      color: $blue;
-      &:hover{ background: $blue; }
-  }
-  &.red{
-      border-color: $red;
-      color: $red;
-      &:hover{ background: $red; }
-  }
-  &.black{
-      border-color: $black;
-      color: $black;
-      &:hover{ background: $black; }
-  }
-  &.black,&.blue,&.green,&.red{
-      &:hover{ color: #fff; }
-  }
-  &.simple{
-      padding: 4px;
-      border:none;
-      border-bottom: 1px solid transparent;
-      &:hover{
-          border-bottom: 1px solid rgba(0,0,0,0.3);
-          background: transparent;
-          color: inherit;
-      }
-  }
-  &.fill{
-      background: #eee;
-      &:hover{
-          background:#ddd;
-          border-color:#ddd;
-      }
-      &.green{
-          border-color: $green;
-          background: $green;
-          &:hover{
-              background:$green-hover;
-              border-color:$green-hover;
-          }
-      }
-      &.blue{
-          border-color: $blue;
-          background: $blue;
-          &:hover{
-              background: $blue-hover;
-              border-color:$blue-hover;
-          }
-      }
-      &.red{
-          border-color: $red;
-          background:$red;
-          &:hover{
-              background: $red-two;
-              border-color: $red-two;
-          }
-      }
-      &.black{
-          border-color: $black;
-          background: $black;
-          &:hover{
-              background: $black-two;
-              border-color: $black-two;
-          }
-      }
-      &.black,&.blue,&.green,&.red{
-        color: #fff;
-      }
-  }
+    color: $black-two;
+    text-decoration: none;
+    border:2px solid $light-gray;
+    -moz-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+    display: inline-block;
+    text-align: center;
+    padding: 0.55rem 1.8rem;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 0.8rem;
+    &:hover{
+        background: $light-gray;
+        color: $black-two;
+    }
+    &:focus{
+        outline: 0;
+    }
+    &.rounded{
+        border-radius: 6px;
+    }
+    &.super-rounded{
+        border-radius: 45px;
+    }
+    &.circle{
+        width: 5rem;
+        height: 5rem;
+        border-radius: 50%;
+        line-height: 1;
+        padding: 1.3em 0.4em;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        &.medium{
+            width: 6rem;
+            height: 6rem;
+        }
+        &.big{
+            width: 7rem;
+            height: 7rem;
+        }
+    }
+    &.disabled{
+        cursor: not-allowed;
+        opacity: 0.5;
+        &:hover{
+            background: inherit;
+        }
+    }
+    &.medium{
+        padding: 0.8rem 2.15rem;
+    }
+    &.big{
+        padding: 1.15rem 2.5rem;
+    }
+    &.green{
+        border-color: $green;
+        color: $green;
+        &:hover{
+            background:$green;
+        }
+    }
+    &.blue{
+        border-color: $blue;
+        color: $blue;
+        &:hover{
+            background: $blue;
+        }
+    }
+    &.red{
+        border-color: $red;
+        color: $red;
+        &:hover{
+            background: $red;
+        }
+    }
+    &.black{
+        border-color: $black;
+        color: $black;
+        &:hover{
+            background: $black;
+        }
+    }
+    &.black,&.blue,&.green,&.red{
+        &:hover{
+            color: #fff;
+        }
+    }
+    &.simple{
+        padding: 4px;
+        border:none;
+        border-bottom: 1px solid transparent;
+        &:hover{
+            border-bottom: 1px solid rgba(0,0,0,0.3);
+            background: transparent;
+            color: inherit;
+        }
+    }
+    &.fill{
+        background: #eee;
+        &:hover{
+            background:#ddd;
+            border-color:#ddd;
+        }
+        &.green{
+            border-color: $green;
+            background: $green;
+            &:hover{
+                background:$green-hover;
+                border-color:$green-hover;
+            }
+        }
+        &.blue{
+            border-color: $blue;
+            background: $blue;
+            &:hover{
+                background: $blue-hover;
+                border-color:$blue-hover;
+            }
+        }
+        &.red{
+            border-color: $red;
+            background:$red;
+            &:hover{
+                background: $red-two;
+                border-color: $red-two;
+            }
+        }
+        &.black{
+            border-color: $black;
+            background: $black;
+            &:hover{
+                background: $black-two;
+                border-color: $black-two;
+            }
+        }
+        &.black,&.blue,&.green,&.red{
+          color: #fff;
+        }
+    }
 }
