@@ -10,7 +10,7 @@ toc: true
 ### Types
 
 {% capture example %}
-<button class="btn btn-btn-simple">Simple</button>
+<button class="btn btn-simple">Simple</button>
 <button class="btn">Default</button>
 <button class="btn btn-disabled">Disabled</button>
 <button class="btn btn-round">Rounded</button>
