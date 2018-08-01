@@ -1,7 +1,15 @@
 .example{
-    margin-top: 1rem;
-    position: relative;
-    padding: 15px;
-    border: 1px solid #eee;
-    border-radius: 5px;
+	margin-top: 1rem;
+	position: relative;
+	padding: 15px;
+	border: 1px solid #eee;
+	border-radius: 5px;
+
+	.row > .col,
+	.row > [class^="col-"]{
+		padding-top: .75rem;
+		padding-bottom: .75rem;
+		background-color: #eee;
+		border: 1px solid #ccc;
+	}
 }
