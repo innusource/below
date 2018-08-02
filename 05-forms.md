@@ -9,14 +9,14 @@ toc: true
 ## Default form
 {% capture example %}
 <form class="form">
-  <fieldset>
-    <legend>A compact inline form</legend>
+	<fieldset>
+		<legend>A compact inline form</legend>
 
-    <input type="email" placeholder="Email">
-    <input type="password" placeholder="Password">
+		<input type="email" placeholder="Email">
+		<input type="password" placeholder="Password">
 
-    <label for="remember" class="form-input-check">
-      <input id="remember" type="checkbox"> Remember me
+		<label for="remember" class="form-input-check">
+			<input id="remember" type="checkbox"> Remember me
 		</label>
 
 		<button type="submit" class="btn">Sign in</button>
