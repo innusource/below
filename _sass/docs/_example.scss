@@ -4,7 +4,8 @@
 	padding: 15px;
 	border: 1px solid #eee;
 	border-radius: 5px;
-
+}
+#grid .example{
 	.row > .col,
 	.row > [class^="col-"]{
 		padding-top: .75rem;
