@@ -19,17 +19,17 @@
 		padding: .5em .6em;
 	}
 	fieldset {
-    margin: 0;
-    padding: .35em 0 .75em;
-    border: 0;
+		margin: 0;
+		padding: .35em 0 .75em;
+		border: 0;
 	}
 	legend {
-    display: block;
-    width: 100%;
-    padding: .3em 0;
-    margin-bottom: .3em;
-    color: #333;
-    border-bottom: 1px solid #e5e5e5;
+		display: block;
+		width: 100%;
+		padding: .3em 0;
+		margin-bottom: .3em;
+		color: #333;
+		border-bottom: 1px solid #e5e5e5;
 	}
 }
 
@@ -54,4 +54,33 @@
 .form-stacked textarea{
 	display: block;
 	margin: .25em 0;
+}
+
+.form-aligned .form-control-group {
+	margin-bottom: .5em;
+}
+
+.form-aligned .form-control-group label {
+	text-align: right;
+	display: inline-block;
+	vertical-align: middle;
+	width: 10em;
+	margin: 0 1em 0 0;
+}
+
+.form .help-inline, .form-message-inline {
+	display: inline-block;
+	padding-left: .3em;
+	color: #666;
+	vertical-align: middle;
+	font-size: .875em;
+}
+
+.form-aligned .form-controls {
+	margin: 1.5em 0 0 11em;
+}
+
+.form .form-input-check{
+	margin: .5em 0;
+	display: block;
 }
