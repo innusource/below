@@ -1,13 +1,13 @@
 .btn{
   background: transparent;
   color: $black-two;
-  border: 2px solid $light-gray;
+  border: 2px solid lighten($primary-color, 20%);
   display: inline-block;
-  padding: 0.55rem 1.8rem;
+  padding: 0.5rem 1.2rem;
   text-decoration: none;
   line-height: 1.5;
   text-align: center;
-  font-size: 0.8rem;
+  font-size: 0.7rem;
   font-weight: 600;
   cursor: pointer;
   -moz-transition: all 0.4s ease;
@@ -16,8 +16,8 @@
   transition: all 0.4s ease;
 
   &:hover{
-    background: $light-gray;
-    color: $black-two;
+    background: lighten($primary-color, 10%);
+    color:  $light-gray;
   }
 
   &:focus{
@@ -25,32 +25,11 @@
   }
 
   &.btn-round{
-    border-radius: 6px;
+    border-radius: 15px;
   }
 
   &.btn-super-round{
     border-radius: 45px;
-  }
-
-  &.btn-circle{
-    width: 5rem;
-    height: 5rem;
-    border-radius: 50%;
-    line-height: 1;
-    padding: 1.3em 0.4em;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-
-    &.btn-medium{
-      width: 6rem;
-      height: 6rem;
-    }
-
-    &.btn-big{
-      width: 7rem;
-      height: 7rem;
-    }
   }
 
   &.btn-disabled{
@@ -63,11 +42,13 @@
   }
 
   &.btn-medium{
-    padding: 0.8rem 2.15rem;
+    padding: 0.5rem 1.2rem;
+    font-size: 1rem;
   }
 
   &.btn-big{
-    padding: 1.15rem 2.5rem;
+    padding: 0.7rem 1.5rem;
+    font-size: 1.2rem;
   }
 
   &.btn-green{
@@ -116,7 +97,7 @@
   }
 
   &.btn-simple{
-    padding: 4px;
+    padding: 1rem;
     border:none;
     border-bottom: 1px solid transparent;
 
@@ -133,6 +114,7 @@
     &:hover{
       background:#ddd;
       border-color:#ddd;
+      color: $black;
     }
 
     &.btn-green{
