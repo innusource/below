@@ -37,11 +37,11 @@ hr {
 
 
 a {
-    color: #2980b9;
-    text-decoration: none;
-    &:hover{
-        color: darken( #2980b9, 5% );
-    }
+  color: #2980b9;
+  text-decoration: none;
+  &:hover{
+    color: darken( #2980b9, 5% );
+  }
 }
 
 abbr[title] {
@@ -124,7 +124,7 @@ button:-moz-focusring,
 }
 
 dl, ol, ul{
-    margin-top: 0;
+  margin-top: 0;
 }
 
 fieldset {

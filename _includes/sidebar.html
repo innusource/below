@@ -1,10 +1,10 @@
 <div class="col-12 col-md-3 col-xl-2 sidebar">
-    <span class="menu-heading"><a href="{{ site.url }}">Below</a></span>
-    <ul class="menu-list list clean">
-        {% for node in site.data.sidebar %}
-            <li>
-                <a href="{{ site.url }}/{{ node | downcase | replace: ' ', '-' }}" {% if node == page.title %}class="active"{% endif %}>{{ node }}</a>
-            </li>
-        {% endfor %}
-    </ul>
+  <span class="menu-heading"><a href="{{ site.url }}">Below</a></span>
+  <ul class="menu-list list clean">
+    {% for node in site.data.sidebar %}
+    <li>
+      <a href="{{ site.url }}/{{ node | downcase | replace: ' ', '-' }}" {% if node == page.title %}class="active"{% endif %}>{{ node }}</a>
+    </li>
+    {% endfor %}
+  </ul>
 </div>

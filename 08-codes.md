@@ -13,8 +13,8 @@ Use **<pre>** tag for a snippet code.
 {% capture example %}
 <pre>
 .below{
-    background: white;
-    color: black;
+  background: white;
+  color: black;
 }
 </pre>
 {% endcapture %}

@@ -1,122 +1,122 @@
 .menu, .menu-nav,.menu-nav > ul{
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    padding-left: 0;
-    margin-bottom: 0;
-    list-style: none;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
 }
 .menu, .menu-nav > ul{
-    a{
-        display: block;
-        padding: 0.5rem 1rem;
-        -moz-transition: all 0.4s ease;
-        -o-transition: all 0.4s ease;
-        -webkit-transition: all 0.4s ease;
-        transition: all 0.4s ease;
-        &.active{
-            font-weight: 600;
-        }
-        &.disabled{
-            cursor: not-allowed;
-            opacity: 0.7;
-            &:hover{
-                opacity: 0.7;
-            }
-        }
+  a{
+    display: block;
+    padding: 0.5rem 1rem;
+    -moz-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+    &.active{
+      font-weight: 600;
     }
-    &.vertical-menu{
-        flex-direction: column;
-        -ms-flex-direction: column;
-        &.tabs{
-            a{
-                border-bottom: none;
-                border-left: 2px solid;
-                &.disabled{
-                    &:hover{
-                        border-color: $blue;
-                    }
-                }
-            }
-        }
-        &.stacked{
-            a{
-                border-bottom: none;
-                border-right: 2px solid;
-                &:first-child{
-                    border-radius: 3px 3px 0 0;
-                }
-                &:last-of-type{
-                    border-radius: 0 0 3px 3px;
-                    border-bottom: 2px solid $blue;
-                }
-            }
-        }
+    &.disabled{
+      cursor: not-allowed;
+      opacity: 0.7;
+      &:hover{
+        opacity: 0.7;
+      }
     }
+  }
+  &.vertical-menu{
+    flex-direction: column;
+    -ms-flex-direction: column;
     &.tabs{
-        a{
-            border-bottom: 2px solid $light-gray;
-            &:hover{
-                background: #f9f9f9;
-                border-color: $blue;
-            }
-            &.active{
-                background: $blue;
-                color: #fff;
-                border-color: $blue;
-            }
-            &.disabled{
-                &:hover{
-                    background: transparent;
-                    border-color: $light-gray;
-                }
-            }
+      a{
+        border-bottom: none;
+        border-left: 2px solid;
+        &.disabled{
+          &:hover{
+            border-color: $blue;
+          }
         }
+      }
     }
     &.stacked{
-        a{
-            border: 2px solid;
-            border-right: none;
-            &:hover{
-                background: $blue;
-                color: #fff;
-                border-color: $blue;
-            }
-            &.active{
-                background: $blue;
-                color: #fff;
-                border-color: $blue;
-            }
-            &.disabled{
-                &:hover{
-                    border-left: 2px solid $blue;
-                    color: $blue;
-                    background: transparent;
-                }
-            }
-            &:first-child{
-                border-radius: 3px 0 0 3px;
-            }
-            &:last-of-type{
-                border-radius: 0 3px 3px 0;
-                border-right: 2px solid $blue;
-            }
+      a{
+        border-bottom: none;
+        border-right: 2px solid;
+        &:first-child{
+          border-radius: 3px 3px 0 0;
         }
+        &:last-of-type{
+          border-radius: 0 0 3px 3px;
+          border-bottom: 2px solid $blue;
+        }
+      }
     }
-    .badge{
-        color: #222;
-        font-weight: 700;
+  }
+  &.tabs{
+    a{
+      border-bottom: 2px solid $light-gray;
+      &:hover{
+        background: #f9f9f9;
+        border-color: $blue;
+      }
+      &.active{
+        background: $blue;
+        color: #fff;
+        border-color: $blue;
+      }
+      &.disabled{
+        &:hover{
+          background: transparent;
+          border-color: $light-gray;
+        }
+      }
     }
+  }
+  &.stacked{
+    a{
+      border: 2px solid;
+      border-right: none;
+      &:hover{
+        background: $blue;
+        color: #fff;
+        border-color: $blue;
+      }
+      &.active{
+        background: $blue;
+        color: #fff;
+        border-color: $blue;
+      }
+      &.disabled{
+        &:hover{
+          border-left: 2px solid $blue;
+          color: $blue;
+          background: transparent;
+        }
+      }
+      &:first-child{
+        border-radius: 3px 0 0 3px;
+      }
+      &:last-of-type{
+        border-radius: 0 3px 3px 0;
+        border-right: 2px solid $blue;
+      }
+    }
+  }
+  .badge{
+    color: #222;
+    font-weight: 700;
+  }
 }
 .center-menu{
-    -ms-flex-pack: center;
-    justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 .right-menu{
-    -ms-flex-pack: end;
-    justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
 }
 .space-between{
-    justify-content: space-between;
+  justify-content: space-between;
 }

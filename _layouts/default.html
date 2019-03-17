@@ -3,24 +3,24 @@ layout: compress
 ---
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-    <head>
-        <meta charset="utf-8">
-        {% include head.html %}
-    </head>
-    <body>
-        <div id="{{ page.title | downcase | replace: ' ', '-' }}" class="container-fluid">
-            <div class="row">
-                {% include sidebar.html %}
-                {% if page.toc %}
-                    <div class="col-xl-2 toc">
-                        {% include toc.html html=content %}
-                    </div>
-                {% endif %}
-                <div class="col-12 col-md-9 col-xl-8 content">
-                    {{ content }}
-                </div>
-            </div>
-        </div>
-        {% include footer.html %}
-    </body>
+<head>
+  <meta charset="utf-8">
+  {% include head.html %}
+</head>
+<body>
+  <div id="{{ page.title | downcase | replace: ' ', '-' }}" class="container-fluid">
+    <div class="row">
+      {% include sidebar.html %}
+      {% if page.toc %}
+      <div class="col-xl-2 toc">
+        {% include toc.html html=content %}
+      </div>
+      {% endif %}
+      <div class="col-12 col-md-9 col-xl-8 content">
+        {{ content }}
+      </div>
+    </div>
+  </div>
+  {% include footer.html %}
+</body>
 </html>
