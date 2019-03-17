@@ -9,19 +9,24 @@
   textarea,
   select {
     background-color: transparent;
-    border: 0.1rem solid #d1d1d1;
+    border: 0.1rem solid lighten($primary-color, 30%);
+    // #d1d1d1
     border-radius: .4rem;
-    display: inline-block;
-    vertical-align: middle;
     box-shadow: none;
     box-sizing: inherit;
+    color: #3d3d3d;
+    display: inline-block;
+    margin: 7px;
+    min-width: 7rem;
     padding: .6rem 1.0rem;
-    padding: .5em .6em;
+    padding: .5rem .6rem;
+    vertical-align: middle;
   }
   fieldset {
+    border: 0;
     margin: 0;
     padding: .35em 0 .75em;
-    border: 0;
+
   }
   legend {
     display: block;
