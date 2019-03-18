@@ -15,7 +15,6 @@ toc: true
 <button class="btn btn-disabled">Disabled</button>
 <button class="btn btn-round">Rounded</button>
 <button class="btn btn-super-round">Super Rounded</button>
-<button class="btn btn-circle"><span>Circle Button</span></button>
 {% endcapture %}
 {% include example.html content=example %}
 
@@ -28,16 +27,8 @@ toc: true
 {% endcapture %}
 {% include example.html content=example %}
 
-#### Sizes for circle button
-
-{% capture example %}
-<button class="btn btn-circle"><span>Circle Default</span></button>
-<button class="btn btn-circle btn-medium"><span>Circle Medium</span></button>
-<button class="btn btn-circle btn-big"><span>Circle Big</span></button>
-{% endcapture %}
-{% include example.html content=example %}
-
 ### Colors
+
 For all color cases (except default): the simple button take class color for text and transparent for background.
 {% capture example %}
 <button class="btn btn-simple btn-green">Simple Green</button>
@@ -50,6 +41,7 @@ For all color cases (except default): the simple button take class color for tex
 {% include example.html content=example %}
 
 ### Color's Fill
+
 {% capture example %}
 <button class="btn btn-fill">Default</button>
 <button class="btn btn-green btn-fill">Green Button</button>
