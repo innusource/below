@@ -10,8 +10,8 @@ toc: true
 ### Types
 
 {% capture example %}
-<button class="btn btn-simple">Simple</button>
 <button class="btn">Default</button>
+<button class="btn btn-rounded">Rounded</button>
 <button class="btn btn-disabled">Disabled</button>
 {% endcapture %}
 {% include example.html content=example %}
@@ -29,7 +29,6 @@ toc: true
 
 For all color cases (except default): the simple button take class color for text and transparent for background.
 {% capture example %}
-<button class="btn btn-simple btn-green">Simple Green</button>
 <button class="btn">Default</button>
 <button class="btn btn-green">Green Button</button>
 <button class="btn btn-blue">Blue Button</button>
