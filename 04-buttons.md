@@ -13,8 +13,6 @@ toc: true
 <button class="btn btn-simple">Simple</button>
 <button class="btn">Default</button>
 <button class="btn btn-disabled">Disabled</button>
-<button class="btn btn-round">Rounded</button>
-<button class="btn btn-super-round">Super Rounded</button>
 {% endcapture %}
 {% include example.html content=example %}
 
@@ -37,16 +35,5 @@ For all color cases (except default): the simple button take class color for tex
 <button class="btn btn-blue">Blue Button</button>
 <button class="btn btn-red">Red Button</button>
 <button class="btn btn-black">Black</button>
-{% endcapture %}
-{% include example.html content=example %}
-
-### Color's Fill
-
-{% capture example %}
-<button class="btn btn-fill">Default</button>
-<button class="btn btn-green btn-fill">Green Button</button>
-<button class="btn btn-blue btn-fill">Blue Button</button>
-<button class="btn btn-red btn-fill">Red Button</button>
-<button class="btn btn-black btn-fill">Black</button>
 {% endcapture %}
 {% include example.html content=example %}
