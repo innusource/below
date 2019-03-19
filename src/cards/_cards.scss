@@ -1,0 +1,41 @@
+.card{
+  width: 100%;
+  background: #fff;
+  border:1px solid #eee;
+  border-radius: 6px;
+  position: relative;
+  margin: 10px 0;
+  .card-body{
+    padding: 0.8rem 2.5rem;
+  }
+  &.black,&.green,&.blue,&.red{
+    &:before {
+      content: "";
+      width: 6px;
+      height: 50%;
+      position: absolute;
+      border-radius: 0 3px 3px 0;
+      top: 25%;
+      left:0;
+    }
+  }
+  &.black{
+    &::before{ background: $black; }
+  }
+  &.blue{
+    &::before{ background: $blue; }
+  }
+  &.red{
+    &::before{ background: $red; }
+  }
+  &.green{
+    &::before{ background: $green; }
+  }
+  p{
+    color: $black-three;
+  }
+  img{
+    max-width: 100%;
+    border-radius: 6px 6px 0 0;
+  }
+}

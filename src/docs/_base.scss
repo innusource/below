@@ -1,0 +1,20 @@
+body, html{
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+*{
+  box-sizing: border-box;
+}
+.content{
+  order: 1;
+  padding: 0 30px;
+  > h1:first-of-type{
+      background: #f9f9f9;
+      margin: 0px -30px;
+      margin-bottom: 30px;
+      padding: 30px;
+      font-weight: 600;
+      border-bottom: 1px solid #eee;
+  }
+}
