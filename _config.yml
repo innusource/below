@@ -19,10 +19,13 @@ compress_html:
   blanklines: false
   startings: [html, head, body]
 
-
+collections:
+  pages:
+    output: true
+    permalink: /:path/
 # Build settings
 sass:
-  sass_dir: _sass
+  sass_dir: src
   style: :compressed
 
 # Dependencies
@@ -36,6 +39,7 @@ plugins:
   - jekyll-feed
 
 exclude:
+  - src
   - Gemfile
   - Gemfile.lock
   - vendor
