@@ -1,8 +1,9 @@
 ---
-layout: default
-permalink: grid/
+layout: docs
 title: Grid
+parent: Guidelines
 toc: true
+priority: 2
 ---
 
 # Grid

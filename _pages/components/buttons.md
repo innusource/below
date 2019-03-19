@@ -1,7 +1,7 @@
 ---
-layout: default
-permalink: buttons/
+layout: docs
 title: Buttons
+parent: Components
 toc: true
 ---
 

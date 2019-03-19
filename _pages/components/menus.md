@@ -1,7 +1,7 @@
 ---
-layout: default
-permalink: menus/
+layout: docs
 title: Menus
+parent: Components
 toc: true
 ---
 

@@ -1,7 +1,7 @@
 ---
-layout: default
-permalink: cards/
+layout: docs
 title: Cards
+parent: Components
 toc: true
 ---
 

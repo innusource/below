@@ -1,7 +1,7 @@
 ---
-layout: default
-permalink: tables/
+layout: docs
 title: Tables
+parent: Content
 toc: true
 ---
 # Tables

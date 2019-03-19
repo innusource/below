@@ -1,7 +1,7 @@
 ---
-layout: default
-permalink: codes/
+layout: docs
 title: Codes
+parent: Content
 toc: true
 ---
 # Codes

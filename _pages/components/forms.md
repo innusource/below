@@ -1,7 +1,7 @@
 ---
-layout: default
-permalink: forms/
+layout: docs
 title: Forms
+parent: Components
 toc: true
 ---
 # Forms

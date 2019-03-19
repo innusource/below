@@ -1,8 +1,9 @@
 ---
-layout: default
-permalink: typography/
+layout: docs
 title: Typography
+parent: Guidelines
 toc: true
+priority: 1
 ---
 
 # Typography
