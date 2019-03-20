@@ -1,10 +1,10 @@
 @charset "utf-8";
 
-@import "globals";
-@import "grid";
-@import "codes";
-@import "cards";
-@import "buttons";
-@import "tables";
-@import "menus";
-@import "forms";
+@import "globals/index.scss";
+@import "grid/index.scss";
+@import "codes/index.scss";
+@import "cards/index.scss";
+@import "buttons/index.scss";
+@import "tables/index.scss";
+@import "menus/index.scss";
+@import "forms/index.scss";
