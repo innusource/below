@@ -94,8 +94,52 @@
     }
   }
 
-  &.btn-rounded{
-    border-radius: 15px;
+  &.btn-outline{
+    background: transparent;
+    border: 1px solid $primary-color;
+    border-radius: 3px;
+    color: $primary-color;
+    &:hover{
+      background: $primary-color;
+      color: #fff;
+    }
+
+    &.btn-outline-green{
+      border-color: $green;
+      color: $green;
+      &:hover{
+        background: $green;
+        color:#fff;
+      }
+    }
+
+    &.btn-outline-blue{
+      border-color: $blue;
+      color: $blue;
+      &:hover{
+        background: $blue;
+        color: #fff;
+      }
+    }
+
+    &.btn-outline-red{
+      border-color: $red;
+      color: $red;
+      &:hover{
+        background: $red;
+        color: #fff;
+      }
+    }
+
+    &.btn-outline-black{
+      border-color: $black;
+      color: $black;
+      &:hover{
+        background: $black;
+        color: #fff;
+      }
+    }
+
   }
 
 }
