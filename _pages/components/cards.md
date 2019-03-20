@@ -5,8 +5,6 @@ parent: Components
 toc: true
 ---
 
-# Cards
-
 ### Default
 {% capture example %}
 <div class="card">

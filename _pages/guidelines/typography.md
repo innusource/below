@@ -6,8 +6,6 @@ toc: true
 priority: 1
 ---
 
-# Typography
-
 ### Typeface
 
 Below uses **Inter UI a free and open source font family**. It's a typeface specially designed for user interfaces with focus on high legibility of small-to-medium sized text on computer screens. Inter UI can be accessed and downloaded [here](https://github.com/rsms/inter).
