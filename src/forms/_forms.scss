@@ -89,3 +89,91 @@
   margin: .5em 0;
   display: block;
 }
+
+.check-container{
+  background: transparent;
+  display: block;
+  position: relative;
+  padding-left: 20px;
+  cursor: pointer;
+  &:hover{
+    background-color: #eee;
+  }
+  & input{
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+    &:checked ~ .checkmark{
+      background-color: $blue;
+      display: block;
+    }
+  }
+}
+
+.checkmark{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 15px;
+  width: 15px;
+  background-color: #eaeaea;
+  border: 1px solid #0039ff;
+  border-radius: 2px;
+  &:after{
+    content: "";
+    position: absolute;
+    display: none;
+  }
+}
+.check-container .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.radio-container{
+  background: transparent;
+  display: relative;
+  padding-left: 20px;
+  cursor: pointer;
+  &:hover{
+    background-color: $light-gray;
+  }
+  & input{
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+    &:checked ~ .radiomark{
+      background: $red;
+      display: block;
+      ~ .radiomark:after{
+        display: block;
+      }
+    }
+  }
+}
+.radiomark{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 15px;
+  width: 15px;
+  background: $light-gray;
+  border: 1px solid $blue;
+  border-radius: 50%;
+  &:after{
+    content: "";
+    position: absolute;
+    display: none;
+  }
+}

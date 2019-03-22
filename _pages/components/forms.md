@@ -149,14 +149,16 @@ toc: true
 ### Checkboxes and radios
 {% capture example %}
 <form class="form">
-  <label for="option-one" class="checkbox">
+  <label for="option-one" class="check-container">
     <input id="option-one" type="checkbox" value="">
+    <span class="checkmark"></span>
     Here's option one.
   </label>
 
-  <label for="option-two" class="form-radio">
+  <label for="option-two" class="radio-container"> Here's a radio button. You can choose this one..
     <input id="option-two" type="radio" name="optionsRadios" value="option1" checked>
-    Here's a radio button. You can choose this one..
+    <span class="radiomark"></span>
+
   </label>
 
   <label for="option-three" class="form-radio">
