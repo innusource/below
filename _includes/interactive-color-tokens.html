@@ -1,0 +1,48 @@
+<table>
+    <thead>
+      <tr>
+        <th>Token</th>
+        <th>Role</th>
+        <th>Value</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for token in site.data.color-tokens.interaction-tokens %}
+        {% assign info = token[1] %}
+        <tr>
+          <td><code>{{ token[0] }}</code></td>
+          <td>
+            <ul>
+              {% for role in info.role %}
+                <li>{{ role }}</li>
+              {% endfor %}
+            </ul>
+          </td>
+          <td>
+            {% case page.slug %}
+              {% when 'light' %}
+                {% assign theme = info.values.light %}
+              {% when 'dark' %}
+                {% assign theme = info.values.dark %}
+              {% when 'darkest' %}
+                {% assign theme = info.values.darkest %}
+              {% else %}
+                {% assign theme = info.values.lightest %}
+            {% endcase %}
+            <div class="row">
+              <div class="col">
+                <ul>
+                  <li>{{ theme.name }}</li>
+                  <li>-</li>
+                  <li>{{ theme.hex }}</li>
+                </ul>
+              </div>
+              <div class="col">
+                <span class="color-box" style="background: {{ info.values.light.hex }};">sddf</span>
+              </div>
+            </div>
+          </td>
+        </tr>
+      {% endfor %}
+    </tbody>
+</table>

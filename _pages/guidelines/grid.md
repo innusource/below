@@ -3,7 +3,7 @@ layout: docs
 title: Grid
 parent: Guidelines
 toc: true
-priority: 2
+priority: 3
 ---
 
 # Grid
