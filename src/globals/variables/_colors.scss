@@ -1,5 +1,8 @@
-// Colors
+@import "../mixins/color-framework";
 
+@include make-colors();
+
+// Deprecated
 $light-gray:#eee;
 $black: #000;
 $black-two:#222;
