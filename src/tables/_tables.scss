@@ -1,5 +1,4 @@
 .table{
-  background: darken($body-background, 10%);
   border-collapse: collapse;
 
 
@@ -10,9 +9,6 @@
 
   tr{
     border-bottom: 1px solid #eee;
-    &:hover{
-      background-color: lighten($primary-color, 30%);
-    }
   }
   &.bordered{
     border-radius: 6px;
