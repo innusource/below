@@ -16,7 +16,7 @@ toc: true
         10 pending
       </span>
     </div>
-    <details class="details">
+    <details class="dropdown">
       <summary>
         <svg class="icon"><use xlink:href="/assets/icons/feather.svg#more-vertical"/></svg>
       </summary>
