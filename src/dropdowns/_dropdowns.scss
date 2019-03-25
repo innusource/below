@@ -18,6 +18,12 @@ details.dropleft {
     width: 170px;
     margin-top: 3px;
     left: 0;
+    
+    &:before{
+      content: "";
+      display: inline-block;
+      position: absolute;
+    }
 
     a {
       font-size: 12.5px;
@@ -44,6 +50,18 @@ details.dropleft {
   }
 }
 
+details.dropdown{
+  ul{
+    
+    &:before{
+      border: 8px solid transparent;
+      border-bottom-color: #fff;
+      left: 9px;
+      top: -16px;
+    }
+  }
+}
+
 details.dropup {
 
   ul {
@@ -51,8 +69,16 @@ details.dropup {
     left: 0;
     margin-bottom: 3px;
     top: auto;
+    
+    &:before{
+      border-bottom: 0;
+      border-left: 8px solid transparent;
+      border-right: 8px solid transparent;
+      border-top: 8px solid #fff;
+      bottom: -8px;
+      left: 9px;      
+    }  
   }
-
 }
 
 details.dropleft {
@@ -60,12 +86,19 @@ details.dropleft {
   ul {
     width: auto;
     left: auto;
-    margin-right: 8px;
+    margin-right: 3px;
     margin-top: 0;
     right: 100%;
-    top: 0;
+    top: -1px;
+    
+    &:before{
+      border: 8px solid;
+      border-color: transparent transparent transparent #fff;
+      left: auto;
+      right: -16px;
+      top: 8px;
+    }
   }
-
 }
 
 details.dropright {
@@ -73,9 +106,15 @@ details.dropright {
   ul {
     width: auto;
     left: 100%;
-    margin-left: 8px;
+    margin-left: 3px;
     margin-top: 0;
-    top: 0;
+    top: -1px;
+    
+    &:before{
+      border: 8px solid;
+      border-color: transparent #fff transparent transparent;
+      left: -16px;
+      top: 8px;
+    }
   }
-
 }
