@@ -88,6 +88,12 @@ details.dropdown {
       }
     }
 
+    .dropdown-item-separator{
+      background-color: #eee;
+      height: 1px;
+      margin: 4px 0;
+    }
+
     &:before{
       content: "";
       display: inline-block;
@@ -97,7 +103,6 @@ details.dropdown {
       left: 9px;
       top: -16px;
     }
-
   }
 
   &[open] > summary::before{
