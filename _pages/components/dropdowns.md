@@ -9,13 +9,13 @@ toc: true
 
 {% capture example %}
 <details class="dropdown">
-  <summary aria-haspopup="true">
-    <a class="btn">Dropdown</a>
+  <summary class="btn">
+    Dropdown
   </summary>
-  <ul>
-    <li><a href="#">First element</a></li>
-    <li><a href="#">Second element</a></li>
-    <li><a href="#">Third element</a></li>
+  <ul class="dropdown-menu">
+    <li><a class="dropdown-item" href="#">First item</a></li>
+    <li><a class="dropdown-item" href="#">Second item</a></li>
+    <li><a class="dropdown-item" href="#">Third item</a></li>
   </ul>
 </details>
 {% endcapture %}
@@ -23,14 +23,14 @@ toc: true
 
 ### Dropup
 {% capture example %}
-<details class="dropup">
-  <summary aria-haspopup="true">
-    <a class="btn">Dropup</a>
+<details class="dropdown">
+  <summary class="btn">
+    Dropup
   </summary>
-  <ul>
-    <li><a href="#">First element</a></li>
-    <li><a href="#">Second element</a></li>
-    <li><a href="#">Third element</a></li>
+  <ul class="dropdown-menu dropdown-menu-up">
+    <li><a class="dropdown-item" href="#">First item</a></li>
+    <li><a class="dropdown-item" href="#">Second item</a></li>
+    <li><a class="dropdown-item" href="#">Third item</a></li>
   </ul>
 </details>
 {% endcapture %}
@@ -39,14 +39,14 @@ toc: true
 ### Dropright
 
 {% capture example %}
-<details class="dropright">
-  <summary aria-haspopup="true">
-    <a class="btn">Dropright</a>
+<details class="dropdown">
+  <summary>
+    <a class="dropdown-item" class="btn">Dropright</a>
   </summary>
-  <ul>
-    <li><a href="#">First element</a></li>
-    <li><a href="#">Second element</a></li>
-    <li><a href="#">Third element</a></li>
+  <ul class="dropdown-menu dropdown-menu-rt">
+    <li><a class="dropdown-item" href="#">First item</a></li>
+    <li><a class="dropdown-item" href="#">Second item</a></li>
+    <li><a class="dropdown-item" href="#">Third item</a></li>
   </ul>
 </details>
 {% endcapture %}
@@ -55,14 +55,14 @@ toc: true
 ### Dropleft
 
 {% capture example %}
-<details class="dropleft">
-  <summary aria-haspopup="true">
-    <a class="btn">Dropleft</a>
+<details class="dropdown">
+  <summary>
+    <a class="dropdown-item" class="btn">Dropleft</a>
   </summary>
-  <ul>
-    <li><a href="#">First element</a></li>
-    <li><a href="#">Second element</a></li>
-    <li><a href="#">Third element</a></li>
+  <ul class="dropdown-menu dropdown-menu-lt">
+    <li><a class="dropdown-item" href="#">First item</a></li>
+    <li><a class="dropdown-item" href="#">Second item</a></li>
+    <li><a class="dropdown-item" href="#">Third item</a></li>
   </ul>
 </details>
 {% endcapture %}
