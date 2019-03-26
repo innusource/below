@@ -155,14 +155,15 @@ toc: true
     Here's option one.
   </label>
 
-  <label for="option-two" class="radio-container"> Here's a radio button. You can choose this one..
+  <label for="option-two" class="radio-container">
     <input id="option-two" type="radio" name="optionsRadios" value="option1" checked>
     <span class="radiomark"></span>
-
+    Here's a radio button. You can choose this one..
   </label>
 
-  <label for="option-three" class="form-radio">
+  <label for="option-three" class="radio-container">
     <input id="option-three" type="radio" name="optionsRadios" value="option2">
+    <span class="radiomark"></span>
     ..Or this one!
   </label>
 </form>
