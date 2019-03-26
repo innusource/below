@@ -177,12 +177,9 @@ details {
   display: block;
 }
 
-details:not([open])>*:not(summary) {
-    display: none !important;
-}
-
 summary {
   cursor: pointer;
+  list-style: none;
   &::-webkit-details-marker{
     display: none;
   }
