@@ -1,0 +1,37 @@
+.folding{
+  border: 1px solid #eee;
+  border-radius: 3px;
+  box-shadow: 5px 0 15px rgba(0,0,0,0.02);
+  .folding-title {
+    font-weight: 600;
+    font-size: 14px;
+    &:hover{
+      background: #f9f9f9;
+    }
+  }
+  .folding-title, .folding-content{
+      padding: 15px;
+  }
+  .icon{
+    float: right;
+  }
+  &[open]{
+    .icon{
+      transform: rotate(180deg);
+    }
+    .folding-title{
+      border-bottom: 1px solid #eee;
+    }
+  }
+}
+.folding-group .folding{
+  border-radius: 0;
+  border-bottom-width: 0;
+  &:first-of-type{
+    border-radius: 3px 3px 0 0;
+  }
+  &:last-of-type{
+    border-radius: 0 0 3px 3px;
+    border-bottom-width: 1px;
+  }
+}
