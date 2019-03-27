@@ -29,9 +29,6 @@
     cursor: not-allowed;
     opacity: 0.5;
 
-    &:hover{
-      background: $primary-color;
-    }
   }
 
   &.btn-medium{
@@ -142,4 +139,7 @@
 
   }
 
+  span{
+    margin: 0 4px;
+  }
 }
