@@ -302,8 +302,8 @@
 
 /* When the radio button is checked, add a blue background */
 .radio-container input:checked ~ .radiomark {
- background-color: $interactive-01;
- border: 1px solid $interactive-01;
+ background-color: $ui-01;
+ border: 2px solid $interactive-01;
 }
 
 /* Create the indicator (the dot/circle - hidden when not checked) */
@@ -320,10 +320,10 @@
 
 /* Style the indicator (dot/circle) */
 .radio-container .radiomark:after {
- top: 3px;
- left: 3px;
+ top: 2px;
+ left: 2px;
  width: 7px;
  height: 7px;
  border-radius: 50%;
- background: white;
+ background: $interactive-01;
 }
