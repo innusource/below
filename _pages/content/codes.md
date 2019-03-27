@@ -4,7 +4,6 @@ title: Codes
 parent: Content
 toc: true
 ---
-# Codes
 
 ### Snippets
 

@@ -4,7 +4,6 @@ title: Tables
 parent: Content
 toc: true
 ---
-# Tables
 
 ### Default
 {% capture example %}
