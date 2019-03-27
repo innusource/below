@@ -10,7 +10,10 @@ toc: true
 {% capture example %}
 <details class="dropdown">
   <summary class="btn">
-    Dropdown
+    <span>Dropdown</span>
+    <svg class="icon icon-small">
+      <use xlink:href="/assets/icons/feather.svg#chevron-down"/>
+    </svg>
   </summary>
   <ul class="dropdown-menu">
     <li><a class="dropdown-item" href="#">First item</a></li>
@@ -25,7 +28,10 @@ toc: true
 {% capture example %}
 <details class="dropdown">
   <summary class="btn">
-    Dropup
+    <span>Dropup</span>
+    <svg class="icon icon-small">
+      <use xlink:href="/assets/icons/feather.svg#chevron-up"/>
+    </svg>
   </summary>
   <ul class="dropdown-menu dropdown-menu-up">
     <li><a class="dropdown-item" href="#">First item</a></li>
@@ -40,8 +46,11 @@ toc: true
 
 {% capture example %}
 <details class="dropdown">
-  <summary>
-    <a class="dropdown-item" class="btn">Dropright</a>
+  <summary class="btn">
+    <span>Dropright</span>
+    <svg class="icon icon-small">
+      <use xlink:href="/assets/icons/feather.svg#chevron-right"/>
+    </svg>
   </summary>
   <ul class="dropdown-menu dropdown-menu-rt">
     <li><a class="dropdown-item" href="#">First item</a></li>
@@ -56,8 +65,11 @@ toc: true
 
 {% capture example %}
 <details class="dropdown">
-  <summary>
-    <a class="dropdown-item" class="btn">Dropleft</a>
+  <summary class="btn">
+    <svg class="icon icon-small">
+      <use xlink:href="/assets/icons/feather.svg#chevron-left"/>
+    </svg>
+    <span>Dropleft</span>
   </summary>
   <ul class="dropdown-menu dropdown-menu-lt">
     <li><a class="dropdown-item" href="#">First item</a></li>
@@ -72,8 +84,8 @@ toc: true
 
 {% capture example %}
 <details class="dropdown">
-  <summary>
-    <a class="dropdown-item" class="btn">Dropdown with separator</a>
+  <summary class="btn">
+    Dropdown with separator
   </summary>
   <ul class="dropdown-menu">
     <li><a class="dropdown-item" href="#">First item</a></li>
