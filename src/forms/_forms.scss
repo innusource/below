@@ -90,106 +90,6 @@
   display: block;
 }
 
-// .check-check-container{
-//   background: transparent;
-//   display: block;
-//   position: relative;
-//   padding-left: 20px;
-//   cursor: pointer;
-//   &:hover{
-//     background-color: #eee;
-//   }
-//   & input{
-//     position: absolute;
-//     opacity: 0;
-//     cursor: pointer;
-//     height: 0;
-//     width: 0;
-//     &:checked ~ .checkmark{
-//       background-color: $blue;
-//       display: block;
-//     }
-//   }
-// }
-//
-// .checkmark{
-//   position: absolute;
-//   top: 0;
-//   left: 0;
-//   height: 15px;
-//   width: 15px;
-//   background-color: #eaeaea;
-//   border: 1px solid #0039ff;
-//   border-radius: 2px;
-//   &:after{
-//     content: "";
-//     position: absolute;
-//     display: none;
-//   }
-// }
-// .check-check-container .checkmark:after {
-//   left: 9px;
-//   top: 5px;
-//   width: 5px;
-//   height: 10px;
-//   border: solid white;
-//   border-width: 0 3px 3px 0;
-//   -webkit-transform: rotate(45deg);
-//   -ms-transform: rotate(45deg);
-//   transform: rotate(45deg);
-// }
-//
-// .radio-check-container{
-//   background: transparent;
-//   display: relative;
-//   padding-left: 20px;
-//   cursor: pointer;
-//   &:hover{
-//     background-color: $light-gray;
-//   }
-//   & input{
-//     position: absolute;
-//     opacity: 0;
-//     cursor: pointer;
-//     height: 0;
-//     width: 0;
-//     &:checked ~ .radiomark{
-//       background: $red;
-//       display: block;
-//       ~ .radiomark:after{
-//         display: block;
-//       }
-//     }
-//   }
-// }
-// .radiomark{
-//   position: absolute;
-//   top: 0;
-//   left: 0;
-//   height: 15px;
-//   width: 15px;
-//   background: $light-gray;
-//   border: 1px solid $blue;
-//   border-radius: 50%;
-//   &:after{
-//     content: "";
-//     position: absolute;
-//     display: none;
-//   }
-// }
-// .radio-check-container .radiomark:after {
-//   left: 9px;
-//   top: 5px;
-//   width: 5px;
-//   height: 10px;
-//   border: solid white;
-//   border-width: 0 3px 3px 0;
-//   -webkit-transform: rotate(45deg);
-//   -ms-transform: rotate(45deg);
-//   transform: rotate(45deg);
-// }
-
-/* Customize the label (the check-container) */
 .check-container {
  display: block;
  position: relative;
@@ -203,7 +103,6 @@
  user-select: none;
 }
 
-/* Hide the browser's default checkbox */
 .check-container input {
  position: absolute;
  opacity: 0;
@@ -212,7 +111,6 @@
  width: 0;
 }
 
-/* Create a custom checkbox */
 .checkmark {
  position: absolute;
  top: 0;
@@ -220,33 +118,28 @@
  height: 15px;
  width: 15px;
  background-color: $ui-03;
- border: 1px solid $interactive-02;
+ border: 1px solid $ui-04;
 }
 
-/* On mouse-over, add a grey background color */
 .check-container:hover input ~ .checkmark {
  background-color: $interactive-01;
 }
 
-/* When the checkbox is checked, add a blue background */
 .check-container input:checked ~ .checkmark {
  background-color: $interactive-01;
  border: 1px solid $interactive-01;
 }
 
-/* Create the checkmark/indicator (hidden when not checked) */
 .checkmark:after {
  content: "";
  position: absolute;
  display: none;
 }
 
-/* Show the checkmark when checked */
 .check-container input:checked ~ .checkmark:after {
  display: block;
 }
 
-/* Style the checkmark/indicator */
 .check-container .checkmark:after {
  left: 5px;
  top: 1px;
@@ -260,7 +153,6 @@
 }
 
 
-/* Customize the label (the container) */
 .radio-container {
  display: block;
  position: relative;
@@ -274,7 +166,6 @@
  user-select: none;
 }
 
-/* Hide the browser's default radio button */
 .radio-container input {
  position: absolute;
  opacity: 0;
@@ -283,7 +174,6 @@
  width: 0;
 }
 
-/* Create a custom radio button */
 .radiomark {
  position: absolute;
  top: 0;
@@ -291,34 +181,29 @@
  height: 15px;
  width: 15px;
  background-color: $ui-03;
- border: 1px solid $interactive-02;
+ border: 1px solid $ui-04;
  border-radius: 50%;
 }
 
-/* On mouse-over, add a grey background color */
 .radio-container:hover input ~ .radiomark {
  background-color: $ui-03;
 }
 
-/* When the radio button is checked, add a blue background */
 .radio-container input:checked ~ .radiomark {
  background-color: $ui-01;
  border: 2px solid $interactive-01;
 }
 
-/* Create the indicator (the dot/circle - hidden when not checked) */
 .radiomark:after {
  content: "";
  position: absolute;
  display: none;
 }
 
-/* Show the indicator (dot/circle) when checked */
 .radio-container input:checked ~ .radiomark:after {
  display: block;
 }
 
-/* Style the indicator (dot/circle) */
 .radio-container .radiomark:after {
  top: 2px;
  left: 2px;
