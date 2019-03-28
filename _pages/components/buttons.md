@@ -5,13 +5,11 @@ parent: Components
 toc: true
 ---
 
-# Buttons
-
 ### Types
 
 {% capture example %}
 <button class="btn">Default</button>
-<button class="btn btn-rounded">Rounded</button>
+<button class="btn btn-outline">Outline</button>
 <button class="btn btn-disabled">Disabled</button>
 {% endcapture %}
 {% include example.html content=example %}

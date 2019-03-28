@@ -6,7 +6,6 @@ toc: true
 priority: 3
 ---
 
-# Grid
 ## Grid options
 
 ## Auto-layout columns

@@ -178,7 +178,11 @@ details {
 }
 
 summary {
-  display: list-item;
+  cursor: pointer;
+  list-style: none;
+  &::-webkit-details-marker{
+    display: none;
+  }
 }
 
 template {
