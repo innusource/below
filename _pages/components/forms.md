@@ -4,7 +4,6 @@ title: Forms
 parent: Components
 toc: true
 ---
-# Forms
 
 ## Default form
 {% capture example %}

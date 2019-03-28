@@ -1,0 +1,47 @@
+.folding{
+  border: 1px solid $ui-03;
+  border-radius: 3px;
+  box-shadow: 3px 0 13px rgba(0,0,0,0.02);
+  .folding-title {
+    background: $ui-02;
+    font-weight: 600;
+    font-size: 14px;
+    &:hover{
+      background: $ui-01;
+    }
+  }
+  .folding-title, .folding-content{
+      padding: 13px 20px;
+  }
+  .icon{
+    float: right;
+  }
+  &[open]{
+    .folding-title:hover{
+      background: $ui-02;
+    }
+    .icon{
+      transform: rotate(180deg);
+    }
+  }
+
+  &.folding-borderless{
+    border: none;
+    box-shadow: none;
+    .folding-title:hover{
+      background: $ui-02;
+    }
+  }
+}
+
+.folding-group .folding{
+  border-radius: 0;
+  border-bottom-width: 0;
+  &:first-of-type{
+    border-radius: 3px 3px 0 0;
+  }
+  &:last-of-type{
+    border-radius: 0 0 3px 3px;
+    border-bottom-width: 1px;
+  }
+}

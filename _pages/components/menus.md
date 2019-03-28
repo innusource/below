@@ -5,8 +5,6 @@ parent: Components
 toc: true
 ---
 
-# Menus
-
 ### Default Menu
 
 {% capture example %}
