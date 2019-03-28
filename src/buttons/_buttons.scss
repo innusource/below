@@ -16,6 +16,12 @@
   -webkit-transition: all 0.4s ease;
   transition: all 0.4s ease;
 
+  &:clear{
+    background: transparent;
+    color: $interactive;
+
+  }
+
   &:hover{
     background: $primary-color;
     color:  $light-gray;
