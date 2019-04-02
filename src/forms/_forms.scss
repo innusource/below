@@ -9,18 +9,31 @@
   textarea,
   select {
     background-color: transparent;
-    border: 0.1rem solid lighten($primary-color, 30%);
+    border: 0.1rem solid $ui-04;
     // #d1d1d1
     border-radius: .4rem;
     box-shadow: none;
     box-sizing: inherit;
-    color: #3d3d3d;
+    color: $text-02;
     display: inline-block;
     margin: 7px;
     min-width: 7rem;
     padding: .6rem 1.0rem;
     padding: .5rem .6rem;
     vertical-align: middle;
+
+    &:hover{
+      background: $hover-ui;
+      color: $text-01;
+    }
+
+    &:focus{
+      background-color: transparent;
+      border-color: $focus;
+      &:hover{
+        color: $text-02;
+      }
+    }
   }
   fieldset {
     border: 0;
