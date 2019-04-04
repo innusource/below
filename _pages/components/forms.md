@@ -186,3 +186,16 @@ toc: true
 </form>
 {% endcapture %}
 {% include example.html content=example %}
+
+## Selects
+{% capture example %}
+<form class="form">
+  <label for="option-one">
+    <select class="" name="">
+      <option value="one">Value one</option>
+      <option value="two">Value two</option>
+    </select>
+  </label>
+</form>
+{% endcapture %}
+{% include example.html content=example %}
