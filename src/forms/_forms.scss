@@ -6,8 +6,7 @@
   input[type="tel"],
   input[type="text"],
   input[type="url"],
-  textarea,
-  select {
+  textarea{
     background-color: transparent;
     border: 1px solid $ui-04;
     border-radius: 3px;
@@ -21,15 +20,43 @@
     vertical-align: middle;
     box-shadow: 5px 5px 10px rgba(0,0,0,0.05);
 
-    &:hover{
-      background: $hover-ui;
-      // color: $text-01;
+    &:focus{
+      background-color: transparent;
+      border-color: $focus;
+      color: $text-01;
     }
+  }
+
+  select{
+    background-color: transparent;
+    border: 1px solid $ui-04;
+    border-radius: 3px;
+    box-shadow: none;
+    box-sizing: inherit;
+    color: $text-02;
+    display: inline-block;
+    margin: 7px;
+    min-width: 20em;
+    padding: 0.8rem 1rem;
+    vertical-align: middle;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.05);
 
     &:focus{
       background-color: transparent;
       border-color: $focus;
       color: $text-01;
+    }
+
+    option{
+      color: $text-02;
+      &:hover{
+        background: $hover-ui;
+      }
+      &:focus{
+        background-color: $interactive-01;
+        border-color: $focus;
+        color: $text-04;
+      }
     }
   }
   fieldset {
