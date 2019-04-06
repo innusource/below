@@ -18,7 +18,7 @@
       font-size: 14px;
       font-weight: 600;
 
-      &.active, &:hover {
+      &.active, &:not(.disabled):hover {
         color: $text-01;
       }
 
@@ -88,7 +88,7 @@
       &.active {
           border-color: $interactive-04;
       }
-      &:hover {
+      &:not(.disabled):hover {
           border-color: $interactive-03;
       }
     }

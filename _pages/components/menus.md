@@ -16,6 +16,7 @@ toc: true
   <ul>
     <li><a href="#" class="active">Docs</a></li>
     <li><a href="#">About</a></li>
+    <li><a href="#" class="disabled">Disabled</a></li>
     <li>
       <a href="#">
         <svg class="icon">
@@ -68,6 +69,7 @@ toc: true
       </li>
       <li><a href="#">Comments</a></li>
       <li><a href="#">Appearance</a></li>
+      <a href="#" class="disabled">Disabled</a>
     </ul>
   </div>
   <div class="col-9">
@@ -88,6 +90,7 @@ toc: true
   <ul>
     <li><a href="#" class="active">Docs</a></li>
     <li><a href="#">About</a></li>
+    <li><a href="#" class="disabled">Disabled</a></li>
     <li>
       <a href="#">
         <svg class="icon">
@@ -136,6 +139,7 @@ toc: true
         </li>
         <li><a href="#">Comments</a></li>
         <li><a href="#">Appearance</a></li>
+        <li><a href="#" class="disabled">Disabled</a></li>
       </ul>
     </div>
     <div class="col-9">
