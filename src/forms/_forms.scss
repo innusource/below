@@ -7,21 +7,21 @@
   input[type="text"],
   input[type="url"],
   textarea{
-    background-color: transparent;
-    border: 1px solid $ui-04;
+      background-color: transparent;
+    border: 1px solid $ui-03;
     border-radius: 3px;
     box-shadow: none;
     box-sizing: inherit;
-    color: $text-02;
+    color: $text-01;
     display: inline-block;
     margin: 7px;
     min-width: 20em;
-    padding: 1rem 1rem;
+    padding: 0.6rem 0.8rem;
     vertical-align: middle;
-    box-shadow: 5px 5px 10px rgba(0,0,0,0.05);
 
     &:focus{
       background-color: transparent;
+      border: 2px solid $ui-03;
       border-color: $focus;
       color: $text-01;
     }
@@ -29,20 +29,20 @@
 
   select{
     background-color: transparent;
-    border: 1px solid $ui-04;
+    border: 1px solid $ui-03;
     border-radius: 3px;
     box-shadow: none;
     box-sizing: inherit;
-    color: $text-02;
+    color: $text-01;
     display: inline-block;
     margin: 7px;
     min-width: 20em;
-    padding: 0.8rem 1rem;
+    padding: 0.6rem 0.8rem;
     vertical-align: middle;
-    box-shadow: 5px 5px 10px rgba(0,0,0,0.05);
 
     &:focus{
       background-color: transparent;
+      border: 2px solid $ui-03;
       border-color: $focus;
       color: $text-01;
     }
@@ -158,9 +158,9 @@
  border: 1px solid $ui-04;
 }
 
-.check-container:hover input ~ .checkmark {
- background-color: $interactive-01;
-}
+// .check-container:hover input ~ .checkmark {
+//  background-color: $interactive-01;
+// }
 
 .check-container input:checked ~ .checkmark {
  background-color: $interactive-01;
