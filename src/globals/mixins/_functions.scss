@@ -47,3 +47,12 @@
 
   @return $string;
 }
+
+// Add properties
+// Used to convert elements of Sass maps into CSS attributes
+
+@mixin properties($map) {
+  @each $name, $value in $map {
+    #{$name}: $value;
+  }
+}
