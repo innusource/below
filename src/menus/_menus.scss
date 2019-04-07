@@ -1,7 +1,6 @@
 .navbar, .sidebar, .nav-tabs {
-    display: -ms-flexbox;
-    display: flex;
-
+  display: -ms-flexbox;
+  display: flex;
   ul {
     padding-left: 0;
     margin-bottom: 0;
@@ -46,7 +45,6 @@
   }
 }
 
-
 .navbar {
   justify-content: space-between;
   padding: .5rem 1rem;
@@ -80,10 +78,14 @@
 .nav-tabs{
   background: $ui-02;
   padding: .5rem 1rem 0 .5rem;
+  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
   ul {
+    display: -ms-flexbox;
+    display: flex;
     a {
       width: 8rem;
-      margin: 0 2px;
+      margin: 0 1px;
       border-bottom: 2px solid $ui-03;
       &.active {
           border-color: $interactive-04;
@@ -92,9 +94,52 @@
           border-color: $interactive-03;
       }
     }
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
+  }
+  .label {
+    width: 8rem;
+    margin: 0 2px;
+    border-bottom: 2px solid $ui-03;
+    padding: 0.5rem 0.8rem;
+    color: $text-02;
+    font-weight: 600;
+    -moz-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+    &:not(.disabled):hover{
+      color: $text-01;
+      cursor: pointer;
+      border-color: $interactive-03;
+    }
+  }
+  .tab-panel {
+    display: none;
+    padding: 20px;
+    background: #fff;
+    order: 99;
+  }
+  .radio-tabs {
+    position: absolute;
+    opacity: 0;
+    &:checked + .label{
+      color: $text-01;
+      border-color: $interactive-03;
+    }
+  }
+  .radio-tabs:checked + .label + .tab-panel {
+    display: block;
+  }
+}
+
+
+@include media-breakpoint-down(sm) {
+  .sidebar{
+    height: 60px !important;
+    width: 100%;
+  }
+  .nav-tabs {
+    ul a{
+      width: 5rem;
+    }
   }
 }
