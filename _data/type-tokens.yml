@@ -1,0 +1,70 @@
+headings:
+  "$heading-01":
+    description: >-
+      This is for page heading.
+    type: Inter UI
+    size: 40px
+    weight: 400
+    letter-spacing: -0.022em
+    line-height: 56px
+  "$heading-02":
+    description: >-
+      This is for layout headings.
+    type: Inter UI
+    size: 30px
+    weight: 400
+    letter-spacing: 0.001em
+    line-height: 42px
+  "$heading-03":
+    description: >-
+      This is for layout headings.
+    type: Inter UI
+    size: 24px
+    weight: 400
+    letter-spacing: -0.019em
+    line-height: 34px
+  "$heading-04":
+    description: >-
+      This is for component and layout headings.
+    type: Inter UI
+    size: 20px
+    weight: 400
+    letter-spacing: -0.017em
+    line-height: 28px
+  "$heading-05":
+    description: >-
+      This is for component and layout headings.
+    type: Inter UI
+    size: 16px
+    weight: 600
+    letter-spacing: -0.011em
+    line-height: 22px
+  "$heading-06":
+    description: >-
+      This is for components.
+    type: Inter UI
+    size: 14px
+    weight: 600
+    letter-spacing: -0.006em
+    line-height: 20px
+body:
+  "$body-01":
+    description: >-
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+      Aliquam sed sem aliquam, iaculis neque in, aliquet lorem.
+      Mauris tristique iaculis dui, at tempus dolor vulputate id.
+    type: Inter UI
+    size: 16px
+    weight: 400
+    letter-spacing: -0.011em
+    line-height: 22px
+  "$body-02":
+    description: >-
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+      Aliquam sed sem aliquam, iaculis neque in, aliquet lorem.
+      Mauris tristique iaculis dui, at tempus dolor vulputate id.
+    type: Inter UI
+    size: 14px
+    weight: 400
+    letter-spacing: -0.006em
+    line-height: 20px
