@@ -1,0 +1,53 @@
+### Headings
+<table>
+  <thead>
+    <th>Token</th>
+    <th>Role</th>
+    <th>Value</th>
+  </thead>
+  <tbody>
+    {% for token in site.data.type-tokens.headings %}
+      {% assign info = token[1] %}
+      <tr>
+        <td><code>{{ token[0] }}</code></td>
+        <td><font style="font-size: {{info.size}}; font-weight: {{info.weight}}; ">{{ info.description }}</font></td>
+        <td>
+          <ul>
+            <li>Type: {{ info.type }}</li>
+            <li>Size: {{ info.size }}</li>
+            <li>Weight: {{ info.weight }}</li>
+            <li>Letter spacing: {{ info.letter-spacing }}</li>
+            <li>Line height: {{ info.line-height }}</li>
+          </ul>
+        </td>
+      </tr>
+    {% endfor %}
+  </tbody>
+</table>
+
+### Body
+<table>
+  <thead>
+    <th>Token</th>
+    <th>Role</th>
+    <th>Value</th>
+  </thead>
+  <tbody>
+    {% for token in site.data.type-tokens.body %}
+      {% assign info = token[1] %}
+      <tr>
+        <td><code>{{ token[0] }}</code></td>
+        <td><font style="font-size: {{info.size}}; font-weight: {{info.weight}}; ">{{ info.description }}</font></td>
+        <td>
+          <ul>
+            <li>Type: {{ info.type }}</li>
+            <li>Size: {{ info.size }}</li>
+            <li>Weight: {{ info.weight }}</li>
+            <li>Letter spacing: {{ info.letter-spacing }}</li>
+            <li>Line height: {{ info.line-height }}</li>
+          </ul>
+        </td>
+      </tr>
+    {% endfor %}
+  </tbody>
+</table>
