@@ -95,7 +95,7 @@
       }
     }
   }
-  .label {
+  .tab-label {
     width: 8rem;
     margin: 0 2px;
     border-bottom: 2px solid $ui-03;
@@ -121,12 +121,12 @@
   .radio-tabs {
     position: absolute;
     opacity: 0;
-    &:checked + .label{
+    &:checked + .tab-label{
       color: $text-01;
       border-color: $interactive-03;
     }
   }
-  .radio-tabs:checked + .label + .tab-panel {
+  .radio-tabs:checked + .tab-label + .tab-panel {
     display: block;
   }
 }
