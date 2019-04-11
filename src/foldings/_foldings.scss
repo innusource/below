@@ -28,8 +28,13 @@
   &.folding-borderless{
     border: none;
     box-shadow: none;
-    .folding-title:hover{
-      background: $ui-02;
+    .folding-title{
+      background: transparent;
+    }
+    &[open]{
+      .folding-title:hover{
+        background: transparent;
+      }
     }
   }
 }
