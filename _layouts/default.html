@@ -7,16 +7,17 @@ layout: compress
   <meta charset="utf-8">
   {% include head.html %}
 </head>
-<body>
+<body class="docs">
+  {% include navbar.html %}
   <div id="{{ page.title | downcase | replace: ' ', '-' }}" class="container-fluid">
     <div class="row">
       {% include sidebar.html %}
-      {% if page.toc %}
+      {% if page.toc == true %}
       <div class="col-xl-2 toc">
         {% include toc.html html=content %}
       </div>
       {% endif %}
-      <div class="col-12 col-md-9 col-xl-8 content">
+      <div class="col-12 col-md-10 {% if page.toc == true %}col-xl-8{% endif %} content">
         {{ content }}
       </div>
     </div>
