@@ -11,6 +11,8 @@ toc: true
 <button class="btn">Default</button>
 <button class="btn btn-outline">Outline</button>
 <button class="btn btn-disabled">Disabled</button>
+<button class="btn btn-clear">Clear</button>
+<button class="btn btn-icon">Icon<span class="icon-btn">I. here</span></button>
 {% endcapture %}
 {% include example.html content=example %}
 
@@ -27,10 +29,11 @@ toc: true
 
 For all color cases (except default): the simple button take class color for text and transparent for background.
 {% capture example %}
-<button class="btn">Default</button>
-<button class="btn btn-green">Green Button</button>
-<button class="btn btn-blue">Blue Button</button>
-<button class="btn btn-red">Red Button</button>
-<button class="btn btn-black">Black</button>
+<button class="btn">Primary</button>
+<button class="btn btn-secondary">Secondary</button>
+<button class="btn btn-error">Error</button>
+<button class="btn btn-succes">Succes</button>
+<button class="btn btn-warning">Warning</button>
+<button class="btn btn-info">Info/Help</button>
 {% endcapture %}
 {% include example.html content=example %}

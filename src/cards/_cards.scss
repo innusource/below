@@ -1,12 +1,13 @@
 .card{
   width: 100%;
   background: #fff;
-  border:1px solid #eee;
+  border: 1px solid $ui-03;
   border-radius: 6px;
   position: relative;
   margin: 10px 0;
+  padding: 0.8rem;
   .card-header, .card-body, .card-footer{
-    padding: 1.2rem 2rem;
+    padding: 1.2rem 1.5rem;
   }
   .card-header{
     display: flex;
@@ -15,14 +16,15 @@
       font-weight: 600;
       font-size: 1rem;
       position: relative;
+      color: $text-01;
       .icon{
         position: relative;
         top: 5px;
         margin-right: 8px;
-        color: #0248FF;
+        color: $interactive-01;
       }
       .card-subtitle{
-        color: #999;
+        color: $text-02;
         font-size: 0.7rem;
         text-transform: uppercase;
         letter-spacing: 0.5px;
@@ -34,13 +36,12 @@
     text-align: right;
   }
   p{
-    color: $black-three;
-    font-size: 0.8rem;
+    color: $text-03;
     line-height: 2;
     margin: 0;
   }
   img{
     max-width: 100%;
-    border-radius: 6px 6px 0 0;
+    border-radius: 6px;
   }
 }

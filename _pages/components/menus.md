@@ -5,127 +5,157 @@ parent: Components
 toc: true
 ---
 
-### Default Menu
-
-{% capture example %}
-<ul class="menu">
-  <li><a href="#" class="active">Active</a></li>
-  <li><a href="#" class="disabled">Disabled</a></li>
-  <li><a href="#">Link</a></li>
-  <li><a href="#">Link</a></li>
-</ul>
-{% endcapture %}
-{% include example.html content=example %}
-
-### Aligned Menus
-
-#### Centered Menu
-
-{% capture example %}
-<ul class="menu center-menu">
-  <li><a href="#" class="active">Active</a></li>
-  <li><a href="#">Link</a></li>
-  <li><a href="#">Link</a></li>
-  <li><a href="#" class="disabled">Disabled</a></li>
-</ul>
-{% endcapture %}
-{% include example.html content=example %}
-
-#### Right-aligned Menu
-
-{% capture example %}
-<ul class="menu right-menu">
-  <li><a href="#" class="active">Active</a></li>
-  <li><a href="#">Link</a></li>
-  <li><a href="#">Link</a></li>
-  <li><a href="#" class="disabled">Disabled</a></li>
-</ul>
-{% endcapture %}
-{% include example.html content=example %}
-
 ### Navbar
 
 {% capture example %}
-<nav class="menu-nav space-between">
+<nav class="navbar">
   <ul>
     <li><a href="#" class="badge">Below</a></li>
-    <li><a href="#" class="active">Home</a></li>
-    <li><a href="#">About</a></li>
-    <li><a href="#">Services</a></li>
+    <li><form class="form"><input type="text" placeholder="Search..."></form></li>
   </ul>
   <ul>
-    <li><a href="#">GitHub</a></li>
-    <li><a href="#">Twitter</a></li>
-    <li><a href="#">Dribble</a></li>
+    <li><a href="#" class="active">Docs</a></li>
+    <li><a href="#">About</a></li>
+    <li>
+      <a href="#">
+        <svg class="icon">
+          <use xlink:href="/assets/icons/feather.svg#github"/>
+        </svg>
+      </a>
+    </li>
+    <li>
+      <details class="dropdown">
+        <summary class="btn btn-clear">
+          <span>miltonolaf</span>
+          <svg class="icon icon-small">
+            <use xlink:href="/assets/icons/feather.svg#chevron-down"/>
+          </svg>
+        </summary>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">Profile</a></li>
+          <li><a class="dropdown-item" href="#">Settings</a></li>
+          <li class="dropdown-item-separator"></li>
+          <li><a class="dropdown-item" href="#">Logout</a></li>
+        </ul>
+      </details>
+    </li>
   </ul>
 </nav>
 {% endcapture %}
 {% include example.html content=example %}
 
-### Vertical Menu
+### Sidebar
 
 {% capture example %}
-<ul class="menu vertical-menu">
-  <a href="#" class="active">Active</a>
-  <a href="#">Link</a>
-  <a href="#">Link</a>
-  <a href="#" class="disabled">Disabled</a>
-</ul>
+<div class="row">
+  <div class="col-3 sidebar">
+    <ul>
+      <li><a href="#" class="badge">Below</a></li>
+      <li><a href="#">Pages</a></li>
+      <li>
+        <details class="folding folding-borderless">
+          <summary class="folding-title">
+            Posts
+            <svg class="icon"><use xlink:href="/assets/icons/feather.svg#chevron-down"/></svg>
+          </summary>
+          <div class="folding-content">
+            <ul>
+              <li><a href="#">New Post</a></li>
+              <li><a href="#">All Posts</a></li>
+            </ul>
+          </div>
+        </details>
+      </li>
+      <li><a href="#">Comments</a></li>
+      <li><a href="#">Appearance</a></li>
+    </ul>
+  </div>
+  <div class="col-9">
+    <h5>Content</h5>
+  </div>
+</div>
+{% endcapture %}
+{% include example.html content=example %}
+
+### Navbar & Sidebar
+
+{% capture example %}
+<nav class="navbar">
+  <ul>
+    <li><a href="#" class="badge">Below</a></li>
+    <li><form class="form"><input type="text" placeholder="Search..."></form></li>
+  </ul>
+  <ul>
+    <li><a href="#" class="active">Docs</a></li>
+    <li><a href="#">About</a></li>
+    <li>
+      <a href="#">
+        <svg class="icon">
+          <use xlink:href="/assets/icons/feather.svg#github"/>
+        </svg>
+      </a>
+    </li>
+    <li>
+      <details class="dropdown">
+        <summary class="btn btn-clear">
+          <span>miltonolaf</span>
+          <svg class="icon icon-small">
+            <use xlink:href="/assets/icons/feather.svg#chevron-down"/>
+          </svg>
+        </summary>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">Profile</a></li>
+          <li><a class="dropdown-item" href="#">Settings</a></li>
+          <li class="dropdown-item-separator"></li>
+          <li><a class="dropdown-item" href="#">Logout</a></li>
+        </ul>
+      </details>
+    </li>
+  </ul>
+</nav>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-3 sidebar">
+      <ul>
+        <li><a href="#">Pages</a></li>
+        <li>
+          <details class="folding folding-borderless">
+            <summary class="folding-title">
+              Posts
+              <svg class="icon">
+                <use xlink:href="/assets/icons/feather.svg#chevron-down"/>
+              </svg>
+            </summary>
+            <div class="folding-content">
+              <ul>
+                <li><a href="#">New Post</a></li>
+                <li><a href="#">All Posts</a></li>
+              </ul>
+            </div>
+          </details>
+        </li>
+        <li><a href="#">Comments</a></li>
+        <li><a href="#">Appearance</a></li>
+      </ul>
+    </div>
+    <div class="col-9">
+      <h5>Content</h5>
+    </div>
+  </div>
+</div>
 {% endcapture %}
 {% include example.html content=example %}
 
 ### Tabs
 
 {% capture example %}
-<ul class="menu tabs">
-  <a href="#" class="active">Active</a>
-  <a href="#">Link</a>
-  <a href="#">Link</a>
-  <a href="#" class="disabled">Disabled</a>
-</ul>
-{% endcapture %}
-{% include example.html content=example %}
-
-#### Vertical
-
-{% capture example %}
-<div class="row">
-  <div class="col-3">
-    <ul class="menu tabs vertical-menu">
-      <a href="#" class="active">Active</a>
-      <a href="#">Link</a>
-      <a href="#">Link</a>
-      <a href="#" class="disabled">Disabled</a>
-    </ul>
-  </div>
-</div>
-{% endcapture %}
-{% include example.html content=example %}
-
-### Stacked
-
-{% capture example %}
-<ul class="menu stacked">
-  <a href="#" class="active">Active</a>
-  <a href="#">Link</a>
-  <a href="#">Link</a>
-  <a href="#" class="disabled">Disabled</a>
-</ul>
-{% endcapture %}
-{% include example.html content=example %}
-
-#### Vertical
-
-{% capture example %}
-<div class="row">
-  <div class="col-3">
-    <ul class="menu stacked vertical-menu">
-      <a href="#" class="active">Active</a>
-      <a href="#">Link</a>
-      <a href="#">Link</a>
-      <a href="#" class="disabled">Disabled</a>
-    </ul>
-  </div>
-</div>
+<nav class="nav-tabs">
+  <ul>
+    <a href="#" class="active">Active</a>
+    <a href="#">Link</a>
+    <a href="#">Link</a>
+    <a href="#" class="disabled">Disabled</a>
+  </ul>
+</nav>
 {% endcapture %}
 {% include example.html content=example %}
