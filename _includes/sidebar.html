@@ -1,5 +1,5 @@
+<!--<a href="{{ node.url | absolute_url }}" class="{% if page.url == node.url %}active{% endif %}">{{ node.title }}</a> <svg class="icon"><use xlink:href="/assets/icons/feather.svg#chevron-down"/></svg>-->
 <div class="col-12 col-md-3 col-xl-2 sidebar">
-  <span class="menu-heading"><a href="{{ site.url }}">Below</a></span>
   <ul class="menu-list list clean">
     {% assign pages_list = site.pages | sort:"priority" %}
     {% for node in pages_list %}
@@ -7,17 +7,22 @@
         {% if node.parent == nil %}
 
           <li class="{% if page.url == node.url or page.parent == node.title or page.grand_parent == node.title %}active{% endif %}">
+            <details class="folding folding-borderless" {% if page.url == node.url or page.parent == node.title or page.grand_parent == node.title %}open{% endif %}>
 
             {% if page.parent == node.title or page.grand_parent == node.title %}
               {% assign first_level_url = node.url | absolute_url %}
             {% endif %}
 
-            <a href="{{ node.url | absolute_url }}" class="{% if page.url == node.url %}active{% endif %}">{{ node.title }}</a>
+            <summary>
+              <div class="folding-title">
+              {{ node.title }} <svg class="icon"><use xlink:href="/assets/icons/feather.svg#chevron-down"/></svg>
+              </div>
+              </summary>
 
             {% if node.has_child %}
               {% assign children_list = site.pages | sort:"priority" %}
-
-              <ul class="navigation-list-child-list">
+              <div class="folding-content">
+              <ul>
 
                 {% for child in children_list %}
                   {% unless child.nav_exclude %}
@@ -57,9 +62,10 @@
                 {% endfor %}
 
               </ul>
+              </div>
 
             {% endif %}
-
+            </details>
           </li>
 
         {% endif %}

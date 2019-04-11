@@ -1,45 +1,31 @@
-.menu-heading a{
-  font-size: 2.5rem;
-  text-decoration: none;
-  font-weight: 900;
-  display: block;
-  color: #222;
-  letter-spacing: -2px;
-  margin-bottom: 20px;
+.logo{
+  font-weight: 600;
+  .isotype{
+    width: 40px;
+    height: 40px;
+    background: #0062ff;
+    color: #fff;
+    display: inline-block;
+    text-align: center;
+    border-radius: 3px;
+    line-height: 40px;
+    margin-right: 5px;
+    font-size: 1.2rem;
+  }
+  &.logo-big{
+    letter-spacing: -2px;
+    .isotype{
+      width: 60px;
+      height: 60px;
+      font-size: 2.3rem;
+      line-height: 60px;
+    }
+  }
 }
 .sidebar{
   height: 100vh;
   position: sticky;
   z-index: 8;
   top: 0;
-  padding: 2.5vh 2vw;
-  border-right: 1px solid #eee;
   overflow-y: auto;
-  .menu-list{
-    font-size: 13px;
-    li{
-      a{
-        display: block;
-        padding: 8px 1px;
-        color: #666;
-        text-decoration: none;
-        font-weight: 600;
-        &:hover{
-          color: #222;
-        }
-        &.active{
-          color: #222;
-          font-weight: 600;
-        }
-      }
-      ul.navigation-list-child-list{
-        list-style: none;
-        padding-left: 15px;
-        li a{
-          font-size: 12.5px;
-          font-weight: normal;
-        }
-      }
-    }
-  }
 }
