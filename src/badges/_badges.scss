@@ -1,0 +1,33 @@
+.badge {
+  padding: 0 0.5rem;
+  font-weight: 600;
+  border-radius: 45px;
+  font-size: 0.7rem;
+  background: $interactive-01;
+  color: #fff;
+  display: inline-block;
+  margin: 0 6px;
+  border: 1px solid transparent;
+  vertical-align: middle;
+
+  &.badge-secondary {
+    background: $ui-03;
+    color: $text-01;
+  }
+
+  &.badge-outline {
+    background: transparent;
+    border-color: $interactive-01;
+    color: $interactive-01;
+  }
+
+  &.badge-small{
+    padding: 0 0.25rem;
+    font-size: 0.6rem;
+  }
+
+  &.badge-big{
+    padding: 0 1rem;
+    font-size: 1rem;
+  }
+}

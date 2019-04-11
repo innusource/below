@@ -1,0 +1,32 @@
+.tag {
+  padding: 0.15rem 0.3rem;
+  font-weight: 600;
+  border-radius: 3px;
+  font-size: 0.8rem;
+  background: $interactive-01;
+  color: #fff;
+  display: inline-block;
+  margin: 2px;
+  border: 1px solid transparent;
+  vertical-align: middle;
+
+  &.tag-outline {
+    background: transparent;
+    border-color: $interactive-01;
+    color: $interactive-01;
+  }
+
+  &.tag-small{
+    padding: 0.1rem 0.25rem;
+    font-size: 0.6rem;
+  }
+
+  &.tag-big{
+    padding: 0.2rem 0.35rem;
+    font-size: 1rem;
+  }
+
+  .icon{
+    margin-left: 5px;
+  }
+}
