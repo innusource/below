@@ -1,13 +1,13 @@
 .badge {
-  padding: 0 0.5rem;
-  font-weight: 600;
-  border-radius: 45px;
-  font-size: 0.7rem;
   background: $interactive-01;
   color: #fff;
-  display: inline-block;
   margin: 0 6px;
+  padding: 0 0.5rem;
+  display: inline-block;
   border: 1px solid transparent;
+  border-radius: 45px;
+  font-size: 0.7rem;
+  font-weight: 600;
   vertical-align: middle;
 
   &.badge-secondary {
@@ -17,8 +17,8 @@
 
   &.badge-outline {
     background: transparent;
-    border-color: $interactive-01;
     color: $interactive-01;
+    border-color: $interactive-01;
   }
 
   &.badge-small {
