@@ -1,0 +1,14 @@
+<div class="nav-tabs">
+  <ul>
+    <li><a href="{{ .Site.baseURL }}/guidelines/color/" class="active">Lightest</a></li>
+    <li><a href="{{ .Site.baseURL }}/guidelines/color/light">Light</a></li>
+    <li><a href="{{ .Site.baseURL }}/guidelines/color/dark">Dark</a></li>
+    <li><a href="{{ .Site.baseURL }}/guidelines/color/darkest">Darkest</a></li>
+  </ul>
+</div>
+
+## Core color tokens
+{{ partial "color-tokens" . }}
+
+## Interactive color tokens
+{{ partial "interactive-color-tokens" . }}
