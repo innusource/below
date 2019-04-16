@@ -7,7 +7,7 @@ toc: true
 
 ## Default
 
-{% capture example %}
+{{<example>}}
 <details class="folding">
   <summary class="folding-title">
     Folding
@@ -19,12 +19,11 @@ toc: true
     </p>
   </div>
 </details>
-{% endcapture %}
-{% include example.html content=example %}
+{{</example>}}
 
 ## Folding Group
 
-{% capture example %}
+{{<example>}}
 <div class="folding-group">
 
   <details class="folding">
@@ -64,12 +63,11 @@ toc: true
   </details>
 
 </div>
-{% endcapture %}
-{% include example.html content=example %}
+{{</example>}}
 
 ## Borderless Folding
 
-{% capture example %}
+{{<example>}}
 <details class="folding folding-borderless">
   <summary class="folding-title">
     Borderless Folding
@@ -81,12 +79,11 @@ toc: true
     </p>
   </div>
 </details>
-{% endcapture %}
-{% include example.html content=example %}
+{{</example>}}
 
 ## Borderless Folding Group
 
-{% capture example %}
+{{<example>}}
 <div class="folding-group">
 
   <details class="folding folding-borderless">
@@ -126,5 +123,4 @@ toc: true
   </details>
 
 </div>
-{% endcapture %}
-{% include example.html content=example %}
+{{</example>}}

@@ -7,7 +7,7 @@ toc: true
 
 ### Navbar
 
-{% capture example %}
+{{<example>}}
 <nav class="navbar">
   <ul>
     <li><a href="#" class="badge">Below</a></li>
@@ -42,12 +42,11 @@ toc: true
     </li>
   </ul>
 </nav>
-{% endcapture %}
-{% include example.html content=example %}
+{{</example>}}
 
 ### Sidebar
 
-{% capture example %}
+{{<example>}}
 <div class="row">
   <div class="col-3 sidebar">
     <ul>
@@ -76,12 +75,11 @@ toc: true
     <h5>Content</h5>
   </div>
 </div>
-{% endcapture %}
-{% include example.html content=example %}
+{{</example>}}
 
 ### Navbar & Sidebar
 
-{% capture example %}
+{{<example>}}
 <nav class="navbar">
   <ul>
     <li><a href="#" class="badge">Below</a></li>
@@ -147,12 +145,11 @@ toc: true
     </div>
   </div>
 </div>
-{% endcapture %}
-{% include example.html content=example %}
+{{</example>}}
 
 ### Tabs
 
-{% capture example %}
+{{<example>}}
 <nav class="nav-tabs">
   <ul>
     <a href="#" class="active">Active</a>
@@ -161,12 +158,11 @@ toc: true
     <a href="#" class="disabled">Disabled</a>
   </ul>
 </nav>
-{% endcapture %}
-{% include example.html content=example %}
+{{</example>}}
 
 ### Tabs with Content
 
-{% capture example %}
+{{<example>}}
 <div class="nav-tabs">
 
   <input name="tabs" type="radio" id="tab-1" class="radio-tabs" checked="checked">
@@ -190,5 +186,4 @@ toc: true
     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus provident saepe deserunt veritatis? Totam, corrupti. Dolor quos, numquam totam quae ea enim maiores sequi et? Optio harum adipisci neque nemo.</p>
   </div>
 </div>
-{% endcapture %}
-{% include example.html content=example %}
+{{</example>}}

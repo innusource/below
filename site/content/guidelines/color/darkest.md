@@ -7,4 +7,4 @@ toc: true
 nav_exclude: true
 theme_tab: darkest
 ---
-{% include color-panel.html %}
+{{ include color-panel.html }}

@@ -11,7 +11,7 @@ priority: 3
 ## Auto-layout columns
 ### Equal-width
 
-{% capture example %}
+{{<example>}}
 <div class="container">
   <div class="row">
     <div class="col">
@@ -33,12 +33,11 @@ priority: 3
     </div>
   </div>
 </div>
-{% endcapture %}
-{% include example.html content=example %}
+{{</example>}}
 
 ### Setting one column width
 
-{% capture example %}
+{{<example>}}
 <div class="container">
   <div class="row">
     <div class="col">
@@ -63,14 +62,13 @@ priority: 3
     </div>
   </div>
 </div>
-{% endcapture %}
-{% include example.html content=example %}
+{{</example>}}
 
 ## Responsive classes
 
 ### All breakpoints
 
-{% capture example %}
+{{<example>}}
 <div class="row">
   <div class="col">col</div>
   <div class="col">col</div>
@@ -81,12 +79,11 @@ priority: 3
   <div class="col-8">col-8</div>
   <div class="col-4">col-4</div>
 </div>
-{% endcapture %}
-{% include example.html content=example %}
+{{</example>}}
 
 ### Stacked to horizontal
 
-{% capture example %}
+{{<example>}}
 <div class="row">
   <div class="col-sm-8">col-sm-8</div>
   <div class="col-sm-4">col-sm-4</div>
@@ -96,12 +93,11 @@ priority: 3
   <div class="col-sm">col-sm</div>
   <div class="col-sm">col-sm</div>
 </div>
-{% endcapture %}
-{% include example.html content=example %}
+{{</example>}}
 
 ### Mix and match
 
-{% capture example %}
+{{<example>}}
 <!-- Stack the columns on mobile by making one full-width and the other half-width -->
 <div class="row">
   <div class="col-12 col-md-8">.col-12 .col-md-8</div>
@@ -120,5 +116,4 @@ priority: 3
   <div class="col-6">.col-6</div>
   <div class="col-6">.col-6</div>
 </div>
-{% endcapture %}
-{% include example.html content=example %}
+{{</example>}}

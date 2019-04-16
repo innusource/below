@@ -1,13 +1,13 @@
 ---
 layout: docs
 title: Tags
-parent: Content
+group: content
 toc: true
 ---
 
 ## Types
 
-{% capture example %}
+{{<example>}}
 <div class="tag">
   Default
 </div>
@@ -25,12 +25,11 @@ toc: true
   Outline with icon
   <svg class="icon icon-small"><use xlink:href="/assets/icons/feather.svg#x"/></svg>
 </div>
-{% endcapture %}
-{% include example.html content=example %}
+{{</example>}}
 
 ## Sizes
 
-{% capture example %}
+{{<example>}}
 <div class="tag tag-small">
   Small
   <svg class="icon icon-small"><use xlink:href="/assets/icons/feather.svg#x"/></svg>
@@ -45,5 +44,4 @@ toc: true
   Big
   <svg class="icon icon"><use xlink:href="/assets/icons/feather.svg#x"/></svg>
 </div>
-{% endcapture %}
-{% include example.html content=example %}
+{{</example>}}

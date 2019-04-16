@@ -7,7 +7,7 @@ toc: true
 
 ## Default
 
-{% capture example %}
+{{<example>}}
 <details class="dropdown">
   <summary class="btn">
     <span>Dropdown</span>
@@ -21,11 +21,10 @@ toc: true
     <li><a class="dropdown-item" href="#">Third item</a></li>
   </ul>
 </details>
-{% endcapture %}
-{% include example.html content=example %}
+{{</example>}}
 
 ### Dropup
-{% capture example %}
+{{<example>}}
 <details class="dropdown">
   <summary class="btn">
     <span>Dropup</span>
@@ -39,12 +38,11 @@ toc: true
     <li><a class="dropdown-item" href="#">Third item</a></li>
   </ul>
 </details>
-{% endcapture %}
-{% include example.html content=example %}
+{{</example>}}
 
 ### Dropright
 
-{% capture example %}
+{{<example>}}
 <details class="dropdown">
   <summary class="btn">
     <span>Dropright</span>
@@ -58,12 +56,11 @@ toc: true
     <li><a class="dropdown-item" href="#">Third item</a></li>
   </ul>
 </details>
-{% endcapture %}
-{% include example.html content=example %}
+{{</example>}}
 
 ### Dropleft
 
-{% capture example %}
+{{<example>}}
 <details class="dropdown">
   <summary class="btn">
     <svg class="icon icon-small">
@@ -77,12 +74,11 @@ toc: true
     <li><a class="dropdown-item" href="#">Third item</a></li>
   </ul>
 </details>
-{% endcapture %}
-{% include example.html content=example %}
+{{</example>}}
 
 ### Separator
 
-{% capture example %}
+{{<example>}}
 <details class="dropdown">
   <summary class="btn">
     Dropdown with separator
@@ -95,5 +91,4 @@ toc: true
     <li><a class="dropdown-item" href="#">Fourth item</a></li>
   </ul>
 </details>
-{% endcapture %}
-{% include example.html content=example %}
+{{</example>}}

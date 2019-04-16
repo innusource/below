@@ -7,21 +7,20 @@ toc: true
 
 ## Lists
 ### Remove default style
-{% capture example %}
+
+{{<example>}}
 <ul class="list clean">
   <li>First element</li>
   <li>Second element</li>
   <li>Third element</li>
 </ul>
-{% endcapture %}
-{% include example.html content=example %}
+{{</example>}}
 
 ## Inline Lists
-{% capture example %}
+{{<example>}}
 <ul class="list inline">
   <li>First element</li>
   <li>Second element</li>
   <li>Third element</li>
 </ul>
-{% endcapture %}
-{% include example.html content=example %}
+{{</example>}}

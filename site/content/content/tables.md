@@ -7,7 +7,7 @@ toc: true
 
 ### Default
 
-{% capture example %}
+{{<example>}}
 <table class="table">
   <thead>
     <tr>
@@ -38,8 +38,7 @@ toc: true
     </tr>
   </tbody>
 </table>
-{% endcapture %}
-{% include example.html content=example %}
+{{</example>}}
 
 
 
@@ -47,7 +46,7 @@ toc: true
 
 #### Border Out
 
-{% capture example %}
+{{<example>}}
 <table class="table table-bordered">
   <thead>
     <tr>
@@ -78,12 +77,11 @@ toc: true
     </tr>
   </tbody>
 </table>
-{% endcapture %}
-{% include example.html content=example %}
+{{</example>}}
 
 #### Columns and Rows full bordered
 
-{% capture example %}
+{{<example>}}
 <table class="table table-bordered-full">
   <thead>
     <tr>
@@ -114,12 +112,11 @@ toc: true
     </tr>
   </tbody>
 </table>
-{% endcapture %}
-{% include example.html content=example %}
+{{</example>}}
 
 #### Borderless Table
 
-{% capture example %}
+{{<example>}}
 <table class="table table-borderless">
   <thead>
     <tr>
@@ -150,12 +147,11 @@ toc: true
     </tr>
   </tbody>
 </table>
-{% endcapture %}
-{% include example.html content=example %}
+{{</example>}}
 
 ### Striped Rows
 
-{% capture example %}
+{{<example>}}
 <table class="table table-striped">
   <thead>
     <tr>
@@ -186,12 +182,11 @@ toc: true
     </tr>
   </tbody>
 </table>
-{% endcapture %}
-{% include example.html content=example %}
+{{</example>}}
 
 ### Hoverable Rows
 
-{% capture example %}
+{{<example>}}
 <table class="table table-hover">
   <thead>
     <tr>
@@ -222,12 +217,11 @@ toc: true
     </tr>
   </tbody>
 </table>
-{% endcapture %}
-{% include example.html content=example %}
+{{</example>}}
 
 ### Small Table
 
-{% capture example %}
+{{<example>}}
 <table class="table table-small">
   <thead>
     <tr>
@@ -258,5 +252,4 @@ toc: true
     </tr>
   </tbody>
 </table>
-{% endcapture %}
-{% include example.html content=example %}
+{{</example>}}

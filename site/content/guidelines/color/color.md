@@ -7,4 +7,4 @@ priority: 2
 has_child: true
 permalink: /guidelines/color/
 ---
-{% include color-panel.html %}
+{{ include color-panel.html }}

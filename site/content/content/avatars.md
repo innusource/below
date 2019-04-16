@@ -7,31 +7,28 @@ toc: true
 
 ## Default
 
-{% capture example %}
+{{<example>}}
 <span class="avatar">A</span>
-{% endcapture %}
-{% include example.html content=example %}
+{{</example>}}
 
 ## Avatar with Image
-{% capture example %}
+{{<example>}}
 <span class="avatar">
   <img src="/assets/img/avatar.jpeg">
 </span>
-{% endcapture %}
-{% include example.html content=example %}
+{{</example>}}
 
 ## Sizes
 
-{% capture example %}
+{{<example>}}
 <span class="avatar avatar-small">S</span>
 <span class="avatar">M</span>
 <span class="avatar avatar-big">B</span>
-{% endcapture %}
-{% include example.html content=example %}
+{{</example>}}
 
 ## Avatars Group
 
-{% capture example %}
+{{<example>}}
 <div class="avatar-group">
   <span class="avatar">M</span>
   <span class="avatar">
@@ -48,5 +45,4 @@ toc: true
   </span>
   <span class="avatar avatar-big">B</span>
 </div>
-{% endcapture %}
-{% include example.html content=example %}
+{{</example>}}

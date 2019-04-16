@@ -7,7 +7,7 @@ toc: true
 
 ## Types
 
-{% capture example %}
+{{<example>}}
 <div class="badge">
   21
 </div>
@@ -19,12 +19,11 @@ toc: true
 <div class="badge badge-outline">
   10
 </div>
-{% endcapture %}
-{% include example.html content=example %}
+{{</example>}}
 
 ## Sizes
 
-{% capture example %}
+{{<example>}}
 <div class="badge badge-small">
   100
 </div>
@@ -36,5 +35,4 @@ toc: true
 <div class="badge badge-big">
   1K
 </div>
-{% endcapture %}
-{% include example.html content=example %}
+{{</example>}}

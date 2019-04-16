@@ -6,7 +6,7 @@ toc: true
 ---
 
 ### Default
-{% capture example %}
+{{<example>}}
 <div class="col-6">
   <div class="card">
     <div class="card-header">
@@ -41,12 +41,11 @@ toc: true
     </div>
   </div>
 </div>
-{% endcapture %}
-{% include example.html content=example %}
+{{</example>}}
 
 
 ### Card with image
-{% capture example %}
+{{<example>}}
 <div class="col-6">
   <div class="card">
     <img src="/assets/img/img.jpeg">
@@ -63,5 +62,4 @@ toc: true
     </div>
   </div>
 </div>
-{% endcapture %}
-{% include example.html content=example %}
+{{</example>}}
