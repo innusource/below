@@ -3,6 +3,11 @@
   border-radius: 3px;
   box-shadow: 3px 0 13px rgba(0, 0, 0, 0.02);
 
+  .folding-title,
+  .folding-content {
+    padding: 1rem 0.8rem;
+  }
+
   .folding-title {
     background: $ui-02;
     font-size: 14px;
@@ -13,34 +18,29 @@
     }
   }
 
-  .folding-title,
-  .folding-content {
-    padding: 1rem 0.8rem;
-  }
-
-  .icon {
-    float: right;
-  }
-
   &[open] .folding-title:hover {
     background: $ui-02;
-  }
-
-  &[open] .icon {
-    transform: rotate(180deg);
   }
 
   &.folding-borderless {
     border: none;
     box-shadow: none;
 
-    .folding-title {
+    :not([open]) .folding-title {
       background: transparent;
     }
 
     &[open] .folding-title:hover {
       background: transparent;
     }
+  }
+
+  .icon {
+    float: right;
+  }
+
+  &[open] .icon {
+    transform: rotate(180deg);
   }
 }
 

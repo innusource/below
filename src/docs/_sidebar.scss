@@ -1,6 +1,7 @@
-.logo{
+.logo {
   font-weight: 600;
-  .isotype{
+
+  .isotype {
     width: 40px;
     height: 40px;
     background: #0062ff;
@@ -12,9 +13,11 @@
     margin-right: 5px;
     font-size: 1.2rem;
   }
-  &.logo-big{
+
+  &.logo-big {
     letter-spacing: -2px;
-    .isotype{
+
+    .isotype {
       width: 60px;
       height: 60px;
       font-size: 2.3rem;
@@ -22,7 +25,8 @@
     }
   }
 }
-.sidebar{
+
+.sidebar {
   height: 100vh;
   position: sticky;
   z-index: 8;

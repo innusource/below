@@ -35,7 +35,6 @@
   &.btn-disabled {
     cursor: not-allowed;
     opacity: 0.5;
-
   }
 
   &.btn-medium {
@@ -95,17 +94,6 @@
     &:hover {
       background: lighten($support-04, 10%);
       border-color: lighten($support-04, 10%);
-    }
-  }
-
-  &.btn-succes,
-  &.btn-error,
-  &.btn-warning,
-  &.btn-info {
-    color: $text-04;
-    
-    &:hover {
-      color: $text-04;
     }
   }
 
