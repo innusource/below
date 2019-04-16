@@ -1,38 +1,43 @@
-body, html{
+body,
+html {
   height: 100%;
   padding: 0;
   margin: 0;
 }
-*{
+
+* {
   box-sizing: border-box;
 }
 
-.navbar-docs{
-  .badge{
+.navbar-docs {
+  .badge {
     letter-spacing: -0.5px;
     padding: 0 0.8rem;
   }
 }
 
-.content{
+.content {
   order: 1;
   padding: 0 30px;
-   > h1:first-of-type{
-      margin: 0 -30px;
-      margin-bottom: 30px;
-      padding: 30px;
-      font-weight: 600;
-      border-bottom: 1px solid #dcdcdc;
+
+  & > h1:first-of-type {
+    margin: 0 -30px;
+    margin-bottom: 30px;
+    padding: 30px;
+    font-weight: 600;
+    border-bottom: 1px solid #dcdcdc;
   }
 }
-main{
+
+main {
   background: #fff;
   min-height: calc(100vh - 60px);
   margin: 0 -30px;
   color: #171717;
   padding: 45px;
 }
-.table ul{
+
+.table ul {
   list-style: circle;
   padding-left: 0;
 }
