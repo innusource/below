@@ -1,4 +1,4 @@
-.btn{
+.btn {
   background: $interactive-01;
   color: $text-04;
   border: 1px solid $interactive-01;
@@ -16,83 +16,83 @@
   -webkit-transition: all 0.4s ease;
   transition: all 0.4s ease;
 
-  &.btn-clear{
+  &.btn-clear {
     background: transparent;
     color: $interactive-02;
-    border: 0px;
+    border: none;
     border-radius: 3px;
   }
 
-  &:hover{
+  &:hover {
     background: $hover-primary;
-    color:  $text-04;
+    color: $text-04;
   }
 
-  &:focus{
+  &:focus {
     outline: 0;
   }
 
-  &.btn-disabled{
+  &.btn-disabled {
     cursor: not-allowed;
     opacity: 0.5;
 
   }
 
-  &.btn-medium{
+  &.btn-medium {
     padding: 0.5rem 1.2rem;
     font-size: 1rem;
   }
 
-  &.btn-big{
+  &.btn-big {
     padding: 0.7rem 1.5rem;
     font-size: 1.2rem;
   }
 
-  &.btn-secondary{
+  &.btn-secondary {
     background: $interactive-02;
     border-color: $interactive-02;
 
-    &:hover{
+    &:hover {
       background: $hover-secondary;
       border-color: $hover-secondary;
     }
   }
 
-  &.btn-succes{
+  &.btn-succes {
     background: $support-02;
     border-color: $support-02;
 
-    &:hover{
+    &:hover {
       background: lighten($support-02, 10%);
       border-color: lighten($support-02, 10%);
     }
   }
 
-  &.btn-error{
+  &.btn-error {
     background: $support-01;
     border-color: $support-01;
 
-    &:hover{
+    &:hover {
       background: lighten($support-01, 10%);
       border-color: lighten($support-01, 10%);
     }
   }
 
-  &.btn-warning{
+  &.btn-warning {
     background: $support-03;
     border-color: $support-03;
 
-    &:hover{
+    &:hover {
       background: darken($support-03, 10%);
       border-color: darken($support-03, 10%);
     }
   }
 
-  &.btn-info{
+  &.btn-info {
     background: $support-04;
     border-color: $support-04;
 
-    &:hover{
+    &:hover {
       background: lighten($support-04, 10%);
       border-color: lighten($support-04, 10%);
     }
@@ -101,64 +101,71 @@
   &.btn-succes,
   &.btn-error,
   &.btn-warning,
-  &.btn-info{
+  &.btn-info {
     color: $text-04;
-    &:hover{
+    
+    &:hover {
       color: $text-04;
     }
   }
 
-  &.btn-outline{
+  &.btn-outline {
     background: transparent;
     border: 1px solid $interactive-01;
     border-radius: 3px;
     color: $interactive-01;
-    &:hover{
+
+    &:hover {
       background: $interactive-01;
       color: $text-04;
     }
 
-    &.btn-outline-secondary{
+    &.btn-outline-secondary {
       border-color: $interactive-02;
       color: $interactive-02;
-      &:hover{
+
+      &:hover {
         background: $interactive-02;
         color: $text-04;
       }
     }
 
-    &.btn-outline-error{
+    &.btn-outline-error {
       border-color: $support-01;
       color: $support-01;
-      &:hover{
+
+      &:hover {
         background: $support-01;
         color: $text-04;
       }
     }
 
-    &.btn-outline-succes{
+    &.btn-outline-succes {
       border-color: $support-02;
       color: $support-02;
-      &:hover{
+
+      &:hover {
         background: $support-02;
         color: $text-04;
       }
     }
 
-    &.btn-outline-warning{
+    &.btn-outline-warning {
       border-color: $support-03;
       color: $support-03;
-      &:hover{
+
+      &:hover {
         background: $support-03;
         color: $text-04;
       }
     }
 
-    &.btn-outline-info{
-      border-color: $support-04  ;
-      color: $support-04  ;
-      &:hover{
-        background: $support-04  ;
+    &.btn-outline-info {
+      border-color: $support-04;
+      color: $support-04;
+
+      &:hover {
+        background: $support-04;
         color: $text-04;
       }
     }
