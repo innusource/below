@@ -34,7 +34,7 @@
     .folding .folding-title {
       color: $text-02;
 
-      &:hover{
+      &:hover {
         color: $text-01;
       }
     }
@@ -89,7 +89,7 @@
 
 .nav-tabs {
   background: $ui-02;
-  padding: .5rem 1rem 0 .5rem;
+  padding: 0.5rem 1rem 0 0.5rem;
   flex-wrap: wrap;
   -ms-flex-wrap: wrap;
 
@@ -103,11 +103,11 @@
       border-bottom: 2px solid $ui-03;
 
       &.active {
-          border-color: $interactive-04;
+        border-color: $interactive-04;
       }
 
       &:not(.disabled):hover {
-          border-color: $interactive-03;
+        border-color: $interactive-03;
       }
     }
   }
@@ -124,7 +124,7 @@
     -webkit-transition: all 0.4s ease;
     transition: all 0.4s ease;
 
-    &:not(.disabled):hover{
+    &:not(.disabled):hover {
       color: $text-01;
       border-color: $interactive-03;
       cursor: pointer;
@@ -150,16 +150,5 @@
 
   .radio-tabs:checked + .tab-label + .tab-panel {
     display: block;
-  }
-}
-
-@include media-breakpoint-down(sm) {
-  .sidebar {
-    width: 100%;
-    height: 60px !important;
-  }
-
-  .nav-tabs ul a{
-    width: 5rem;
   }
 }
