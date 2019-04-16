@@ -14,23 +14,20 @@
   }
 
   .folding-title,
-  .folding-content{
+  .folding-content {
     padding: 1rem 0.8rem;
   }
 
-  .icon{
+  .icon {
     float: right;
   }
 
-  &[open] {
+  &[open] .folding-title:hover {
+    background: $ui-02;
+  }
 
-    .folding-title:hover {
-      background: $ui-02;
-    }
-
-    .icon {
-      transform: rotate(180deg);
-    }
+  &[open] .icon {
+    transform: rotate(180deg);
   }
 
   &.folding-borderless {
@@ -41,10 +38,8 @@
       background: transparent;
     }
 
-    &[open] {
-      .folding-title:hover {
-        background: transparent;
-      }
+    &[open] .folding-title:hover {
+      background: transparent;
     }
   }
 }
