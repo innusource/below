@@ -7,7 +7,7 @@
   input[type="text"],
   input[type="url"],
   textarea{
-      background-color: transparent;
+    background-color: transparent;
     border: 1px solid $ui-03;
     border-radius: 3px;
     box-shadow: none;
@@ -15,7 +15,7 @@
     color: $text-01;
     display: inline-block;
     margin: 0px;
-    min-width: 20em;
+    min-width: 15em;
     padding: 0.7rem;
     vertical-align: middle;
 
@@ -72,6 +72,10 @@
     color: #333;
     border-bottom: 1px solid #e5e5e5;
   }
+
+  &:required{
+    border-color: $suport-01;
+  }
 }
 
 .form-stacked input:not([type]),
@@ -98,7 +102,7 @@
 }
 
 .form-aligned .form-control-group {
-  margin-bottom: .5em;
+  margin-bottom: 1rem;
 }
 
 .form-aligned .form-control-group label {
@@ -106,7 +110,7 @@
   display: inline-block;
   vertical-align: middle;
   width: 10em;
-  margin: 0.7rem;
+  margin: 0rem 0.7rem;
 }
 
 .form .help-inline, .form-message-inline {
@@ -177,12 +181,12 @@
 }
 
 .check-container .checkmark:after {
- left: 5px;
- top: 1px;
+ left: 4.3px;
+ top: 0.5px;
  width: 5px;
- height: 10px;
- border: solid white;
- border-width: 0 3px 3px 0;
+ height: 11px;
+ border: solid $link-01;
+ border-width: 0 2px 2px 0;
  -webkit-transform: rotate(45deg);
  -ms-transform: rotate(45deg);
  transform: rotate(45deg);
