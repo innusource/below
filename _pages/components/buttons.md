@@ -12,7 +12,7 @@ toc: true
 <button class="btn btn-outline">Outline</button>
 <button class="btn btn-disabled">Disabled</button>
 <button class="btn btn-clear">Clear</button>
-<button class="btn btn-icon">Icon
+<button class="btn">Icon
   <svg class="icon icon-small">
     <use xlink:href="/assets/icons/feather.svg#aperture"/>
   </svg>
