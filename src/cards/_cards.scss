@@ -1,46 +1,56 @@
-.card{
+.card {
   width: 100%;
-  background: #fff;
+  background: $ui-02;
+  margin: 10px 0;
+  padding: 0.8rem;
   border: 1px solid $ui-03;
   border-radius: 6px;
   position: relative;
-  margin: 10px 0;
-  padding: 0.8rem;
-  .card-header, .card-body, .card-footer{
+
+  .card-header,
+  .card-body,
+  .card-footer {
     padding: 1.2rem 1.5rem;
   }
-  .card-header{
+
+  .card-header {
     display: flex;
     justify-content: space-between;
-    .card-title{
-      font-weight: 600;
-      font-size: 1rem;
-      position: relative;
+
+    .card-title {
       color: $text-01;
-      .icon{
+      font-size: 1rem;
+      font-weight: 600;
+      position: relative;
+
+      .icon {
+        color: $interactive-01;
+        margin-right: 8px;
         position: relative;
         top: 5px;
-        margin-right: 8px;
-        color: $interactive-01;
       }
-      .card-subtitle{
+
+      .card-subtitle {
         color: $text-02;
+        margin-left: 2px;
         font-size: 0.7rem;
         text-transform: uppercase;
         letter-spacing: 0.5px;
-        margin-left: 2px;
       }
     }
   }
-  .card-footer{
+
+  .card-footer {
     text-align: right;
   }
-  p{
+
+  p {
     color: $text-03;
-    line-height: 2;
     margin: 0;
+    line-height: 2;
   }
-  img{
+
+  img {
     max-width: 100%;
     border-radius: 6px;
   }
