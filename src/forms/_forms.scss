@@ -1,4 +1,4 @@
-.form{
+.form {
   input[type="email"],
   input[type="number"],
   input[type="password"],
@@ -10,29 +10,29 @@
   select {
     background-color: transparent;
     border: 0.1rem solid lighten($primary-color, 30%);
-    // #d1d1d1
-    border-radius: .4rem;
+    border-radius: 0.4rem;
     box-shadow: none;
     box-sizing: inherit;
     color: #3d3d3d;
     display: inline-block;
     margin: 2px;
     min-width: 7rem;
-    padding: .6rem 1.0rem;
-    padding: .5rem .6rem;
+    padding: 0.6rem 1rem;
+    padding: 0.5rem 0.6rem;
     vertical-align: middle;
   }
+
   fieldset {
     border: 0;
     margin: 0;
-    padding: .35em 0 .75em;
-
+    padding: 0.35em 0 0.75em;
   }
+
   legend {
     display: block;
     width: 100%;
-    padding: .3em 0;
-    margin-bottom: .3em;
+    padding: 0.3em 0;
+    margin-bottom: 0.3em;
     color: #333;
     border-bottom: 1px solid #e5e5e5;
   }
@@ -56,13 +56,13 @@
 .form-stacked input[type="text"],
 .form-stacked label,
 .form-stacked select,
-.form-stacked textarea{
+.form-stacked textarea {
   display: block;
-  margin: .25em 0;
+  margin: 0.25em 0;
 }
 
 .form-aligned .form-control-group {
-  margin-bottom: .5em;
+  margin-bottom: 0.5em;
 }
 
 .form-aligned .form-control-group label {
@@ -73,19 +73,20 @@
   margin: 0 1em 0 0;
 }
 
-.form .help-inline, .form-message-inline {
+.form .help-inline,
+.form-message-inline {
   display: inline-block;
-  padding-left: .3em;
+  padding-left: 0.3em;
   color: #666;
   vertical-align: middle;
-  font-size: .875em;
+  font-size: 0.875em;
 }
 
 .form-aligned .form-controls {
   margin: 1.5em 0 0 11em;
 }
 
-.form .form-input-check{
-  margin: .5em 0;
+.form .form-input-check {
+  margin: 0.5em 0;
   display: block;
 }

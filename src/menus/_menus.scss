@@ -4,6 +4,11 @@
   display: -ms-flexbox;
   display: flex;
 
+  .folding .folding-title,
+  .folding .folding-content {
+    padding: 0.5rem 0.8rem;
+  }
+
   ul {
     margin-bottom: 0;
     padding-left: 0;
@@ -20,8 +25,7 @@
       -webkit-transition: all 0.4s ease;
       transition: all 0.4s ease;
 
-      &.active,
-      &:not(.disabled):hover {
+      &.active {
         color: $text-01;
       }
 
@@ -37,11 +41,6 @@
       &:hover {
         color: $text-01;
       }
-    }
-
-    .folding .folding-title,
-    .folding .folding-content {
-      padding: 0.5rem 0.8rem;
     }
   }
 
@@ -67,26 +66,6 @@
   }
 }
 
-.sidebar {
-  background: $ui-01;
-  padding: 1rem;
-  border-right: 1px solid $ui-03;
-  flex-direction: column;
-
-  ul ul {
-    padding-left: 5px;
-
-    a {
-      font-size: 12.5px;
-      font-weight: normal;
-    }
-  }
-
-  .badge {
-    margin-bottom: 15px;
-  }
-}
-
 .nav-tabs {
   background: $ui-02;
   padding: 0.5rem 1rem 0 0.5rem;
@@ -104,10 +83,6 @@
 
       &.active {
         border-color: $interactive-04;
-      }
-
-      &:not(.disabled):hover {
-        border-color: $interactive-03;
       }
     }
   }
@@ -150,5 +125,25 @@
 
   .radio-tabs:checked + .tab-label + .tab-panel {
     display: block;
+  }
+}
+
+.sidebar {
+  background: $ui-01;
+  padding: 1rem;
+  border-right: 1px solid $ui-03;
+  flex-direction: column;
+
+  ul > ul {
+    padding-left: 5px;
+
+    a {
+      font-size: 12.5px;
+      font-weight: normal;
+    }
+  }
+
+  .badge {
+    margin-bottom: 15px;
   }
 }

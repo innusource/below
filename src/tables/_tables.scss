@@ -1,42 +1,44 @@
-.table{
+.table {
   width: 100%;
   border-collapse: collapse;
   margin-bottom: 0.5rem;
 
-  th, td{
+  th,
+  td {
     padding: 1em 2em;
     text-align: inherit;
   }
 
-  tr{
+  tr {
     border-bottom: 1px solid $ui-03;
   }
 
-  tbody tr:last-of-type{
+  tbody tr:last-of-type {
     border-bottom: none;
   }
 
-  &.table-bordered{
+  &.table-bordered {
     border: 1px solid $ui-03;
   }
 
-  &.table-bordered-full *{
+  &.table-bordered-full * {
     border: 1px solid $ui-03;
   }
 
-  &.table-borderless *{
+  &.table-borderless * {
     border: none;
   }
 
-  &.table-striped tbody tr:nth-of-type(2n+1){
+  &.table-striped tbody tr:nth-of-type(2n+1) {
     background: $ui-01;
   }
 
-  &.table-hover tbody tr:hover{
+  &.table-hover tbody tr:hover {
     background: $ui-01;
   }
 
-  &.table-small th, &.table-small td{
+  &.table-small th,
+  &.table-small td {
     padding: 0.5em 1em;
   }
 }

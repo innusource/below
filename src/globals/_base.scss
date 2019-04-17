@@ -19,7 +19,6 @@ html {
   box-sizing: inherit;
 }
 
-
 body {
   padding: 0;
   margin: 0;
@@ -35,12 +34,12 @@ hr {
   overflow: visible;
 }
 
-
 a {
   color: #2980b9;
   text-decoration: none;
-  &:hover{
-    color: darken( #2980b9, 5% );
+
+  &:hover {
+    color: darken(#2980b9, 5%);
   }
 }
 
@@ -55,7 +54,8 @@ strong {
   font-weight: bolder;
 }
 
-small, .small {
+small,
+.small {
   font-size: 65%;
   color: #666;
 }
@@ -123,7 +123,9 @@ button:-moz-focusring,
   outline: 1px dotted ButtonText;
 }
 
-dl, ol, ul{
+dl,
+ol,
+ul {
   margin-top: 0;
 }
 
@@ -180,7 +182,8 @@ details {
 summary {
   cursor: pointer;
   list-style: none;
-  &::-webkit-details-marker{
+
+  &::-webkit-details-marker {
     display: none;
   }
 }
@@ -193,6 +196,6 @@ template {
   display: none;
 }
 
-*:focus{
+*:focus {
   outline: 0;
 }
