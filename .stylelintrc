@@ -4,7 +4,7 @@
   ],
   "rules": {
     "at-rule-no-unknown": [true, {
-      "ignoreAtRules": ["function", "if", "each", "include", "mixin"]
+      "ignoreAtRules": ["function", "if", "else","warn", "each", "include", "mixin", "for", "return", "extend"]
     }]
   }
 }
