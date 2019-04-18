@@ -23,7 +23,8 @@
         @extend %grid-column;
       }
     }
-    .col#{$infix}{
+
+    .col#{$infix} {
       @extend %grid-column;
     }
 
@@ -40,7 +41,6 @@
           @include make-col($i, $columns);
         }
       }
-
 
       // `$columns - 1` because offsetting by the width of an entire row isn't possible
       @for $i from 0 through ($columns - 1) {

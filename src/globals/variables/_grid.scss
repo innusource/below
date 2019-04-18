@@ -32,4 +32,5 @@ $container-max-widths: (
 ) !default;
 
 @import "../mixins/functions";
+
 @include _assert-ascending($container-max-widths, "$container-max-widths");

@@ -48,17 +48,38 @@ $body-02: (
   line-height: 20px,
 );
 
-h1, h2, h3, h4, h5, h6,
-.h1, .h2, .h3, .h4, .h5, .h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.heading-01,
+.heading-02,
+.heading-03,
+.heading-04,
+.heading-05,
+.heading-06 {
   margin-bottom: $headings-margin-bottom;
   font-family: $headings-font-family;
   font-weight: $headings-font-weight;
   color: $headings-color;
 }
 
-h1, .heading-01 { @include properties($heading-01); }
-h2, .heading-02 { @include properties($heading-02); }
-h3, .heading-03 { @include properties($heading-03); }
-h4, .heading-04 { @include properties($heading-04); }
-h5, .heading-05 { @include properties($heading-05); }
-h6, .heading-06 { @include properties($heading-06); }
+h1,
+.heading-01 { @include properties($heading-01); }
+
+h2,
+.heading-02 { @include properties($heading-02); }
+
+h3,
+.heading-03 { @include properties($heading-03); }
+
+h4,
+.heading-04 { @include properties($heading-04); }
+
+h5,
+.heading-05 { @include properties($heading-05); }
+
+h6,
+.heading-06 { @include properties($heading-06); }

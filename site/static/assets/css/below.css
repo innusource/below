@@ -1,43 +1,59 @@
-h1, h2, h3, h4, h5, h6,
-.h1, .h2, .h3, .h4, .h5, .h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.heading-01,
+.heading-02,
+.heading-03,
+.heading-04,
+.heading-05,
+.heading-06 {
   margin-bottom: 1rem;
   font-family: "Inter UI", sans-serif;
   font-weight: 400;
   color: #171717;
 }
 
-h1, .heading-01 {
+h1,
+.heading-01 {
   font-size: 40px;
   letter-spacing: -0.022em;
   line-height: 56px;
 }
 
-h2, .heading-02 {
+h2,
+.heading-02 {
   font-size: 30px;
   letter-spacing: 0.001em;
   line-height: 42px;
 }
 
-h3, .heading-03 {
+h3,
+.heading-03 {
   font-size: 24px;
   letter-spacing: -0.019em;
   line-height: 34px;
 }
 
-h4, .heading-04 {
+h4,
+.heading-04 {
   font-size: 20px;
   letter-spacing: -0.017em;
   line-height: 28px;
 }
 
-h5, .heading-05 {
+h5,
+.heading-05 {
   font-size: 16px;
   font-weight: 600;
   letter-spacing: -0.011em;
   line-height: 22px;
 }
 
-h6, .heading-06 {
+h6,
+.heading-06 {
   font-size: 14px;
   font-weight: 600;
   letter-spacing: -0.006em;
@@ -245,46 +261,62 @@ template {
   outline: 0;
 }
 
-h1, h2, h3, h4, h5, h6,
-.h1, .h2, .h3, .h4, .h5, .h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.heading-01,
+.heading-02,
+.heading-03,
+.heading-04,
+.heading-05,
+.heading-06 {
   margin-bottom: 1rem;
   font-family: "Inter UI", sans-serif;
   font-weight: 400;
   color: #171717;
 }
 
-h1, .heading-01 {
+h1,
+.heading-01 {
   font-size: 40px;
   letter-spacing: -0.022em;
   line-height: 56px;
 }
 
-h2, .heading-02 {
+h2,
+.heading-02 {
   font-size: 30px;
   letter-spacing: 0.001em;
   line-height: 42px;
 }
 
-h3, .heading-03 {
+h3,
+.heading-03 {
   font-size: 24px;
   letter-spacing: -0.019em;
   line-height: 34px;
 }
 
-h4, .heading-04 {
+h4,
+.heading-04 {
   font-size: 20px;
   letter-spacing: -0.017em;
   line-height: 28px;
 }
 
-h5, .heading-05 {
+h5,
+.heading-05 {
   font-size: 16px;
   font-weight: 600;
   letter-spacing: -0.011em;
   line-height: 22px;
 }
 
-h6, .heading-06 {
+h6,
+.heading-06 {
   font-size: 14px;
   font-weight: 600;
   letter-spacing: -0.006em;
@@ -1041,7 +1073,7 @@ template {
   width: 2.5rem;
   height: 2.5rem;
   background: #0062ff;
-  color: #ffffff;
+  color: #fff;
   display: inline-block;
   border-radius: 50%;
   font-size: 1.2rem;
@@ -1078,13 +1110,13 @@ template {
 }
 
 .avatar-group .avatar {
-  box-shadow: 0 0 0 3px #ffffff;
+  box-shadow: 0 0 0 3px #fff;
   margin-left: -10px;
 }
 
 .btn {
   background: #0062ff;
-  color: #ffffff;
+  color: #fff;
   border: 1px solid #0062ff;
   border-radius: 3px;
   display: inline-block;
@@ -1110,7 +1142,7 @@ template {
 
 .btn:hover {
   background: #0353e9;
-  color: #ffffff;
+  color: #fff;
 }
 
 .btn:focus {
@@ -1191,7 +1223,7 @@ template {
 
 .btn.btn-outline:hover {
   background: #0062ff;
-  color: #ffffff;
+  color: #fff;
 }
 
 .btn.btn-outline.btn-outline-secondary {
@@ -1201,7 +1233,7 @@ template {
 
 .btn.btn-outline.btn-outline-secondary:hover {
   background: #171717;
-  color: #ffffff;
+  color: #fff;
 }
 
 .btn.btn-outline.btn-outline-error {
@@ -1211,7 +1243,7 @@ template {
 
 .btn.btn-outline.btn-outline-error:hover {
   background: #da1e28;
-  color: #ffffff;
+  color: #fff;
 }
 
 .btn.btn-outline.btn-outline-succes {
@@ -1221,7 +1253,7 @@ template {
 
 .btn.btn-outline.btn-outline-succes:hover {
   background: #24a148;
-  color: #ffffff;
+  color: #fff;
 }
 
 .btn.btn-outline.btn-outline-warning {
@@ -1231,7 +1263,7 @@ template {
 
 .btn.btn-outline.btn-outline-warning:hover {
   background: #fdd13a;
-  color: #ffffff;
+  color: #fff;
 }
 
 .btn.btn-outline.btn-outline-info {
@@ -1241,7 +1273,7 @@ template {
 
 .btn.btn-outline.btn-outline-info:hover {
   background: #054ada;
-  color: #ffffff;
+  color: #fff;
 }
 
 pre {
@@ -1263,7 +1295,7 @@ pre {
 
 kbd {
   background: #171717;
-  color: #ffffff;
+  color: #fff;
   padding: 1px 4px;
   border: none;
   border-radius: 3px;
@@ -1272,7 +1304,7 @@ kbd {
 
 .card {
   width: 100%;
-  background: #ffffff;
+  background: #fff;
   margin: 10px 0;
   padding: 0.8rem;
   border: 1px solid #dcdcdc;
@@ -1335,7 +1367,7 @@ kbd {
 
 .dropdown .dropdown-menu {
   width: 170px;
-  background: #ffffff;
+  background: #fff;
   margin: 0;
   margin-top: 3px;
   padding: 0;
@@ -1419,7 +1451,7 @@ kbd {
 }
 
 .folding .folding-title {
-  background: #ffffff;
+  background: #fff;
   font-size: 14px;
   font-weight: 600;
 }
@@ -1429,7 +1461,7 @@ kbd {
 }
 
 .folding[open] .folding-title:hover {
-  background: #ffffff;
+  background: #fff;
 }
 
 .folding.folding-borderless {
@@ -1734,7 +1766,7 @@ kbd {
 }
 
 .nav-tabs {
-  background: #ffffff;
+  background: #fff;
   padding: 0.5rem 1rem 0 0.5rem;
   flex-wrap: wrap;
   -ms-flex-wrap: wrap;

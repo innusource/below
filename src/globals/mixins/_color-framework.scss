@@ -1,5 +1,5 @@
 @mixin make-colors {
-  $black-100: #000000 !default !global;
+  $black-100: #000 !default !global;
   $blue-10: #edf4ff !default !global;
   $blue-20: #c9deff !default !global;
   $blue-30: #97c1ff !default !global;
@@ -101,6 +101,6 @@
   $warm-gray-80: #403c3c !default !global;
   $warm-gray-90: #2b2828 !default !global;
   $warm-gray-100: #1a1717 !default !global;
-  $white-0: #ffffff !default !global;
+  $white-0: #fff !default !global;
   $yellow-20: #fdd13a !default !global;
 }
