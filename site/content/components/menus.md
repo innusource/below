@@ -12,7 +12,7 @@ toc: true
 {{<example>}}
 <nav class="navbar">
   <ul>
-    <li><a href="#" class="badge">Below</a></li>
+    <li><a href="#" class="brand">Below</a></li>
     <li><form class="form"><input type="text" placeholder="Search..."></form></li>
   </ul>
   <ul>
@@ -52,7 +52,7 @@ toc: true
 <div class="row">
   <div class="col-3 sidebar">
     <ul>
-      <li><a href="#" class="badge">Below</a></li>
+      <li><a href="#" class="brand">Below</a></li>
       <li><a href="#">Pages</a></li>
       <li>
         <details class="folding folding-borderless">
@@ -84,7 +84,7 @@ toc: true
 {{<example>}}
 <nav class="navbar">
   <ul>
-    <li><a href="#" class="badge">Below</a></li>
+    <li><a href="#" class="brand">Below</a></li>
     <li><form class="form"><input type="text" placeholder="Search..."></form></li>
   </ul>
   <ul>
