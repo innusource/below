@@ -3,7 +3,7 @@
 {{- $input := .Inner -}}
 
 {{- if eq $show_preview true -}}
-<div{{ with .Get "id" }} id="{{ . }}"{{ end }} class="example{{ with .Get "class" }} {{ . }}{{ end }}">
+<div{{ with .Get "id" }} id="{{ . }}"{{ end }} class="example card{{ with .Get "class" }} {{ . }}{{ end }}">
   {{- $input -}}
 </div>
 {{- end -}}
