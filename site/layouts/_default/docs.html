@@ -5,7 +5,7 @@
 </head>
 <body class="docs">
   {{ partial "navbar" . }}
-  <div id="{{ .Title | lower | replace ' ' '-' }}" class="container-fluid">
+  <div id="{{ .Title | lower }}" class="container-fluid">
     <div class="row">
       {{ partial "sidebar" . }}
       {{ if (eq .Page.Params.toc true) }}
@@ -13,7 +13,7 @@
           {{ .TableOfContents }}
         </div>
       {{ end }}
-      <div class="col-12 col-md-10 content">
+      <div class="col-12 col-md-10 col-xl-8 content">
         <h1>{{ .Title }}</h1>
         {{ .Content }}
       </div>
