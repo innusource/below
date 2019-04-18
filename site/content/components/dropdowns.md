@@ -1,7 +1,9 @@
 ---
 layout: docs
 title: Dropdowns
-parent: Components
+menu:
+  main:
+    parent: Components
 toc: true
 ---
 

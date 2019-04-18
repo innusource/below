@@ -1,7 +1,9 @@
 ---
 layout: docs
 title: Buttons
-parent: Components
+menu:
+  main:
+    parent: Components
 toc: true
 ---
 

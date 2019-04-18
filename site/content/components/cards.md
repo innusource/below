@@ -1,7 +1,9 @@
 ---
 layout: docs
 title: Cards
-parent: Components
+menu:
+  main:
+    parent: Components
 toc: true
 ---
 

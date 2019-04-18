@@ -1,9 +1,10 @@
 ---
 layout: docs
 title: Typography
-parent: Guidelines
+menu:
+  main:
+    parent: Guidelines
 toc: true
-priority: 1
 ---
 
 ## Typeface

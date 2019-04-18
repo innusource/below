@@ -1,7 +1,9 @@
 ---
 layout: docs
 title: Tables
-parent: Content
+menu:
+  main:
+    parent: Content
 toc: true
 ---
 

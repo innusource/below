@@ -1,7 +1,9 @@
 ---
 layout: docs
 title: Tags
-group: content
+menu:
+  main:
+    parent: Content
 toc: true
 ---
 

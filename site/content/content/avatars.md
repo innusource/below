@@ -1,7 +1,9 @@
 ---
 layout: docs
 title: Avatars
-parent: Content
+menu:
+  main:
+    parent: Content
 toc: true
 ---
 

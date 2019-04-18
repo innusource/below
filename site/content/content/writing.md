@@ -1,7 +1,9 @@
 ---
 layout: docs
 title: Writing
-parent: Content
+menu:
+  main:
+    parent: Content
 toc: true
 ---
 

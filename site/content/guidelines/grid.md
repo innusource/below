@@ -1,9 +1,10 @@
 ---
 layout: docs
 title: Grid
-parent: Guidelines
 toc: true
-priority: 3
+menu:
+  main:
+    parent: Guidelines
 ---
 
 ## Grid options
