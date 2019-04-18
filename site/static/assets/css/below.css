@@ -98,7 +98,8 @@ strong {
   font-weight: bolder;
 }
 
-small, .small {
+small,
+.small {
   font-size: 65%;
   color: #666;
 }
@@ -166,7 +167,9 @@ button:-moz-focusring,
   outline: 1px dotted ButtonText;
 }
 
-dl, ol, ul {
+dl,
+ol,
+ul {
   margin-top: 0;
 }
 
@@ -342,7 +345,8 @@ strong {
   font-weight: bolder;
 }
 
-small, .small {
+small,
+.small {
   font-size: 65%;
   color: #666;
 }
@@ -410,7 +414,9 @@ button:-moz-focusring,
   outline: 1px dotted ButtonText;
 }
 
-dl, ol, ul {
+dl,
+ol,
+ul {
   margin-top: 0;
 }
 
@@ -1098,11 +1104,8 @@ template {
 .btn.btn-clear {
   background: transparent;
   color: #171717;
-  border-bottom: 1px solid #0062ff;
-  border-top: 0px;
-  border-left: 0px;
-  border-right: 0px;
-  border-radius: 0px;
+  border: none;
+  border-radius: 3px;
 }
 
 .btn:hover {
@@ -1179,14 +1182,6 @@ template {
   border-color: #1861fa;
 }
 
-.btn.btn-succes, .btn.btn-error, .btn.btn-warning, .btn.btn-info {
-  color: #ffffff;
-}
-
-.btn.btn-succes:hover, .btn.btn-error:hover, .btn.btn-warning:hover, .btn.btn-info:hover {
-  color: #ffffff;
-}
-
 .btn.btn-outline {
   background: transparent;
   border: 1px solid #0062ff;
@@ -1247,14 +1242,6 @@ template {
 .btn.btn-outline.btn-outline-info:hover {
   background: #054ada;
   color: #ffffff;
-}
-
-.btn.btn-icon.icon-btn {
-  margin: 0 5px;
-}
-
-.btn span {
-  margin: 0 4px;
 }
 
 pre {
@@ -1426,6 +1413,11 @@ kbd {
   box-shadow: 3px 0 13px rgba(0, 0, 0, 0.02);
 }
 
+.folding .folding-title,
+.folding .folding-content {
+  padding: 1rem 0.8rem;
+}
+
 .folding .folding-title {
   background: #ffffff;
   font-size: 14px;
@@ -1436,21 +1428,8 @@ kbd {
   background: #f3f3f3;
 }
 
-.folding .folding-title,
-.folding .folding-content {
-  padding: 1rem 0.8rem;
-}
-
-.folding .icon {
-  float: right;
-}
-
 .folding[open] .folding-title:hover {
   background: #ffffff;
-}
-
-.folding[open] .icon {
-  transform: rotate(180deg);
 }
 
 .folding.folding-borderless {
@@ -1458,12 +1437,20 @@ kbd {
   box-shadow: none;
 }
 
-.folding.folding-borderless .folding-title {
+.folding.folding-borderless :not([open]) .folding-title {
   background: transparent;
 }
 
 .folding.folding-borderless[open] .folding-title:hover {
   background: transparent;
+}
+
+.folding .icon {
+  float: right;
+}
+
+.folding[open] .icon {
+  transform: rotate(180deg);
 }
 
 .folding-group .folding {
@@ -1491,29 +1478,29 @@ kbd {
 .form select {
   background-color: transparent;
   border: 0.1rem solid #9bb7ff;
-  border-radius: .4rem;
+  border-radius: 0.4rem;
   box-shadow: none;
   box-sizing: inherit;
   color: #3d3d3d;
   display: inline-block;
   margin: 2px;
   min-width: 7rem;
-  padding: .6rem 1.0rem;
-  padding: .5rem .6rem;
+  padding: 0.6rem 1rem;
+  padding: 0.5rem 0.6rem;
   vertical-align: middle;
 }
 
 .form fieldset {
   border: 0;
   margin: 0;
-  padding: .35em 0 .75em;
+  padding: 0.35em 0 0.75em;
 }
 
 .form legend {
   display: block;
   width: 100%;
-  padding: .3em 0;
-  margin-bottom: .3em;
+  padding: 0.3em 0;
+  margin-bottom: 0.3em;
   color: #333;
   border-bottom: 1px solid #e5e5e5;
 }
@@ -1538,11 +1525,11 @@ kbd {
 .form-stacked select,
 .form-stacked textarea {
   display: block;
-  margin: .25em 0;
+  margin: 0.25em 0;
 }
 
 .form-aligned .form-control-group {
-  margin-bottom: .5em;
+  margin-bottom: 0.5em;
 }
 
 .form-aligned .form-control-group label {
@@ -1553,12 +1540,13 @@ kbd {
   margin: 0 1em 0 0;
 }
 
-.form .help-inline, .form-message-inline {
+.form .help-inline,
+.form-message-inline {
   display: inline-block;
-  padding-left: .3em;
+  padding-left: 0.3em;
   color: #666;
   vertical-align: middle;
-  font-size: .875em;
+  font-size: 0.875em;
 }
 
 .form-aligned .form-controls {
@@ -1566,7 +1554,7 @@ kbd {
 }
 
 .form .form-input-check {
-  margin: .5em 0;
+  margin: 0.5em 0;
   display: block;
 }
 
@@ -1666,6 +1654,15 @@ kbd {
   display: flex;
 }
 
+.navbar .folding .folding-title,
+.navbar .folding .folding-content,
+.sidebar .folding .folding-title,
+.sidebar .folding .folding-content,
+.nav-tabs .folding .folding-title,
+.nav-tabs .folding .folding-content {
+  padding: 0.5rem 0.8rem;
+}
+
 .navbar ul,
 .sidebar ul,
 .nav-tabs ul {
@@ -1688,11 +1685,9 @@ kbd {
   transition: all 0.4s ease;
 }
 
-.navbar ul a.active, .navbar ul a:not(.disabled):hover,
+.navbar ul a.active,
 .sidebar ul a.active,
-.sidebar ul a:not(.disabled):hover,
-.nav-tabs ul a.active,
-.nav-tabs ul a:not(.disabled):hover {
+.nav-tabs ul a.active {
   color: #171717;
 }
 
@@ -1713,15 +1708,6 @@ kbd {
 .sidebar ul .folding .folding-title:hover,
 .nav-tabs ul .folding .folding-title:hover {
   color: #171717;
-}
-
-.navbar ul .folding .folding-title,
-.navbar ul .folding .folding-content,
-.sidebar ul .folding .folding-title,
-.sidebar ul .folding .folding-content,
-.nav-tabs ul .folding .folding-title,
-.nav-tabs ul .folding .folding-content {
-  padding: 0.5rem 0.8rem;
 }
 
 .navbar .badge,
@@ -1747,29 +1733,9 @@ kbd {
   flex-wrap: wrap;
 }
 
-.sidebar {
-  background: #f3f3f3;
-  padding: 1rem;
-  border-right: 1px solid #dcdcdc;
-  flex-direction: column;
-}
-
-.sidebar ul ul {
-  padding-left: 5px;
-}
-
-.sidebar ul ul a {
-  font-size: 12.5px;
-  font-weight: normal;
-}
-
-.sidebar .badge {
-  margin-bottom: 15px;
-}
-
 .nav-tabs {
   background: #ffffff;
-  padding: .5rem 1rem 0 .5rem;
+  padding: 0.5rem 1rem 0 0.5rem;
   flex-wrap: wrap;
   -ms-flex-wrap: wrap;
 }
@@ -1786,10 +1752,6 @@ kbd {
 }
 
 .nav-tabs ul a.active {
-  border-color: #0062ff;
-}
-
-.nav-tabs ul a:not(.disabled):hover {
   border-color: #0062ff;
 }
 
@@ -1833,14 +1795,24 @@ kbd {
   display: block;
 }
 
-@media (max-width: 767.98px) {
-  .sidebar {
-    width: 100%;
-    height: 60px !important;
-  }
-  .nav-tabs ul a {
-    width: 5rem;
-  }
+.sidebar {
+  background: #f3f3f3;
+  padding: 1rem;
+  border-right: 1px solid #dcdcdc;
+  flex-direction: column;
+}
+
+.sidebar ul > ul {
+  padding-left: 5px;
+}
+
+.sidebar ul > ul a {
+  font-size: 12.5px;
+  font-weight: normal;
+}
+
+.sidebar .badge {
+  margin-bottom: 15px;
 }
 
 .table {
@@ -1849,7 +1821,8 @@ kbd {
   margin-bottom: 0.5rem;
 }
 
-.table th, .table td {
+.table th,
+.table td {
   padding: 1em 2em;
   text-align: inherit;
 }
@@ -1882,7 +1855,8 @@ kbd {
   background: #f3f3f3;
 }
 
-.table.table-small th, .table.table-small td {
+.table.table-small th,
+.table.table-small td {
   padding: 0.5em 1em;
 }
 
