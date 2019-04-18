@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    {{ partial "head" . }}
+  </head>
+  <body class="docs">
+    {{ partial "navbar" . }}
+    <div id="{{ .Title | lower | replace ' ' '-' }}" class="container-fluid">
+      <div class="row">
+        {{ partial "sidebar" . }}
+        <div class="col-12 col-md-10 content">
+          <h1 class="logo logo-big">below</h1>
+          <h6>CSS Design System for IU</h6>
+          <a class="btn" href="/getting-started">Getting Started</a>
+          {{ .Content }}
+        </div>
+      </div>
+    </div>
+    {{ partial "footer" . }}
+  </body>
+</html>
