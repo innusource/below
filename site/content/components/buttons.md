@@ -13,8 +13,10 @@ toc: true
 <button class="btn">Default</button>
 <button class="btn btn-outline">Outline</button>
 <button class="btn btn-disabled">Disabled</button>
+<button class="btn">
+  Icon Button <svg class="icon"><use xlink:href="/assets/icons/feather.svg#arrow-down-circle"/></svg>
+</button>
 <button class="btn btn-clear">Clear</button>
-<button class="btn btn-icon">Icon<span class="icon-btn">I. here</span></button>
 {{</example>}}
 
 ### Sizes
@@ -27,12 +29,20 @@ toc: true
 
 ### Colors
 
-For all color cases (except default): the simple button take class color for text and transparent for background.
 {{<example>}}
-<button class="btn">Primary</button>
 <button class="btn btn-secondary">Secondary</button>
-<button class="btn btn-error">Error</button>
-<button class="btn btn-succes">Succes</button>
+<button class="btn btn-success">Success</button>
 <button class="btn btn-warning">Warning</button>
-<button class="btn btn-info">Info/Help</button>
+<button class="btn btn-error">Error</button>
+<button class="btn btn-info">Info</button>
+{{</example>}}
+
+The colors buttons can to be outline buttons too.
+
+{{<example>}}
+<button class="btn btn-outline btn-secondary">Secondary</button>
+<button class="btn btn-outline btn-success">Success</button>
+<button class="btn btn-outline btn-warning">Warning</button>
+<button class="btn btn-outline btn-error">Error</button>
+<button class="btn btn-outline btn-info">Info</button>
 {{</example>}}

@@ -4,11 +4,11 @@
   border: 1px solid $interactive-01;
   border-radius: 3px;
   display: inline-block;
-  padding: 0.5rem 1.2rem;
+  padding: 0.5rem 1.5rem;
   text-decoration: none;
   line-height: 1.5;
   text-align: center;
-  font-size: 0.7rem;
+  font-size: 0.75rem;
   font-weight: 600;
   cursor: pointer;
   -moz-transition: all 0.4s ease;
@@ -16,11 +16,8 @@
   -webkit-transition: all 0.4s ease;
   transition: all 0.4s ease;
 
-  &.btn-clear {
-    background: transparent;
-    color: $interactive-02;
-    border: none;
-    border-radius: 3px;
+  .icon {
+    margin-left: 5px;
   }
 
   &:hover {
@@ -30,6 +27,18 @@
 
   &:focus {
     outline: 0;
+  }
+
+  &.btn-clear {
+    background: transparent;
+    color: $text-01;
+    border: none;
+    border-radius: 3px;
+
+    &:hover {
+      background: transparent;
+      color: $text-02;
+    }
   }
 
   &.btn-disabled {
@@ -51,19 +60,39 @@
     background: $interactive-02;
     border-color: $interactive-02;
 
+    &.btn-outline {
+      color: $interactive-02;
+      border-color: $interactive-02;
+
+      &:hover {
+        background: $interactive-02;
+        border-color: $interactive-02;
+      }
+    }
+
     &:hover {
       background: $hover-secondary;
       border-color: $hover-secondary;
     }
   }
 
-  &.btn-succes {
+  &.btn-success {
     background: $support-02;
     border-color: $support-02;
 
+    &.btn-outline {
+      color: $support-02;
+      border-color: $support-02;
+
+      &:hover {
+        background: $support-02;
+        border-color: $support-02;
+      }
+    }
+
     &:hover {
-      background: lighten($support-02, 10%);
-      border-color: lighten($support-02, 10%);
+      background: lighten($support-02, 5%);
+      border-color: lighten($support-02, 5%);
     }
   }
 
@@ -71,9 +100,19 @@
     background: $support-01;
     border-color: $support-01;
 
+    &.btn-outline {
+      color: $support-01;
+      border-color: $support-01;
+
+      &:hover {
+        background: $support-01;
+        border-color: $support-01;
+      }
+    }
+
     &:hover {
-      background: lighten($support-01, 10%);
-      border-color: lighten($support-01, 10%);
+      background: lighten($support-01, 5%);
+      border-color: lighten($support-01, 5%);
     }
   }
 
@@ -81,9 +120,19 @@
     background: $support-03;
     border-color: $support-03;
 
+    &.btn-outline {
+      color: $support-03;
+      border-color: $support-03;
+
+      &:hover {
+        background: $support-03;
+        border-color: $support-03;
+      }
+    }
+
     &:hover {
-      background: darken($support-03, 10%);
-      border-color: darken($support-03, 10%);
+      background: darken($support-03, 5%);
+      border-color: darken($support-03, 5%);
     }
   }
 
@@ -91,9 +140,19 @@
     background: $support-04;
     border-color: $support-04;
 
+    &.btn-outline {
+      color: $support-04;
+      border-color: $support-04;
+
+      &:hover {
+        background: $support-04;
+        border-color: $support-04;
+      }
+    }
+
     &:hover {
-      background: lighten($support-04, 10%);
-      border-color: lighten($support-04, 10%);
+      background: lighten($support-04, 5%);
+      border-color: lighten($support-04, 5%);
     }
   }
 
@@ -128,7 +187,7 @@
       }
     }
 
-    &.btn-outline-succes {
+    &.btn-outline-success {
       border-color: $support-02;
       color: $support-02;
 
