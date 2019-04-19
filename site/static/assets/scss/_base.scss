@@ -10,7 +10,7 @@ html {
 }
 
 .navbar-docs {
-  .badge {
+  .brand {
     letter-spacing: -0.5px;
     padding: 0 0.8rem;
   }
@@ -19,8 +19,10 @@ html {
 .content {
   order: 1;
   padding: 0 30px;
+  background: #f3f3f3;
 
   & > h1:first-of-type {
+    background: #fff;
     margin: 0 -30px;
     margin-bottom: 30px;
     padding: 30px;

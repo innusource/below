@@ -3,13 +3,12 @@
 {{- $input := .Inner -}}
 
 {{- if eq $show_preview true -}}
-<div{{ with .Get "id" }} id="{{ . }}"{{ end }} class="example{{ with .Get "class" }} {{ . }}{{ end }}">
+<div{{ with .Get "id" }} id="{{ . }}"{{ end }} class="example card{{ with .Get "class" }} {{ . }}{{ end }}">
   {{- $input -}}
+  {{- if eq $show_markup true -}}
+    {{- $.Scratch.Set "highlight_content" $input -}}
+
+    {{- highlight (trim ($.Scratch.Get "highlight_content") "\n") "html" "" -}}
+  {{- end -}}
 </div>
-{{- end -}}
-
-{{- if eq $show_markup true -}}
-  {{- $.Scratch.Set "highlight_content" $input -}}
-
-  {{- highlight (trim ($.Scratch.Get "highlight_content") "\n") "html" "" -}}
 {{- end -}}
