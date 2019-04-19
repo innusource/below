@@ -17,7 +17,7 @@
   }
 }
 
-.list.list-inline li {
+.list.list-inline .list-item {
   display: inline-block;
   margin-right: 1rem;
 }
@@ -57,6 +57,7 @@
 
         &::before {
           content: counter(sub-list-item-counter, lower-alpha) ".";
+          margin-right: 0.5rem;
         }
       }
     }
