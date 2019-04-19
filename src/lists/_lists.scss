@@ -1,3 +1,64 @@
 .list {
+  padding-left: 0;
+}
+
+.sub-list {
+  margin: 0.15rem 0;
+  padding-left: 2rem;
+}
+
+.list,
+.sub-list {
+  list-style: none;
+
+  .list-item,
+  .sublist-item {
+    line-height: 1.5;
+  }
+}
+
+.list.list-inline li {
   display: inline-block;
+  margin-right: 1rem;
+}
+
+.list.list-unordered .list-item {
+  &::before {
+    content: '\25CB';
+    font-size: 0.5em;
+    vertical-align: middle;
+    margin-right: 0.5rem;
+  }
+
+  .sub-list .sublist-item::before {
+    content: '\25A1';
+    font-size: 0.7em;
+    vertical-align: middle;
+    margin-right: 0.5rem;
+  }
+}
+
+.list.list-ordered {
+  counter-reset: list-item-counter;
+
+  .list-item {
+    counter-increment: list-item-counter;
+
+    &::before {
+      content: counter(list-item-counter) ".";
+      margin-right: 0.5rem;
+    }
+
+    .sub-list {
+      counter-reset: sub-list-item-counter;
+
+      .sublist-item {
+        counter-increment: sub-list-item-counter;
+
+        &::before {
+          content: counter(sub-list-item-counter, lower-alpha) ".";
+        }
+      }
+    }
+  }
 }
