@@ -53,12 +53,24 @@ toc: true
   <div class="col-3 sidebar">
     <ul>
       <li><a href="#" class="brand">Below</a></li>
-      <li><a href="#">Pages</a></li>
+      <li>
+      <a href="#">
+        <svg class="icon">
+          <use xlink:href="/assets/icons/feather.svg#list"/>
+        </svg>
+        Pages
+        </a>
+      </li>
       <li>
         <details class="folding folding-borderless">
           <summary class="folding-title">
+            <svg class="icon">
+              <use xlink:href="/assets/icons/feather.svg#layers"/>
+            </svg>
             Posts
-            <svg class="icon"><use xlink:href="/assets/icons/feather.svg#chevron-down"/></svg>
+            <svg class="icon icon-right icon-rotate">
+              <use xlink:href="/assets/icons/feather.svg#chevron-down"/>
+            </svg>
           </summary>
           <div class="folding-content">
             <ul>
@@ -68,9 +80,30 @@ toc: true
           </div>
         </details>
       </li>
-      <li><a href="#">Comments</a></li>
-      <li><a href="#">Appearance</a></li>
-      <a href="#" class="disabled">Disabled</a>
+      <li>
+        <a href="#">
+          <svg class="icon">
+            <use xlink:href="/assets/icons/feather.svg#message-circle"/>
+          </svg>
+          Comments
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <svg class="icon">
+            <use xlink:href="/assets/icons/feather.svg#settings"/>
+          </svg>
+          Appearance
+        </a>
+      </li>
+      <li>
+        <a href="#" class="disabled">
+          <svg class="icon">
+            <use xlink:href="/assets/icons/feather.svg#clock"/>
+          </svg>
+          Disabled
+        </a>
+      </li>
     </ul>
   </div>
   <div class="col-9">
@@ -120,12 +153,22 @@ toc: true
   <div class="row">
     <div class="col-3 sidebar">
       <ul>
-        <li><a href="#">Pages</a></li>
+        <li>
+        <a href="#">
+          <svg class="icon">
+            <use xlink:href="/assets/icons/feather.svg#list"/>
+          </svg>
+          Pages
+          </a>
+        </li>
         <li>
           <details class="folding folding-borderless">
             <summary class="folding-title">
-              Posts
               <svg class="icon">
+                <use xlink:href="/assets/icons/feather.svg#layers"/>
+              </svg>
+              Posts
+              <svg class="icon icon-right icon-rotate">
                 <use xlink:href="/assets/icons/feather.svg#chevron-down"/>
               </svg>
             </summary>
@@ -137,9 +180,30 @@ toc: true
             </div>
           </details>
         </li>
-        <li><a href="#">Comments</a></li>
-        <li><a href="#">Appearance</a></li>
-        <li><a href="#" class="disabled">Disabled</a></li>
+        <li>
+          <a href="#">
+            <svg class="icon">
+              <use xlink:href="/assets/icons/feather.svg#message-circle"/>
+            </svg>
+            Comments
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <svg class="icon">
+              <use xlink:href="/assets/icons/feather.svg#settings"/>
+            </svg>
+            Appearance
+          </a>
+        </li>
+        <li>
+          <a href="#" class="disabled">
+            <svg class="icon">
+              <use xlink:href="/assets/icons/feather.svg#clock"/>
+            </svg>
+            Disabled
+          </a>
+        </li>
       </ul>
     </div>
     <div class="col-9">
