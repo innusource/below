@@ -1,0 +1,335 @@
+- var: "$focus"
+  role:
+  - Focus border
+  - Focus underline
+  values:
+    lightest:
+      name: Blue 60
+      hex: "#0062ff"
+    light:
+      name: Blue 60
+      hex: "#0062ff"
+    dark:
+      name: white
+      hex: "#ffffff"
+    darkest:
+      name: white
+      hex: "#ffffff"
+- var: "$hover-primary"
+  role:
+  - "$interactive-01 hover"
+  values:
+    lightest:
+      name: Blue 60 hover
+      hex: "#0353e9"
+    light:
+      name: Blue 60 hover
+      hex: "#0353e9"
+    dark:
+      name: Blue 60 hover
+      hex: "#0353e9"
+    darkest:
+      name: Blue 60 hover
+      hex: "#0353e9"
+- var: "$hover-primary-text"
+  role:
+  - "$interactive-01 text hover"
+  values:
+    lightest:
+      name: Blue 70
+      hex: "#054ada"
+    light:
+      name: Blue 70
+      hex: "#054ada"
+    dark:
+      name: Blue 70
+      hex: "#054ada"
+    darkest:
+      name: Blue 70
+      hex: "#054ada"
+- var: "$hover-secondary"
+  role:
+  - "$interactive-02 hover"
+  values:
+    lightest:
+      name: Gray 80 hover
+      hex: "#4c4c4c"
+    light:
+      name: Gray 80 hover
+      hex: "#4c4c4c"
+    dark:
+      name: Gray 60 hover
+      hex: "#606060"
+    darkest:
+      name: Gray 60 hover
+      hex: "#606060"
+- var: "$hover-tertiary"
+  role:
+  - "$interactive-03 hover"
+  - "$inverse-01 hover"
+  values:
+    lightest:
+      name: Blue 60 hover
+      hex: "#0353e9"
+    light:
+      name: Blue 60 hover
+      hex: "#0353e9"
+    dark:
+      name: Gray 10
+      hex: "#f3f3f3"
+    darkest:
+      name: Gray 10
+      hex: "#f3f3f3"
+- var: "$hover-ui"
+  role:
+  - "$ui-01 hover"
+  - "$ui-02 hover"
+  - Transparent background hover
+  values:
+    lightest:
+      name: Gray 10 hover
+      hex: "#e5e5e5"
+    light:
+      name: Gray 10 hover
+      hex: "#e5e5e5"
+    dark:
+      name: Gray 80 hover
+      hex: "#4c4c4c"
+    darkest:
+      name: Gray 90 hover
+      hex: "#353535"
+- var: "$hover-selected-ui"
+  role:
+  - data table selected row hover
+  values:
+    lightest:
+      name: Gray 20 Hover
+      hex: "#cacaca"
+    light:
+      name: Gray 20 Hover
+      hex: "#cacaca"
+    dark:
+      name: Gray 70 Hover
+      hex: "#656565"
+    darkest:
+      name: Gray 80 Hover
+      hex: "#4c4c4c"
+- var: "$hover-danger"
+  role:
+  - Danger hover
+  - "$support-01 hover"
+  values:
+    lightest:
+      name: Red 60 hover
+      hex: "#ba1b23"
+    light:
+      name: Red 60 hover
+      hex: "#ba1b23"
+    dark:
+      name: Red 60 hover
+      hex: "#ba1b23"
+    darkest:
+      name: Red 60 hover
+      hex: "#ba1b23"
+- var: "$hover-row"
+  role:
+  - Row hover
+  values:
+    lightest:
+      name: Gray 10 hover
+      hex: "#e5e5e5"
+    light:
+      name: Gray 10 hover
+      hex: "#e5e5e5"
+    dark:
+      name: Gray 80 hover
+      hex: "#4c4c4c"
+    darkest:
+      name: Gray 90 hover
+      hex: "#353535"
+- var: "$active-primary"
+  role:
+  - "$interactive-01 active"
+  values:
+    lightest:
+      name: Blue 80
+      hex: "#0530ad"
+    light:
+      name: Blue 80
+      hex: "#0530ad"
+    dark:
+      name: Blue 80
+      hex: "#0530ad"
+    darkest:
+      name: Blue 80
+      hex: "#0530ad"
+- var: "$active-secondary"
+  role:
+  - "$interactive-02 active"
+  - "$inverse-01 active"
+  values:
+    lightest:
+      name: Gray 60
+      hex: "#6f6f6f"
+    light:
+      name: Gray 60
+      hex: "#6f6f6f"
+    dark:
+      name: Gray 80
+      hex: "#3d3d3d"
+    darkest:
+      name: Gray 80
+      hex: "#3d3d3d"
+- var: "$active-tertiary"
+  role:
+  - "$interactive-03 active"
+  values:
+    lightest:
+      name: Blue 80
+      hex: "#0530ad"
+    light:
+      name: Blue 80
+      hex: "#0530ad"
+    dark:
+      name: Gray 30
+      hex: "#bebebe"
+    darkest:
+      name: Gray 30
+      hex: "#bebebe"
+- var: "$active-ui"
+  role:
+  - "$ui-01 active"
+  - "$ui-02 active"
+  values:
+    lightest:
+      name: Gray 30
+      hex: "#bebebe"
+    light:
+      name: Gray 30
+      hex: "#bebebe"
+    dark:
+      name: Gray 60
+      hex: "#6f6f6f"
+    darkest:
+      name: Gray 70
+      hex: "#565656"
+- var: "$active-danger"
+  role:
+  - Danger active
+  - "$support-01 active"
+  values:
+    lightest:
+      name: Red 80
+      hex: "#750e13"
+    light:
+      name: Red 80
+      hex: "#750e13"
+    dark:
+      name: Red 80
+      hex: "#750e13"
+    darkest:
+      name: Red 80
+      hex: "#750e13"
+- var: "$selected-ui"
+  role:
+  - Selected UI elements
+  values:
+    lightest:
+      name: Gray 20
+      hex: "#dcdcdc"
+    light:
+      name: Gray 20
+      hex: "#dcdcdc"
+    dark:
+      name: Gray 70
+      hex: "#565656"
+    darkest:
+      name: Gray 80
+      hex: "#3d3d3d"
+- var: "$highlight"
+  role:
+  - "$interactive-01 highlight"
+  values:
+    lightest:
+      name: Blue 20
+      hex: "#C9deff"
+    light:
+      name: Blue 10
+      hex: "#edf4ff"
+    dark:
+      name: Blue 80
+      hex: "#0530ad"
+    darkest:
+      name: Blue 90
+      hex: "#051b75"
+- var: "$visited-link"
+  role:
+  - Visited links
+  values:
+    lightest:
+      name: Purple 60
+      hex: "#8a3ffc"
+    light:
+      name: Purple 60
+      hex: "#8a3ffc"
+    dark:
+      name: Purple 40
+      hex: "#bb8eff"
+    darkest:
+      name: Purple 40
+      hex: "#bb8eff"
+- var: "$disabled-01"
+  role:
+  - Disabled fields
+  - Disabled backgrounds
+  - Disabled border
+  values:
+    lightest:
+      name: Gray 10
+      hex: "#f3f3f3"
+    light:
+      name: white
+      hex: "#ffffff"
+    dark:
+      name: Gray 80
+      hex: "#3d3d3d"
+    darkest:
+      name: Gray 90
+      hex: "#282828"
+- var: "$disabled-02"
+  role:
+  - Disabled elements on $disabled-01
+  - Disabled label
+  - Disabled text on $disabled-01
+  - Disabled icons
+  - Disabled border
+  values:
+    lightest:
+      name: Gray 30
+      hex: "#bebebe"
+    light:
+      name: Gray 30
+      hex: "#bebebe"
+    dark:
+      name: Gray 70
+      hex: "#565656"
+    darkest:
+      name: Gray 80
+      hex: "#3d3d3d"
+- var: "$disabled-03"
+  role:
+  - Disabled text on $disabled-02
+  - Disabled icons on $disabled-02
+  values:
+    lightest:
+      name: Gray 50
+      hex: "#8c8c8c"
+    light:
+      name: Gray 50
+      hex: "#8c8c8c"
+    dark:
+      name: Gray 50
+      hex: "#8c8c8c"
+    darkest:
+      name: Gray 60
+      hex: "#6f6f6f"

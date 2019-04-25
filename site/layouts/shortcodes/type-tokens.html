@@ -1,0 +1,29 @@
+{{- $file := index .Params 0 -}}
+<div class="example card">
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Token</th>
+        <th>Role</th>
+        <th>Value</th>
+      </tr>
+    </thead>
+    <tbody>
+      {{- range $token := (index $.Site.Data $file) -}}
+        <tr>
+          <td><code>{{ $token.var }}</code></td>
+          <td><span style="font-size: {{$token.size}}; font-weight: {{$token.weight}}; ">{{ $token.description }}</span></td>
+          <td>
+            <ul>
+              <li>Type: {{ $token.type }}</li>
+              <li>Size: {{ $token.size }}</li>
+              <li>Weight: {{ $token.weight }}</li>
+              <li>Letter spacing: {{ $token.letter_spacing }}</li>
+              <li>Line height: {{ $token.line_height }}</li>
+            </ul>
+          </td>
+        </tr>
+      {{- end -}}
+    </tbody>
+  </table>
+</div>  

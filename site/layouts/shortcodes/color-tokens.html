@@ -1,0 +1,41 @@
+{{- $file := index .Params 0 -}}
+<div class="example card">
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Token</th>
+        <th>Role</th>
+        <th>Value</th>
+      </tr>
+    </thead>
+    <tbody>
+      {{- range $token := (index $.Site.Data $file) -}}
+        <tr>
+          <td><code>{{ $token.var }}</code></td>
+          <td>
+            <ul>
+              {{- range $role := $token.role -}}
+                <li>{{ $role }}</li>
+              {{- end -}}
+            </ul>
+          </td>
+          <td>
+            {{ $tab := $.Page.Params.tab }}
+            {{ $theme := (index $token.values $tab) }}
+            <div class="row">
+              <div class="col">
+                <ul>
+                  <li>{{ $theme.name }}</li>
+                  <li><b>{{ $theme.hex }}</b></li>
+                </ul>
+              </div>
+              <div class="col">
+                <span class="color-token-example" style="background: {{ $theme.hex }};"></span>
+              </div>
+            </div>
+          </td>
+        </tr>
+      {{- end -}}
+    </tbody>
+  </table>
+</div>  
