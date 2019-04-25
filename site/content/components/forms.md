@@ -8,7 +8,8 @@ toc: true
 ---
 
 ## Default form
-{% capture example %}
+
+{{<example>}}
 <form class="form">
   <fieldset>
     <legend>A compact inline form</legend>
@@ -23,11 +24,11 @@ toc: true
     <button type="submit" class="btn">Sign in</button>
   </fieldset>
 </form>
-{% endcapture %}
-{% include example.html content=example %}
+{{</example>}}
 
 ## Stacked form
-{% capture example %}
+
+{{<example>}}
 <form class="form form-stacked">
   <fieldset>
     <legend>A Stacked Form</legend>
@@ -53,11 +54,11 @@ toc: true
     <button type="submit" class="btn">Sign in</button>
   </fieldset>
 </form>
-{% endcapture %}
-{% include example.html content=example %}
+{{</example>}}
 
-## Aligned form
-{% capture example %}
+## Aligned Form
+
+{{<example>}}
 <form class="form form-aligned">
   <fieldset>
     <div class="form-control-group">
@@ -90,13 +91,12 @@ toc: true
     </div>
   </fieldset>
 </form>
-{% endcapture %}
-{% include example.html content=example %}
+{{</example>}}
 
 ## Inputs
 
 ### Grouped inputs
-{% capture example %}
+{{<example>}}
 <form class="form">
   <fieldset class="form-group">
     <input type="text" class="form-input" placeholder="Username">
@@ -111,44 +111,43 @@ toc: true
 
   <button type="submit" class="btn">Sign in</button>
 </form>
-{% endcapture %}
-{% include example.html content=example %}
+{{</example>}}
 
 ### Required inputs
-{% capture example %}
+
+{{<example>}}
 <form class="form">
   <input type="email" placeholder="Requires an email" required>
 </form>
-{% endcapture %}
-{% include example.html content=example %}
+{{</example>}}
 
 ### Disabled inputs
-{% capture example %}
+
+{{<example>}}
 <form class="form">
   <input type="text" placeholder="Disabled input here..." disabled>
 </form>
-{% endcapture %}
-{% include example.html content=example %}
+{{</example>}}
 
 ### Read-Only inputs
-{% capture example %}
+
+{{<example>}}
 <form class="form">
   <input type="text" value="Readonly input here..." readonly>
 </form>
-{% endcapture %}
-{% include example.html content=example %}
+{{</example>}}
 
 ### Rounded inputs
-{% capture example %}
+
+{{<example>}}
 <form class="form">
   <input type="text" class="form-input-rounded">
   <button type="submit" class="btn">Search</button>
 </form>
-{% endcapture %}
-{% include example.html content=example %}
+{{</example>}}
 
 ### Checkboxes
-{% capture example %}
+{{<example>}}
 <form class="form">
   <label for="option-one" class="check-container">
     <input id="option-one" type="checkbox" value="">
@@ -162,11 +161,10 @@ toc: true
     And option two.
   </label>
 </form>
-{% endcapture %}
-{% include example.html content=example %}
+{{</example>}}
 
 ### Radios
-{% capture example %}
+{{<example>}}
 <form class="form">
   <label for="option-three" class="radio-container">
     <input id="option-three" type="radio" name="optionsRadios" value="option1" checked>
@@ -186,11 +184,10 @@ toc: true
     ..Or maybe this one.
   </label>
 </form>
-{% endcapture %}
-{% include example.html content=example %}
+{{</example>}}
 
 ## Selects
-{% capture example %}
+{{<example>}}
 <form class="form">
   <label for="option-one">
     <select class="" name="">
@@ -199,5 +196,4 @@ toc: true
     </select>
   </label>
 </form>
-{% endcapture %}
-{% include example.html content=example %}
+{{</example>}}
