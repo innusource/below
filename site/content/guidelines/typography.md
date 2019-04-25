@@ -14,4 +14,8 @@ Below uses **Inter UI a free and open source font family**. It's a typeface spec
 ## Usage
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sed sem aliquam, iaculis neque in, aliquet lorem.
 
-{{ include type-tokens.html }}
+### Headings
+{{< type-tokens headings-type-tokens >}}
+
+### Body
+{{< type-tokens body-type-tokens >}}
