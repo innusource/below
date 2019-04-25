@@ -6,20 +6,59 @@
   input[type="tel"],
   input[type="text"],
   input[type="url"],
-  textarea,
-  select {
+  textarea {
     background-color: transparent;
-    border: 0.1rem solid lighten($primary-color, 30%);
-    border-radius: 0.4rem;
+    border: 1px solid $ui-03;
+    border-radius: 3px;
     box-shadow: none;
     box-sizing: inherit;
-    color: #3d3d3d;
+    color: $text-01;
     display: inline-block;
-    margin: 2px;
-    min-width: 7rem;
-    padding: 0.6rem 1rem;
-    padding: 0.5rem 0.6rem;
+    margin: none;
+    min-width: 15em;
+    padding: 0.7rem;
     vertical-align: middle;
+
+    &:focus {
+      background-color: transparent;
+      outline: 1px solid $interactive-01;
+      border-color: $focus;
+      color: $text-01;
+    }
+  }
+
+  select {
+    background-color: transparent;
+    border: 1px solid $ui-03;
+    border-radius: 3px;
+    box-shadow: none;
+    box-sizing: inherit;
+    color: $text-01;
+    display: inline-block;
+    margin: 7px;
+    min-width: 20em;
+    padding: 0.7rem;
+    vertical-align: middle;
+
+    &:focus {
+      background-color: transparent;
+      outline: 1px solid $interactive-01;
+      color: $text-01;
+    }
+
+    option {
+      color: $text-02;
+
+      &:hover {
+        background: $hover-ui;
+      }
+
+      &:focus {
+        background-color: $interactive-01;
+        border-color: $focus;
+        color: $text-04;
+      }
+    }
   }
 
   fieldset {
@@ -35,6 +74,10 @@
     margin-bottom: 0.3em;
     color: #333;
     border-bottom: 1px solid #e5e5e5;
+  }
+
+  &:required {
+    border-color: $support-01;
   }
 }
 
@@ -62,7 +105,7 @@
 }
 
 .form-aligned .form-control-group {
-  margin-bottom: 0.5em;
+  margin-bottom: 1rem;
 }
 
 .form-aligned .form-control-group label {
@@ -70,7 +113,7 @@
   display: inline-block;
   vertical-align: middle;
   width: 10em;
-  margin: 0 1em 0 0;
+  margin: none 0.7rem;
 }
 
 .form .help-inline,
@@ -89,4 +132,127 @@
 .form .form-input-check {
   margin: 0.5em 0;
   display: block;
+}
+
+.check-container {
+  display: block;
+  position: relative;
+  padding-left: 25px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  font-size: 0.85rem;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.check-container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 15px;
+  width: 15px;
+  background-color: $ui-03;
+  border: 1px solid $ui-04;
+}
+
+// .check-container:hover input ~ .checkmark {
+//  background-color: $interactive-01;
+// }
+
+.check-container input:checked ~ .checkmark {
+  background-color: $interactive-01;
+  border: 1px solid $interactive-01;
+}
+
+.checkmark:after{
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.check-container input:checked ~ .checkmark: after {
+  display: block;
+}
+
+.check-container .checkmark:after{
+  left: 4.3px;
+  top: 0.5px;
+  width: 5px;
+  height: 11px;
+  border: solid $link-01;
+  border-width: 0 2px 2px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+
+.radio-container {
+  display: block;
+  position: relative;
+  padding-left: 25px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 0.85rem;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.radio-container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.radiomark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 15px;
+  width: 15px;
+  background-color: $ui-03;
+  border: 1px solid $ui-04;
+  border-radius: 50%;
+}
+
+.radio-container:hover input ~ .radiomark {
+  background-color: $ui-03;
+}
+
+.radio-container input:checked ~ .radiomark {
+  background-color: $ui-01;
+  border: 2px solid $interactive-01;
+}
+
+.radiomark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.radio-container input:checked ~ .radiomark:after {
+  display: block;
+}
+
+.radio-container .radiomark:after {
+  top: 2px;
+  left: 2px;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: $interactive-01;
 }
