@@ -13,7 +13,7 @@ toc: true
 <details class="folding">
   <summary class="folding-title">
     Folding
-    <svg class="icon"><use xlink:href="/assets/icons/feather.svg#chevron-down"/></svg>
+    <svg class="icon icon-right icon-rotate"><use xlink:href="/assets/icons/feather.svg#chevron-down"/></svg>
   </summary>
   <div class="folding-content">
     <p>
@@ -31,7 +31,7 @@ toc: true
   <details class="folding">
     <summary class="folding-title">
       First Folding
-      <svg class="icon"><use xlink:href="/assets/icons/feather.svg#chevron-down"/></svg>
+      <svg class="icon icon-right icon-rotate"><use xlink:href="/assets/icons/feather.svg#chevron-down"/></svg>
     </summary>
     <div class="folding-content">
       <p>
@@ -43,7 +43,7 @@ toc: true
   <details class="folding">
     <summary class="folding-title">
       Second Folding
-      <svg class="icon"><use xlink:href="/assets/icons/feather.svg#chevron-down"/></svg>
+      <svg class="icon icon-right icon-rotate"><use xlink:href="/assets/icons/feather.svg#chevron-down"/></svg>
     </summary>
     <div class="folding-content">
       <p>
@@ -55,7 +55,7 @@ toc: true
   <details class="folding">
     <summary class="folding-title">
       Third Folding
-      <svg class="icon"><use xlink:href="/assets/icons/feather.svg#chevron-down"/></svg>
+      <svg class="icon icon-right icon-rotate"><use xlink:href="/assets/icons/feather.svg#chevron-down"/></svg>
     </summary>
     <div class="folding-content">
       <p>
@@ -73,7 +73,7 @@ toc: true
 <details class="folding folding-borderless">
   <summary class="folding-title">
     Borderless Folding
-    <svg class="icon"><use xlink:href="/assets/icons/feather.svg#chevron-down"/></svg>
+    <svg class="icon icon-right icon-rotate"><use xlink:href="/assets/icons/feather.svg#chevron-down"/></svg>
   </summary>
   <div class="folding-content">
     <p>
@@ -91,7 +91,7 @@ toc: true
   <details class="folding folding-borderless">
     <summary class="folding-title">
       First Borderless Folding
-      <svg class="icon"><use xlink:href="/assets/icons/feather.svg#chevron-down"/></svg>
+      <svg class="icon icon-right icon-rotate"><use xlink:href="/assets/icons/feather.svg#chevron-down"/></svg>
     </summary>
     <div class="folding-content">
       <p>
@@ -103,7 +103,7 @@ toc: true
   <details class="folding folding-borderless">
     <summary class="folding-title">
       Second Borderless Folding
-      <svg class="icon"><use xlink:href="/assets/icons/feather.svg#chevron-down"/></svg>
+      <svg class="icon icon-right icon-rotate"><use xlink:href="/assets/icons/feather.svg#chevron-down"/></svg>
     </summary>
     <div class="folding-content">
       <p>
@@ -115,7 +115,7 @@ toc: true
   <details class="folding folding-borderless">
     <summary class="folding-title">
       Third Borderless Folding
-      <svg class="icon"><use xlink:href="/assets/icons/feather.svg#chevron-down"/></svg>
+      <svg class="icon icon-right icon-rotate"><use xlink:href="/assets/icons/feather.svg#chevron-down"/></svg>
     </summary>
     <div class="folding-content">
       <p>

@@ -5,7 +5,7 @@
 
   .folding-title,
   .folding-content {
-    padding: 1rem 0.8rem;
+    padding: 1rem;
   }
 
   .folding-title {
@@ -35,11 +35,7 @@
     }
   }
 
-  .icon {
-    float: right;
-  }
-
-  &[open] .icon {
+  &[open] .icon.icon-rotate {
     transform: rotate(180deg);
   }
 }
