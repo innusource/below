@@ -1,0 +1,48 @@
+- var: $heading-01
+  description: >-
+    This is for page heading.
+  type: Inter UI
+  size: 40px
+  weight: 400
+  letter_spacing: -0.022em
+  line_height: 56px
+- var: $heading-02
+  description: >-
+    This is for layout headings.
+  type: Inter UI
+  size: 30px
+  weight: 400
+  letter_spacing: 0.001em
+  line_height: 42px
+- var: $heading-03
+  description: >-
+    This is for layout headings.
+  type: Inter UI
+  size: 24px
+  weight: 400
+  letter_spacing: -0.019em
+  line_height: 34px
+- var: $heading-04
+  description: >-
+    This is for component and layoutheadings.
+  type: Inter UI
+  size: 20px
+  weight: 400
+  letter_spacing: -0.017em
+  line_height: 28px
+- var: $heading-05
+  description: >-
+    This is for component and layoutheadings.
+  type: Inter UI
+  size: 16px
+  weight: 600
+  letter_spacing: -0.011em
+  line_height: 22px
+- var: $heading-06
+  description: >-
+    This is for components.
+  type: Inter UI
+  size: 14px
+  weight: 600
+  letter_spacing: -0.006em
+  line_height: 20px
