@@ -80,6 +80,10 @@
     border-color: $support-01;
   }
 
+  &:disabled {
+    cursor: not-allowed;
+  }
+
   &.form-stacked input:not([type]),
   &.form-stacked input[type="password"],
   &.form-stacked input[type="email"],
@@ -147,7 +151,7 @@
   user-select: none;
 }
 
-.check-container input[type="radio"] {
+.check-container input[type="checkbox"] {
   position: absolute;
   opacity: 0;
   cursor: pointer;
@@ -166,7 +170,7 @@
 }
 
 .check-container input:checked ~ .checkmark {
-  background-color: $interactive-01;
+  background-color: $ui-02;
   border: 1px solid $interactive-01;
 }
 
@@ -219,7 +223,7 @@
   left: 0;
   height: 15px;
   width: 15px;
-  background-color: $ui-03;
+  background-color: $ui-02;
   border: 1px solid $ui-04;
   border-radius: 50%;
 }
@@ -229,7 +233,7 @@
 }
 
 .radio-container input:checked ~ .radiomark {
-  background-color: $ui-01;
+  background-color: $ui-02;
   border: 2px solid $interactive-01;
 }
 
