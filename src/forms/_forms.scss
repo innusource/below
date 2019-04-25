@@ -79,29 +79,29 @@
   &:required {
     border-color: $support-01;
   }
-}
 
-.form-stacked input:not([type]),
-.form-stacked input[type="password"],
-.form-stacked input[type="email"],
-.form-stacked input[type="url"],
-.form-stacked input[type="date"],
-.form-stacked input[type="month"],
-.form-stacked input[type="time"],
-.form-stacked input[type="datetime"],
-.form-stacked input[type="datetime-local"],
-.form-stacked input[type="week"],
-.form-stacked input[type="tel"],
-.form-stacked input[type="color"],
-.form-stacked input[type="file"],
-.form-stacked input[type="search"],
-.form-stacked input[type="number"],
-.form-stacked input[type="text"],
-.form-stacked label,
-.form-stacked select,
-.form-stacked textarea {
-  display: block;
-  margin: 0.25em 0;
+  &.form-stacked input:not([type]),
+  &.form-stacked input[type="password"],
+  &.form-stacked input[type="email"],
+  &.form-stacked input[type="url"],
+  &.form-stacked input[type="date"],
+  &.form-stacked input[type="month"],
+  &.form-stacked input[type="time"],
+  &.form-stacked input[type="datetime"],
+  &.form-stacked input[type="datetime-local"],
+  &.form-stacked input[type="week"],
+  &.form-stacked input[type="tel"],
+  &.form-stacked input[type="color"],
+  &.form-stacked input[type="file"],
+  &.form-stacked input[type="search"],
+  &.form-stacked input[type="number"],
+  &.form-stacked input[type="text"],
+  &.form-stacked label,
+  &.form-stacked select,
+  &.form-stacked textarea {
+    display: block;
+    margin: 0.25em 0;
+  }
 }
 
 .form-aligned .form-control-group {
