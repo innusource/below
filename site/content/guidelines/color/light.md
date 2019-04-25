@@ -1,16 +1,23 @@
 ---
 layout: docs
-title: Color
-parent: Color
-grand_parent: Guidelines
+title: Light Theme
+menu:
+  main:
+    parent: Color
 toc: true
-nav_exclude: true
+tab: light
 ---
 <div class="nav-tabs">
   <ul>
-    <li><a href="/guidelines/color/" class="active">Lightest</a></li>
-    <li><a href="/guidelines/color/light">Light</a></li>
+    <li><a href="/guidelines/color/">Lightest</a></li>
+    <li><a href="/guidelines/color/light" class="active">Light</a></li>
     <li><a href="/guidelines/color/dark">Dark</a></li>
     <li><a href="/guidelines/color/darkest">Darkest</a></li>
   </ul>
 </div>
+
+## Core color tokens
+{{< color-tokens core-color-tokens >}}
+
+## Interactive color tokens
+{{< color-tokens interactive-color-tokens >}}
