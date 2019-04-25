@@ -8,7 +8,7 @@ toc: true
 ---
 
 ## Default form
-{{<example>}}
+{% capture example %}
 <form class="form">
   <fieldset>
     <legend>A compact inline form</legend>
@@ -23,10 +23,11 @@ toc: true
     <button type="submit" class="btn">Sign in</button>
   </fieldset>
 </form>
-{{</example>}}
+{% endcapture %}
+{% include example.html content=example %}
 
 ## Stacked form
-{{<example>}}
+{% capture example %}
 <form class="form form-stacked">
   <fieldset>
     <legend>A Stacked Form</legend>
@@ -52,10 +53,11 @@ toc: true
     <button type="submit" class="btn">Sign in</button>
   </fieldset>
 </form>
-{{</example>}}
+{% endcapture %}
+{% include example.html content=example %}
 
 ## Aligned form
-{{<example>}}
+{% capture example %}
 <form class="form form-aligned">
   <fieldset>
     <div class="form-control-group">
@@ -88,12 +90,13 @@ toc: true
     </div>
   </fieldset>
 </form>
-{{</example>}}
+{% endcapture %}
+{% include example.html content=example %}
 
 ## Inputs
 
 ### Grouped inputs
-{{<example>}}
+{% capture example %}
 <form class="form">
   <fieldset class="form-group">
     <input type="text" class="form-input" placeholder="Username">
@@ -108,53 +111,93 @@ toc: true
 
   <button type="submit" class="btn">Sign in</button>
 </form>
-{{</example>}}
+{% endcapture %}
+{% include example.html content=example %}
 
 ### Required inputs
-{{<example>}}
+{% capture example %}
 <form class="form">
   <input type="email" placeholder="Requires an email" required>
 </form>
-{{</example>}}
+{% endcapture %}
+{% include example.html content=example %}
 
 ### Disabled inputs
-{{<example>}}
+{% capture example %}
 <form class="form">
   <input type="text" placeholder="Disabled input here..." disabled>
 </form>
-{{</example>}}
+{% endcapture %}
+{% include example.html content=example %}
 
 ### Read-Only inputs
-{{<example>}}
+{% capture example %}
 <form class="form">
   <input type="text" value="Readonly input here..." readonly>
 </form>
-{{</example>}}
+{% endcapture %}
+{% include example.html content=example %}
 
 ### Rounded inputs
-{{<example>}}
+{% capture example %}
 <form class="form">
   <input type="text" class="form-input-rounded">
   <button type="submit" class="btn">Search</button>
 </form>
-{{</example>}}
+{% endcapture %}
+{% include example.html content=example %}
 
-### Checkboxes and radios
-{{<example>}}
+### Checkboxes
+{% capture example %}
 <form class="form">
-  <label for="option-one" class="checkbox">
+  <label for="option-one" class="check-container">
     <input id="option-one" type="checkbox" value="">
+    <span class="checkmark"></span>
     Here's option one.
   </label>
 
-  <label for="option-two" class="form-radio">
-    <input id="option-two" type="radio" name="optionsRadios" value="option1" checked>
+  <label for="option-two" class="check-container">
+    <input id="option-two" type="checkbox" value="">
+    <span class="checkmark"></span>
+    And option two.
+  </label>
+</form>
+{% endcapture %}
+{% include example.html content=example %}
+
+### Radios
+{% capture example %}
+<form class="form">
+  <label for="option-three" class="radio-container">
+    <input id="option-three" type="radio" name="optionsRadios" value="option1" checked>
+    <span class="radiomark"></span>
     Here's a radio button. You can choose this one..
   </label>
 
-  <label for="option-three" class="form-radio">
-    <input id="option-three" type="radio" name="optionsRadios" value="option2">
+  <label for="option-four" class="radio-container">
+    <input id="option-four" type="radio" name="optionsRadios" value="option2">
+    <span class="radiomark"></span>
     ..Or this one!
   </label>
+
+  <label for="option-five" class="radio-container">
+    <input id="option-five" type="radio" name="optionsRadios" value="option2">
+    <span class="radiomark"></span>
+    ..Or maybe this one.
+  </label>
 </form>
-{{</example>}}
+{% endcapture %}
+{% include example.html content=example %}
+
+## Selects
+{% capture example %}
+<form class="form">
+  <label for="option-one">
+    <select class="" name="">
+      <option value="one">Value one</option>
+      <option value="two">Value two</option>
+    </select>
+  </label>
+</form>
+{% endcapture %}
+{% include example.html content=example %}
