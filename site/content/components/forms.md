@@ -137,25 +137,16 @@ toc: true
 </form>
 {{</example>}}
 
-### Rounded inputs
-
-{{<example>}}
-<form class="form">
-  <input type="text" class="form-input-rounded">
-  <button type="submit" class="btn">Search</button>
-</form>
-{{</example>}}
-
 ### Checkboxes
 {{<example>}}
 <form class="form">
-  <label for="option-one" class="check-container">
+  <label for="option-one" class="checkbox-container">
     <input id="option-one" type="checkbox" value="">
     <span class="checkmark"></span>
     Here's option one.
   </label>
 
-  <label for="option-two" class="check-container">
+  <label for="option-two" class="checkbox-container">
     <input id="option-two" type="checkbox" value="">
     <span class="checkmark"></span>
     And option two.

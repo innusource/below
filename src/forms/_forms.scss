@@ -25,6 +25,19 @@
       border-color: $focus;
       color: $text-01;
     }
+
+    &[readonly] {
+      cursor: auto;
+
+      &:focus {
+        outline: 0;
+        border-color: $ui-03;
+      }
+    }
+
+    &[disabled]:hover {
+      cursor: not-allowed;
+    }
   }
 
   select {
@@ -138,20 +151,20 @@
   display: block;
 }
 
-.check-container {
+.checkbox-container {
   display: block;
   position: relative;
   padding-left: 25px;
   margin-bottom: 10px;
   cursor: pointer;
-  font-size: 0.85rem;
+  font-size: 0.9em;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
 }
 
-.check-container input[type="checkbox"] {
+.checkbox-container input[type="checkbox"] {
   position: absolute;
   opacity: 0;
   cursor: pointer;
@@ -161,16 +174,15 @@
 
 .checkmark {
   position: absolute;
-  top: 0;
+  top: 1px;
   left: 0;
   height: 15px;
   width: 15px;
-  background-color: $ui-03;
-  border: 1px solid $ui-04;
+  background-color: $ui-02;
+  border: 1px solid $ui-03;
 }
 
-.check-container input:checked ~ .checkmark {
-  background-color: $ui-02;
+.checkbox-container input[type="checkbox"]:checked ~ .checkmark {
   border: 1px solid $interactive-01;
 }
 
@@ -180,7 +192,7 @@
   display: none;
 }
 
-.check-container .checkmark::after {
+.checkbox-container .checkmark::after {
   left: 4.3px;
   top: 0.5px;
   width: 5px;
@@ -192,7 +204,7 @@
   transform: rotate(45deg);
 }
 
-.check-container input:checked ~ .checkmark::after {
+.checkbox-container input[type="checkbox"]:checked ~ .checkmark::after {
   display: block;
 }
 
@@ -202,7 +214,7 @@
   padding-left: 25px;
   margin-bottom: 12px;
   cursor: pointer;
-  font-size: 0.85rem;
+  font-size: 0.9em;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -224,17 +236,12 @@
   height: 15px;
   width: 15px;
   background-color: $ui-02;
-  border: 1px solid $ui-04;
+  border: 1px solid $ui-03;
   border-radius: 50%;
 }
 
-.radio-container:hover input ~ .radiomark {
-  background-color: $ui-03;
-}
-
-.radio-container input:checked ~ .radiomark {
-  background-color: $ui-02;
-  border: 2px solid $interactive-01;
+.radio-container input[type="radio"]:checked ~ .radiomark {
+  border-color: $interactive-01;
 }
 
 .radiomark::after {
@@ -244,14 +251,14 @@
 }
 
 .radio-container .radiomark::after {
-  top: 2px;
-  left: 2px;
-  width: 7px;
-  height: 7px;
-  border-radius: 50%;
+  width: 5px;
+  height: 5px;
   background: $interactive-01;
+  top: 4px;
+  left: 4px;
+  border-radius: 50%;
 }
 
-.radio-container input:checked ~ .radiomark::after {
+.radio-container input[type="radio"]:checked ~ .radiomark::after {
   display: block;
 }

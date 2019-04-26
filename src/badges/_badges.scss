@@ -1,14 +1,14 @@
 .badge {
   background: $interactive-01;
   color: #fff;
-  margin: 0 6px;
+  margin: 0 4px;
   padding: 0 0.5rem;
   display: inline-block;
   border: 1px solid transparent;
   border-radius: 45px;
   font-size: 0.7rem;
   font-weight: 600;
-  vertical-align: middle;
+  vertical-align: bottom;
 
   &.badge-secondary {
     background: $ui-03;

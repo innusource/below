@@ -1,35 +1,7 @@
 .logo {
   font-weight: 600;
 
-  .isotype {
-    width: 40px;
-    height: 40px;
-    background: #0062ff;
-    color: #fff;
-    display: inline-block;
-    text-align: center;
-    border-radius: 3px;
-    line-height: 40px;
-    margin-right: 5px;
-    font-size: 1.2rem;
-  }
-
   &.logo-big {
     letter-spacing: -2px;
-
-    .isotype {
-      width: 60px;
-      height: 60px;
-      font-size: 2.3rem;
-      line-height: 60px;
-    }
   }
-}
-
-.sidebar {
-  height: 100vh;
-  position: sticky;
-  z-index: 8;
-  top: 0;
-  overflow-y: auto;
 }
