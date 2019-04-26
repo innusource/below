@@ -13,27 +13,29 @@
     padding-left: 0;
     list-style: none;
 
-    a {
-      color: $text-02;
-      padding: 0.5rem 0.8rem;
-      display: block;
-      font-size: 14px;
-      font-weight: 600;
-      -moz-transition: all 0.4s ease;
-      -o-transition: all 0.4s ease;
-      -webkit-transition: all 0.4s ease;
-      transition: all 0.4s ease;
+    li {
+      a {
+        color: $text-02;
+        padding: 0.5rem 0.8rem;
+        display: block;
+        font-size: 14px;
+        font-weight: 600;
+        -moz-transition: all 0.4s ease;
+        -o-transition: all 0.4s ease;
+        -webkit-transition: all 0.4s ease;
+        transition: all 0.4s ease;
 
-      .icon:not(.icon-right) {
-        margin-right: 10px;
+        .icon:not(.icon-right) {
+          margin-right: 10px;
+        }
       }
 
-      &:hover,
-      &.active {
+      a:hover,
+      &.active a {
         color: $text-01;
       }
 
-      &.disabled {
+      &.disabled a {
         cursor: not-allowed;
         opacity: 0.5;
 
@@ -93,7 +95,7 @@
     ul {
       padding-left: 5px;
 
-      a {
+      li:not(.disabled) a {
         font-size: 12.5px;
         font-weight: normal;
       }

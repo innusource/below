@@ -16,9 +16,9 @@ toc: true
     <li><form class="form"><input type="text" placeholder="Search..."></form></li>
   </ul>
   <ul>
-    <li><a href="#" class="active">Docs</a></li>
+    <li class="active"><a href="#">Docs</a></li>
     <li><a href="#">About</a></li>
-    <li><a href="#" class="disabled">Disabled</a></li>
+    <li class="disabled"><a href="#">Disabled</a></li>
     <li>
       <a href="#">
         <svg class="icon">
@@ -96,8 +96,8 @@ toc: true
           Appearance
         </a>
       </li>
-      <li>
-        <a href="#" class="disabled">
+      <li class="disabled">
+        <a href="#"">
           <svg class="icon">
             <use xlink:href="/assets/icons/feather.svg#clock"/>
           </svg>
@@ -121,9 +121,9 @@ toc: true
     <li><form class="form"><input type="text" placeholder="Search..."></form></li>
   </ul>
   <ul>
-    <li><a href="#" class="active">Docs</a></li>
+    <li class="active"><a href="#">Docs</a></li>
     <li><a href="#">About</a></li>
-    <li><a href="#" class="disabled">Disabled</a></li>
+    <li class="disabled"><a href="#">Disabled</a></li>
     <li>
       <a href="#">
         <svg class="icon">
@@ -196,8 +196,8 @@ toc: true
             Appearance
           </a>
         </li>
-        <li>
-          <a href="#" class="disabled">
+        <li class="disabled">
+          <a href="#">
             <svg class="icon">
               <use xlink:href="/assets/icons/feather.svg#clock"/>
             </svg>
