@@ -8,20 +8,20 @@
   input[type="url"],
   textarea {
     background-color: transparent;
-    border: 1px solid $ui-03;
+    border: 2px solid $ui-03;
     border-radius: 3px;
     box-shadow: none;
     box-sizing: inherit;
     color: $text-01;
     display: inline-block;
-    margin: none;
+    margin: 0;
     min-width: 15em;
     padding: 0.7rem;
     vertical-align: middle;
 
     &:focus {
       background-color: transparent;
-      outline: 1px solid $interactive-01;
+      outline: 0 solid $interactive-01;
       border-color: $focus;
       color: $text-01;
     }
@@ -130,7 +130,7 @@
   display: inline-block;
   vertical-align: middle;
   width: 10em;
-  margin: none 0.7rem;
+  margin: 0 0.7rem;
 }
 
 .form .help-inline,
