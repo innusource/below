@@ -8,6 +8,7 @@ toc: true
 ---
 
 ## Default form
+
 {{<example>}}
 <form class="form">
   <fieldset>
@@ -26,6 +27,7 @@ toc: true
 {{</example>}}
 
 ## Stacked form
+
 {{<example>}}
 <form class="form form-stacked">
   <fieldset>
@@ -54,7 +56,8 @@ toc: true
 </form>
 {{</example>}}
 
-## Aligned form
+## Aligned Form
+
 {{<example>}}
 <form class="form form-aligned">
   <fieldset>
@@ -111,6 +114,7 @@ toc: true
 {{</example>}}
 
 ### Required inputs
+
 {{<example>}}
 <form class="form">
   <input type="email" placeholder="Requires an email" required>
@@ -118,6 +122,7 @@ toc: true
 {{</example>}}
 
 ### Disabled inputs
+
 {{<example>}}
 <form class="form">
   <input type="text" placeholder="Disabled input here..." disabled>
@@ -125,36 +130,61 @@ toc: true
 {{</example>}}
 
 ### Read-Only inputs
+
 {{<example>}}
 <form class="form">
   <input type="text" value="Readonly input here..." readonly>
 </form>
 {{</example>}}
 
-### Rounded inputs
+### Checkboxes
 {{<example>}}
 <form class="form">
-  <input type="text" class="form-input-rounded">
-  <button type="submit" class="btn">Search</button>
-</form>
-{{</example>}}
-
-### Checkboxes and radios
-{{<example>}}
-<form class="form">
-  <label for="option-one" class="checkbox">
+  <label for="option-one" class="checkbox-container">
     <input id="option-one" type="checkbox" value="">
+    <span class="checkmark"></span>
     Here's option one.
   </label>
 
-  <label for="option-two" class="form-radio">
-    <input id="option-two" type="radio" name="optionsRadios" value="option1" checked>
+  <label for="option-two" class="checkbox-container">
+    <input id="option-two" type="checkbox" value="">
+    <span class="checkmark"></span>
+    And option two.
+  </label>
+</form>
+{{</example>}}
+
+### Radios
+{{<example>}}
+<form class="form">
+  <label for="option-three" class="radio-container">
+    <input id="option-three" type="radio" name="optionsRadios" value="option1" checked>
+    <span class="radiomark"></span>
     Here's a radio button. You can choose this one..
   </label>
 
-  <label for="option-three" class="form-radio">
-    <input id="option-three" type="radio" name="optionsRadios" value="option2">
+  <label for="option-four" class="radio-container">
+    <input id="option-four" type="radio" name="optionsRadios" value="option2">
+    <span class="radiomark"></span>
     ..Or this one!
+  </label>
+
+  <label for="option-five" class="radio-container">
+    <input id="option-five" type="radio" name="optionsRadios" value="option2">
+    <span class="radiomark"></span>
+    ..Or maybe this one.
+  </label>
+</form>
+{{</example>}}
+
+## Selects
+{{<example>}}
+<form class="form">
+  <label for="option-one">
+    <select class="" name="">
+      <option value="one">Value one</option>
+      <option value="two">Value two</option>
+    </select>
   </label>
 </form>
 {{</example>}}
