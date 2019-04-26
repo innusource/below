@@ -31,7 +31,7 @@
       }
 
       a:hover,
-      &.active a {
+      &.active > a {
         color: $text-01;
       }
 
