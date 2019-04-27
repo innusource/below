@@ -7,7 +7,7 @@ menu:
 toc: true
 ---
 
-## Default form
+## Default Form
 
 {{<example>}}
 <form class="form">
@@ -18,7 +18,8 @@ toc: true
     <input type="password" placeholder="Password">
 
     <label for="remember" class="form-input-check">
-      <input id="remember" type="checkbox"> Remember me
+      <input id="remember" type="checkbox" value="">
+      <span class="check-mark"></span> Remember me
     </label>
 
     <button type="submit" class="btn">Sign in</button>
@@ -26,7 +27,7 @@ toc: true
 </form>
 {{</example>}}
 
-## Stacked form
+## Stacked Form
 
 {{<example>}}
 <form class="form form-stacked">
@@ -47,8 +48,9 @@ toc: true
       <option>IL</option>
     </select>
 
-    <label for="remember" class="form-input-check">
-      <input id="remember" type="checkbox"> Remember me
+    <label for="remember-two" class="form-input-check">
+      <input id="remember-two" type="checkbox" value="">
+      <span class="check-mark"></span> Remember me
     </label>
 
     <button type="submit" class="btn">Sign in</button>
@@ -83,8 +85,10 @@ toc: true
     </div>
 
     <div class="form-controls">
-      <label for="cb" class="form-input-check">
-        <input id="cb" type="checkbox"> I've read the terms and conditions
+
+      <label for="conditions" class="form-input-check">
+        <input id="conditions" type="checkbox" value="">
+        <span class="check-mark"></span> I've read the terms and conditions
       </label>
 
       <button type="submit" class="btn">Submit</button>
@@ -138,17 +142,18 @@ toc: true
 {{</example>}}
 
 ### Checkboxes
+
 {{<example>}}
 <form class="form">
-  <label for="option-one" class="checkbox-container">
+  <label for="option-one" class="form-input-check">
     <input id="option-one" type="checkbox" value="">
-    <span class="checkmark"></span>
+    <span class="check-mark"></span>
     Here's option one.
   </label>
 
-  <label for="option-two" class="checkbox-container">
+  <label for="option-two" class="form-input-check">
     <input id="option-two" type="checkbox" value="">
-    <span class="checkmark"></span>
+    <span class="check-mark"></span>
     And option two.
   </label>
 </form>
@@ -157,20 +162,20 @@ toc: true
 ### Radios
 {{<example>}}
 <form class="form">
-  <label for="option-three" class="radio-container">
-    <input id="option-three" type="radio" name="optionsRadios" value="option1" checked>
+  <label for="option-radio-one" class="form-input-radio">
+    <input id="option-radio-one" type="radio" name="radio" value="" checked>
     <span class="radiomark"></span>
     Here's a radio button. You can choose this one..
   </label>
 
-  <label for="option-four" class="radio-container">
-    <input id="option-four" type="radio" name="optionsRadios" value="option2">
+  <label for="option-radio-two" class="form-input-radio">
+    <input id="option-radio-two" type="radio" name="radio" value="">
     <span class="radiomark"></span>
     ..Or this one!
   </label>
 
-  <label for="option-five" class="radio-container">
-    <input id="option-five" type="radio" name="optionsRadios" value="option2">
+  <label for="option-radio-three" class="form-input-radio">
+    <input id="option-radio-three" type="radio" name="radio" value="">
     <span class="radiomark"></span>
     ..Or maybe this one.
   </label>
@@ -180,11 +185,9 @@ toc: true
 ## Selects
 {{<example>}}
 <form class="form">
-  <label for="option-one">
-    <select class="" name="">
-      <option value="one">Value one</option>
-      <option value="two">Value two</option>
-    </select>
-  </label>
+  <select class="" name="">
+    <option value="one">Value one</option>
+    <option value="two">Value two</option>
+  </select>
 </form>
 {{</example>}}
