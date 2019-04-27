@@ -97,7 +97,7 @@ toc: true
         </a>
       </li>
       <li class="disabled">
-        <a href="#"">
+        <a href="#">
           <svg class="icon">
             <use xlink:href="/assets/icons/feather.svg#clock"/>
           </svg>
