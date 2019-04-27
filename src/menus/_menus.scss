@@ -5,7 +5,11 @@
 
   .folding .folding-title,
   .folding .folding-content {
-    padding: 0.5rem 0.8rem;
+    padding: 0.45rem 0.8rem;
+  }
+
+  .folding .folding-content {
+    padding-right: 0;
   }
 
   ul {
@@ -16,9 +20,11 @@
     li {
       a {
         color: $text-02;
-        padding: 0.5rem 0.8rem;
+        margin: 0.1em;
+        padding: 0.45rem 0.8rem;
+        border-radius: 3px;
         display: block;
-        font-size: 14px;
+        font-size: 0.95em;
         font-weight: 600;
         -moz-transition: all 0.4s ease;
         -o-transition: all 0.4s ease;
@@ -33,6 +39,7 @@
       a:hover,
       &.active > a {
         color: $text-01;
+        background: $ui-01;
       }
 
       &.disabled a {
@@ -40,14 +47,13 @@
         opacity: 0.5;
 
         &:hover {
+          background: transparent;
           color: $text-02;
         }
       }
     }
 
     .folding .folding-title {
-      color: $text-02;
-
       .icon:not(.icon-right) {
         margin-right: 10px;
       }
@@ -63,6 +69,11 @@
     padding: 0.3rem 0.8rem;
     font-size: 18px;
     font-weight: 700;
+
+    &:hover {
+      background: transparent;
+      color: $text-02;
+    }
   }
 }
 
@@ -100,14 +111,6 @@
         font-weight: normal;
       }
     }
-
-    .folding-title:hover {
-      background: transparent;
-    }
-  }
-
-  .brand {
-    margin-bottom: 15px;
   }
 }
 
@@ -117,10 +120,6 @@
     width: 100%;
     top: 0;
     flex-direction: row;
-
-    .brand {
-      margin-bottom: 0;
-    }
   }
 
   .menu-toggle {
