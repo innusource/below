@@ -44,7 +44,7 @@
 
   select {
     background-color: transparent;
-    border: 1px solid $ui-03;
+    border: 2px solid $ui-03;
     border-radius: 3px;
     box-shadow: none;
     box-sizing: inherit;
@@ -52,27 +52,12 @@
     display: inline-block;
     margin: 0;
     min-width: 15em;
-    padding: 0.7rem;
+    padding: 0.5rem;
+    position: relative;
     vertical-align: middle;
-
-    &:focus {
-      background-color: transparent;
-      outline: 0;
-      color: $text-01;
-    }
 
     option {
       color: $text-02;
-
-      &:hover {
-        background: $hover-ui;
-      }
-
-      &:focus {
-        background-color: $interactive-01;
-        border-color: $focus;
-        color: $text-04;
-      }
     }
   }
 

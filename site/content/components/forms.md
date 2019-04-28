@@ -185,7 +185,7 @@ toc: true
 ## Selects
 {{<example>}}
 <form class="form">
-  <select class="" name="">
+  <select class="">
     <option value="one">Value one</option>
     <option value="two">Value two</option>
   </select>
