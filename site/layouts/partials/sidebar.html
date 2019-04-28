@@ -13,14 +13,14 @@
             <div class="folding-content">
               <ul>
                 {{ range .Children }}
-                  <li {{ if $currentPage.IsMenuCurrent "main" . }}active{{ end }}><a href="{{ .URL }}">{{ .Name }}</a></li>
+                  <li class="{{ if $currentPage.IsMenuCurrent "main" . }}active{{ end }}"><a href="{{ .URL }}">{{ .Name }}</a></li>
                 {{ end }}
               </ul>
             </div>
           </details>
         </li>
       {{ else }}
-        <li class="{{ if $currentPage.HasMenuCurrent "main" . }}active{{ end }}"><a href="{{ .URL }}">{{ .Name }}</a></li>
+        <li class="{{ if $currentPage.IsMenuCurrent "main" . }}active{{ end }}"><a href="{{ .URL }}">{{ .Name }}</a></li>
       {{ end }}
     {{ end }}
   </ul>
