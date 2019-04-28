@@ -1,0 +1,93 @@
+.modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 900;
+  opacity: 0;
+  pointer-events: none;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+
+  &:target {
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  .modal-overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: $overlay-01;
+  }
+
+  .modal-container {
+    width: 600px;
+    max-width: 100%;
+    background: $ui-02;
+    border-radius: 3px;
+    padding-top: 0.5em;
+    position: relative;
+    box-shadow: 2px 2px 5px rgba(25, 25, 25, 0.025);
+
+    .modal-header,
+    .modal-body,
+    .modal-footer {
+      padding: 1em 2em;
+      position: relative;
+    }
+
+    .modal-title {
+      margin: 0;
+      font-weight: 500;
+    }
+
+    .modal-close {
+      width: 25px;
+      height: 25px;
+      background: $ui-01;
+      color: $text-02;
+      border-radius: 50%;
+      cursor: pointer;
+      line-height: 25px;
+      position: absolute;
+      right: 15px;
+      top: 12px;
+      text-align: center;
+      z-index: 910;
+
+      &:hover {
+        color: $text-01;
+        background: $ui-03;
+      }
+    }
+
+    .modal-body {
+      color: $text-02;
+    }
+
+    .modal-footer {
+      background: $ui-01;
+      border-radius: 0 0 3px 3px;
+      text-align: right;
+    }
+  }
+
+  &.modal-small .modal-container {
+    width: 400px;
+  }
+
+  &.modal-big .modal-container {
+    width: 750px;
+  }
+}
