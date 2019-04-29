@@ -189,5 +189,8 @@ toc: true
     <option value="one">Value one</option>
     <option value="two">Value two</option>
   </select>
+  <svg class="select-arrow">
+    <use xlink:href="/assets/icons/feather.svg#chevron-down"/>
+  </svg>
 </form>
 {{</example>}}
