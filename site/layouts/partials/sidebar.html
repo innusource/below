@@ -1,5 +1,11 @@
 <div class="col-12 col-md-3 col-xl-2 sidebar">
-  <ul class="menu-list">
+  <label for="sidebar-docs" class="menu-toggle-button">
+    <svg class="icon icon-big">
+      <use xlink:href="/assets/icons/feather.svg#menu"/>
+    </svg>
+  </label>
+  <input type="checkbox" id="sidebar-docs" role="button" class="menu-toggle">
+  <ul class="folding-menu">
     {{ $currentPage := . }}
     {{ range .Site.Menus.main }}
       {{ if .HasChildren }}
