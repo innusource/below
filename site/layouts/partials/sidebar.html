@@ -1,5 +1,11 @@
 <div class="col-12 col-md-3 col-xl-2 sidebar">
-  <ul class="menu-list">
+  <label for="sidebar-docs" class="menu-toggle-button">
+    <svg class="icon icon-big">
+      <use xlink:href="/assets/icons/feather.svg#menu"/>
+    </svg>
+  </label>
+  <input type="checkbox" id="sidebar-docs" role="button" class="menu-toggle">
+  <ul class="folding-menu">
     {{ $currentPage := . }}
     {{ range .Site.Menus.main }}
       {{ if .HasChildren }}
@@ -13,14 +19,14 @@
             <div class="folding-content">
               <ul>
                 {{ range .Children }}
-                  <li {{ if $currentPage.IsMenuCurrent "main" . }}active{{ end }}><a href="{{ .URL }}">{{ .Name }}</a></li>
+                  <li class="{{ if $currentPage.IsMenuCurrent "main" . }}active{{ end }}"><a href="{{ .URL }}">{{ .Name }}</a></li>
                 {{ end }}
               </ul>
             </div>
           </details>
         </li>
       {{ else }}
-        <li class="{{ if $currentPage.HasMenuCurrent "main" . }}active{{ end }}"><a href="{{ .URL }}">{{ .Name }}</a></li>
+        <li class="{{ if $currentPage.IsMenuCurrent "main" . }}active{{ end }}"><a href="{{ .URL }}">{{ .Name }}</a></li>
       {{ end }}
     {{ end }}
   </ul>

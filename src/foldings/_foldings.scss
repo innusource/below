@@ -10,28 +10,30 @@
 
   .folding-title {
     background: $ui-02;
-    font-size: 14px;
+    color: $text-02;
+    font-size: 0.95em;
     font-weight: 600;
+    border-radius: 3px;
 
     &:hover {
       background: $ui-01;
     }
   }
 
-  &[open] .folding-title:hover {
-    background: $ui-02;
+  &[open] .folding-title {
+    color: $text-01;
+
+    &:hover {
+      background: $ui-02;
+    }
   }
 
   &.folding-borderless {
     border: none;
     box-shadow: none;
 
-    :not([open]) .folding-title {
-      background: transparent;
-    }
-
-    &[open] .folding-title:hover {
-      background: transparent;
+    &[open] .folding-title {
+      background: $ui-01;
     }
   }
 

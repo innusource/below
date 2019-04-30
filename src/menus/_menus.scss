@@ -5,7 +5,11 @@
 
   .folding .folding-title,
   .folding .folding-content {
-    padding: 0.5rem 0.8rem;
+    padding: 0.45rem 0.8rem;
+  }
+
+  .folding .folding-content {
+    padding-right: 0;
   }
 
   ul {
@@ -13,39 +17,43 @@
     padding-left: 0;
     list-style: none;
 
-    a {
-      color: $text-02;
-      padding: 0.5rem 0.8rem;
-      display: block;
-      font-size: 14px;
-      font-weight: 600;
-      -moz-transition: all 0.4s ease;
-      -o-transition: all 0.4s ease;
-      -webkit-transition: all 0.4s ease;
-      transition: all 0.4s ease;
+    li {
+      a {
+        color: $text-02;
+        margin: 0.1em;
+        padding: 0.45rem 0.8rem;
+        border-radius: 3px;
+        display: block;
+        font-size: 0.95em;
+        font-weight: 600;
+        -moz-transition: all 0.4s ease;
+        -o-transition: all 0.4s ease;
+        -webkit-transition: all 0.4s ease;
+        transition: all 0.4s ease;
 
-      .icon:not(.icon-right) {
-        margin-right: 10px;
+        .icon:not(.icon-right) {
+          margin-right: 10px;
+        }
       }
 
-      &:hover,
-      &.active {
+      a:hover,
+      &.active > a {
         color: $text-01;
+        background: $ui-01;
       }
 
-      &.disabled {
+      &.disabled a {
         cursor: not-allowed;
         opacity: 0.5;
 
         &:hover {
+          background: transparent;
           color: $text-02;
         }
       }
     }
 
     .folding .folding-title {
-      color: $text-02;
-
       .icon:not(.icon-right) {
         margin-right: 10px;
       }
@@ -58,16 +66,27 @@
 
   .brand {
     color: $text-01;
+    margin-right: 0.5em;
     padding: 0.3rem 0.8rem;
     font-size: 18px;
     font-weight: 700;
+
+    &:hover {
+      background: transparent;
+      color: $text-02;
+    }
+  }
+
+  .menu-toggle,
+  .menu-toggle-button {
+    display: none;
   }
 }
 
 .navbar {
   background: $ui-02;
   padding: 0.5rem 1rem;
-  border-bottom: 1px solid $ui-03;
+  border-bottom: 2px solid $ui-03;
   justify-content: space-between;
 
   ul {
@@ -79,12 +98,8 @@
 }
 
 .sidebar {
-  height: 100vh;
   background: $ui-02;
   padding: 1rem;
-  border-right: 1px solid $ui-03;
-  flex-direction: column;
-  position: sticky;
   overflow-y: auto;
   top: 0;
   z-index: 8;
@@ -93,35 +108,79 @@
     ul {
       padding-left: 5px;
 
-      a {
+      li:not(.disabled) a {
         font-size: 12.5px;
         font-weight: normal;
       }
     }
-
-    .folding-title:hover {
-      background: transparent;
-    }
-  }
-
-  .brand {
-    margin-bottom: 15px;
   }
 }
 
 
+@include media-breakpoint-up(md) {
+  .sidebar {
+    height: 100vh;
+    position: sticky;
+    flex-direction: column;
+  }
+}
+
 @include media-breakpoint-down(sm) {
   .sidebar {
-    width: 100%;
-    top: 0;
-    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
 
-    .brand {
-      margin-bottom: 0;
+    .folding-menu {
+      width: 100%;
     }
   }
 
-  .menu-toggle {
-    display: block;
+  .sidebar,
+  .navbar {
+    width: 100%;
+    top: 0;
+    position: relative;
+    padding: 0.5rem 0.25rem;
+
+    .folding-menu {
+      margin-top: 0.5em;
+      display: none;
+      width: 100%;
+    }
+
+    .menu-toggle:checked + .folding-menu {
+      display: block;
+    }
+
+    .menu-toggle-button {
+      color: $text-03;
+      margin-left: auto;
+      padding: 0.3rem 0.8rem;
+      cursor: pointer;
+      display: block;
+
+      &:hover {
+        color: $text-01;
+      }
+    }
+  }
+
+  .navbar {
+    .navbar-scroll {
+      max-width: 100%;
+      height: 2.5rem;
+      margin-top: 0.25rem;
+      overflow: hidden;
+
+      .menu-responsive {
+        padding-bottom: 2rem;
+        overflow-x: auto;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+        -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+      }
+    }
   }
 }
