@@ -13,7 +13,7 @@ toc: true
 <a class="btn" href="#modal">Open Modal</a>
 
 <div id="modal" class="modal">
-  <a class="modal-overlay" href="#"></a>
+  <a class="modal-overlay" href="#0"></a>
   <div class="modal-container">
     <div class="modal-header">
       <h4 class="modal-title">Default Modal Title</h4>
@@ -29,7 +29,7 @@ toc: true
       </p>
     </div>
     <div class="modal-footer">
-      <a href="#" class="btn btn-clear">Close</a>
+      <a href="#0" class="btn btn-clear">Close</a>
       <a class="btn">Confirm</a>
     </div>
   </div>
@@ -42,7 +42,7 @@ toc: true
 <a class="btn" href="#modal-small">Open Small Modal</a>
 
 <div id="modal-small" class="modal modal-small">
-  <a class="modal-overlay" href="#"></a>
+  <a class="modal-overlay" href="#0"></a>
   <div class="modal-container">
     <div class="modal-header">
       <h4 class="modal-title">Small Modal Title</h4>
@@ -58,7 +58,7 @@ toc: true
       </p>
     </div>
     <div class="modal-footer">
-      <a href="#" class="btn btn-clear">Close</a>
+      <a href="#0" class="btn btn-clear">Close</a>
       <a class="btn">Confirm</a>
     </div>
   </div>
@@ -67,7 +67,7 @@ toc: true
 <a class="btn" href="#modal-big">Open Big Modal</a>
 
 <div id="modal-big" class="modal modal-big">
-  <a class="modal-overlay" href="#"></a>
+  <a class="modal-overlay" href="#0"></a>
   <div class="modal-container">
     <div class="modal-header">
       <h4 class="modal-title">Big Modal Title</h4>
@@ -86,7 +86,7 @@ toc: true
       </p>
     </div>
     <div class="modal-footer">
-      <a href="#" class="btn btn-clear">Close</a>
+      <a href="#0" class="btn btn-clear">Close</a>
       <a class="btn">Confirm</a>
     </div>
   </div>
