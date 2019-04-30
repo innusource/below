@@ -1,7 +1,9 @@
 .table {
   width: 100%;
-  border-collapse: collapse;
   margin-bottom: 0.5rem;
+  border-collapse: collapse;
+  display: block;
+  overflow-x: auto;
 
   th,
   td {
