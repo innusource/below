@@ -7,12 +7,11 @@
   input[type="text"],
   input[type="url"],
   textarea {
-    background-color: transparent;
-    border: 1px solid $ui-03;
+    background-color: $ui-01;
+    border: 2px solid $ui-04;
     border-radius: 3px;
-    box-shadow: none;
     box-sizing: inherit;
-    color: $text-01;
+    color: $text-02;
     display: inline-block;
     margin: 0;
     min-width: 15em;
@@ -20,11 +19,10 @@
     vertical-align: middle;
 
     &:focus {
-      background-color: transparent;
+      background-color: $ui-01;
       outline: 0;
       border-color: $focus;
-      box-shadow: 0 0 0 1px $focus;
-      color: $text-01;
+      color: $text-02;
     }
 
     &[readonly] {
@@ -32,8 +30,7 @@
 
       &:focus {
         outline: 0;
-        border-color: $ui-03;
-        box-shadow: none;
+        border-color: $ui-04;
       }
     }
 
@@ -42,37 +39,48 @@
     }
   }
 
-  select {
-    background-color: transparent;
-    border: 2px solid $ui-03;
-    border-radius: 3px;
-    box-shadow: none;
-    box-sizing: inherit;
-    color: $text-01;
-    display: inline-block;
-    margin: 0;
-    min-width: 15em;
-    padding: 0.5rem;
+  .container-select {
     position: relative;
-    vertical-align: middle;
-    font-size: 0.875rem;
-    font-weight: 400;
-    line-height: 1.125rem;
-    letter-spacing: 0.16px;
-    outline: 2px solid transparent;
-    outline-offset: -2px;
-    height: 2.5rem;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    width: 14rem;
-    cursor: pointer;
+    width: 15em;
+    display: inline-block;
 
-    option {
+    .select {
+      background-color: transparent;
+      border: 2px solid $ui-04;
+      border-radius: 3px;
+      box-sizing: inherit;
       color: $text-02;
+      display: inline-block;
+      margin: 0;
+      min-width: 15em;
+      padding: 0.7rem;
+      position: relative;
+      vertical-align: middle;
+      font-size: 0.875rem;
+      font-weight: 400;
+      line-height: 1.125rem;
+      letter-spacing: 0.16px;
+      outline: 2px solid transparent;
+      outline-offset: -2px;
+      height: 100%;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+      width: 100%;
+      cursor: pointer;
+
+      &:focus {
+        outline: 0;
+        border-color: $ui-04;
+      }
+    }
+
+    .icon {
+      top: 11px;
+      position: absolute;
+      right: 9px;
     }
   }
-
 
   fieldset {
     border: 0;
@@ -255,17 +263,4 @@
       display: block;
     }
   }
-}
-
-.select-arrow {
-  width: 15px;
-  height: 15px;
-  stroke: currentColor;
-  stroke-width: 2;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-  fill: none;
-  top: 5px;
-  position: relative;
-  margin-left: -23px;
 }

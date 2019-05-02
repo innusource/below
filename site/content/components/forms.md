@@ -185,12 +185,14 @@ toc: true
 ## Selects
 {{<example>}}
 <form class="form">
-  <select class="">
-    <option value="one">Value one</option>
-    <option value="two">Value two</option>
-  </select>
-  <svg class="select-arrow">
-    <use xlink:href="/assets/icons/feather.svg#chevron-down"/>
-  </svg>
+  <div class="container-select">
+    <select class="select">
+      <option value="one">Value one</option>
+      <option value="two">Value two</option>
+    </select>
+    <svg class="icon">
+      <use xlink:href="/assets/icons/feather.svg#chevron-down"/>
+    </svg>
+  </div>
 </form>
 {{</example>}}
