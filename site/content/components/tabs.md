@@ -12,10 +12,10 @@ toc: true
 {{<example>}}
 <nav class="nav-tabs">
   <ul>
-    <a href="#" class="active">Active</a>
-    <a href="#">Link</a>
-    <a href="#">Link</a>
-    <a href="#" class="disabled">Disabled</a>
+    <li class="active"><a href="#">Active</a></li>
+    <li><a href="#">Link</a></li>
+    <li><a href="#">Link</a></li>
+    <li class="disabled"><a href="#">Disabled</a></li>
   </ul>
 </nav>
 {{</example>}}

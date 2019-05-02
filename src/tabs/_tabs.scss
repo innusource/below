@@ -1,6 +1,7 @@
 .nav-tabs {
   background: $ui-02;
   padding: 0.5rem 1rem 0 0.5rem;
+  border-radius: 3px;
   display: -ms-flexbox;
   display: flex;
   flex-wrap: wrap;
@@ -13,28 +14,30 @@
     display: flex;
     list-style: none;
 
-    a {
-      width: 8rem;
-      color: $text-02;
-      margin: 0 1px;
-      padding: 0.5rem 0.8rem;
-      display: block;
-      border-bottom: 2px solid $ui-03;
-      font-size: 14px;
-      font-weight: 600;
-      -moz-transition: all 0.4s ease;
-      -o-transition: all 0.4s ease;
-      -webkit-transition: all 0.4s ease;
-      transition: all 0.4s ease;
-
-      &.active,
-      &:not(.disabled):hover {
-        border-color: $interactive-04;
+    li {
+      a {
+        width: 8rem;
+        color: $text-02;
+        margin: 0 1px;
+        padding: 0.5rem 0.8rem;
+        display: block;
+        border-bottom: 2px solid $ui-03;
+        font-size: 14px;
+        font-weight: 600;
+        -moz-transition: all 0.4s ease;
+        -o-transition: all 0.4s ease;
+        -webkit-transition: all 0.4s ease;
+        transition: all 0.4s ease;
       }
 
-      &.disabled {
+      &.disabled a {
         cursor: not-allowed;
         opacity: 0.5;
+      }
+
+      &.active a,
+      &:not(.disabled) a:hover {
+        border-color: $interactive-04;
       }
     }
   }
