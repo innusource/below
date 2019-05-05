@@ -1,186 +1,195 @@
-.navbar,
-.sidebar {
-  display: -ms-flexbox;
-  display: flex;
+.navbar-nav {
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style: none;
 
-  .folding .folding-title,
-  .folding .folding-content {
-    padding: 0.45rem 0.8rem;
-  }
+  .nav-item {
+    .nav-link {
+      color: $text-02;
+      margin: 0.1rem;
+      padding: 0.45rem 0.8rem;
+      border-radius: 3px;
+      display: block;
+      -moz-transition: all 0.4s ease;
+      -o-transition: all 0.4s ease;
+      -webkit-transition: all 0.4s ease;
+      transition: all 0.4s ease;
 
-  .folding .folding-content {
-    padding-right: 0;
-  }
+      @include properties($heading-06);
 
-  ul {
-    margin-bottom: 0;
-    padding-left: 0;
-    list-style: none;
-
-    li {
-      a {
-        color: $text-02;
-        margin: 0.1em;
-        padding: 0.45rem 0.8rem;
-        border-radius: 3px;
-        display: block;
-        font-size: 0.95em;
-        font-weight: 600;
-        -moz-transition: all 0.4s ease;
-        -o-transition: all 0.4s ease;
-        -webkit-transition: all 0.4s ease;
-        transition: all 0.4s ease;
-
-        .icon:not(.icon-right) {
-          margin-right: 10px;
-        }
-      }
-
-      a:hover,
-      &.active > a {
-        color: $text-01;
-        background: $ui-01;
-      }
-
-      &.disabled a {
-        cursor: not-allowed;
-        opacity: 0.5;
-
-        &:hover {
-          background: transparent;
-          color: $text-02;
-        }
-      }
-    }
-
-    .folding .folding-title {
       .icon:not(.icon-right) {
         margin-right: 10px;
       }
 
       &:hover {
         color: $text-01;
+        background: $ui-01;
       }
     }
+
+    &.active > .nav-link {
+      color: $text-01;
+      background: $ui-01;
+    }
+
+    &.disabled .nav-link {
+      cursor: not-allowed;
+      opacity: 0.5;
+    }
+  }
+}
+
+.nav-header {
+  display: flex;
+  align-items: center;
+  height: 3.45rem;
+  background: $ui-02;
+  padding: 0 1rem;
+  border-bottom: 2px solid $ui-03;
+
+  @include media-breakpoint-down(sm) {
+    padding: 0.5rem 2rem;
+  }
+
+  .navbar-menu {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    @include media-breakpoint-down(sm) {
+      display: none;
+    }
+  }
+
+  .navbar-nav {
+    display: flex;
+    flex-wrap: wrap;
   }
 
   .brand {
     color: $text-01;
     margin-right: 0.5em;
-    padding: 0.3rem 0.8rem;
-    font-size: 18px;
-    font-weight: 700;
+    padding: 0 0.5rem;
+
+    @include properties($body-01);
 
     &:hover {
       background: transparent;
       color: $text-02;
     }
-  }
 
-  .menu-toggle,
-  .menu-toggle-button {
-    display: none;
-  }
-}
-
-.navbar {
-  background: $ui-02;
-  padding: 0.5rem 1rem;
-  border-bottom: 2px solid $ui-03;
-  justify-content: space-between;
-
-  ul {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
+    @include media-breakpoint-down(sm) {
+      margin-left: 0.5rem;
+    }
   }
 }
 
 .sidebar {
-  background: $ui-02;
-  padding: 1rem;
-  overflow-y: auto;
-  top: 0;
-  z-index: 8;
+  padding: 0;
 
-  ul .folding {
-    ul {
-      padding-left: 5px;
-
-      li:not(.disabled) a {
-        font-size: 12.5px;
-        font-weight: normal;
-      }
-    }
-  }
-}
-
-
-@include media-breakpoint-up(md) {
-  .sidebar {
-    height: 100vh;
-    position: sticky;
-    flex-direction: column;
-  }
-}
-
-@include media-breakpoint-down(sm) {
-  .sidebar {
-    justify-content: space-between;
-    flex-wrap: wrap;
-    -ms-flex-wrap: wrap;
-
-    .folding-menu {
-      width: 100%;
-    }
-  }
-
-  .sidebar,
-  .navbar {
-    width: 100%;
+  @include media-breakpoint-down(sm) {
+    background: $overlay-01;
+    position: fixed;
     top: 0;
-    position: relative;
-    padding: 0.5rem 0.25rem;
+    bottom: 0;
+    display: none;
+    z-index: 1000;
+  }
 
-    .folding-menu {
-      margin-top: 0.5em;
-      display: none;
-      width: 100%;
+  .navbar-menu {
+    background: $ui-02;
+    padding-top: 1rem;
+    overflow-y: auto;
+    top: 0;
+    z-index: 8;
+    position: sticky;
+    height: 100vh;
+
+    @include media-breakpoint-down(sm) {
+      width: 15rem;
+      height: 100%;
+      padding-top: 3.45rem;
     }
 
-    .menu-toggle:checked + .folding-menu {
-      display: block;
-    }
+    .navbar-nav {
+      .nav-item .nav-link {
+        border-radius: 0;
+      }
 
-    .menu-toggle-button {
-      color: $text-03;
-      margin-left: auto;
-      padding: 0.3rem 0.8rem;
-      cursor: pointer;
-      display: block;
+      .folding-title,
+      .folding-content {
+        padding: 0.45rem 0.8rem;
+        border-radius: 0;
+      }
 
-      &:hover {
-        color: $text-01;
+      .folding-title {
+        .icon:not(.icon-right) {
+          margin-right: 10px;
+        }
+
+        &:hover {
+          color: $text-01;
+        }
+      }
+
+      .folding-content {
+        padding-right: 0;
+      }
+
+      & .navbar-nav {
+        padding-left: 5px;
+
+        .nav-item {
+          .nav-link {
+            border-radius: 3px;
+            margin: 0.1rem 0.5rem 0.1rem 0;
+
+            @include properties($body-02);
+          }
+        }
       }
     }
   }
 
-  .navbar {
-    .navbar-scroll {
-      max-width: 100%;
-      height: 2.5rem;
-      margin-top: 0.25rem;
-      overflow: hidden;
+  .sidebar-overlay {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    cursor: pointer;
+    height: 100%;
+    z-index: 1;
 
-      .menu-responsive {
-        padding-bottom: 2rem;
-        overflow-x: auto;
-        white-space: nowrap;
-        -webkit-overflow-scrolling: touch;
-        -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
-      }
+    @include media-breakpoint-down(sm) {
+      display: block;
     }
+  }
+}
+
+.menu-toggle {
+  display: none;
+
+  &:checked + .sidebar {
+    display: block;
+  }
+}
+
+.menu-toggle-button {
+  color: $text-03;
+  padding: 0.3rem 0.8rem;
+  cursor: pointer;
+  display: block;
+  position: absolute;
+  z-index: 10;
+  top: 0.6rem;
+
+  @include media-breakpoint-up(sm) {
+    display: none;
+  }
+
+  &:hover {
+    color: $text-01;
   }
 }
