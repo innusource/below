@@ -39,13 +39,31 @@
     }
   }
 
+  input[type="file"] {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+  }
+
+  .label-file {
+    background: $ui-01;
+    border: 2px solid $ui-04;
+    border-radius: 3px;
+    color: $text-02;
+    padding: 0.7rem;
+  }
+
   .container-select {
     position: relative;
     width: 15em;
     display: inline-block;
+    height: 3em;
 
     .select {
-      background-color: transparent;
+      background-color: $ui-01;
       border: 2px solid $ui-04;
       border-radius: 3px;
       box-sizing: inherit;
@@ -78,7 +96,7 @@
     .icon {
       top: 11px;
       position: absolute;
-      right: 9px;
+      right: 5px;
     }
   }
 
@@ -177,15 +195,15 @@
     left: 0;
     height: 15px;
     width: 15px;
-    background-color: $ui-02;
-    border: 1px solid $ui-03;
+    background-color: $ui-01;
+    border: 2px solid $ui-04;
 
     &::after {
       content: "";
       position: absolute;
       display: none;
-      left: 4.3px;
-      top: 0;
+      left: 4px;
+      top: 0.5;
       width: 5px;
       height: 11px;
       border: solid $interactive-01;
@@ -204,7 +222,7 @@
     cursor: pointer;
 
     &:checked ~ .check-mark {
-      border: 1px solid $interactive-01;
+      border: 2px solid $interactive-01;
     }
 
     &:checked ~ .check-mark::after {
@@ -231,19 +249,19 @@
     left: 0;
     height: 15px;
     width: 15px;
-    background-color: $ui-02;
-    border: 1px solid $ui-03;
+    background-color: $ui-01;
+    border: 2px solid $ui-04;
     border-radius: 50%;
 
     &::after {
       content: "";
       position: absolute;
       display: none;
-      width: 5px;
-      height: 5px;
+      width: 7px;
+      height: 7px;
       background: $interactive-01;
-      top: 4px;
-      left: 4px;
+      top: 2px;
+      left: 2px;
       border-radius: 50%;
     }
   }

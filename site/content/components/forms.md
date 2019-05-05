@@ -182,6 +182,19 @@ toc: true
 </form>
 {{</example>}}
 
+### Files
+{{<example>}}
+<form class="form">
+  <input type="file" id="custom-file" name="" value="">
+  <label for="custom-file" class="label-file">
+    Choose a file
+    <svg class="icon">
+      <use xlink:href="/assets/icons/feather.svg#upload"/>
+    </svg>
+  </label>
+</form>
+{{</example>}}
+
 ## Selects
 {{<example>}}
 <form class="form">
