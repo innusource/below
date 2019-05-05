@@ -3,7 +3,7 @@ layout: docs
 title: Tags
 menu:
   main:
-    parent: Content
+    parent: Components
 toc: true
 ---
 
