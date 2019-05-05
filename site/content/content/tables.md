@@ -13,7 +13,7 @@ toc: true
 <table class="table">
   <thead>
     <tr>
-      <th>#</th>
+      <th></th>
       <th>First</th>
       <th>Last</th>
       <th>GitHub</th>
@@ -21,19 +21,19 @@ toc: true
   </thead>
   <tbody>
     <tr>
-      <th>1</th>
+      <th><span class="avatar avatar-small">M</span></th>
       <td>Milton</td>
       <td>Olaf</td>
       <td>miltonolaf</td>
     </tr>
     <tr>
-      <th>2</th>
+      <th><span class="avatar avatar-small">J</span></th>
       <td>Jesus</td>
       <td>T.</td>
       <td>jestov</td>
     </tr>
     <tr>
-      <th>3</th>
+      <th><span class="avatar avatar-small">I</span></th>
       <td>Isaac</td>
       <td>B.</td>
       <td>Isaac343</td>
