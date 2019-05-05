@@ -3,7 +3,7 @@ layout: docs
 title: Avatars
 menu:
   main:
-    parent: Content
+    parent: Components
 toc: true
 ---
 

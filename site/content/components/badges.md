@@ -3,7 +3,7 @@ layout: docs
 title: Badges
 menu:
   main:
-    parent: Content
+    parent: Components
 toc: true
 ---
 
