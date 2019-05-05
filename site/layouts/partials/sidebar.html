@@ -1,33 +1,36 @@
-<div class="col-12 col-md-3 col-xl-2 sidebar">
-  <label for="sidebar-docs" class="menu-toggle-button">
-    <svg class="icon icon-big">
-      <use xlink:href="/assets/icons/feather.svg#menu"/>
-    </svg>
-  </label>
-  <input type="checkbox" id="sidebar-docs" role="button" class="menu-toggle">
-  <ul class="folding-menu">
-    {{ $currentPage := . }}
-    {{ range .Site.Menus.main }}
-      {{ if .HasChildren }}
-        <li class="{{ if $currentPage.HasMenuCurrent "main" . }}active{{ end }}">
-          <details class="folding folding-borderless" {{ if $currentPage.HasMenuCurrent "main" . }}open{{ end }}>
-            <summary>
-              <div class="folding-title">
-                {{ .Name }} <svg class="icon icon-right"><use xlink:href="/assets/icons/feather.svg#chevron-down"/></svg>
+<label for="sidebar-docs" class="menu-toggle-button">
+  <svg class="icon icon-big">
+    <use xlink:href="/assets/icons/feather.svg#menu"/>
+  </svg>
+</label>
+<input type="checkbox" id="sidebar-docs" role="button" class="menu-toggle">
+<aside class="col-12 col-md-3 col-xl-2 sidebar">
+  <label class="sidebar-overlay" for="sidebar-docs"></label>
+  <nav class="navbar">
+    <ul class="folding-menu">
+      {{ $currentPage := . }}
+      {{ range .Site.Menus.main }}
+        {{ if .HasChildren }}
+          <li class="{{ if $currentPage.HasMenuCurrent "main" . }}active{{ end }}">
+            <details class="folding folding-borderless" {{ if $currentPage.HasMenuCurrent "main" . }}open{{ end }}>
+              <summary>
+                <div class="folding-title">
+                  {{ .Name }} <svg class="icon icon-right"><use xlink:href="/assets/icons/feather.svg#chevron-down"/></svg>
+                </div>
+              </summary>
+              <div class="folding-content">
+                <ul>
+                  {{ range .Children }}
+                    <li class="{{ if $currentPage.IsMenuCurrent "main" . }}active{{ end }}"><a href="{{ .URL }}">{{ .Name }}</a></li>
+                  {{ end }}
+                </ul>
               </div>
-            </summary>
-            <div class="folding-content">
-              <ul>
-                {{ range .Children }}
-                  <li class="{{ if $currentPage.IsMenuCurrent "main" . }}active{{ end }}"><a href="{{ .URL }}">{{ .Name }}</a></li>
-                {{ end }}
-              </ul>
-            </div>
-          </details>
-        </li>
-      {{ else }}
-        <li class="{{ if $currentPage.IsMenuCurrent "main" . }}active{{ end }}"><a href="{{ .URL }}">{{ .Name }}</a></li>
+            </details>
+          </li>
+        {{ else }}
+          <li class="{{ if $currentPage.IsMenuCurrent "main" . }}active{{ end }}"><a href="{{ .URL }}">{{ .Name }}</a></li>
+        {{ end }}
       {{ end }}
-    {{ end }}
-  </ul>
-</div>
+    </ul>
+  </nav>
+</aside>
