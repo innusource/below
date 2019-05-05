@@ -76,13 +76,13 @@ toc: true
 
 {{<example>}}
 <div class="avatar-group">
-  <span class="avatar avatar">
+  <span class="avatar">
     <img src="/assets/img/avatar-01.jpeg">
   </span>
-  <span class="avatar avatar">
+  <span class="avatar">
     <img src="/assets/img/avatar.jpeg">
   </span>
-  <span class="avatar avatar">
+  <span class="avatar">
     <img src="/assets/img/avatar-02.jpeg">
   </span>
 </div>
