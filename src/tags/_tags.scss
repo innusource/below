@@ -26,6 +26,12 @@
     font-size: 1rem;
   }
 
+  &.tag-absolute {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+  }
+
   .icon {
     margin-left: 5px;
   }

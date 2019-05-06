@@ -47,3 +47,14 @@ toc: true
   <svg class="icon icon"><use xlink:href="/assets/icons/feather.svg#x"/></svg>
 </div>
 {{</example>}}
+
+
+## Absolute Tag
+
+If you want to use a tag inside a relative <kbd>div</kbd>, could use an absolute tag.
+
+{{<example>}}
+<div class="tag tag-absolute">
+  I'm absolute
+</div>
+{{</example>}}

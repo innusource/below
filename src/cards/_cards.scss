@@ -2,15 +2,13 @@
   width: 100%;
   background: $ui-02;
   margin: 10px 0;
-  padding: 0.8rem;
-  border: 1px solid $ui-03;
+  border: 1px solid $ui-01;
   border-radius: 6px;
   position: relative;
 
   .card-header,
-  .card-body,
-  .card-footer {
-    padding: 1.2rem 1.5rem;
+  .card-body {
+    padding: 1rem 1.25rem;
   }
 
   .card-header {
@@ -31,10 +29,9 @@
       }
 
       .card-subtitle {
-        color: $text-02;
+        color: $text-03;
         margin-left: 2px;
         font-size: 0.7rem;
-        text-transform: uppercase;
         letter-spacing: 0.5px;
       }
     }
@@ -42,10 +39,12 @@
 
   .card-footer {
     text-align: right;
+    background: $ui-01;
+    padding: 0.8rem 1.25rem;
   }
 
   > img {
     max-width: 100%;
-    border-radius: inherit;
+    border-radius: 3px 3px 0 0;
   }
 }
