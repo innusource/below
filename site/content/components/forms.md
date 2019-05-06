@@ -199,8 +199,8 @@ toc: true
 {{<example>}}
   <form class="form">
     <div class="container-search">
-      <input type="search" name="" value="">
-      <button type="button" name="" class="searh-input">
+      <input type="search">
+      <button type="button" class="search-input">
         <svg class="icon">
           <use xlink:href="/assets/icons/feather.svg#search"/>
         </svg>
