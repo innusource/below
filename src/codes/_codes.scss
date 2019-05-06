@@ -17,10 +17,10 @@ pre {
 }
 
 kbd {
-  background: $ui-05;
-  color: $text-04;
+  background: $ui-01;
+  color: $text-01;
   padding: 1px 4px;
-  border: none;
+  border: 1px solid $ui-03;
   border-radius: 3px;
   line-height: 2;
 }

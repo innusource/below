@@ -7,7 +7,7 @@ menu:
 toc: true
 ---
 
-### Default
+## Default
 {{<example>}}
 <div class="col-6">
   <div class="card">
@@ -21,7 +21,7 @@ toc: true
       </div>
       <details class="dropdown">
         <summary>
-          <svg class="icon icon-small">
+          <svg class="icon">
             <use xlink:href="/assets/icons/feather.svg#more-vertical"/>
           </svg>
         </summary>
@@ -38,18 +38,21 @@ toc: true
       </p>
     </div>
     <div class="card-footer">
-      <button class="btn btn-rounded">Add</button>
-      <button class="btn btn-rounded btn-error">Delete</button>
+      <button class="btn">Add</button>
+      <button class="btn btn-error">Delete</button>
     </div>
   </div>
 </div>
 {{</example>}}
 
 
-### Card with image
+## Card with Image
 {{<example>}}
 <div class="col-6">
   <div class="card">
+    <div class="tag tag-absolute">
+      User Experience
+    </div>
     <img src="/assets/img/img.jpeg">
     <div class="card-header">
       <div class="card-title">Title</div>
@@ -60,7 +63,19 @@ toc: true
       </p>
     </div>
     <div class="card-footer">
-      <button class="btn btn-rounded">Rounded</button>
+      <div class="avatar-group">
+        <span class="avatar avatar-small">
+          <img src="/assets/img/avatar-01.jpeg">
+        </span>
+        <span class="avatar avatar-small">
+          <img src="/assets/img/avatar.jpeg">
+        </span>
+        <span class="avatar avatar-small">R</span>
+        <span class="avatar avatar-small">
+          <img src="/assets/img/avatar-02.jpeg">
+        </span>
+      </div>
+      <button class="btn">Read <svg class="icon"><use xlink:href="/assets/icons/feather.svg#plus"/></svg></button>
     </div>
   </div>
 </div>

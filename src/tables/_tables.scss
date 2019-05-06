@@ -2,8 +2,6 @@
   width: 100%;
   margin-bottom: 0.5rem;
   border-collapse: collapse;
-  display: block;
-  overflow-x: auto;
 
   th,
   td {
@@ -42,5 +40,12 @@
   &.table-small th,
   &.table-small td {
     padding: 0.5em 1em;
+  }
+}
+
+@include media-breakpoint-down(sm) {
+  .table {
+    display: block;
+    overflow-x: auto;
   }
 }
