@@ -9,11 +9,11 @@ toc: true
 
 ### Snippets
 
-Use **<pre>** tag for a snippet code.
+Use <kbd>pre</kbd> tag for a snippet code.
 
 {{<example>}}
 <pre>
-.below{
+.below {
   background: white;
   color: black;
 }
