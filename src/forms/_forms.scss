@@ -56,6 +56,31 @@
     padding: 0.7rem;
   }
 
+  .searh-input {
+    background: $ui-01;
+    border: 2px solid $ui-04;
+    border-radius: 3px;
+    color: $interactive-01;
+    padding: 0.3rem;
+    margin-left: -3px;
+    height: 102%;
+    position: absolute;
+    width: 3.1em;
+  }
+
+  .container-search {
+    position: relative;
+    width: 15em;
+    display: inline-block;
+    height: 3em;
+
+    .icon {
+      top: 9px;
+      position: absolute;
+      right: 9px;
+    }
+  }
+
   .container-select {
     position: relative;
     width: 15em;

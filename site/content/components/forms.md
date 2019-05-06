@@ -195,6 +195,20 @@ toc: true
 </form>
 {{</example>}}
 
+### Search
+{{<example>}}
+  <form class="form">
+    <div class="container-search">
+      <input type="search" name="" value="">
+      <button type="button" name="" class="searh-input">
+        <svg class="icon">
+          <use xlink:href="/assets/icons/feather.svg#search"/>
+        </svg>
+      </button>
+    </div>
+  </form>
+{{</example>}}
+
 ## Selects
 {{<example>}}
 <form class="form">
