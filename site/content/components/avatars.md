@@ -80,26 +80,26 @@ Too avatars works if you give the class to an <kbd>a</kbd> tag.
 {{</example>}}
 
 {{<example>}}
-  <!-- Status on Square Avatars -->
-  <span class="avatar avatar-square avatar-x-large avatar-status avatar-status-on">
-    <img src="/assets/img/avatar.jpeg">
-  </span>
+<!-- Status on Square Avatars -->
+<span class="avatar avatar-square avatar-x-large avatar-status avatar-status-on">
+  <img src="/assets/img/avatar.jpeg">
+</span>
 
-  <span class="avatar avatar-square avatar-large avatar-status avatar-status-null">
-    <img src="/assets/img/avatar-01.jpeg">
-  </span>
+<span class="avatar avatar-square avatar-large avatar-status avatar-status-null">
+  <img src="/assets/img/avatar-01.jpeg">
+</span>
 
-  <span class="avatar avatar-square avatar-status avatar-status-null">
-    A
-  </span>
+<span class="avatar avatar-square avatar-status avatar-status-null">
+  A
+</span>
 
-  <span class="avatar avatar-square avatar-small avatar-status avatar-status-off">
-    <img src="/assets/img/avatar-02.jpeg">
-  </span>
+<span class="avatar avatar-square avatar-small avatar-status avatar-status-off">
+  <img src="/assets/img/avatar-02.jpeg">
+</span>
 
-  <span class="avatar avatar-square avatar-x-small avatar-status avatar-status-off">
-    XS
-  </span>
+<span class="avatar avatar-square avatar-x-small avatar-status avatar-status-off">
+  XS
+</span>
 {{</example>}}
 
 ## Avatar Box
