@@ -17,6 +17,7 @@ toc: true
     <input type="email" placeholder="Email">
     <input type="password" placeholder="Password">
 
+    <!--  Checkbox -->
     <label for="remember" class="form-input-check">
       <input id="remember" type="checkbox" value="">
       <span class="check-mark"></span> Remember me
@@ -34,13 +35,16 @@ toc: true
   <fieldset>
     <legend>A Stacked Form</legend>
 
+    <!-- "Email" input -->
     <label for="email">Email</label>
     <input id="email" type="email" placeholder="Email">
     <span class="form-message">This is a required field.</span>
 
+    <!-- Password input -->
     <label for="password">Password</label>
     <input id="password" type="password" placeholder="Password">
 
+    <!-- Select input  -->
     <label for="state">State</label>
     <div class="container-select">
       <select class="select" id="state">
@@ -53,6 +57,7 @@ toc: true
       </svg>
     </div>
 
+    <!-- Checkbox input -->
     <label for="remember-two" class="form-input-check">
       <input id="remember-two" type="checkbox" value="">
       <span class="check-mark"></span> Remember me
@@ -68,22 +73,26 @@ toc: true
 {{<example>}}
 <form class="form form-aligned">
   <fieldset>
+    <!-- Username input -->
     <div class="form-control-group">
       <label for="name">Username</label>
       <input id="name" type="text" placeholder="Username">
       <span class="form-message-inline">This is a required field.</span>
     </div>
 
+    <!-- Password input -->
     <div class="form-control-group">
       <label for="password">Password</label>
       <input id="password" type="password" placeholder="Password">
     </div>
 
+    <!-- Email input -->
     <div class="form-control-group">
       <label for="email">Email Address</label>
       <input id="email" type="email" placeholder="Email Address">
     </div>
 
+    <!-- Input -->
     <div class="form-control-group">
       <label for="foo">Supercalifragilistic Label</label>
       <input id="foo" type="text" placeholder="Enter something here...">
@@ -91,6 +100,7 @@ toc: true
 
     <div class="form-controls">
 
+      <!-- Checkbox input   -->
       <label for="conditions" class="form-input-check">
         <input id="conditions" type="checkbox" value="">
         <span class="check-mark"></span> I've read the terms and conditions
@@ -107,12 +117,15 @@ toc: true
 ### Grouped inputs
 {{<example>}}
 <form class="form">
+
+  <!-- Upper input group -->
   <fieldset class="form-group">
     <input type="text" class="form-input" placeholder="Username">
     <input type="text" class="form-input" placeholder="Password">
     <input type="email" class="form-input" placeholder="Email">
   </fieldset>
 
+  <!-- Lower input group -->
   <fieldset class="form-group">
     <input type="text" class="form-input" placeholder="A title">
     <textarea class="form-input" placeholder="Textareas work too"></textarea>
@@ -150,12 +163,14 @@ toc: true
 
 {{<example>}}
 <form class="form">
+  <!-- First checkbox -->
   <label for="option-one" class="form-input-check">
     <input id="option-one" type="checkbox" value="">
     <span class="check-mark"></span>
     Here's option one.
   </label>
 
+  <!-- Second checkbox -->
   <label for="option-two" class="form-input-check">
     <input id="option-two" type="checkbox" value="">
     <span class="check-mark"></span>
@@ -167,18 +182,22 @@ toc: true
 ### Radios
 {{<example>}}
 <form class="form">
+
+  <!-- First radio -->
   <label for="option-radio-one" class="form-input-radio">
     <input id="option-radio-one" type="radio" name="radio" value="" checked>
     <span class="radiomark"></span>
     Here's a radio button. You can choose this one..
   </label>
 
+  <!-- Second radio -->
   <label for="option-radio-two" class="form-input-radio">
     <input id="option-radio-two" type="radio" name="radio" value="">
     <span class="radiomark"></span>
     ..Or this one!
   </label>
 
+  <!-- Last radio -->
   <label for="option-radio-three" class="form-input-radio">
     <input id="option-radio-three" type="radio" name="radio" value="">
     <span class="radiomark"></span>
@@ -190,6 +209,7 @@ toc: true
 ### Files
 {{<example>}}
 <form class="form">
+  <!-- File input -->
   <input type="file" id="custom-file" name="" value="">
   <label for="custom-file" class="label-file">
     Choose a file
@@ -203,6 +223,7 @@ toc: true
 ### Search
 {{<example>}}
   <form class="form">
+    <!-- Search input -->
     <div class="container-search">
       <input type="search">
       <button type="button" class="search-input">
@@ -217,6 +238,7 @@ toc: true
 ## Select
 {{<example>}}
 <form class="form">
+  <!-- Select input -->
   <div class="container-select">
     <select class="select">
       <option value="one">Value one</option>
