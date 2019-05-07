@@ -10,136 +10,25 @@ toc: true
 ### Navbar
 
 {{<example>}}
-<nav class="navbar">
+<header class="nav-header">
   <a href="#" class="brand">Below</a>
-  <div class="navbar-scroll">
-    <ul class="menu-responsive">
-    <li class="active"><a href="#">Docs</a></li>
-    <li><a href="#">About</a></li>
-    <li class="disabled"><a href="#">Disabled</a></li>
-    <li>
-      <a href="#">
-        <svg class="icon">
-          <use xlink:href="/assets/icons/feather.svg#github"/>
-        </svg>
-        GitHub
-      </a>
-    </li>
-    <li><form class="form"><input type="text" placeholder="Search..."></form></li>
-    <li>
-      <details class="dropdown">
-        <summary class="btn btn-clear">
-          <span>miltonolaf</span>
-          <svg class="icon icon-small">
-            <use xlink:href="/assets/icons/feather.svg#chevron-down"/>
-          </svg>
-        </summary>
-        <ul class="dropdown-menu">
-          <li><a class="dropdown-item" href="#">Profile</a></li>
-          <li><a class="dropdown-item" href="#">Settings</a></li>
-          <li class="dropdown-item-separator"></li>
-          <li><a class="dropdown-item" href="#">Logout</a></li>
-        </ul>
-      </details>
-    </li>
-    </ul>
-  </div>
-</nav>
-{{</example>}}
-
-### Sidebar
-
-{{<example>}}
-<div class="row">
-  <div class="col-md-3 sidebar">
-    <a href="#" class="brand">Below</a>
-    <label for="example-01" class="menu-toggle-button">
-      <svg class="icon">
-        <use xlink:href="/assets/icons/feather.svg#menu"/>
-      </svg>
-    </label>
-    <input type="checkbox" id="example-01" role="button" class="menu-toggle">
-    <ul class="folding-menu">
-      <li>
-      <a href="#">
-        <svg class="icon">
-          <use xlink:href="/assets/icons/feather.svg#list"/>
-        </svg>
-        Pages
-        </a>
-      </li>
-      <li>
-        <details class="folding folding-borderless">
-          <summary class="folding-title">
-            <svg class="icon">
-              <use xlink:href="/assets/icons/feather.svg#layers"/>
-            </svg>
-            Posts
-            <svg class="icon icon-right icon-rotate">
-              <use xlink:href="/assets/icons/feather.svg#chevron-down"/>
-            </svg>
-          </summary>
-          <div class="folding-content">
-            <ul>
-              <li><a href="#">New Post</a></li>
-              <li><a href="#">All Posts</a></li>
-            </ul>
-          </div>
-        </details>
-      </li>
-      <li>
-        <a href="#">
-          <svg class="icon">
-            <use xlink:href="/assets/icons/feather.svg#message-circle"/>
-          </svg>
-          Comments
-        </a>
-      </li>
-      <li>
-        <a href="#">
-          <svg class="icon">
-            <use xlink:href="/assets/icons/feather.svg#settings"/>
-          </svg>
-          Appearance
-        </a>
-      </li>
-      <li class="disabled">
-        <a href="#">
-          <svg class="icon">
-            <use xlink:href="/assets/icons/feather.svg#clock"/>
-          </svg>
-          Disabled
-        </a>
-      </li>
-    </ul>
-  </div>
-  <div class="col-md-9">
-    <h5>Content</h5>
-  </div>
-</div>
-{{</example>}}
-
-### Navbar & Sidebar
-
-{{<example>}}
-<nav class="navbar">
-  <a href="#" class="brand">Below</a>
-  <div class="navbar-scroll">
-    <ul class="menu-responsive">
-      <li class="active"><a href="#">Docs</a></li>
-      <li><a href="#">About</a></li>
-      <li class="disabled"><a href="#">Disabled</a></li>
-      <li>
-        <a href="#">
+  <nav class="navbar-menu">
+    <ul class="navbar-nav">
+      <li class="nav-item active"><a href="#" class="nav-link">Active</a></li>
+      <li class="nav-item disabled"><a href="#" class="nav-link">Disabled</a></li>
+      <li class="nav-item">
+        <a href="#" class="nav-link">
           <svg class="icon">
             <use xlink:href="/assets/icons/feather.svg#github"/>
           </svg>
+          GitHub
         </a>
       </li>
-      <li><form class="form"><input type="text" placeholder="Search..."></form></li>
-      <li>
+    </ul>
+    <ul class="navbar-nav">
+      <li class="nav-item">
         <details class="dropdown">
-          <summary class="btn btn-clear">
+          <summary class="nav-link">
             <span>miltonolaf</span>
             <svg class="icon icon-small">
               <use xlink:href="/assets/icons/feather.svg#chevron-down"/>
@@ -154,30 +43,40 @@ toc: true
         </details>
       </li>
     </ul>
-  </div>
-</nav>
+  </nav>
+</header>
+{{</example>}}
 
-<div class="container-fluid">
-  <div class="row">
-    <div class="col-md-3 sidebar">
-      <label for="example-02" class="menu-toggle-button">
-        <svg class="icon">
-          <use xlink:href="/assets/icons/feather.svg#menu"/>
-        </svg>
-      </label>
-      <input type="checkbox" id="example-02 role="button" class="menu-toggle">
-      <ul class="folding-menu">
-        <li>
-        <a href="#">
-          <svg class="icon">
-            <use xlink:href="/assets/icons/feather.svg#list"/>
-          </svg>
-          Pages
+### Sidebar
+
+{{<example>}}
+<div class="row">
+  <label for="sidebar-docs" class="menu-toggle-button">
+    <svg class="icon icon-big">
+      <use xlink:href="/assets/icons/feather.svg#menu"/>
+    </svg>
+  </label>
+  <input type="checkbox" id="sidebar-docs" role="button" class="menu-toggle">
+  <aside class="col-md-3 sidebar">
+    <label class="sidebar-overlay" for="sidebar-docs"></label>
+    <label for="sidebar-docs" class="menu-toggle-button">
+      <svg class="icon icon-big">
+        <use xlink:href="/assets/icons/feather.svg#arrow-left"/>
+      </svg>
+    </label>
+    <nav class="navbar-menu">
+      <ul class="navbar-nav folding-menu">
+        <li class="nav-item">
+          <a href="#" class="nav-link">
+            <svg class="icon">
+              <use xlink:href="/assets/icons/feather.svg#list"/>
+            </svg>
+            Pages
           </a>
         </li>
-        <li>
+        <li class="nav-item">
           <details class="folding folding-borderless">
-            <summary class="folding-title">
+            <summary class="nav-link folding-title">
               <svg class="icon">
                 <use xlink:href="/assets/icons/feather.svg#layers"/>
               </svg>
@@ -187,31 +86,31 @@ toc: true
               </svg>
             </summary>
             <div class="folding-content">
-              <ul>
-                <li><a href="#">New Post</a></li>
-                <li><a href="#">All Posts</a></li>
+              <ul class="navbar-nav">
+                <li class="nav-item"><a href="#" class="nav-link">New Post</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">All Posts</a></li>
               </ul>
             </div>
           </details>
         </li>
-        <li>
-          <a href="#">
+        <li class="nav-item">
+          <a href="#" class="nav-link">
             <svg class="icon">
               <use xlink:href="/assets/icons/feather.svg#message-circle"/>
             </svg>
             Comments
           </a>
         </li>
-        <li>
-          <a href="#">
+        <li class="nav-item">
+          <a href="#" class="nav-link">
             <svg class="icon">
               <use xlink:href="/assets/icons/feather.svg#settings"/>
             </svg>
             Appearance
           </a>
         </li>
-        <li class="disabled">
-          <a href="#">
+        <li class="nav-item disabled">
+          <a href="#" class="nav-link">
             <svg class="icon">
               <use xlink:href="/assets/icons/feather.svg#clock"/>
             </svg>
@@ -219,8 +118,117 @@ toc: true
           </a>
         </li>
       </ul>
-    </div>
-    <div class="col-md-9">
+    </nav>
+  </aside>
+  <div class="col-md-9">
+    <h5>Content</h5>
+  </div>
+</div>
+{{</example>}}
+
+### Navbar & Sidebar
+
+{{<example>}}
+<header class="nav-header">
+  <a class="brand col-12 col-sm-4 col-md-3 col-lg-2" href="/">below</a>
+  <nav class="navbar-menu">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <form class="form"><input type="text" placeholder="Search..."></form>
+      </li>
+    </ul>
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <details class="dropdown">
+          <summary class="nav-link">
+            <span>miltonolaf</span>
+            <svg class="icon icon-small">
+              <use xlink:href="/assets/icons/feather.svg#chevron-down"/>
+            </svg>
+          </summary>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Profile</a></li>
+            <li><a class="dropdown-item" href="#">Settings</a></li>
+            <li class="dropdown-item-separator"></li>
+            <li><a class="dropdown-item" href="#">Logout</a></li>
+          </ul>
+        </details>
+      </li>
+    </ul>
+  </nav>
+</header>
+<div class="container-fluid">
+  <div class="row">
+    <label for="sidebar-docs" class="menu-toggle-button">
+      <svg class="icon icon-big">
+        <use xlink:href="/assets/icons/feather.svg#menu"/>
+      </svg>
+    </label>
+    <input type="checkbox" id="sidebar-docs" role="button" class="menu-toggle">
+    <aside class="sidebar col-12 col-md-3 col-xl-2">
+      <label class="sidebar-overlay" for="sidebar-docs"></label>
+      <label for="sidebar-docs" class="menu-toggle-button">
+        <svg class="icon icon-big">
+          <use xlink:href="/assets/icons/feather.svg#arrow-left"/>
+        </svg>
+      </label>
+      <nav class="navbar-menu">
+        <ul class="navbar-nav folding-menu">
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <svg class="icon">
+                <use xlink:href="/assets/icons/feather.svg#list"/>
+              </svg>
+              Pages
+            </a>
+          </li>
+          <li class="nav-item">
+            <details class="folding folding-borderless">
+              <summary class="nav-link folding-title">
+                <svg class="icon">
+                  <use xlink:href="/assets/icons/feather.svg#layers"/>
+                </svg>
+                Posts
+                <svg class="icon icon-right icon-rotate">
+                  <use xlink:href="/assets/icons/feather.svg#chevron-down"/>
+                </svg>
+              </summary>
+              <div class="folding-content">
+                <ul class="navbar-nav">
+                  <li class="nav-item"><a href="#" class="nav-link">New Post</a></li>
+                  <li class="nav-item"><a href="#" class="nav-link">All Posts</a></li>
+                </ul>
+              </div>
+            </details>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <svg class="icon">
+                <use xlink:href="/assets/icons/feather.svg#message-circle"/>
+              </svg>
+              Comments
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <svg class="icon">
+                <use xlink:href="/assets/icons/feather.svg#settings"/>
+              </svg>
+              Appearance
+            </a>
+          </li>
+          <li class="nav-item disabled">
+            <a href="#" class="nav-link">
+              <svg class="icon">
+                <use xlink:href="/assets/icons/feather.svg#clock"/>
+              </svg>
+              Disabled
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </aside>
+    <div class="col-12 col-md-9 col-xl-10">
       <h5>Content</h5>
     </div>
   </div>

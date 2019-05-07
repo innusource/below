@@ -8,15 +8,21 @@
   <div id="{{ .Title | lower }}" class="container-fluid">
     <div class="row">
       {{ partial "sidebar" . }}
-      {{ if (eq .Page.Params.toc true) }}
-        <div class="col-xl-2 toc">
-          {{ .TableOfContents }}
-        </div>
-      {{ end }}
-      <div class="col-12 col-md-10 col-xl-8 content">
+
+      <div class="col-12 col-md-9 col-xl-10 content">
         <h1>{{ .Title }}</h1>
-        {{ .Content }}
+        <div class="row">
+          <div class="col-12 col-md-12 col-xl-10">
+            {{ .Content }}
+          </div>
+          {{ if (eq .Page.Params.toc true) }}
+            <div class="col-12 col-xl-2 toc">
+              {{ .TableOfContents }}
+            </div>
+          {{ end }}
+        </div>
       </div>
+
     </div>
   </div>
   {{ partial "footer" . }}
