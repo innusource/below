@@ -1,0 +1,28 @@
+.avatar-group {
+  padding: 0 10px;
+  display: inline-block;
+
+  .avatar {
+    box-shadow: 0 0 0 3px $ui-02;
+    margin: 0 -5px;
+    vertical-align: middle;
+
+    &:hover {
+      -moz-transition: all 0.4s ease;
+      -o-transition: all 0.4s ease;
+      -webkit-transition: all 0.4s ease;
+      transition: all 0.4s ease;
+      z-index: 1;
+    }
+  }
+
+  .avatar-large,
+  .avatar-x-large {
+    box-shadow: 0 0 0 4px $ui-02;
+  }
+
+  .avatar-small,
+  .avatar-x-small {
+    box-shadow: 0 0 0 2px $ui-02;
+  }
+}

@@ -1,0 +1,53 @@
+.alert {
+  min-width: 20rem;
+  background: $ui-01;
+  margin: 10px 5px;
+  padding: 8px 15px;
+  border: 1px solid $ui-01;
+  border-left: 5px solid $interactive-01;
+  border-radius: 3px;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  align-items: center;
+  position: relative;
+
+  > .icon {
+    margin-right: 15px;
+    align-self: flex-start;
+    float: left;
+  }
+
+  .alert-close {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+  }
+
+  .alert-content {
+    display: inline-block;
+
+    .alert-title {
+      font-weight: 600;
+    }
+
+    .alert-description {
+      color: $text-02;
+    }
+  }
+
+  &.alert-success {
+    border-left-color: $support-02;
+  }
+
+  &.alert-warning {
+    border-left-color: $support-03;
+  }
+
+  &.alert-error {
+    border-left-color: $support-01;
+  }
+}
+
+details.alert:not([open]) {
+  display: none;
+}
