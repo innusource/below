@@ -8,21 +8,21 @@
   input[type="url"],
   textarea {
     background-color: $ui-01;
+    color: $text-02;
     border: none;
     border-radius: 3px;
     box-sizing: inherit;
-    color: $text-02;
     display: inline-block;
     margin: 0;
-    min-width: 15em;
     padding: 0.7rem;
+    min-width: 15em;
     vertical-align: middle;
 
     &:focus {
       background-color: $ui-01;
-      outline: 0;
-      border-color: $focus;
       color: $text-02;
+      box-shadow: 0 0 0 2px $interactive-01;
+      outline: 0;
     }
 
     &[readonly] {
@@ -40,12 +40,9 @@
   }
 
   input[type="file"] {
-    width: 0.1px;
-    height: 0.1px;
-    opacity: 0;
-    overflow: hidden;
+    width: 0;
+    height: 0;
     position: absolute;
-    z-index: -1;
   }
 
   .label-file {
