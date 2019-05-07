@@ -42,11 +42,16 @@ toc: true
     <input id="password" type="password" placeholder="Password">
 
     <label for="state">State</label>
-    <select id="state">
-      <option>AL</option>
-      <option>CA</option>
-      <option>IL</option>
-    </select>
+    <div class="container-select">
+      <select class="select" id="state">
+        <option>AL</option>
+        <option>CA</option>
+        <option>IL</option>
+      </select>
+      <svg class="icon">
+        <use xlink:href="/assets/icons/feather.svg#chevron-down"/>
+      </svg>
+    </div>
 
     <label for="remember-two" class="form-input-check">
       <input id="remember-two" type="checkbox" value="">
@@ -195,7 +200,21 @@ toc: true
 </form>
 {{</example>}}
 
-## Selects
+### Search
+{{<example>}}
+  <form class="form">
+    <div class="container-search">
+      <input type="search">
+      <button type="button" class="search-input">
+        <svg class="icon">
+          <use xlink:href="/assets/icons/feather.svg#search"/>
+        </svg>
+      </button>
+    </div>
+  </form>
+{{</example>}}
+
+## Select
 {{<example>}}
 <form class="form">
   <div class="container-select">

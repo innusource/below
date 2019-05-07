@@ -1,0 +1,24 @@
+.avatar.avatar-status {
+  &::after {
+    content: '';
+    width: 14px;
+    height: 14px;
+    box-shadow: 0 0 0 2.5px $ui-02;
+    position: absolute;
+    border-radius: 50%;
+    bottom: 2.5px;
+    right: 2.5px;
+  }
+
+  &.avatar-status-off::after {
+    background: $support-01;
+  }
+
+  &.avatar-status-on::after {
+    background: $support-02;
+  }
+
+  &.avatar-status-null::after {
+    background: $support-03;
+  }
+}

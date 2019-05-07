@@ -1,6 +1,6 @@
 .alert {
   min-width: 20rem;
-  background: lighten($interactive-01, 48%);
+  background: $ui-01;
   margin: 10px 5px;
   padding: 8px 15px;
   border: 1px solid $ui-01;
@@ -15,7 +15,6 @@
     margin-right: 15px;
     align-self: flex-start;
     float: left;
-    position: relative;
   }
 
   .alert-close {

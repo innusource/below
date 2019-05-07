@@ -37,13 +37,14 @@
 
       &.active a,
       &:not(.disabled) a:hover {
+        color: $text-01;
         border-color: $interactive-04;
       }
     }
   }
 
   .tab-panel {
-    background: #fff;
+    background: $ui-02;
     padding: 20px;
     display: none;
     order: 99;
@@ -68,7 +69,7 @@
 
     &:checked + .tab-label {
       color: $text-01;
-      border-color: $interactive-03;
+      border-color: $interactive-04;
 
       & + .tab-panel {
         display: block;
@@ -82,7 +83,7 @@
 
     &:not([disabled]) + .tab-label:hover {
       color: $text-01;
-      border-color: $interactive-03;
+      border-color: $interactive-04;
       cursor: pointer;
     }
   }
