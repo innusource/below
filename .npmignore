@@ -1,0 +1,5 @@
+site/
+config.yml
+_site/
+.cache
+dist/
