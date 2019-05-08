@@ -17,22 +17,15 @@
 
     .card-title {
       color: $text-01;
-      font-size: 1rem;
-      font-weight: 600;
       position: relative;
+
+      @include properties($heading-06);
 
       .icon {
         color: $interactive-01;
         margin-right: 8px;
         position: relative;
         top: 5px;
-      }
-
-      .card-subtitle {
-        color: $text-03;
-        margin-left: 2px;
-        font-size: 0.7rem;
-        letter-spacing: 0.5px;
       }
     }
   }
