@@ -1,0 +1,130 @@
+.btn {
+  &.btn-clear {
+    background: transparent;
+    color: $text-01;
+    border: none;
+    border-radius: 3px;
+
+    &:hover {
+      background: transparent;
+      color: $text-02;
+    }
+  }
+
+  &.btn-disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+  }
+
+  &.btn-secondary {
+    background: $interactive-02;
+    border-color: $interactive-02;
+
+    &.btn-outline {
+      color: $interactive-02;
+      border-color: $interactive-02;
+
+      &:hover {
+        background: $interactive-02;
+        border-color: $interactive-02;
+      }
+    }
+
+    &:hover {
+      background: $hover-secondary;
+      border-color: $hover-secondary;
+    }
+  }
+
+  &.btn-success {
+    background: $support-02;
+    border-color: $support-02;
+
+    &.btn-outline {
+      color: $support-02;
+      border-color: $support-02;
+
+      &:hover {
+        background: $support-02;
+        border-color: $support-02;
+      }
+    }
+
+    &:hover {
+      background: lighten($support-02, 5%);
+      border-color: lighten($support-02, 5%);
+    }
+  }
+
+  &.btn-error {
+    background: $support-01;
+    border-color: $support-01;
+
+    &.btn-outline {
+      color: $support-01;
+      border-color: $support-01;
+
+      &:hover {
+        background: $support-01;
+        border-color: $support-01;
+      }
+    }
+
+    &:hover {
+      background: lighten($support-01, 5%);
+      border-color: lighten($support-01, 5%);
+    }
+  }
+
+  &.btn-warning {
+    background: $support-03;
+    border-color: $support-03;
+
+    &.btn-outline {
+      color: $support-03;
+      border-color: $support-03;
+
+      &:hover {
+        background: $support-03;
+        border-color: $support-03;
+      }
+    }
+
+    &:hover {
+      background: darken($support-03, 5%);
+      border-color: darken($support-03, 5%);
+    }
+  }
+
+  &.btn-info {
+    background: $support-04;
+    border-color: $support-04;
+
+    &.btn-outline {
+      color: $support-04;
+      border-color: $support-04;
+
+      &:hover {
+        background: $support-04;
+        border-color: $support-04;
+      }
+    }
+
+    &:hover {
+      background: lighten($support-04, 5%);
+      border-color: lighten($support-04, 5%);
+    }
+  }
+
+  &.btn-outline {
+    background: transparent;
+    border: 1px solid $interactive-01;
+    border-radius: 3px;
+    color: $interactive-01;
+
+    &:hover {
+      background: $interactive-01;
+      color: $text-04;
+    }
+  }
+}
