@@ -14,7 +14,7 @@ toc: true
 <button class="btn btn-outline">Outline</button>
 <button class="btn btn-disabled">Disabled</button>
 <button class="btn">
-  Icon Button <svg class="icon"><use xlink:href="/assets/icons/feather.svg#arrow-down-circle"/></svg>
+  Icon Button <svg class="icon"><use xlink:href="/assets/icons/feather.svg#camera"/></svg>
 </button>
 <button class="btn btn-clear">Clear</button>
 {{</example>}}
