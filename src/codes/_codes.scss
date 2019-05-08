@@ -5,8 +5,6 @@ pre {
   padding: 1em 1.8em;
   border: none;
   border-radius: 5px;
-  font-size: 1rem;
-  line-height: 1.6;
   max-width: 100%;
   page-break-inside: avoid;
   white-space: pre-wrap;
@@ -14,6 +12,8 @@ pre {
   white-space: -pre-wrap;
   white-space: -o-pre-wrap;
   overflow-x: auto;
+
+  @include properties($body-02);
 }
 
 kbd {
@@ -22,7 +22,8 @@ kbd {
   padding: 1px 4px;
   border: 1px solid $ui-03;
   border-radius: 3px;
-  line-height: 2;
+
+  @include properties($body-02);
 }
 
 @include media-breakpoint-down(sm) {

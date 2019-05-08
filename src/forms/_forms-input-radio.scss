@@ -1,0 +1,54 @@
+.form {
+  .form-input-radio {
+    padding-left: 25px;
+    margin-bottom: 12px;
+    display: block;
+    position: relative;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+    @include properties($body-02);
+
+    .radiomark {
+      height: 15px;
+      width: 15px;
+      background-color: $ui-01;
+      border: 1px solid $ui-04;
+      border-radius: 50%;
+      position: absolute;
+      left: 0;
+      top: 0;
+
+      &::after {
+        width: 7px;
+        height: 7px;
+        background: $interactive-01;
+        border-radius: 50%;
+        display: none;
+        position: absolute;
+        content: "";
+        left: 3px;
+        top: 3px;
+      }
+    }
+
+    input[type="radio"] {
+      height: 0;
+      width: 0;
+      position: absolute;
+      opacity: 0;
+      cursor: pointer;
+
+      &:checked ~ .radiomark {
+        border-color: $interactive-01;
+      }
+
+      &:checked ~ .radiomark::after {
+        display: block;
+      }
+    }
+  }
+}

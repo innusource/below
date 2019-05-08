@@ -13,11 +13,8 @@ toc: true
   <div class="card">
     <div class="card-header">
       <div class="card-title">
-        <svg class="icon icon-big"><use xlink:href="/assets/icons/feather.svg#activity"/></svg>
-        Reports
-        <span class="card-subtitle">
-          10 pending
-        </span>
+        <svg class="icon icon-big"><use xlink:href="/assets/icons/feather.svg#inbox"/></svg>
+        Messages
       </div>
       <details class="dropdown">
         <summary>

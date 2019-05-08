@@ -5,13 +5,14 @@
   color: $text-04;
   display: inline-block;
   border-radius: 50%;
-  font-size: 1.2rem;
-  font-weight: 600;
-  line-height: 4rem;
   text-align: center;
   text-transform: uppercase;
   position: relative;
   vertical-align: bottom;
+
+  @include properties($heading-06);
+
+  line-height: 4rem;
 
   &:hover {
     color: $text-04;

@@ -2,7 +2,7 @@
   &.avatar-x-small {
     width: 1.5rem;
     height: 1.5rem;
-    font-size: 0.65rem;
+    font-size: 0.5rem;
     line-height: 1.5rem;
 
     &.avatar-status::after {
@@ -14,7 +14,7 @@
   &.avatar-small {
     width: 2rem;
     height: 2rem;
-    font-size: 0.8rem;
+    font-size: 0.75rem;
     line-height: 2rem;
 
     &.avatar-status::after {
@@ -33,7 +33,7 @@
   &.avatar-large {
     width: 6rem;
     height: 6rem;
-    font-size: 2rem;
+    font-size: 1.75rem;
     line-height: 6rem;
 
     &.avatar-status::after {
@@ -47,7 +47,7 @@
   &.avatar-x-large {
     width: 8rem;
     height: 8rem;
-    font-size: 2.5rem;
+    font-size: 2.25rem;
     line-height: 8rem;
 
     &.avatar-status::after {

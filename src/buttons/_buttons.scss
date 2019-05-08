@@ -4,21 +4,16 @@
   border: 1px solid $interactive-01;
   border-radius: 3px;
   display: inline-block;
-  padding: 0.5rem 1.5rem;
+  padding: 0.5rem 1rem;
   text-decoration: none;
-  line-height: 1.5;
   text-align: center;
-  font-size: 0.75rem;
-  font-weight: 600;
   cursor: pointer;
   -moz-transition: all 0.4s ease;
   -o-transition: all 0.4s ease;
   -webkit-transition: all 0.4s ease;
   transition: all 0.4s ease;
 
-  .icon {
-    margin: 0 3px;
-  }
+  @include properties($heading-06);
 
   &:hover {
     background: $hover-primary;
@@ -29,192 +24,7 @@
     outline: 0;
   }
 
-  &.btn-clear {
-    background: transparent;
-    color: $text-01;
-    border: none;
-    border-radius: 3px;
-
-    &:hover {
-      background: transparent;
-      color: $text-02;
-    }
-  }
-
-  &.btn-disabled {
-    cursor: not-allowed;
-    opacity: 0.5;
-  }
-
-  &.btn-medium {
-    padding: 0.5rem 1.2rem;
-    font-size: 1rem;
-  }
-
-  &.btn-big {
-    padding: 0.7rem 1.5rem;
-    font-size: 1.2rem;
-  }
-
-  &.btn-secondary {
-    background: $interactive-02;
-    border-color: $interactive-02;
-
-    &.btn-outline {
-      color: $interactive-02;
-      border-color: $interactive-02;
-
-      &:hover {
-        background: $interactive-02;
-        border-color: $interactive-02;
-      }
-    }
-
-    &:hover {
-      background: $hover-secondary;
-      border-color: $hover-secondary;
-    }
-  }
-
-  &.btn-success {
-    background: $support-02;
-    border-color: $support-02;
-
-    &.btn-outline {
-      color: $support-02;
-      border-color: $support-02;
-
-      &:hover {
-        background: $support-02;
-        border-color: $support-02;
-      }
-    }
-
-    &:hover {
-      background: lighten($support-02, 5%);
-      border-color: lighten($support-02, 5%);
-    }
-  }
-
-  &.btn-error {
-    background: $support-01;
-    border-color: $support-01;
-
-    &.btn-outline {
-      color: $support-01;
-      border-color: $support-01;
-
-      &:hover {
-        background: $support-01;
-        border-color: $support-01;
-      }
-    }
-
-    &:hover {
-      background: lighten($support-01, 5%);
-      border-color: lighten($support-01, 5%);
-    }
-  }
-
-  &.btn-warning {
-    background: $support-03;
-    border-color: $support-03;
-
-    &.btn-outline {
-      color: $support-03;
-      border-color: $support-03;
-
-      &:hover {
-        background: $support-03;
-        border-color: $support-03;
-      }
-    }
-
-    &:hover {
-      background: darken($support-03, 5%);
-      border-color: darken($support-03, 5%);
-    }
-  }
-
-  &.btn-info {
-    background: $support-04;
-    border-color: $support-04;
-
-    &.btn-outline {
-      color: $support-04;
-      border-color: $support-04;
-
-      &:hover {
-        background: $support-04;
-        border-color: $support-04;
-      }
-    }
-
-    &:hover {
-      background: lighten($support-04, 5%);
-      border-color: lighten($support-04, 5%);
-    }
-  }
-
-  &.btn-outline {
-    background: transparent;
-    border: 1px solid $interactive-01;
-    border-radius: 3px;
-    color: $interactive-01;
-
-    &:hover {
-      background: $interactive-01;
-      color: $text-04;
-    }
-
-    &.btn-outline-secondary {
-      border-color: $interactive-02;
-      color: $interactive-02;
-
-      &:hover {
-        background: $interactive-02;
-        color: $text-04;
-      }
-    }
-
-    &.btn-outline-error {
-      border-color: $support-01;
-      color: $support-01;
-
-      &:hover {
-        background: $support-01;
-        color: $text-04;
-      }
-    }
-
-    &.btn-outline-success {
-      border-color: $support-02;
-      color: $support-02;
-
-      &:hover {
-        background: $support-02;
-        color: $text-04;
-      }
-    }
-
-    &.btn-outline-warning {
-      border-color: $support-03;
-      color: $support-03;
-
-      &:hover {
-        background: $support-03;
-        color: $text-04;
-      }
-    }
-
-    &.btn-outline-info {
-      border-color: $support-04;
-      color: $support-04;
-
-      &:hover {
-        background: $support-04;
-        color: $text-04;
-      }
-    }
+  .icon {
+    margin: 0 3px;
   }
 }

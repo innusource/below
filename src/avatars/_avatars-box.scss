@@ -9,14 +9,12 @@
   .avatar-box-content {
     color: $text-01;
     margin: 0 15px;
-    font-size: 1em;
 
-    .avatar-box-content-primary {
-      font-weight: 600;
-    }
+    @include properties($heading-06);
 
     .avatar-box-content-secondary {
       color: $text-03;
+      font-weight: normal;
     }
   }
 }
