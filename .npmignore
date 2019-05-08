@@ -3,3 +3,5 @@ config.yml
 _site/
 .cache
 dist/
+scripts/
+src/

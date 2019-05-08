@@ -14,14 +14,18 @@
 
   .pagination-item,
   .pagination-action {
-    color: $text-03;
+    color: $text-02;
     margin: 0 3px;
     padding: 0.45rem 0.8rem;
     border-radius: 3px;
     cursor: pointer;
+  }
+
+  .pagination-item {
+    background: $ui-01;
 
     &:hover {
-      color: $text-01;
+      background: $ui-03;
     }
   }
 
