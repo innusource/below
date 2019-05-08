@@ -1,10 +1,11 @@
 {
   "name": "@hyphev/below",
-  "version": "1.0.0",
+  "version": "1.0.3",
   "description": "The CSS design system of hyphev projects",
   "homepage": "https://below.hyphev.com/",
   "scripts": {
     "start": "npm-run-all --parallel watch docs-serve",
+    "prepublishOnly": "scripts/prepublish",
     "linkinator": "linkinator _site --recurse --skip \"^(?!http://localhost)\"",
     "css": "npm-run-all css-compile css-minify css-copy",
     "css-copy": "cross-env-shell shx mkdir -p site/static/assets/dist/css/ && cross-env-shell shx cp -r dist/* site/static/assets/dist/css/",
