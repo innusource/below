@@ -13,6 +13,22 @@ toc: true
 <span class="avatar">A</span>
 {{</example>}}
 
+Too avatars works if you give the class to an <kbd>a</kbd> tag.
+
+{{<example>}}
+<a class="avatar" href="#">A</a>
+{{</example>}}
+
+## Types
+
+{{<example>}}
+<!-- Default -->
+<span class="avatar">A</span>
+
+<!-- Square -->
+<span class="avatar avatar-square">SQ</span>
+{{</example>}}
+
 ## Avatar with Image
 {{<example>}}
 <span class="avatar">
@@ -23,10 +39,19 @@ toc: true
 ## Sizes
 
 {{<example>}}
+<!-- Extra Large -->
 <span class="avatar avatar-x-large">XL</span>
+
+<!-- Large -->
 <span class="avatar avatar-large">L</span>
+
+<!-- Default (Medium) -->
 <span class="avatar">M</span>
+
+<!-- Small -->
 <span class="avatar avatar-small">S</span>
+
+<!-- Extra Small -->
 <span class="avatar avatar-x-small">XS</span>
 {{</example>}}
 
@@ -54,6 +79,29 @@ toc: true
 </span>
 {{</example>}}
 
+{{<example>}}
+<!-- Status on Square Avatars -->
+<span class="avatar avatar-square avatar-x-large avatar-status avatar-status-on">
+  <img src="/assets/img/avatar.jpeg">
+</span>
+
+<span class="avatar avatar-square avatar-large avatar-status avatar-status-null">
+  <img src="/assets/img/avatar-01.jpeg">
+</span>
+
+<span class="avatar avatar-square avatar-status avatar-status-null">
+  A
+</span>
+
+<span class="avatar avatar-square avatar-small avatar-status avatar-status-off">
+  <img src="/assets/img/avatar-02.jpeg">
+</span>
+
+<span class="avatar avatar-square avatar-x-small avatar-status avatar-status-off">
+  XS
+</span>
+{{</example>}}
+
 ## Avatar Box
 
 {{<example>}}
@@ -75,6 +123,7 @@ toc: true
 ## Avatars Group
 
 {{<example>}}
+<!-- Group of same sizes -->
 <div class="avatar-group">
   <span class="avatar">
     <img src="/assets/img/avatar-01.jpeg">
@@ -87,6 +136,7 @@ toc: true
   </span>
 </div>
 
+<!-- Group of differents sizes -->
 <div class="avatar-group">
   <span class="avatar avatar-x-small">XS</span>
   <span class="avatar avatar-small">S</span>

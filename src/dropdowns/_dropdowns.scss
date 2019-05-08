@@ -11,7 +11,6 @@
     display: block;
     border: 1px solid $ui-03;
     border-radius: 3px;
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.04);
     list-style: none;
     position: absolute;
     left: 0;
@@ -42,14 +41,15 @@
     }
 
     .dropdown-item {
-      width: 100%;
+      max-width: 100%;
       color: $text-02;
       padding: 8px 15px;
-      font-size: 12.5px;
       display: block;
       overflow: hidden;
       text-overflow: ellipsis;
       white-space: nowrap;
+
+      @include properties($body-02);
 
       &:hover,
       &:focus {
@@ -59,7 +59,7 @@
 
     .dropdown-item-separator {
       height: 1px;
-      background-color: $ui-03;
+      background-color: $ui-01;
       margin: 4px 0;
     }
   }

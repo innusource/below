@@ -1,9 +1,9 @@
 .avatar-group {
-  padding: 0 20px;
+  padding: 0 10px;
   display: inline-block;
 
   .avatar {
-    box-shadow: 0 0 0 4px $ui-02;
+    box-shadow: 0 0 0 3px $ui-02;
     margin: 0 -5px;
     vertical-align: middle;
 
@@ -18,11 +18,11 @@
 
   .avatar-large,
   .avatar-x-large {
-    box-shadow: 0 0 0 5px $ui-02;
+    box-shadow: 0 0 0 4px $ui-02;
   }
 
   .avatar-small,
   .avatar-x-small {
-    box-shadow: 0 0 0 3px $ui-02;
+    box-shadow: 0 0 0 2px $ui-02;
   }
 }

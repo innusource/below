@@ -25,7 +25,7 @@ toc: true
 </details>
 {{</example>}}
 
-### Dropup
+## Dropup
 {{<example>}}
 <details class="dropdown">
   <summary class="btn">
@@ -42,7 +42,7 @@ toc: true
 </details>
 {{</example>}}
 
-### Dropright
+## Dropright
 
 {{<example>}}
 <details class="dropdown">
@@ -60,7 +60,7 @@ toc: true
 </details>
 {{</example>}}
 
-### Dropleft
+## Dropleft
 
 {{<example>}}
 <details class="dropdown">
@@ -78,7 +78,7 @@ toc: true
 </details>
 {{</example>}}
 
-### Separator
+## Dropdown with Separator
 
 {{<example>}}
 <details class="dropdown">

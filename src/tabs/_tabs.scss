@@ -22,12 +22,12 @@
         padding: 0.5rem 0.8rem;
         display: block;
         border-bottom: 2px solid $ui-03;
-        font-size: 14px;
-        font-weight: 600;
         -moz-transition: all 0.4s ease;
         -o-transition: all 0.4s ease;
         -webkit-transition: all 0.4s ease;
         transition: all 0.4s ease;
+
+        @include properties($heading-06);
       }
 
       &.disabled a {
@@ -37,13 +37,14 @@
 
       &.active a,
       &:not(.disabled) a:hover {
+        color: $text-01;
         border-color: $interactive-04;
       }
     }
   }
 
   .tab-panel {
-    background: #fff;
+    background: $ui-02;
     padding: 20px;
     display: none;
     order: 99;
@@ -68,7 +69,7 @@
 
     &:checked + .tab-label {
       color: $text-01;
-      border-color: $interactive-03;
+      border-color: $interactive-04;
 
       & + .tab-panel {
         display: block;
@@ -82,7 +83,7 @@
 
     &:not([disabled]) + .tab-label:hover {
       color: $text-01;
-      border-color: $interactive-03;
+      border-color: $interactive-04;
       cursor: pointer;
     }
   }

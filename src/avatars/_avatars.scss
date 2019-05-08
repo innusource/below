@@ -5,97 +5,17 @@
   color: $text-04;
   display: inline-block;
   border-radius: 50%;
-  font-size: 1.2rem;
-  font-weight: 600;
-  line-height: 4rem;
   text-align: center;
   text-transform: uppercase;
   position: relative;
   vertical-align: bottom;
 
-  &.avatar-status {
-    &::after {
-      content: '';
-      width: 14px;
-      height: 14px;
-      box-shadow: 0 0 0 2.5px $ui-02;
-      position: absolute;
-      border-radius: 50%;
-      bottom: 2.5px;
-      right: 2.5px;
-    }
+  @include properties($heading-06);
 
-    &.avatar-status-off::after {
-      background: $support-01;
-    }
+  line-height: 4rem;
 
-    &.avatar-status-on::after {
-      background: $support-02;
-    }
-
-    &.avatar-status-null::after {
-      background: $support-03;
-    }
-  }
-
-  &.avatar-x-small {
-    width: 1.5rem;
-    height: 1.5rem;
-    font-size: 0.65rem;
-    line-height: 1.5rem;
-
-    &.avatar-status::after {
-      width: 7px;
-      height: 7px;
-    }
-  }
-
-  &.avatar-small {
-    width: 2rem;
-    height: 2rem;
-    font-size: 0.8rem;
-    line-height: 2rem;
-
-    &.avatar-status::after {
-      width: 10px;
-      height: 10px;
-    }
-  }
-
-  &.avatar-large {
-    width: 6rem;
-    height: 6rem;
-    font-size: 2rem;
-    line-height: 6rem;
-
-    &.avatar-status::after {
-      width: 18px;
-      height: 18px;
-      bottom: 5px;
-      right: 5px;
-    }
-  }
-
-  &.avatar-x-large {
-    width: 8rem;
-    height: 8rem;
-    font-size: 2.5rem;
-    line-height: 8rem;
-
-    &.avatar-status::after {
-      width: 22px;
-      height: 22px;
-      box-shadow: 0 0 0 3px $ui-02;
-      bottom: 8px;
-      right: 8px;
-    }
-  }
-
-  &.avatar-small.avatar-status::after,
-  &.avatar-x-small.avatar-status::after {
-    box-shadow: 0 0 0 2px $ui-02;
-    bottom: 0.25px;
-    right: 0.25px;
+  &:hover {
+    color: $text-04;
   }
 
   img {

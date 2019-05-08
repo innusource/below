@@ -1,0 +1,28 @@
+.avatar.avatar-square {
+  border-radius: 3px;
+
+  &.avatar-status::after {
+    top: -2px;
+    right: -2px;
+  }
+
+  &.avatar-small.avatar-status::after,
+  &.avatar-x-small.avatar-status::after {
+    top: -1px;
+    right: -1px;
+  }
+
+  &.avatar-large.avatar-status::after {
+    top: -3px;
+    right: -3px;
+  }
+
+  &.avatar-x-large.avatar-status::after {
+    top: -4px;
+    right: -4px;
+  }
+
+  img {
+    border-radius: 3px;
+  }
+}
