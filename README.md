@@ -30,7 +30,7 @@ Our documentation site lives at [below.hyphev.com](https://below.hyphev.com).
 
 ## Installation
 
-Install @hyphev/below in your project with npm:
+Install `@hyphev/below` in your project with npm:
 
 ```sh
 npm install @hyphev/below
