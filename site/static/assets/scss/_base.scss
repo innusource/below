@@ -20,13 +20,14 @@
   color: $text-01;
   position: relative;
   padding: 5vh 0;
+  align-items: center;
 
   img {
     max-width: 100%;
     margin-top: 15px;
   }
 
-  .btn {
+  .btn-group {
     margin-top: 40px;
   }
 }

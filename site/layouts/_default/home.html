@@ -7,18 +7,22 @@
     {{ partial "navbar" . }}
     <div id="{{ .Title | lower | replace ' ' '-' }}" class="container-fluid">
       <div class="row">
-        {{ partial "sidebar" . }}
-        <div class="col-12 col-md-10 hero-bg">
+        <div class="col-12 hero-bg">
           <div class="container">
             <div class="row hero">
               <div class="col-md-5">
-                <h1 class="logo logo-big"><b>hyphev</b> below <span class="tag tag-outline">v1.0.3</span></h1>
-                <p><b>CSS Design System</b></p>
-                <a class="btn" href="/getting-started">Getting Started</a>
-                <a class="btn btn-clear" href="https://github.com/hyphev/below" target="_blank">See on GitHub</a>
+                <h3 class="logo logo-big">
+                  <b>hyphev</b> below <span class="badge badge-secondary">v1.0.3</span>
+                </h3>
+                <h2>An open source<br><b>CSS Design System</b></h2>
+                <p>Designed, developed and thought about the creation of graphical interfaces, created with a minimalist approach.</p>
+                <div class="btn-group">
+                  <a class="btn btn-medium" href="/getting-started">Getting Started</a>
+                  <a class="btn btn-medium btn-secondary" href="https://github.com/hyphev/below" target="_blank">See on GitHub</a>
+                </div>
               </div>
               <div class="col-md-7">
-                <img src="assets/img/bg-01.svg">
+                <img src="assets/img/master-bg.svg">
               </div>
             </div>
           </div>
