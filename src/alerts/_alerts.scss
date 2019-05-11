@@ -1,9 +1,9 @@
 .alert {
-  min-width: 20rem;
+  width: 18rem;
+  max-width: 100%;
   background: $ui-01;
   margin: 10px 5px;
   padding: 8px 15px;
-  border: 1px solid $ui-01;
   border-left: 5px solid $interactive-01;
   border-radius: 3px;
   display: -ms-inline-flexbox;
@@ -32,6 +32,7 @@
 
     .alert-description {
       color: $text-02;
+      font-size: 90%;
     }
   }
 
