@@ -6,8 +6,14 @@
   display: inline-block;
   margin: 2px;
   border: 1px solid transparent;
+  vertical-align: middle;
 
   @include properties($heading-06);
+
+  &.tag-secondary {
+    background: $ui-03;
+    color: $text-03;
+  }
 
   &.tag-outline {
     background: transparent;
