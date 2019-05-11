@@ -11,6 +11,11 @@ html {
   -webkit-text-size-adjust: 100%;
   box-sizing: border-box;
   -ms-overflow-style: scrollbar;
+  font-family: 'Inter', sans-serif;
+}
+
+@supports (font-variation-settings: normal) {
+  html { font-family: 'Inter var', sans-serif; }
 }
 
 *,
@@ -22,11 +27,10 @@ html {
 body {
   padding: 0;
   margin: 0;
-  font-size: 0.85rem;
-  font-family: 'Inter UI', sans-serif;
   background: $ui-01;
   color: $text-01;
-  line-height: 1.5;
+
+  @include properties($body-01);
 }
 
 hr {
