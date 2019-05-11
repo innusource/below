@@ -14,18 +14,31 @@ toc: true
   Default
 </div>
 
+<div class="tag tag-secondary">
+  Secondary
+</div>
+
 <div class="tag tag-outline">
   Outline
 </div>
+{{</example>}}
 
-<div class="tag tag-icon">
+## Tags with Icons
+
+{{<example>}}
+<div class="tag">
   Default with icon
-  <svg class="icon icon-small"><use xlink:href="/assets/icons/feather.svg#x"/></svg>
+  <svg class="icon"><use xlink:href="/assets/icons/feather.svg#x"/></svg>
 </div>
 
-<div class="tag tag-outline tag-icon">
+<div class="tag tag-secondary">
+  Secondary with Icon
+  <svg class="icon"><use xlink:href="/assets/icons/feather.svg#x"/></svg>
+</div>
+
+<div class="tag tag-outline">
   Outline with icon
-  <svg class="icon icon-small"><use xlink:href="/assets/icons/feather.svg#x"/></svg>
+  <svg class="icon"><use xlink:href="/assets/icons/feather.svg#x"/></svg>
 </div>
 {{</example>}}
 
