@@ -15,8 +15,11 @@
   padding-left: 0;
 }
 
+.hero-container {
+  background: $ui-02;
+}
+
 .hero {
-  margin: 0 auto;
   color: $text-01;
   position: relative;
   padding: 5vh 0;
@@ -36,6 +39,5 @@ footer {
   border-top: 1px solid $ui-03;
   background: $ui-01;
   padding: 30px 0;
-  margin-top: 40px;
   color: $text-02;
 }
