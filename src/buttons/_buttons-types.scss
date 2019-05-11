@@ -17,6 +17,27 @@
   }
 
   &.btn-secondary {
+    background: $ui-01;
+    border-color: $ui-01;
+    color: $text-01;
+
+    &.btn-outline {
+      border-color: $hover-row;
+      color: $text-01;
+
+      &:hover {
+        background: $hover-row;
+        color: $text-01;
+      }
+    }
+
+    &:hover {
+      background: $hover-ui;
+      border-color: $hover-row;
+    }
+  }
+
+  &.btn-tertiary {
     background: $interactive-02;
     border-color: $interactive-02;
 
