@@ -10,32 +10,44 @@ toc: true
 ## Types
 
 {{<example>}}
-<div class="tag">
-  Default
-</div>
+<!-- Default Tag -->
+<div class="tag">Default</div>
 
-<div class="tag tag-secondary">
-  Secondary
-</div>
+<!-- Secondary Tag -->
+<div class="tag tag-secondary">Secondary</div>
 
-<div class="tag tag-outline">
-  Outline
-</div>
+<!-- Tertiary Tag -->
+<div class="tag tag-tertiary">Tertiary</div>
+
+<!-- Outline Tag -->
+<div class="tag tag-outline">Outline</div>
+
+<!-- Success Tag -->
+<div class="tag tag-success">Success</div>
+
+<!-- Warning Tag -->
+<div class="tag tag-warning">Warning</div>
+
+<!-- Error Tag -->
+<div class="tag tag-error">Error</div>
 {{</example>}}
 
 ## Tags with Icons
 
 {{<example>}}
+<!-- Default Tag with icon -->
 <div class="tag">
   Default with icon
   <svg class="icon"><use xlink:href="/assets/icons/feather.svg#x"/></svg>
 </div>
 
+<!-- Secondary Tag with icon -->
 <div class="tag tag-secondary">
   Secondary with Icon
   <svg class="icon"><use xlink:href="/assets/icons/feather.svg#x"/></svg>
 </div>
 
+<!-- Outline Tag with icon -->
 <div class="tag tag-outline">
   Outline with icon
   <svg class="icon"><use xlink:href="/assets/icons/feather.svg#x"/></svg>
@@ -45,19 +57,22 @@ toc: true
 ## Sizes
 
 {{<example>}}
+<!-- Small Tag -->
 <div class="tag tag-small">
   Small
   <svg class="icon icon-small"><use xlink:href="/assets/icons/feather.svg#x"/></svg>
 </div>
 
+<!-- Default Tag -->
 <div class="tag">
   Default
-  <svg class="icon icon-small"><use xlink:href="/assets/icons/feather.svg#x"/></svg>
+  <svg class="icon"><use xlink:href="/assets/icons/feather.svg#x"/></svg>
 </div>
 
+<!-- Big Tag -->
 <div class="tag tag-big">
   Big
-  <svg class="icon icon"><use xlink:href="/assets/icons/feather.svg#x"/></svg>
+  <svg class="icon"><use xlink:href="/assets/icons/feather.svg#x"/></svg>
 </div>
 {{</example>}}
 

@@ -21,6 +21,22 @@
     border-color: $interactive-01;
   }
 
+  &.badge-tertiary {
+    background: $ui-04;
+  }
+
+  &.badge-success {
+    background: $support-02;
+  }
+
+  &.badge-warning {
+    background: $support-03;
+  }
+
+  &.badge-error {
+    background: $support-01;
+  }
+
   &.badge-small {
     padding: 0 0.25rem;
     font-size: 0.6rem;
