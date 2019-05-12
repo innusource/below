@@ -96,13 +96,13 @@
   color: $text-03;
   padding: 0.3rem 0.8rem;
   cursor: pointer;
-  display: block;
+  display: none;
   position: absolute;
   z-index: 10;
   top: 0.6rem;
 
-  @include media-breakpoint-up(sm) {
-    display: none;
+  @include media-breakpoint-down(sm) {
+    display: block;
   }
 
   &.close {
