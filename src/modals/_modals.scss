@@ -13,6 +13,8 @@
   visibility: hidden;
   z-index: 900;
 
+  @include properties($body-02);
+
   .modal-overlay {
     position: absolute;
     top: 0;

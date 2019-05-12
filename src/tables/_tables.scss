@@ -3,6 +3,8 @@
   margin-bottom: 0.5rem;
   border-collapse: collapse;
 
+  @include properties($body-02);
+
   th,
   td {
     padding: 1em 2em;
