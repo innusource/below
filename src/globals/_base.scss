@@ -91,6 +91,14 @@ sup {
   top: -0.5em;
 }
 
+blockquote {
+  background: $ui-01;
+  color: $text-03;
+  margin: 0 0 15px;
+  padding: 20px;
+  border-left: 5px solid #0062ff;
+}
+
 img {
   border-style: none;
 }
