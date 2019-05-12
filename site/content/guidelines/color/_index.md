@@ -10,7 +10,7 @@ tab: lightest
 ---
 <div class="nav-tabs">
   <ul>
-    <li><a href="/guidelines/color/" class="active">Lightest</a></li>
+    <li class="active"><a href="/guidelines/color/">Lightest</a></li>
     <li><a href="/guidelines/color/light">Light</a></li>
     <li><a href="/guidelines/color/dark">Dark</a></li>
     <li><a href="/guidelines/color/darkest">Darkest</a></li>

@@ -11,7 +11,7 @@ tab: dark
   <ul>
     <li><a href="/guidelines/color/">Lightest</a></li>
     <li><a href="/guidelines/color/light">Light</a></li>
-    <li><a href="/guidelines/color/dark" class="active">Dark</a></li>
+    <li class="active"><a href="/guidelines/color/dark">Dark</a></li>
     <li><a href="/guidelines/color/darkest">Darkest</a></li>
   </ul>
 </div>
