@@ -63,7 +63,7 @@ toc: true
 ### Blockquotes with cite
 {{<example>}}
 <blockquote>
-  <p>This a simple blockquote.</p>
+  <p>This a blockquote with cite.</p>
   <cite>- Stephen Hawking.</cite>
 </blockquote>
 {{</example>}}
