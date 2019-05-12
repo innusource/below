@@ -64,7 +64,7 @@ toc: true
 
 ## Absolute Tag
 
-If you want to use a tag inside a relative <kbd>div</kbd>, could use an absolute tag.
+If you want to use a tag inside a relative <code>&lt;div&gt;</code> could use an absolute tag.
 
 {{<example>}}
 <div class="tag tag-absolute">
