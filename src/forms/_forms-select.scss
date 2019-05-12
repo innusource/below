@@ -2,8 +2,12 @@
   .container-select {
     position: relative;
     width: 15em;
+    max-width: 100%;
     display: inline-block;
-    height: 3em;
+
+    @include media-breakpoint-down(sm) {
+      width: 12em;
+    }
 
     .select {
       width: 100%;
@@ -11,7 +15,7 @@
       background-color: $ui-01;
       color: $text-02;
       margin: 0;
-      padding: 0.7rem;
+      padding: 0.5rem 0.7rem;
       border: none;
       border-radius: 3px;
       display: inline-block;
@@ -21,6 +25,12 @@
       cursor: pointer;
       -webkit-appearance: none;
       -moz-appearance: none;
+
+      @include media-breakpoint-down(sm) {
+        padding: 0.5rem;
+      }
+
+      @include properties($body-02);
 
       &:focus {
         border-color: $ui-04;
@@ -33,6 +43,7 @@
       top: 12px;
       right: 12px;
       cursor: pointer;
+      pointer-events: none;
     }
   }
 }
