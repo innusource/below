@@ -24,6 +24,7 @@ toc: true
 
 ## Types
 {{<example>}}
+<!-- Success Alert -->
 <div class="alert alert-success">
   <div class="alert-content">
     <div class="alert-title">
@@ -35,6 +36,7 @@ toc: true
   </div>
 </div>
 
+<!-- Warning Alert -->
 <div class="alert alert-warning">
   <div class="alert-content">
     <div class="alert-title">
@@ -46,6 +48,7 @@ toc: true
   </div>
 </div>
 
+<!-- Error Alert -->
 <div class="alert alert-error">
   <div class="alert-content">
     <div class="alert-title">
@@ -76,7 +79,10 @@ toc: true
 
 ## Dismissible Alert
 
+Below uses <code>&lt;details&gt;</code> tag to make dismissible alerts.
+
 {{<example>}}
+<!-- Dismissible Success Alert -->
 <details class="alert" open>
   <summary>
     <div class="alert-close">
@@ -94,6 +100,7 @@ toc: true
   </div>
 </details>
 
+<!-- Dismissible Default Alert -->
 <details class="alert alert-success" open>
   <summary>
     <div class="alert-close">

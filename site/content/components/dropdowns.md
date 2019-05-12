@@ -9,11 +9,13 @@ toc: true
 
 ## Default
 
+Below uses <code>&lt;details&gt;</code> tag to make dropdowns.
+
 {{<example>}}
 <details class="dropdown">
   <summary class="btn">
     <span>Dropdown</span>
-    <svg class="icon icon-small">
+    <svg class="icon icon-right">
       <use xlink:href="/assets/icons/feather.svg#chevron-down"/>
     </svg>
   </summary>
@@ -30,7 +32,7 @@ toc: true
 <details class="dropdown">
   <summary class="btn">
     <span>Dropup</span>
-    <svg class="icon icon-small">
+    <svg class="icon icon-right">
       <use xlink:href="/assets/icons/feather.svg#chevron-up"/>
     </svg>
   </summary>
@@ -48,7 +50,7 @@ toc: true
 <details class="dropdown">
   <summary class="btn">
     <span>Dropright</span>
-    <svg class="icon icon-small">
+    <svg class="icon icon-right">
       <use xlink:href="/assets/icons/feather.svg#chevron-right"/>
     </svg>
   </summary>
@@ -65,7 +67,7 @@ toc: true
 {{<example>}}
 <details class="dropdown">
   <summary class="btn">
-    <svg class="icon icon-small">
+    <svg class="icon">
       <use xlink:href="/assets/icons/feather.svg#chevron-left"/>
     </svg>
     <span>Dropleft</span>
@@ -84,6 +86,9 @@ toc: true
 <details class="dropdown">
   <summary class="btn">
     Dropdown with separator
+    <svg class="icon icon-right">
+      <use xlink:href="/assets/icons/feather.svg#chevron-right"/>
+    </svg>
   </summary>
   <ul class="dropdown-menu">
     <li><a class="dropdown-item" href="#">First item</a></li>

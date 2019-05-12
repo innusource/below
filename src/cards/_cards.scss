@@ -1,10 +1,12 @@
 .card {
   width: 100%;
   background: $ui-02;
-  margin: 10px 0;
+  margin: 5px 0;
   border: 1px solid $ui-01;
-  border-radius: 6px;
+  border-radius: 3px;
   position: relative;
+
+  @include properties($body-02);
 
   .card-header,
   .card-body {

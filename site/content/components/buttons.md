@@ -11,7 +11,9 @@ toc: true
 
 {{<example>}}
 <button class="btn">Default</button>
+<button class="btn btn-secondary">Secondary</button>
 <button class="btn btn-outline">Outline</button>
+<button class="btn btn-outline btn-secondary">Outline Secondary</button>
 <button class="btn btn-disabled">Disabled</button>
 <button class="btn">
   Icon Button <svg class="icon"><use xlink:href="/assets/icons/feather.svg#camera"/></svg>
@@ -30,7 +32,7 @@ toc: true
 ### Colors
 
 {{<example>}}
-<button class="btn btn-secondary">Secondary</button>
+<button class="btn btn-tertiary">Tertiary</button>
 <button class="btn btn-success">Success</button>
 <button class="btn btn-warning">Warning</button>
 <button class="btn btn-error">Error</button>
@@ -40,7 +42,7 @@ toc: true
 The colors buttons can to be outline buttons too.
 
 {{<example>}}
-<button class="btn btn-outline btn-secondary">Secondary</button>
+<button class="btn btn-outline btn-tertiary">Tertiary</button>
 <button class="btn btn-outline btn-success">Success</button>
 <button class="btn btn-outline btn-warning">Warning</button>
 <button class="btn btn-outline btn-error">Error</button>

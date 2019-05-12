@@ -1,5 +1,7 @@
 .list {
   padding-left: 0;
+
+  @include properties($body-02);
 }
 
 .sub-list {
