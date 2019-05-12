@@ -77,7 +77,7 @@
 
     .navbar-menu {
       @include media-breakpoint-down(sm) {
-        display: flex;
+        display: flex !important;
         overflow-y: hidden;
         overflow-x: auto;
         justify-content: center;
