@@ -25,7 +25,9 @@
 
   @media (max-width: 1199px) {
     order: 1;
-    position: relative;
+    position: static;
+    display: flex;
+    justify-content: end;
   }
 
   &::before {
@@ -35,10 +37,56 @@
     content: "";
     position: absolute;
     border-left: 1px solid $ui-03;
+
+    @media (max-width: 1199px) {
+      display: none;
+    }
   }
 
   .heading-06 {
     margin: 2rem 0 0 -0.3rem;
+    display: block;
+
+    @media (max-width: 1199px) {
+      margin: 0 0.3rem;
+      display: none;
+    }
+
+    span {
+      @media (max-width: 1199px) {
+        display: none;
+      }
+    }
+
+    .icon {
+      @media (max-width: 1199px) {
+        width: 18px;
+        height: 18px;
+      }
+    }
+  }
+
+  a.heading-06 {
+    @media (max-width: 1199px) {
+      display: block;
+    }
+  }
+
+  label.heading-06 {
+    cursor: pointer;
+    display: none;
+
+    @media (max-width: 1199px) {
+      display: block;
+    }
+  }
+
+  .content-toggle {
+    display: none;
+
+    &:checked + .toc {
+      display: block;
+    }
   }
 }
 

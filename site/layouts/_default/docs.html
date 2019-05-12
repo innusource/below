@@ -17,11 +17,13 @@
           </div>
           {{ if (eq .Page.Params.toc true) }}
             <div class="col-12 col-xl-2 page-side">
-              <div class="heading-06"><svg class="icon"><use xlink:href="/assets/icons/feather.svg#align-left"/></svg> Contents</div>
+              <div class="heading-06"><a href=""></a> Contents</div>
+              <label for="sidecontents" class="heading-06"><svg class="icon"><use xlink:href="/assets/icons/feather.svg#align-left"/></svg></label>
+              <input type="checkbox" id="sidecontents" role="button" class="content-toggle">
               <div class="toc">
                 {{ .TableOfContents }}
               </div>
-              <a href="" class="heading-06"><svg class="icon"><use xlink:href="/assets/icons/feather.svg#github"/></svg> Edit on Github</a>
+              <a href="" class="heading-06"><svg class="icon"><use xlink:href="/assets/icons/feather.svg#github"/></svg> <span>Edit on Github</span></a>
             </div>
           {{ end }}
         </div>
