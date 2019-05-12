@@ -10,10 +10,6 @@
       padding: 0.45rem 0.8rem;
       border-radius: 3px;
       display: flex;
-      -moz-transition: all 0.4s ease;
-      -o-transition: all 0.4s ease;
-      -webkit-transition: all 0.4s ease;
-      transition: all 0.4s ease;
 
       @include properties($heading-06);
 
