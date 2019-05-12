@@ -21,6 +21,22 @@
     color: $interactive-01;
   }
 
+  &.tag-tertiary {
+    background: $ui-04;
+  }
+
+  &.tag-success {
+    background: $support-02;
+  }
+
+  &.tag-warning {
+    background: $support-03;
+  }
+
+  &.tag-error {
+    background: $support-01;
+  }
+
   &.tag-small {
     padding: 0.1rem 0.25rem;
     font-size: 0.6rem;

@@ -118,26 +118,6 @@
     }
   }
 
-  &.btn-info {
-    background: $support-04;
-    border-color: $support-04;
-
-    &.btn-outline {
-      color: $support-04;
-      border-color: $support-04;
-
-      &:hover {
-        background: $support-04;
-        border-color: $support-04;
-      }
-    }
-
-    &:hover {
-      background: lighten($support-04, 5%);
-      border-color: lighten($support-04, 5%);
-    }
-  }
-
   &.btn-outline {
     background: transparent;
     border: 1px solid $interactive-01;

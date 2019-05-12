@@ -1,6 +1,10 @@
 code {
-  font-size: 90%;
-  color: $visited-link;
+  font-size: 80%;
+  background: $ui-01;
+  border: 1px solid $ui-03;
+  color: $text-02;
+  padding: 2px 4px;
+  border-radius: 3px;
   word-break: break-word;
 }
 
@@ -18,6 +22,12 @@ pre {
   white-space: -pre-wrap;
   white-space: -o-pre-wrap;
   overflow-x: auto;
+
+  code {
+    background: transparent;
+    border: none;
+    font-size: 100%;
+  }
 
   @include properties($body-02);
 }

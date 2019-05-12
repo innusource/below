@@ -7,7 +7,7 @@ menu:
 toc: true
 ---
 
-### Types
+## Types
 
 {{<example>}}
 <button class="btn">Default</button>
@@ -21,7 +21,7 @@ toc: true
 <button class="btn btn-clear">Clear</button>
 {{</example>}}
 
-### Sizes
+## Sizes
 
 {{<example>}}
 <button class="btn">By Default</button>
@@ -29,14 +29,13 @@ toc: true
 <button class="btn btn-big">Big Button</button>
 {{</example>}}
 
-### Colors
+## Colors
 
 {{<example>}}
 <button class="btn btn-tertiary">Tertiary</button>
 <button class="btn btn-success">Success</button>
 <button class="btn btn-warning">Warning</button>
 <button class="btn btn-error">Error</button>
-<button class="btn btn-info">Info</button>
 {{</example>}}
 
 The colors buttons can to be outline buttons too.
@@ -46,5 +45,4 @@ The colors buttons can to be outline buttons too.
 <button class="btn btn-outline btn-success">Success</button>
 <button class="btn btn-outline btn-warning">Warning</button>
 <button class="btn btn-outline btn-error">Error</button>
-<button class="btn btn-outline btn-info">Info</button>
 {{</example>}}
