@@ -10,7 +10,7 @@ toc: true
 ### Navbar
 
 {{<example>}}
-<header class="nav-header">
+<header class="nav-header only-header">
   <a href="#" class="brand">Below</a>
   <nav class="navbar-menu">
     <ul class="navbar-nav">
@@ -132,13 +132,9 @@ toc: true
 
 {{<example>}}
 <header class="nav-header">
-  <a class="brand col-12 col-sm-4 col-md-3 col-lg-2" href="/">below</a>
+  <a class="brand" href="/">below</a>
   <nav class="navbar-menu">
-    <ul class="navbar-nav">
-      <li class="nav-item active">
-        <form class="form"><input type="text" placeholder="Search..."></form>
-      </li>
-    </ul>
+    <form class="form"><input type="text" placeholder="Search..."></form>
     <ul class="navbar-nav">
       <li class="nav-item">
         <details class="dropdown">
