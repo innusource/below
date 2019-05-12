@@ -50,6 +50,7 @@ toc: true
 ### Sidebar
 
 {{<example>}}
+<div class="container-fluid">
 <div class="row">
   <label for="sidebar-docs" class="menu-toggle-button">
     <svg class="icon icon-big">
@@ -123,6 +124,7 @@ toc: true
   <div class="col-md-9">
     <h5>Content</h5>
   </div>
+</div>
 </div>
 {{</example>}}
 
