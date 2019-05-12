@@ -12,12 +12,16 @@
       <div class="col-12 col-md-9 col-xl-10 content">
         <h1>{{ .Title }}</h1>
         <div class="row">
-          <div class="col-12 col-md-12 col-xl-10">
+          <div class="col-12 col-md-12 col-xl-10 page-container">
             {{ .Content }}
           </div>
           {{ if (eq .Page.Params.toc true) }}
-            <div class="col-12 col-xl-2 toc">
-              {{ .TableOfContents }}
+            <div class="col-12 col-xl-2 page-side">
+              <div class="heading-06"><svg class="icon"><use xlink:href="/assets/icons/feather.svg#align-left"/></svg> Contents</div>
+              <div class="toc">
+                {{ .TableOfContents }}
+              </div>
+              <a href="" class="heading-06"><svg class="icon"><use xlink:href="/assets/icons/feather.svg#github"/></svg> Edit on Github</a>
             </div>
           {{ end }}
         </div>
