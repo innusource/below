@@ -14,16 +14,16 @@
           <td><code>{{ $token.var }}</code></td>
           <td><span style="font-size: {{$token.size}}; font-weight: {{$token.weight}}; ">{{ $token.description }}</span></td>
           <td>
-            <ul>
-              <li>Type: {{ $token.type }}</li>
-              <li>Size: {{ $token.size }}</li>
-              <li>Weight: {{ $token.weight }}</li>
-              <li>Letter spacing: {{ $token.letter_spacing }}</li>
-              <li>Line height: {{ $token.line_height }}</li>
+            <ul class="list list-unordered">
+              <li class="list-item">Type: {{ $token.type }}</li>
+              <li class="list-item">Size: {{ $token.size }}</li>
+              <li class="list-item">Weight: {{ $token.weight }}</li>
+              <li class="list-item">Letter spacing: {{ $token.letter_spacing }}</li>
+              <li class="list-item">Line height: {{ $token.line_height }}</li>
             </ul>
           </td>
         </tr>
       {{- end -}}
     </tbody>
   </table>
-</div>  
+</div>
