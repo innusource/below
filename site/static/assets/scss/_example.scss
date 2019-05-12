@@ -5,6 +5,15 @@
   @media (max-width: 575px) {
     padding: 5px;
   }
+
+  .sidebar .navbar-menu {
+    height: auto;
+  }
+
+  .col-md-9,
+  .col-xl-10 {
+    background: $ui-01;
+  }
 }
 
 #grid .example {

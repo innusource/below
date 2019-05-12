@@ -4,7 +4,26 @@
     {{ partial "head" . }}
   </head>
   <body class="docs">
-    {{ partial "navbar" . }}
+    <header class="nav-header only-header">
+    <a class="brand" href="/"><span class="brand-prefix">hyphev</span> below</a>
+    <nav class="navbar-menu">
+      <form class="form">
+        <input type="text" placeholder="Search...">
+      </form>
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="/getting-started">
+            Documentation
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://github.com/hyphev/below">
+            <svg class="icon"><use xlink:href="/assets/icons/feather.svg#github"/></svg> GitHub
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
     <div class="hero-container">
       <div id="{{ .Title | lower | replace ' ' '-' }}" class="container">
         <div class="row hero">
