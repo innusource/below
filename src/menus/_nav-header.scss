@@ -1,0 +1,101 @@
+.nav-header {
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: justify;
+  min-height: 3.45rem;
+  background: $ui-background;
+  padding: 0 1rem;
+  border-bottom: 2px solid $ui-03;
+
+  @include media-breakpoint-down(sm) {
+    padding: 0.5rem 2rem;
+  }
+
+  .navbar-menu {
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -ms-flex-preferred-size: 100%;
+    flex-basis: auto;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    justify-content: space-between;
+
+    @include media-breakpoint-down(sm) {
+      display: none !important;
+    }
+  }
+
+  .navbar-nav {
+    display: flex;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+
+  .brand {
+    display: inline-block;
+    color: $text-01;
+    margin-right: 4.5rem;
+    padding: 0 0.5rem;
+
+    @include properties($body-01);
+
+    &:hover {
+      background: transparent;
+      color: $text-02;
+    }
+
+    @include media-breakpoint-down(md) {
+      margin-right: 2.5rem;
+    }
+
+    @include media-breakpoint-down(sm) {
+      margin-left: 0.5rem;
+    }
+  }
+
+  &.only-header {
+    @include media-breakpoint-down(sm) {
+      height: auto;
+      -ms-flex-direction: column !important;
+      flex-direction: column !important;
+      -ms-flex-pack: start;
+      justify-content: flex-start;
+      align-items: center;
+      padding: 0.5rem 0.5rem 0;
+    }
+
+    .brand {
+      @include media-breakpoint-down(sm) {
+        margin: 0.5rem;
+      }
+    }
+
+    .navbar-menu {
+      @include media-breakpoint-down(sm) {
+        display: flex;
+        overflow-y: hidden;
+        overflow-x: auto;
+        justify-content: center;
+        max-width: 100%;
+      }
+
+      .form {
+        @include media-breakpoint-down(sm) {
+          display: none;
+        }
+      }
+
+      .navbar-nav {
+        @include media-breakpoint-down(sm) {
+          min-width: 100%;
+          padding-bottom: 0.5rem;
+        }
+      }
+    }
+  }
+}
