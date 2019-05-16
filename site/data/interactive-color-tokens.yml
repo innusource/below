@@ -53,10 +53,10 @@
   values:
     lightest:
       name: Gray 80 hover
-      hex: "#4c4c4c"
+      hex: "#dcdcdc"
     light:
       name: Gray 80 hover
-      hex: "#4c4c4c"
+      hex: "#dcdcdc"
     dark:
       name: Gray 60 hover
       hex: "#606060"
@@ -69,17 +69,17 @@
   - "$inverse-01 hover"
   values:
     lightest:
-      name: Blue 60 hover
-      hex: "#0353e9"
+      name: Gray 90
+      hex: "#353535"
     light:
-      name: Blue 60 hover
-      hex: "#0353e9"
+      name: Gray 90
+      hex: "#353535"
     dark:
-      name: Gray 10
-      hex: "#f3f3f3"
+      name: Gray 90
+      hex: "#353535"
     darkest:
-      name: Gray 10
-      hex: "#f3f3f3"
+      name: Gray 90
+      hex: "#353535"
 - var: "$hover-ui"
   role:
   - "$ui-01 hover"

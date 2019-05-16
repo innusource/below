@@ -1,13 +1,13 @@
 .btn {
   &.btn-clear {
     background: transparent;
-    color: $text-01;
+    color: $link-01;
     border: none;
     border-radius: 3px;
 
     &:hover {
       background: transparent;
-      color: $text-02;
+      opacity: 0.95;
     }
   }
 
@@ -17,37 +17,17 @@
   }
 
   &.btn-secondary {
-    background: $ui-01;
-    border-color: $ui-01;
+    background: $interactive-02;
+    border-color: $interactive-02;
     color: $text-01;
 
     &.btn-outline {
-      border-color: $ui-01;
+      border-color: $interactive-02;
       color: $text-01;
 
       &:hover {
-        background: $ui-01;
-        color: $text-01;
-        border-color: $ui-01;
-      }
-    }
-
-    &:hover {
-      background: $hover-ui;
-      border-color: $hover-ui;
-    }
-  }
-
-  &.btn-tertiary {
-    background: $interactive-02;
-    border-color: $interactive-02;
-
-    &.btn-outline {
-      color: $interactive-02;
-      border-color: $interactive-02;
-
-      &:hover {
         background: $interactive-02;
+        color: $text-01;
         border-color: $interactive-02;
       }
     }
@@ -55,6 +35,29 @@
     &:hover {
       background: $hover-secondary;
       border-color: $hover-secondary;
+    }
+  }
+
+  &.btn-tertiary {
+    background: $interactive-03;
+    border-color: $interactive-03;
+    color: $text-04;
+
+    &.btn-outline {
+      border-color: $interactive-03;
+      color: $text-01;
+
+      &:hover {
+        background: $interactive-03;
+        border-color: $interactive-03;
+        color: $text-04;
+      }
+    }
+
+    &:hover {
+      background: $hover-tertiary;
+      border-color: $hover-tertiary;
+      color: $text-04;
     }
   }
 

@@ -1,0 +1,26 @@
+.folding-group .folding {
+  margin: 0;
+  border-bottom-width: 0;
+  border-radius: 0;
+
+  &[open] .folding-title {
+    border-radius: 0;
+  }
+
+  &:first-of-type {
+    border-radius: 3px 3px 0 0;
+  }
+
+  &:last-of-type {
+    border-bottom-width: 1px;
+    border-radius: 0 0 3px 3px;
+  }
+
+  &.folding-borderless {
+    margin: 2px 0;
+
+    &[open] .folding-title {
+      border-radius: 3px;
+    }
+  }
+}
