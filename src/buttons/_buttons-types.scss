@@ -17,6 +17,28 @@
   }
 
   &.btn-secondary {
+    background: $ui-01;
+    border-color: $ui-01;
+    color: $text-01;
+
+    &.btn-outline {
+      border-color: $ui-01;
+      color: $text-01;
+
+      &:hover {
+        background: $ui-01;
+        color: $text-01;
+        border-color: $ui-01;
+      }
+    }
+
+    &:hover {
+      background: $hover-ui;
+      border-color: $hover-ui;
+    }
+  }
+
+  &.btn-tertiary {
     background: $interactive-02;
     border-color: $interactive-02;
 
@@ -93,26 +115,6 @@
     &:hover {
       background: darken($support-03, 5%);
       border-color: darken($support-03, 5%);
-    }
-  }
-
-  &.btn-info {
-    background: $support-04;
-    border-color: $support-04;
-
-    &.btn-outline {
-      color: $support-04;
-      border-color: $support-04;
-
-      &:hover {
-        background: $support-04;
-        border-color: $support-04;
-      }
-    }
-
-    &:hover {
-      background: lighten($support-04, 5%);
-      border-color: lighten($support-04, 5%);
     }
   }
 

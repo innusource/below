@@ -4,6 +4,8 @@
   display: flex;
   display: -ms-flexbox;
 
+  @include properties($body-02);
+
   &.pagination-center {
     justify-content: center;
   }

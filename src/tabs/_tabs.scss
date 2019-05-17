@@ -1,22 +1,28 @@
 .nav-tabs {
   background: $ui-02;
-  padding: 0.5rem 1rem 0 0.5rem;
+  padding: 0.5rem 0.5rem 0 0.5rem;
   border-radius: 3px;
   display: -ms-flexbox;
   display: flex;
   flex-wrap: wrap;
   -ms-flex-wrap: wrap;
 
+  @include media-breakpoint-down(sm) {
+    padding: 0.5rem 0 0 0;
+  }
+
   ul {
     margin-bottom: 0;
     padding-left: 0;
     display: -ms-flexbox;
     display: flex;
+    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
     list-style: none;
 
     li {
       a {
-        width: 8rem;
+        min-width: 8rem;
         color: $text-02;
         margin: 0 1px;
         padding: 0.5rem 0.8rem;
@@ -28,6 +34,12 @@
         transition: all 0.4s ease;
 
         @include properties($heading-06);
+
+        @include media-breakpoint-down(sm) {
+          min-width: 4.5rem;
+          margin: 0 0.5px;
+          padding: 0.35rem 0.15rem;
+        }
       }
 
       &.disabled a {
@@ -44,10 +56,15 @@
   }
 
   .tab-panel {
+    width: 100%;
     background: $ui-02;
-    padding: 20px;
+    padding: 15px;
     display: none;
     order: 99;
+
+    @include media-breakpoint-down(sm) {
+      padding: 5px;
+    }
   }
 
   .radio-tabs {
@@ -55,16 +72,23 @@
     opacity: 0;
 
     & + .tab-label {
-      width: 8rem;
+      min-width: 8rem;
       color: $text-02;
-      margin: 0 2px;
+      margin: 0 1px;
       padding: 0.5rem 0.8rem;
       border-bottom: 2px solid $ui-03;
-      font-weight: 600;
       -moz-transition: all 0.4s ease;
       -o-transition: all 0.4s ease;
       -webkit-transition: all 0.4s ease;
       transition: all 0.4s ease;
+
+      @include properties($heading-06);
+
+      @include media-breakpoint-down(sm) {
+        min-width: 4.5rem;
+        margin: 0 0.5px;
+        padding: 0.35rem 0.15rem;
+      }
     }
 
     &:checked + .tab-label {
@@ -73,6 +97,8 @@
 
       & + .tab-panel {
         display: block;
+
+        @include properties($body-02);
       }
     }
 

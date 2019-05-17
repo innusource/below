@@ -2,7 +2,7 @@
   input[type="file"] {
     width: 0;
     height: 0;
-    position: absolute;
+    position: relative;
     visibility: hidden;
   }
 
@@ -13,5 +13,8 @@
     border: none;
     border-radius: 3px;
     cursor: pointer;
+    display: inline-block;
+
+    @include properties($body-02);
   }
 }

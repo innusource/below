@@ -5,6 +5,9 @@
   "rules": {
     "at-rule-no-unknown": [true, {
       "ignoreAtRules": ["function", "if", "else","warn", "each", "include", "mixin", "for", "return", "extend", "at-root"]
+    }],
+    "property-no-unknown": [true, {
+      "ignoreProperties": ["font-named-instance"]
     }]
   }
 }

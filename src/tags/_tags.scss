@@ -6,13 +6,35 @@
   display: inline-block;
   margin: 2px;
   border: 1px solid transparent;
+  vertical-align: middle;
 
   @include properties($heading-06);
+
+  &.tag-secondary {
+    background: $ui-01;
+    color: $text-03;
+  }
 
   &.tag-outline {
     background: transparent;
     border-color: $interactive-01;
     color: $interactive-01;
+  }
+
+  &.tag-tertiary {
+    background: $ui-04;
+  }
+
+  &.tag-success {
+    background: $support-02;
+  }
+
+  &.tag-warning {
+    background: $support-03;
+  }
+
+  &.tag-error {
+    background: $support-01;
   }
 
   &.tag-small {

@@ -1,0 +1,36 @@
+.navbar-nav {
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style: none;
+
+  .nav-item {
+    .nav-link {
+      color: $text-02;
+      margin: 0.1rem;
+      padding: 0.45rem 0.8rem;
+      border-radius: 3px;
+      display: flex;
+
+      @include properties($heading-06);
+
+      .icon:not(.icon-right) {
+        margin-right: 10px;
+      }
+
+      &:hover {
+        color: $text-01;
+        background: $ui-01;
+      }
+    }
+
+    &.active > .nav-link {
+      color: $text-01;
+      background: $ui-01;
+    }
+
+    &.disabled .nav-link {
+      cursor: not-allowed;
+      opacity: 0.5;
+    }
+  }
+}

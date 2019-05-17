@@ -13,7 +13,7 @@ toc: true
 <span class="avatar">A</span>
 {{</example>}}
 
-Too avatars works if you give the class to an <kbd>a</kbd> tag.
+Too avatars works if you give the class to an <code>&lt;a&gt;</code> tag.
 
 {{<example>}}
 <a class="avatar" href="#">A</a>

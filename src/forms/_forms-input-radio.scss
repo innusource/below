@@ -16,22 +16,22 @@
       height: 15px;
       width: 15px;
       background-color: $ui-01;
-      border: 1px solid $ui-04;
+      border: 1px solid $ui-03;
       border-radius: 50%;
       position: absolute;
       left: 0;
       top: 0;
 
       &::after {
-        width: 7px;
-        height: 7px;
-        background: $interactive-01;
+        content: "";
+        width: 9px;
+        height: 9px;
+        background: #0062ff;
         border-radius: 50%;
         display: none;
         position: absolute;
-        content: "";
-        left: 3px;
-        top: 3px;
+        left: 1.65px;
+        top: 1.65px;
       }
     }
 
@@ -41,10 +41,6 @@
       position: absolute;
       opacity: 0;
       cursor: pointer;
-
-      &:checked ~ .radiomark {
-        border-color: $interactive-01;
-      }
 
       &:checked ~ .radiomark::after {
         display: block;

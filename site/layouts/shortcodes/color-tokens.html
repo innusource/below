@@ -13,9 +13,9 @@
         <tr>
           <td><code>{{ $token.var }}</code></td>
           <td>
-            <ul>
+            <ul class="list list-unordered">
               {{- range $role := $token.role -}}
-                <li>{{ $role }}</li>
+                <li class="list-item">{{ $role }}</li>
               {{- end -}}
             </ul>
           </td>
@@ -24,9 +24,9 @@
             {{ $theme := (index $token.values $tab) }}
             <div class="row">
               <div class="col">
-                <ul>
-                  <li>{{ $theme.name }}</li>
-                  <li><b>{{ $theme.hex }}</b></li>
+                <ul class="list list-unordered">
+                  <li class="list-item">{{ $theme.name }}</li>
+                  <li class="list-item"><b>{{ $theme.hex }}</b></li>
                 </ul>
               </div>
               <div class="col">
@@ -38,4 +38,4 @@
       {{- end -}}
     </tbody>
   </table>
-</div>  
+</div>

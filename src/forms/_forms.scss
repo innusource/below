@@ -7,16 +7,24 @@
   input[type="text"],
   input[type="url"],
   textarea {
-    min-width: 15em;
+    width: 15em;
+    max-width: 100%;
     background-color: $ui-01;
     color: $text-02;
-    margin: 0;
-    padding: 0.7rem;
+    margin: 1px 0;
+    padding: 0.5rem 0.7rem;
     border: none;
     border-radius: 3px;
     display: inline-block;
     box-sizing: inherit;
     vertical-align: middle;
+
+    @include properties($body-02);
+
+    @include media-breakpoint-down(sm) {
+      width: 12em;
+      padding: 0.5em;
+    }
 
     &:focus {
       background-color: $ui-01;
@@ -39,10 +47,29 @@
     }
   }
 
+  .form-controls {
+    margin: 0.75em 0;
+  }
+
+  .form-group {
+    margin: 0;
+    padding: 0.35em 0;
+
+    input[type="email"],
+    input[type="number"],
+    input[type="password"],
+    input[type="search"],
+    input[type="tel"],
+    input[type="text"],
+    input[type="url"],
+    textarea {
+      vertical-align: top;
+    }
+  }
+
   fieldset {
     border: 0;
     margin: 0;
-    padding: 0.35em 0 0.75em;
   }
 
   legend {
@@ -50,8 +77,17 @@
     width: 100%;
     padding: 0.3em 0;
     margin-bottom: 0.3em;
-    color: $text-01;
+    color: $text-02;
     border-bottom: 1px solid $ui-03;
+
+    @include properties($body-02);
+  }
+
+  label {
+    color: $text-02;
+    display: block;
+
+    @include properties($heading-06);
   }
 
   &:required {

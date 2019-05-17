@@ -6,19 +6,35 @@
   display: inline-block;
   border: 1px solid transparent;
   border-radius: 45px;
-  vertical-align: bottom;
+  vertical-align: middle;
 
   @include properties($heading-06);
 
   &.badge-secondary {
     background: $ui-01;
-    color: $text-01;
+    color: $text-03;
   }
 
   &.badge-outline {
     background: transparent;
     color: $interactive-01;
     border-color: $interactive-01;
+  }
+
+  &.badge-tertiary {
+    background: $ui-04;
+  }
+
+  &.badge-success {
+    background: $support-02;
+  }
+
+  &.badge-warning {
+    background: $support-03;
+  }
+
+  &.badge-error {
+    background: $support-01;
   }
 
   &.badge-small {

@@ -2,6 +2,9 @@
   width: 100%;
   margin-bottom: 0.5rem;
   border-collapse: collapse;
+  color: $text-01;
+
+  @include properties($body-02);
 
   th,
   td {

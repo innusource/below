@@ -17,11 +17,13 @@ toc: true
     <input type="email" placeholder="Email">
     <input type="password" placeholder="Password">
 
-    <!--  Checkbox -->
-    <label for="remember" class="form-input-check">
-      <input id="remember" type="checkbox" value="">
-      <span class="check-mark"></span> Remember me
-    </label>
+    <div class="form-controls">
+      <!--  Checkbox -->
+      <label for="remember" class="form-input-check">
+        <input id="remember" type="checkbox" value="">
+        <span class="check-mark"></span> Remember me
+      </label>
+    </div>
 
     <button type="submit" class="btn">Sign in</button>
   </fieldset>
@@ -57,11 +59,13 @@ toc: true
       </svg>
     </div>
 
-    <!-- Checkbox input -->
-    <label for="remember-two" class="form-input-check">
-      <input id="remember-two" type="checkbox" value="">
-      <span class="check-mark"></span> Remember me
-    </label>
+    <div class="form-controls">
+      <!-- Checkbox input -->
+      <label for="remember-two" class="form-input-check">
+        <input id="remember-two" type="checkbox" value="">
+        <span class="check-mark"></span> Remember me
+      </label>
+    </div>
 
     <button type="submit" class="btn">Sign in</button>
   </fieldset>
