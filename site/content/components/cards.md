@@ -53,7 +53,7 @@ toc: true
       <div class="tag tag-absolute">
         User Experience
       </div>
-      <img src="/assets/img/img.jpeg">
+      <img src="/assets/img/card-img.svg">
       <div class="card-header">
         <div class="card-title">Title</div>
       </div>
