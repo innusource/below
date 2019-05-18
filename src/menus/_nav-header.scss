@@ -31,6 +31,7 @@
   }
 
   .navbar-nav {
+    display: -ms-flexbox;
     display: flex;
     -ms-flex-direction: row;
     flex-direction: row;
@@ -78,6 +79,7 @@
     .navbar-menu {
       @include media-breakpoint-down(sm) {
         display: flex !important;
+        display: -ms-flexbox !important;
         overflow-y: hidden;
         overflow-x: auto;
         justify-content: center;

@@ -1,12 +1,12 @@
 @mixin lightest-theme {
   $interactive-01: #0062ff !default !global;
-  $interactive-02: #171717 !default !global;
-  $interactive-03: #0062ff !default !global;
+  $interactive-02: #e9e9e9 !default !global;
+  $interactive-03: #171717 !default !global;
   $interactive-04: #0062ff !default !global;
   $ui-background: #fff !default !global;
   $ui-01: #f3f3f3 !default !global;
   $ui-02: #fff !default !global;
-  $ui-03: #dcdcdc !default !global;
+  $ui-03: #e9e9e9 !default !global;
   $ui-04: #8c8c8c !default !global;
   $ui-05: #171717 !default !global;
   $text-01: #171717 !default !global;
@@ -30,9 +30,9 @@
   $hover-primary: #0353e9 !default !global;
   $active-primary: #0530ad !default !global;
   $hover-primary-text: #054ada !default !global;
-  $hover-secondary: #4c4c4c !default !global;
+  $hover-secondary: #dcdcdc !default !global;
   $active-secondary: #6f6f6f !default !global;
-  $hover-tertiary: #0353e9 !default !global;
+  $hover-tertiary: #363636 !default !global;
   $active-tertiary: #0530ad !default !global;
   $hover-ui: #e5e5e5 !default !global;
   $active-ui: #bebebe !default !global;
@@ -55,13 +55,13 @@
 
 @mixin light-theme {
   $interactive-01: #0062ff !default !global;
-  $interactive-02: #171717 !default !global;
-  $interactive-03: #0062ff !default !global;
+  $interactive-02: #e9e9e9 !default !global;
+  $interactive-03: #171717 !default !global;
   $interactive-04: #0062ff !default !global;
   $ui-background: #f3f3f3 !default !global;
   $ui-01: #fff !default !global;
   $ui-02: #f3f3f3 !default !global;
-  $ui-03: #dcdcdc !default !global;
+  $ui-03: #e9e9e9 !default !global;
   $ui-04: #8c8c8c !default !global;
   $ui-05: #171717 !default !global;
   $text-01: #171717 !default !global;
@@ -85,9 +85,9 @@
   $hover-primary: #0353e9 !default !global;
   $active-primary: #0530ad !default !global;
   $hover-primary-text: #054ada !default !global;
-  $hover-secondary: #4c4c4c !default !global;
+  $hover-secondary: #dcdcdc !default !global;
   $active-secondary: #6f6f6f !default !global;
-  $hover-tertiary: #0353e9 !default !global;
+  $hover-tertiary: #363636 !default !global;
   $active-tertiary: #0530ad !default !global;
   $hover-ui: #e5e5e5 !default !global;
   $active-ui: #bebebe !default !global;
@@ -111,12 +111,12 @@
 @mixin dark-theme {
   $interactive-01: #0062ff !default !global;
   $interactive-02: #6f6f6f !default !global;
-  $interactive-03: #fff !default !global;
+  $interactive-03: #171717 !default !global;
   $interactive-04: #408bfc !default !global;
   $ui-background: #282828 !default !global;
   $ui-01: #3d3d3d !default !global;
   $ui-02: #565656 !default !global;
-  $ui-03: #565656 !default !global;
+  $ui-03: #363636 !default !global;
   $ui-04: #8c8c8c !default !global;
   $ui-05: #f3f3f3 !default !global;
   $text-01: #f3f3f3 !default !global;
@@ -142,7 +142,7 @@
   $hover-primary-text: #054ada !default !global;
   $hover-secondary: #606060 !default !global;
   $active-secondary: #3d3d3d !default !global;
-  $hover-tertiary: #f3f3f3 !default !global;
+  $hover-tertiary: #353535 !default !global;
   $active-tertiary: #bebebe !default !global;
   $hover-ui: #353535 !default !global;
   $active-ui: #6f6f6f !default !global;
@@ -166,12 +166,12 @@
 @mixin darkest-theme {
   $interactive-01: #0062ff !default !global;
   $interactive-02: #6f6f6f !default !global;
-  $interactive-03: #fff !default !global;
+  $interactive-03: #171717 !default !global;
   $interactive-04: #408bfc !default !global;
   $ui-background: #171717 !default !global;
   $ui-01: #282828 !default !global;
   $ui-02: #3d3d3d !default !global;
-  $ui-03: #3d3d3d !default !global;
+  $ui-03: #363636 !default !global;
   $ui-04: #6f6f6f !default !global;
   $ui-05: #f3f3f3 !default !global;
   $text-01: #f3f3f3 !default !global;
@@ -197,7 +197,7 @@
   $hover-primary-text: #054ada !default !global;
   $hover-secondary: #606060 !default !global;
   $active-secondary: #3d3d3d !default !global;
-  $hover-tertiary: #f3f3f3 !default !global;
+  $hover-tertiary: #353535 !default !global;
   $active-tertiary: #bebebe !default !global;
   $hover-ui: #353535 !default !global;
   $active-ui: #565656 !default !global;
