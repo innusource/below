@@ -1,5 +1,5 @@
 <p align="center">
-  <img width="300px" src="site/static/assets/img/readme.svg">
+  <img width="300px" src="https://raw.githubusercontent.com/hyphev/below/master/site/static/assets/img/readme.svg?sanitize=true">
 </p>
 <h1 align="center">hyphev below CSS</h1>
 <p align="center">The CSS design system of hyphev projects</p>
