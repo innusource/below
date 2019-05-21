@@ -34,7 +34,7 @@ toc: true
               <use xlink:href="/assets/icons/feather.svg#chevron-down"/>
             </svg>
           </summary>
-          <ul class="dropdown-menu">
+          <ul class="dropdown-content">
             <li><a class="dropdown-item" href="#">Profile</a></li>
             <li><a class="dropdown-item" href="#">Settings</a></li>
             <li class="dropdown-item-separator"></li>
@@ -144,7 +144,7 @@ toc: true
               <use xlink:href="/assets/icons/feather.svg#chevron-down"/>
             </svg>
           </summary>
-          <ul class="dropdown-menu">
+          <ul class="dropdown-content">
             <li><a class="dropdown-item" href="#">Profile</a></li>
             <li><a class="dropdown-item" href="#">Settings</a></li>
             <li class="dropdown-item-separator"></li>
