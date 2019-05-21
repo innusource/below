@@ -2,54 +2,68 @@
   display: inline-block;
   position: relative;
 
-  .dropdown-menu {
+  .dropdown-content {
     width: 170px;
     background: $ui-02;
     margin: 0;
     margin-top: 3px;
-    padding: 0;
+    padding: 8px;
     display: block;
     border: 1px solid $ui-03;
     border-radius: 3px;
     list-style: none;
     position: absolute;
-    left: 0;
+    left: auto;
+    right: 0;
     z-index: 90;
 
-    &.dropdown-menu-up {
+    @include properties($body-02);
+
+    &.dropup-content,
+    &.dropup-content-left {
       margin-bottom: 3px;
-      left: 0;
       bottom: 100%;
       top: auto;
     }
 
-    &.dropdown-menu-lt {
-      width: auto;
-      margin-right: 3px;
-      margin-top: 0;
-      left: auto;
-      right: 100%;
-      top: -1px;
+    &.dropup-content-left {
+      left: 0;
+      right: auto;
     }
 
-    &.dropdown-menu-rt {
-      width: auto;
-      margin-left: 3px;
-      margin-top: 0;
-      left: 100%;
-      top: -1px;
+    &.dropdown-content-left {
+      left: 0;
+      right: auto;
+    }
+
+    &.dropleft-content {
+      @include media-breakpoint-up(md) {
+        margin-right: 3px;
+        margin-top: 0;
+        left: auto;
+        right: 100%;
+        top: 0;
+      }
+    }
+
+    &.dropright-content {
+      @include media-breakpoint-up(md) {
+        margin-left: 3px;
+        margin-top: 0;
+        left: 100%;
+        top: 0;
+      }
     }
 
     .dropdown-item {
       max-width: 100%;
       color: $text-02;
       padding: 8px 15px;
+      border-radius: 3px;
       display: block;
       overflow: hidden;
       text-overflow: ellipsis;
       white-space: nowrap;
-
-      @include properties($body-02);
 
       &:hover,
       &:focus {
