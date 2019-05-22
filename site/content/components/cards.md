@@ -23,7 +23,7 @@ toc: true
               <use xlink:href="/assets/icons/feather.svg#more-vertical"/>
             </svg>
           </summary>
-          <ul class="dropdown-menu">
+          <ul class="dropdown-content">
             <li><a class="dropdown-item" href="#">First item</a></li>
             <li><a class="dropdown-item" href="#">Second item</a></li>
             <li><a class="dropdown-item" href="#">Third item</a></li>

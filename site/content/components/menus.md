@@ -34,7 +34,7 @@ toc: true
               <use xlink:href="/assets/icons/feather.svg#chevron-down"/>
             </svg>
           </summary>
-          <ul class="dropdown-menu">
+          <ul class="dropdown-content">
             <li><a class="dropdown-item" href="#">Profile</a></li>
             <li><a class="dropdown-item" href="#">Settings</a></li>
             <li class="dropdown-item-separator"></li>
@@ -66,7 +66,18 @@ toc: true
       </svg>
     </label>
     <nav class="navbar-menu">
-      <ul class="navbar-nav folding-menu">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a href="#" class="nav-link">
+            <svg class="icon">
+              <use xlink:href="/assets/icons/feather.svg#home"/>
+            </svg>
+            Dashboard
+          </a>
+        </li>
+      </ul>
+      <ul class="navbar-nav">
+        <div class="nav-title">Content</div>
         <li class="nav-item">
           <a href="#" class="nav-link">
             <svg class="icon">
@@ -94,20 +105,42 @@ toc: true
             </div>
           </details>
         </li>
+      </ul>
+      <ul class="navbar-nav">
+        <div class="nav-title">Audience</div>
         <li class="nav-item">
           <a href="#" class="nav-link">
             <svg class="icon">
               <use xlink:href="/assets/icons/feather.svg#message-circle"/>
             </svg>
-            Comments
+            Messages
           </a>
         </li>
         <li class="nav-item">
           <a href="#" class="nav-link">
             <svg class="icon">
-              <use xlink:href="/assets/icons/feather.svg#settings"/>
+              <use xlink:href="/assets/icons/feather.svg#message-square"/>
             </svg>
-            Appearance
+            Comments
+          </a>
+        </li>
+      </ul>
+      <ul class="navbar-nav">
+        <div class="nav-title">Store</div>
+        <li class="nav-item">
+          <a href="#" class="nav-link">
+            <svg class="icon">
+              <use xlink:href="/assets/icons/feather.svg#shopping-bag"/>
+            </svg>
+            Products
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link">
+            <svg class="icon">
+              <use xlink:href="/assets/icons/feather.svg#shopping-cart"/>
+            </svg>
+            Sales
           </a>
         </li>
         <li class="nav-item disabled">
@@ -116,6 +149,17 @@ toc: true
               <use xlink:href="/assets/icons/feather.svg#clock"/>
             </svg>
             Disabled
+          </a>
+        </li>
+      </ul>
+      <!-- navbar at bottom of sidebar -->
+      <ul class="navbar-nav navbar-nav-bottom">
+        <li class="nav-item">
+          <a href="#" class="nav-link">
+            <svg class="icon">
+              <use xlink:href="/assets/icons/feather.svg#settings"/>
+            </svg>
+            Settings
           </a>
         </li>
       </ul>
@@ -144,7 +188,7 @@ toc: true
               <use xlink:href="/assets/icons/feather.svg#chevron-down"/>
             </svg>
           </summary>
-          <ul class="dropdown-menu">
+          <ul class="dropdown-content">
             <li><a class="dropdown-item" href="#">Profile</a></li>
             <li><a class="dropdown-item" href="#">Settings</a></li>
             <li class="dropdown-item-separator"></li>
@@ -171,7 +215,18 @@ toc: true
         </svg>
       </label>
       <nav class="navbar-menu">
-        <ul class="navbar-nav folding-menu">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <svg class="icon">
+                <use xlink:href="/assets/icons/feather.svg#home"/>
+              </svg>
+              Dashboard
+            </a>
+          </li>
+        </ul>
+        <ul class="navbar-nav">
+          <div class="nav-title">Content</div>
           <li class="nav-item">
             <a href="#" class="nav-link">
               <svg class="icon">
@@ -199,20 +254,42 @@ toc: true
               </div>
             </details>
           </li>
+        </ul>
+        <ul class="navbar-nav">
+          <div class="nav-title">Audience</div>
           <li class="nav-item">
             <a href="#" class="nav-link">
               <svg class="icon">
                 <use xlink:href="/assets/icons/feather.svg#message-circle"/>
               </svg>
-              Comments
+              Messages
             </a>
           </li>
           <li class="nav-item">
             <a href="#" class="nav-link">
               <svg class="icon">
-                <use xlink:href="/assets/icons/feather.svg#settings"/>
+                <use xlink:href="/assets/icons/feather.svg#message-square"/>
               </svg>
-              Appearance
+              Comments
+            </a>
+          </li>
+        </ul>
+        <ul class="navbar-nav">
+          <div class="nav-title">Store</div>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <svg class="icon">
+                <use xlink:href="/assets/icons/feather.svg#shopping-bag"/>
+              </svg>
+              Products
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <svg class="icon">
+                <use xlink:href="/assets/icons/feather.svg#shopping-cart"/>
+              </svg>
+              Sales
             </a>
           </li>
           <li class="nav-item disabled">
@@ -221,6 +298,17 @@ toc: true
                 <use xlink:href="/assets/icons/feather.svg#clock"/>
               </svg>
               Disabled
+            </a>
+          </li>
+        </ul>
+        <!-- navbar at bottom of sidebar -->
+        <ul class="navbar-nav navbar-nav-bottom">
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <svg class="icon">
+                <use xlink:href="/assets/icons/feather.svg#settings"/>
+              </svg>
+              Settings
             </a>
           </li>
         </ul>

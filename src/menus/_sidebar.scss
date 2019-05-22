@@ -19,6 +19,9 @@
     z-index: 8;
     position: sticky;
     height: 100vh;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: column;
 
     @include media-breakpoint-down(sm) {
       width: 15rem;
@@ -27,6 +30,16 @@
     }
 
     .navbar-nav {
+      margin-bottom: 0.5rem;
+
+      .nav-title {
+        padding: 0.45rem 0.8rem;
+        color: $text-03;
+        display: block;
+
+        @include properties($body-02);
+      }
+
       .nav-item .nav-link {
         border-radius: 0;
         margin: 0.1rem 0;
@@ -52,7 +65,7 @@
         padding-right: 0;
       }
 
-      & .navbar-nav {
+      .navbar-nav {
         padding-left: 5px;
 
         .nav-item {
@@ -63,6 +76,10 @@
             @include properties($body-02);
           }
         }
+      }
+
+      &.navbar-nav-bottom {
+        margin-top: auto;
       }
     }
   }

@@ -12,7 +12,7 @@
     </svg>
   </label>
   <nav class="navbar-menu">
-    <ul class="navbar-nav folding-menu">
+    <ul class="navbar-nav">
       {{ $currentPage := . }}
       {{ range .Site.Menus.main }}
         {{ if .HasChildren }}
@@ -20,7 +20,7 @@
             <details class="folding folding-borderless" {{ if $currentPage.HasMenuCurrent "main" . }}open{{ end }}>
               <summary>
                 <div class="nav-link folding-title">
-                  {{ .Name }} <svg class="icon icon-right"><use xlink:href="/assets/icons/feather.svg#chevron-down"/></svg>
+                  {{ .Name }} <svg class="icon icon-right icon-rotate"><use xlink:href="/assets/icons/feather.svg#chevron-down"/></svg>
                 </div>
               </summary>
               <div class="folding-content">

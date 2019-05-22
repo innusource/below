@@ -9,17 +9,37 @@ toc: true
 
 ## Default
 
-Below uses <code>&lt;details&gt;</code> tag to make dropdowns.
+Below uses <code>&lt;details&gt;</code> tag to make dropdowns. By default the <code>.dropdown-content</code> opens aligned to the right.
 
 {{<example>}}
 <details class="dropdown">
   <summary class="btn">
-    <span>Dropdown</span>
+    Dropdown
     <svg class="icon icon-right">
       <use xlink:href="/assets/icons/feather.svg#chevron-down"/>
     </svg>
   </summary>
-  <ul class="dropdown-menu">
+  <ul class="dropdown-content">
+    <li><a class="dropdown-item" href="#">First item</a></li>
+    <li><a class="dropdown-item" href="#">Second item</a></li>
+    <li><a class="dropdown-item" href="#">Third item</a></li>
+  </ul>
+</details>
+{{</example>}}
+
+## Dropdown Left
+
+You can use <code>.dropdown-content-left</code> to open a dropdown aligned to left.
+
+{{<example>}}
+<details class="dropdown">
+  <summary class="btn">
+    Dropdown Left
+    <svg class="icon icon-right">
+      <use xlink:href="/assets/icons/feather.svg#chevron-down"/>
+    </svg>
+  </summary>
+  <ul class="dropdown-content dropdown-content-left">
     <li><a class="dropdown-item" href="#">First item</a></li>
     <li><a class="dropdown-item" href="#">Second item</a></li>
     <li><a class="dropdown-item" href="#">Third item</a></li>
@@ -28,15 +48,35 @@ Below uses <code>&lt;details&gt;</code> tag to make dropdowns.
 {{</example>}}
 
 ## Dropup
+The dropup opens aligned to the right too.
 {{<example>}}
 <details class="dropdown">
   <summary class="btn">
-    <span>Dropup</span>
+    Dropup
     <svg class="icon icon-right">
       <use xlink:href="/assets/icons/feather.svg#chevron-up"/>
     </svg>
   </summary>
-  <ul class="dropdown-menu dropdown-menu-up">
+  <ul class="dropdown-content dropup-content">
+    <li><a class="dropdown-item" href="#">First item</a></li>
+    <li><a class="dropdown-item" href="#">Second item</a></li>
+    <li><a class="dropdown-item" href="#">Third item</a></li>
+  </ul>
+</details>
+{{</example>}}
+
+## Dropup Left
+
+You can use <code>.dropup-content-left</code> to open a dropdown aligned to left.
+{{<example>}}
+<details class="dropdown">
+  <summary class="btn">
+    Dropup
+    <svg class="icon icon-right">
+      <use xlink:href="/assets/icons/feather.svg#chevron-up"/>
+    </svg>
+  </summary>
+  <ul class="dropdown-content dropup-content-left">
     <li><a class="dropdown-item" href="#">First item</a></li>
     <li><a class="dropdown-item" href="#">Second item</a></li>
     <li><a class="dropdown-item" href="#">Third item</a></li>
@@ -48,17 +88,15 @@ Below uses <code>&lt;details&gt;</code> tag to make dropdowns.
 
 {{<example>}}
 <details class="dropdown">
-  <summary class="btn">
-    <span>Dropright</span>
-    <svg class="icon icon-right">
-      <use xlink:href="/assets/icons/feather.svg#chevron-right"/>
+  <summary class="btn btn-clear">
+    <svg class="icon">
+      <use xlink:href="/assets/icons/feather.svg#help-circle"/>
     </svg>
+    Dropright
   </summary>
-  <ul class="dropdown-menu dropdown-menu-rt">
-    <li><a class="dropdown-item" href="#">First item</a></li>
-    <li><a class="dropdown-item" href="#">Second item</a></li>
-    <li><a class="dropdown-item" href="#">Third item</a></li>
-  </ul>
+  <div class="dropdown-content dropright-content">
+    This dropdown open to the right.
+  </div>
 </details>
 {{</example>}}
 
@@ -66,17 +104,15 @@ Below uses <code>&lt;details&gt;</code> tag to make dropdowns.
 
 {{<example>}}
 <details class="dropdown">
-  <summary class="btn">
+  <summary class="btn btn-clear">
     <svg class="icon">
-      <use xlink:href="/assets/icons/feather.svg#chevron-left"/>
+      <use xlink:href="/assets/icons/feather.svg#help-circle"/>
     </svg>
-    <span>Dropleft</span>
+    Dropleft
   </summary>
-  <ul class="dropdown-menu dropdown-menu-lt">
-    <li><a class="dropdown-item" href="#">First item</a></li>
-    <li><a class="dropdown-item" href="#">Second item</a></li>
-    <li><a class="dropdown-item" href="#">Third item</a></li>
-  </ul>
+  <div class="dropdown-content dropleft-content">
+    This dropdown open to the left.
+  </div>
 </details>
 {{</example>}}
 
@@ -90,7 +126,7 @@ Below uses <code>&lt;details&gt;</code> tag to make dropdowns.
       <use xlink:href="/assets/icons/feather.svg#chevron-right"/>
     </svg>
   </summary>
-  <ul class="dropdown-menu">
+  <ul class="dropdown-content">
     <li><a class="dropdown-item" href="#">First item</a></li>
     <li><a class="dropdown-item" href="#">Second item</a></li>
     <li><a class="dropdown-item" href="#">Third item</a></li>
