@@ -61,11 +61,33 @@ toc: true
 </div>
 {{</example>}}
 
-## Alert with Icon
+## Alert Info
+
+There is the <code>.alert-info</code> class to put extra content like avatars or icons.
 
 {{<example>}}
+<!-- Alert with avatar -->
 <div class="alert">
-  <svg class="icon"><use xlink:href="/assets/icons/feather.svg#git-pull-request"/></svg>
+  <div class="alert-info">
+    <span class="avatar avatar-small">
+      <img src="/assets/img/avatar-02.jpeg">
+    </span>
+  </div>
+  <div class="alert-content">
+    <div class="alert-title">
+      New commits
+    </div>
+    <div class="alert-description">
+      2 new commits to below
+    </div>
+  </div>
+</div>
+
+<!-- Alert with icon -->
+<div class="alert">
+  <div class="alert-info">
+    <svg class="icon"><use xlink:href="/assets/icons/feather.svg#git-pull-request"/></svg>
+  </div>
   <div class="alert-content">
     <div class="alert-title">
       Pull request.
@@ -82,35 +104,44 @@ toc: true
 Below uses <code>&lt;details&gt;</code> tag to make dismissible alerts.
 
 {{<example>}}
-<!-- Dismissible Success Alert -->
+<!-- Dismissible Default Alert with Avatar Small -->
 <details class="alert" open>
   <summary>
     <div class="alert-close">
       <svg class="icon"><use xlink:href="/assets/icons/feather.svg#x"/></svg>
     </div>
   </summary>
-  <svg class="icon"><use xlink:href="/assets/icons/feather.svg#paperclip"/></svg>
+  <div class="alert-info">
+    <span class="avatar avatar-small">
+      <img src="/assets/img/avatar-02.jpeg">
+    </span>
+  </div>
   <div class="alert-content">
     <div class="alert-title">
-      Attached File.
+      New comment
     </div>
     <div class="alert-description">
-      You have attached 3 files.
+      You have been mentioned in a comment.
     </div>
   </div>
 </details>
 
-<!-- Dismissible Default Alert -->
+<!-- Dismissible Success Alert -->
 <details class="alert alert-success" open>
   <summary>
     <div class="alert-close">
       <svg class="icon"><use xlink:href="/assets/icons/feather.svg#x"/></svg>
     </div>
   </summary>
-  <svg class="icon"><use xlink:href="/assets/icons/feather.svg#award"/></svg>
+  <div class="alert-info">
+    <svg class="icon"><use xlink:href="/assets/icons/feather.svg#paperclip"/></svg>
+  </div>
   <div class="alert-content">
     <div class="alert-title">
-      Congrats
+      Attached File.
+    </div>
+    <div class="alert-description">
+      You have attached 3 files.
     </div>
   </div>
 </details>
