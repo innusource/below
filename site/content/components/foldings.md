@@ -9,7 +9,7 @@ toc: true
 
 ## Default
 
-Below uses <code>&lt;details&gt;</code> tag to make foldings.
+Use <code>&lt;details&gt;</code> tag to make foldings.
 
 {{<example>}}
 <details class="folding">

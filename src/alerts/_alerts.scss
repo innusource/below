@@ -3,30 +3,31 @@
   max-width: 100%;
   background: $ui-01;
   margin: 5px 0;
-  padding: 8px 15px;
+  padding: 12px;
   border-left: 5px solid $interactive-01;
   border-radius: 3px;
   display: -ms-inline-flexbox;
   display: inline-flex;
   align-items: center;
   position: relative;
+  vertical-align: bottom;
 
   @include properties($body-02);
 
-  > .icon {
-    margin-right: 15px;
+  .alert-info {
+    margin-right: 10px;
     align-self: flex-start;
     float: left;
   }
 
   .alert-close {
     position: absolute;
-    top: 8px;
-    right: 8px;
+    top: 12px;
+    right: 10px;
   }
 
   .alert-content {
-    display: inline-block;
+    overflow: hidden;
 
     .alert-title {
       font-weight: 600;

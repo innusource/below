@@ -1,18 +1,18 @@
 .folding {
   border: 1px solid $ui-03;
   border-radius: 3px;
-  margin: 2px 0;
+  margin: 0.25em 0;
 
   @include properties($body-02);
 
-  .folding-title,
   .folding-content {
-    padding: 1rem;
+    padding: 1.5rem 1rem;
   }
 
   .folding-title {
     background: $ui-02;
     color: $text-02;
+    padding: 1rem;
     font-weight: 600;
     display: flex;
     display: -ms-flexbox;
@@ -22,16 +22,15 @@
     }
   }
 
-  &[open] .folding-title {
-    color: $text-01;
-    border-radius: 3px 3px 0 0;
-
-    &:hover {
+  &[open] {
+    .folding-title {
       background: $ui-01;
+      color: $text-01;
+      border-radius: 3px 3px 0 0;
     }
-  }
 
-  &[open] .icon.icon-rotate {
-    transform: rotate(180deg);
+    .icon.icon-rotate {
+      transform: rotate(180deg);
+    }
   }
 }

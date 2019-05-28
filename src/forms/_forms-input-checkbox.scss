@@ -1,5 +1,6 @@
 .form {
-  .form-input-check {
+  .form-input-checkbox,
+  .form-input-checkbox-inline {
     margin: 0.5rem 0;
     padding-left: 25px;
     display: block;
@@ -12,25 +13,25 @@
 
     @include properties($body-02);
 
-    .check-mark {
-      height: 15px;
-      width: 15px;
-      background-color: $ui-01;
-      border: 1px solid $ui-03;
+    .checkbox-control {
+      width: 20px;
+      height: 20px;
+      border: 2px solid #e9e9e9;
+      border-radius: 3px;
       position: absolute;
-      top: 1px;
+      top: 0;
       left: 0;
 
       &::after {
+        content: "";
         width: 5px;
         height: 11px;
         border: solid $interactive-01;
         border-width: 0 2px 2px 0;
-        position: absolute;
         display: none;
-        content: "";
-        left: 4px;
-        top: 0.5;
+        position: absolute;
+        left: 6px;
+        top: 2px;
         -webkit-transform: rotate(45deg);
         -ms-transform: rotate(45deg);
         transform: rotate(45deg);
@@ -44,9 +45,14 @@
       position: absolute;
       cursor: pointer;
 
-      &:checked ~ .check-mark::after {
+      &:checked ~ .checkbox-control::after {
         display: block;
       }
     }
+  }
+
+  .form-input-checkbox-inline {
+    display: inline-block;
+    margin-right: 0.5rem;
   }
 }
