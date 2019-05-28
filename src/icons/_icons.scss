@@ -1,6 +1,7 @@
 .icon {
   width: 15px;
   height: 15px;
+  margin: 0 4px;
   stroke: currentColor;
   stroke-width: 2;
   stroke-linecap: round;
@@ -19,7 +20,13 @@
     height: 20px;
   }
 
+  &.icon-left {
+    margin-left: 0;
+    margin-right: 10px;
+  }
+
   &.icon-right {
     margin-left: auto;
+    margin-right: 0;
   }
 }
