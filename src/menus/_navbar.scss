@@ -14,10 +14,6 @@
 
       @include properties($heading-06);
 
-      .icon:not(.icon-right) {
-        margin-right: 10px;
-      }
-
       &:hover {
         color: $text-01;
         background: $ui-01;
