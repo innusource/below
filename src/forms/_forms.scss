@@ -1,28 +1,21 @@
 .form {
-  input[type="email"],
-  input[type="number"],
-  input[type="password"],
-  input[type="search"],
-  input[type="tel"],
-  input[type="text"],
-  input[type="url"],
-  textarea {
-    width: 15em;
-    max-width: 100%;
+  .form-control {
+    width: 100%;
+    height: 38px;
     background-color: $ui-01;
     color: $text-02;
-    margin: 1px 0;
+    margin: 0.25em 0;
     padding: 0.5rem 0.7rem;
     border: none;
     border-radius: 3px;
     display: inline-block;
     box-sizing: inherit;
-    vertical-align: middle;
+    vertical-align: top;
+    position: relative;
 
     @include properties($body-02);
 
     @include media-breakpoint-down(sm) {
-      width: 12em;
       padding: 0.5em;
     }
 
@@ -47,36 +40,20 @@
     }
   }
 
-  .form-controls {
-    margin: 0.75em 0;
+  textarea.form-control {
+    height: auto;
+    resize: vertical;
   }
 
   .form-group {
-    margin: 0;
-    padding: 0.35em 0;
-
-    input[type="email"],
-    input[type="number"],
-    input[type="password"],
-    input[type="search"],
-    input[type="tel"],
-    input[type="text"],
-    input[type="url"],
-    textarea {
-      vertical-align: top;
-    }
-  }
-
-  fieldset {
-    border: 0;
-    margin: 0;
+    margin: 0.25em 0;
   }
 
   legend {
     display: block;
     width: 100%;
     padding: 0.3em 0;
-    margin-bottom: 0.3em;
+    margin-bottom: 0.5em;
     color: $text-02;
     border-bottom: 1px solid $ui-03;
 
@@ -86,8 +63,14 @@
   label {
     color: $text-02;
     display: block;
+    margin: 0.25em 0;
 
     @include properties($heading-06);
+  }
+
+  .form-message {
+    color: $text-02;
+    font-size: 90%;
   }
 
   &:required {
@@ -96,5 +79,20 @@
 
   &:disabled {
     cursor: not-allowed;
+  }
+
+  .col,
+  [class*="col-"] {
+    padding: 0 2.5px;
+  }
+
+  .form-row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -2.5px;
+    margin-left: -2.5px;
   }
 }
