@@ -394,10 +394,10 @@
   values:
     lightest:
       name: Green 60
-      hex: "#198038"
+      hex: "#24a148"
     light:
       name: Green 60
-      hex: "#198038"
+      hex: "#24a148"
     dark:
       name: Green 50
       hex: "#24a148"
