@@ -29,4 +29,4 @@ themesDir: "site/themes"
 params:
   description: "The CSS design system of hyphev projects."
   authors: "Below contributors"
-  current_version: 1.0.7
+  current_version: 1.0.8
