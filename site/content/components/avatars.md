@@ -105,16 +105,20 @@ Too avatars works if you give the class to an <code>&lt;a&gt;</code> tag.
 ## Avatar Box
 
 {{<example>}}
-<div class="avatar-box">
-  <span class="avatar avatar-status avatar-status-on">
-    <img src="/assets/img/avatar-02.jpeg">
-  </span>
-  <div class="avatar-box-content">
-    <div class="avatar-box-content-primary">
-      Milton Olaf
-    </div>
-    <div class="avatar-box-content-secondary">
-      Python Lover
+<div class="row">
+  <div class="col-md-6">
+    <div class="avatar-box">
+      <span class="avatar avatar-small avatar-status avatar-status-on">
+        <img src="/assets/img/avatar-02.jpeg">
+      </span>
+      <div class="avatar-box-content">
+        <div class="avatar-box-content-primary">
+          Milton Olaf
+        </div>
+        <div class="avatar-box-content-secondary">
+          Trying to make the web fast, highly readable, 100% responsive, and easy to navigate.
+        </div>
+      </div>
     </div>
   </div>
 </div>

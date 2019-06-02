@@ -1,20 +1,25 @@
 .avatar-box {
-  background: $ui-01;
-  padding: 8px 12px;
+  background: $ui-02;
+  padding: 0.5rem;
+  margin: 0.25rem 0;
   border-radius: 3px;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  align-items: center;
+
+  .avatar {
+    margin-right: 0.75rem;
+  }
 
   .avatar-box-content {
     color: $text-01;
-    margin: 0 15px;
+    flex: 1;
 
     @include properties($heading-06);
 
     .avatar-box-content-secondary {
-      color: $text-03;
+      color: $text-02;
       font-weight: normal;
+      font-size: 90%;
     }
   }
 }

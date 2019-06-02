@@ -8,7 +8,7 @@
 
   th,
   td {
-    padding: 1em 2em;
+    padding: 0.75rem 0.5rem;
     text-align: inherit;
   }
 
@@ -24,11 +24,13 @@
     border: 1px solid $ui-03;
   }
 
-  &.table-bordered-full * {
+  &.table-bordered-full th,
+  &.table-bordered-full td {
     border: 1px solid $ui-03;
   }
 
-  &.table-borderless * {
+  &.table-borderless th,
+  &.table-borderless td {
     border: none;
   }
 
@@ -42,7 +44,8 @@
 
   &.table-small th,
   &.table-small td {
-    padding: 0.5em 1em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
   }
 }
 
