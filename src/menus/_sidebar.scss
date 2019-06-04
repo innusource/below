@@ -14,7 +14,7 @@
   .navbar-menu {
     background: $ui-background;
     height: 100vh;
-    padding-top: 1rem;
+    padding-top: 0.25rem;
     padding-bottom: 3.5rem;
     overflow-y: auto;
     position: sticky;
@@ -34,48 +34,66 @@
       margin-bottom: 0.5rem;
 
       .nav-title {
-        padding: 0.45rem 0.8rem;
+        margin: 0.55rem 1.5rem;
         color: $text-03;
         display: block;
 
         @include properties($body-02);
       }
 
-      .nav-item .nav-link {
-        border-radius: 0;
-        margin: 0.1rem 0;
-      }
+      .nav-item {
+        .nav-link {
+          border-radius: 3px;
+          margin: 0.25rem 0.5rem;
+          border-left: 3px solid transparent;
 
-      .folding-title,
-      .folding-content {
-        padding: 0.45rem 0.8rem;
-        border-radius: 0;
-      }
-
-      .folding-title {
-        .icon:not(.icon-right) {
-          margin-right: 10px;
+          @include properties($heading-06);
         }
 
-        &:hover {
+        .folding .folding-title,
+        .folding .folding-content {
+          padding: 0.55rem 0.8rem;
+        }
+
+        .folding .folding-title {
+          &:hover {
+            background: $ui-01;
+            color: $text-01;
+          }
+        }
+
+        .folding .folding-content {
+          padding: 0;
+        }
+
+        &.active > .nav-link,
+        &.active > .folding:not([open]) .nav-link.folding-title {
+          border-color: $interactive-01;
+          background: $ui-01;
+          font-weight: 600;
           color: $text-01;
         }
-      }
 
-      .folding-content {
-        padding-right: 0;
-      }
+        .folding[open] .folding-title {
+          color: $text-01;
+          background: $ui-02;
 
-      .navbar-nav {
-        padding-left: 5px;
-
-        .nav-item {
-          .nav-link {
-            border-radius: 3px;
-            margin: 0.1rem 0.5rem 0.1rem 0;
-
-            @include properties($body-02);
+          &:hover {
+            background: $ui-01;
           }
+        }
+      }
+
+      .navbar-nav .nav-item {
+        .nav-link {
+          margin-left: 1.45rem;
+          padding-left: 0.8rem;
+
+          @include properties($body-02-strong);
+        }
+
+        &.active .nav-link {
+          font-weight: 600;
         }
       }
 

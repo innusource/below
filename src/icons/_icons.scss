@@ -1,28 +1,30 @@
 .icon {
-  width: 15px;
-  height: 15px;
+  width: 17px;
+  height: 17px;
   margin: 0 4px;
   stroke: currentColor;
   stroke-width: 2;
   stroke-linecap: round;
   stroke-linejoin: round;
   fill: none;
-  top: 3px;
+  top: 2px;
   position: relative;
 
   &.icon-small {
     width: 13px;
     height: 13px;
+    top: 3.5px;
   }
 
   &.icon-big {
     width: 20px;
     height: 20px;
+    top: 0;
   }
 
   &.icon-left {
     margin-left: 0;
-    margin-right: 10px;
+    margin-right: 12px;
   }
 
   &.icon-right {

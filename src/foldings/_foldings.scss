@@ -11,7 +11,7 @@
 
   .folding-title {
     background: $ui-02;
-    color: $text-02;
+    color: $text-01;
     padding: 1rem;
     font-weight: 600;
     display: flex;
@@ -25,8 +25,8 @@
   &[open] {
     .folding-title {
       background: $ui-01;
-      color: $text-01;
       border-radius: 3px 3px 0 0;
+      font-weight: 600;
     }
 
     .icon.icon-rotate {
