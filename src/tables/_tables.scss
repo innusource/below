@@ -6,14 +6,18 @@
 
   @include properties($body-02);
 
+  tr {
+    border-bottom: 1px solid $ui-03;
+  }
+
+  thead tr {
+    border-bottom-width: 2px;
+  }
+
   th,
   td {
     padding: 0.75rem 0.5rem;
     text-align: inherit;
-  }
-
-  tr {
-    border-bottom: 1px solid $ui-03;
   }
 
   tbody tr:last-of-type {
