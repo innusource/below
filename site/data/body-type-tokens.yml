@@ -3,7 +3,7 @@
     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
     Aliquam sed sem aliquam, iaculis neque in, aliquet lorem.
     Mauris tristique iaculis dui, at tempus dolor vulputate id.
-  type: Inter UI
+  type: Inter
   size: 16px
   weight: 400
   letter_spacing: -0.011em
@@ -13,8 +13,18 @@
     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
     Aliquam sed sem aliquam, iaculis neque in, aliquet lorem.
     Mauris tristique iaculis dui, at tempus dolor vulputate id.
-  type: Inter UI
+  type: Inter
   size: 14px
   weight: 400
+  letter_spacing: -0.006em
+  line_height: 20px
+- var: $body-02-strong
+  description: >-
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    Aliquam sed sem aliquam, iaculis neque in, aliquet lorem.
+    Mauris tristique iaculis dui, at tempus dolor vulputate id.
+  type: Inter
+  size: 14px
+  weight: 500
   letter_spacing: -0.006em
   line_height: 20px
