@@ -21,13 +21,6 @@
       position: relative;
 
       @include properties($heading-06);
-
-      .icon {
-        color: $interactive-01;
-        margin-right: 8px;
-        position: relative;
-        top: 5px;
-      }
     }
   }
 

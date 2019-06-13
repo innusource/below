@@ -7,12 +7,13 @@
     .nav-link {
       color: $text-02;
       margin: 0.1rem;
-      padding: 0.45rem 0.8rem;
+      padding: 0.55rem 0.8rem;
+      background: $ui-02;
       border-radius: 3px;
       display: flex;
       display: -ms-flexbox;
 
-      @include properties($heading-06);
+      @include properties($body-02-strong);
 
       &:hover {
         color: $text-01;
@@ -23,6 +24,7 @@
     &.active > .nav-link {
       color: $text-01;
       background: $ui-01;
+      font-weight: 600;
     }
 
     &.disabled .nav-link {

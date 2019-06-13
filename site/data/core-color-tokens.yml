@@ -129,11 +129,11 @@
       name: Gray 10
       hex: "#f3f3f3"
     dark:
-      name: Gray 70
-      hex: "#565656"
+      name: Gray 90
+      hex: "#282828"
     darkest:
-      name: Gray 80
-      hex: "#3d3d3d"
+      name: Gray 100
+      hex: "#171717"
 - var: "$ui-03"
   role:
   - Subtle border

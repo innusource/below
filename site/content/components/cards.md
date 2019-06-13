@@ -14,7 +14,6 @@ toc: true
     <div class="card">
       <div class="card-header">
         <div class="card-title">
-          <svg class="icon icon-big"><use xlink:href="/assets/icons/feather.svg#inbox"/></svg>
           Messages
         </div>
         <details class="dropdown">
@@ -36,8 +35,7 @@ toc: true
         </p>
       </div>
       <div class="card-footer">
-        <button class="btn">Add</button>
-        <button class="btn btn-error">Delete</button>
+        <button class="btn btn-clear">View More</button>
       </div>
     </div>
   </div>

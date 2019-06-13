@@ -11,7 +11,7 @@ toc: true
 
 {{<example>}}
 <header class="nav-header only-header">
-  <a href="#" class="brand">Below</a>
+  <a href="#" class="brand">below</a>
   <nav class="navbar-menu">
     <ul class="navbar-nav">
       <li class="nav-item active"><a href="#" class="nav-link">Active</a></li>
@@ -67,7 +67,7 @@ toc: true
     </label>
     <nav class="navbar-menu">
       <ul class="navbar-nav">
-        <li class="nav-item">
+        <li class="nav-item active">
           <a href="#" class="nav-link">
             <svg class="icon icon-left">
               <use xlink:href="/assets/icons/feather.svg#home"/>
@@ -166,7 +166,7 @@ toc: true
     </nav>
   </aside>
   <div class="col-md-9">
-    <h5>Content</h5>
+    <h5>Dashboard</h5>
   </div>
 </div>
 </div>
@@ -207,7 +207,7 @@ toc: true
       </svg>
     </label>
     <input type="checkbox" id="sidebar-docs" role="button" class="menu-toggle">
-    <aside class="sidebar col-12 col-md-3 col-xl-2">
+    <aside class="sidebar col-12 col-md-3 col-xl-3">
       <label class="sidebar-overlay" for="sidebar-docs"></label>
       <label for="sidebar-docs" class="menu-toggle-button">
         <svg class="icon icon-big">
@@ -216,9 +216,9 @@ toc: true
       </label>
       <nav class="navbar-menu">
         <ul class="navbar-nav">
-          <li class="nav-item">
+          <li class="nav-item active">
             <a href="#" class="nav-link">
-              <svg class="icon">
+              <svg class="icon icon-left">
                 <use xlink:href="/assets/icons/feather.svg#home"/>
               </svg>
               Dashboard
@@ -229,7 +229,7 @@ toc: true
           <div class="nav-title">Content</div>
           <li class="nav-item">
             <a href="#" class="nav-link">
-              <svg class="icon">
+              <svg class="icon icon-left">
                 <use xlink:href="/assets/icons/feather.svg#list"/>
               </svg>
               Pages
@@ -238,7 +238,7 @@ toc: true
           <li class="nav-item">
             <details class="folding folding-borderless">
               <summary class="nav-link folding-title">
-                <svg class="icon">
+                <svg class="icon icon-left">
                   <use xlink:href="/assets/icons/feather.svg#layers"/>
                 </svg>
                 Posts
@@ -259,7 +259,7 @@ toc: true
           <div class="nav-title">Audience</div>
           <li class="nav-item">
             <a href="#" class="nav-link">
-              <svg class="icon">
+              <svg class="icon icon-left">
                 <use xlink:href="/assets/icons/feather.svg#message-circle"/>
               </svg>
               Messages
@@ -267,7 +267,7 @@ toc: true
           </li>
           <li class="nav-item">
             <a href="#" class="nav-link">
-              <svg class="icon">
+              <svg class="icon icon-left">
                 <use xlink:href="/assets/icons/feather.svg#message-square"/>
               </svg>
               Comments
@@ -278,7 +278,7 @@ toc: true
           <div class="nav-title">Store</div>
           <li class="nav-item">
             <a href="#" class="nav-link">
-              <svg class="icon">
+              <svg class="icon icon-left">
                 <use xlink:href="/assets/icons/feather.svg#shopping-bag"/>
               </svg>
               Products
@@ -286,7 +286,7 @@ toc: true
           </li>
           <li class="nav-item">
             <a href="#" class="nav-link">
-              <svg class="icon">
+              <svg class="icon icon-left">
                 <use xlink:href="/assets/icons/feather.svg#shopping-cart"/>
               </svg>
               Sales
@@ -294,7 +294,7 @@ toc: true
           </li>
           <li class="nav-item disabled">
             <a href="#" class="nav-link">
-              <svg class="icon">
+              <svg class="icon icon-left">
                 <use xlink:href="/assets/icons/feather.svg#clock"/>
               </svg>
               Disabled
@@ -305,7 +305,7 @@ toc: true
         <ul class="navbar-nav navbar-nav-bottom">
           <li class="nav-item">
             <a href="#" class="nav-link">
-              <svg class="icon">
+              <svg class="icon icon-left">
                 <use xlink:href="/assets/icons/feather.svg#settings"/>
               </svg>
               Settings
@@ -314,8 +314,8 @@ toc: true
         </ul>
       </nav>
     </aside>
-    <div class="col-12 col-md-9 col-xl-10">
-      <h5>Content</h5>
+    <div class="col-12 col-md-9 col-xl-9">
+      <h5>Dashboard</h5>
     </div>
   </div>
 </div>
