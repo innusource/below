@@ -67,7 +67,6 @@
 
         &.active > .nav-link,
         &.active > .folding:not([open]) .nav-link.folding-title {
-          border-color: $interactive-01;
           background: $ui-01;
           font-weight: 600;
           color: $text-01;
