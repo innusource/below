@@ -1,9 +1,12 @@
 .card {
   width: 100%;
   background: $ui-02;
-  margin: 0.5rem 0;
-  border-radius: 3px;
+  margin: 1rem 0;
+  border-radius: 0.25rem;
   position: relative;
+  overflow: hidden;
+  -webkit-box-shadow: 0 1px 2px $shadow-01;
+  box-shadow: 0 1px 2px $shadow-01;
 
   @include properties($body-02);
 
@@ -15,23 +18,26 @@
   .card-header {
     display: flex;
     justify-content: space-between;
+    background: $ui-02;
 
     .card-title {
       color: $text-01;
       position: relative;
 
-      @include properties($heading-06);
+      @include properties($heading-05);
     }
+  }
+
+  .card-body {
+    color: $text-03;
   }
 
   .card-footer {
     text-align: right;
-    border-top: 1px solid $ui-03;
     padding: 0.8rem 1.25rem;
   }
 
   > img {
     max-width: 100%;
-    border-radius: 3px 3px 0 0;
   }
 }
