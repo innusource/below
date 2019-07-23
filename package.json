@@ -14,7 +14,7 @@
     "css-docs": "npm-run-all css-compile-docs css-minify-docs",
     "css-light-main": "npm-run-all css-compile-main css-minify-main css-copy",
     "css-compile": "npm-run-all --parallel css-compile-*",
-    "css-compile-main": "node-sass --output-style expanded --source-map true --source-map-contents true --precision 6 src/index.scss dist/below.min.css",
+    "css-compile-main": "node-sass --output-style expanded --source-map true --source-map-contents true --precision 6 src/index.scss site/static/assets/dist/css/below.min.css",
     "css-compile-docs": "cross-env-shell node-sass --output-style expanded --source-map true --source-map-contents true --precision 6 site/static/assets/scss/index.scss site/static/assets/dist/css/docs.min.css",
     "css-lint": "npm-run-all --parallel css-lint-*",
     "css-lint-main": "stylelint \"src/**/*.scss\" --cache --cache-location .cache/.stylelintcache",
