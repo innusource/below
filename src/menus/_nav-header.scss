@@ -8,7 +8,7 @@
   align-items: center;
   -ms-flex-pack: justify;
   min-height: 3.45rem;
-  background: $ui-background;
+  background: $ui-alt-background;
   padding: 0 1rem;
   border-bottom: 2px solid $ui-03;
 
@@ -29,6 +29,11 @@
     @include media-breakpoint-down(sm) {
       display: none !important;
     }
+
+    .form .form-control {
+      background-color: $ui-alt-01;
+      color: $text-alt-02;
+    }
   }
 
   .navbar-nav {
@@ -36,11 +41,35 @@
     display: flex;
     -ms-flex-direction: row;
     flex-direction: row;
+
+    .nav-item {
+      .nav-link {
+        color: $text-alt-02;
+        background: $ui-alt-02;
+
+        &:hover {
+          color: $text-alt-01;
+          background: $ui-alt-01;
+        }
+      }
+  
+      &.active > .nav-link {
+        color: $text-alt-01;
+        background: $ui-alt-01;
+      }
+  
+      &.disabled .nav-link {
+        &:hover {
+          background: transparent;
+          color: $text-alt-02;
+        }
+      }
+    }
   }
 
   .brand {
     display: inline-block;
-    color: $text-01;
+    color: $text-alt-01;
     margin-right: 4.5rem;
     padding: 0 0.5rem;
 
@@ -48,7 +77,7 @@
 
     &:hover {
       background: transparent;
-      color: $text-02;
+      color: $text-alt-02;
     }
 
     @include media-breakpoint-down(md) {
