@@ -52,12 +52,12 @@
           background: $ui-alt-01;
         }
       }
-  
+
       &.active > .nav-link {
         color: $text-alt-01;
         background: $ui-alt-01;
       }
-  
+
       &.disabled .nav-link {
         &:hover {
           background: transparent;
