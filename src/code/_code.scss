@@ -4,7 +4,7 @@ code {
   border: 1px solid $ui-03;
   color: $text-02;
   padding: 2px 4px;
-  border-radius: 3px;
+  border-radius: $radius-size-01;
   word-break: break-word;
 }
 
@@ -14,7 +14,7 @@ pre {
   margin: 0.5em 0;
   padding: 1em 1.8em;
   border: none;
-  border-radius: 5px;
+  border-radius: $radius-size-02;
   max-width: 100%;
   page-break-inside: avoid;
   white-space: pre-wrap;
@@ -36,7 +36,7 @@ kbd {
   background: $ui-05;
   color: $text-03;
   padding: 1px 4px;
-  border-radius: 3px;
+  border-radius: $radius-size-01;
 
   @include properties($body-02);
 }

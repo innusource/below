@@ -28,11 +28,12 @@
     width: 600px;
     max-width: 100%;
     background: $ui-02;
-    border-radius: 3px;
+    border-radius: $radius-size-02;
     padding-top: 0.5em;
     position: relative;
-    box-shadow: 2px 2px 5px rgba(25, 25, 25, 0.025);
     overflow-y: auto;
+
+    @include properties($light-shadow);
   }
 
   .modal-title {
@@ -46,9 +47,13 @@
     position: relative;
   }
 
+  .modal-body {
+    color: $text-02;
+  }
+
   .modal-footer {
     background: $ui-01;
-    border-radius: 0 0 3px 3px;
+    border-radius: $radius-size-02-bottom;
     text-align: right;
   }
 

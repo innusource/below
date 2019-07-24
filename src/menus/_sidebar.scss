@@ -84,7 +84,7 @@
 
       .navbar-nav .nav-item {
         .nav-link {
-          border-radius: 3px;
+          border-radius: $radius-size-01;
           margin: 0.15rem 0.5rem 0.15rem 1.65rem;
 
           @include properties($body-02-strong);

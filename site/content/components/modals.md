@@ -17,7 +17,7 @@ toc: true
     <label class="modal-overlay" for="modal-01"></label>
     <div class="modal-container">
       <div class="modal-header">
-        <h4 class="modal-title">Modal Title</h4>
+        <h5 class="modal-title">Modal Title</h5>
         <label class="modal-close" for="modal-01">
           <svg class="icon">
             <use xlink:href="/assets/icons/feather.svg#x"/>
@@ -47,7 +47,7 @@ toc: true
     <label class="modal-overlay" for="modal-02"></label>
     <div class="modal-container">
       <div class="modal-header">
-        <h4 class="modal-title">Modal Title</h4>
+        <h5 class="modal-title">Modal Title</h5>
         <label class="modal-close" for="modal-02">
           <svg class="icon">
             <use xlink:href="/assets/icons/feather.svg#x"/>
@@ -73,7 +73,7 @@ toc: true
     <label class="modal-overlay" for="modal-03"></label>
     <div class="modal-container">
       <div class="modal-header">
-        <h4 class="modal-title">Modal Title</h4>
+        <h5 class="modal-title">Modal Title</h5>
         <label class="modal-close" for="modal-03">
           <svg class="icon">
             <use xlink:href="/assets/icons/feather.svg#x"/>

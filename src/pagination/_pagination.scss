@@ -2,7 +2,7 @@
   background: $ui-02;
   margin: 0.5rem 0;
   padding: 1rem;
-  border-radius: 3px;
+  border-radius: $radius-size-02;
   display: flex;
   display: -ms-flexbox;
 
@@ -21,7 +21,7 @@
     color: $text-02;
     margin: 0 3px;
     padding: 0.45rem 0.8rem;
-    border-radius: 3px;
+    border-radius: $radius-size-02;
     cursor: pointer;
   }
 

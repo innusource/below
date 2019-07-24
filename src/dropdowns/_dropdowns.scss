@@ -7,16 +7,17 @@
     background: $ui-02;
     margin: 0;
     margin-top: 3px;
-    padding: 8px;
+    padding: 0;
     display: block;
-    border: 1px solid $ui-03;
-    border-radius: 3px;
+    border: none;
+    border-radius: $radius-size-01;
     list-style: none;
     position: absolute;
     left: auto;
     right: 0;
     z-index: 90;
 
+    @include properties($light-shadow);
     @include properties($body-02);
 
     &.dropup-content,
@@ -58,16 +59,17 @@
     .dropdown-item {
       max-width: 100%;
       color: $text-02;
-      padding: 0.45rem 0.8rem;
-      border-radius: 3px;
+      padding: 0.55rem 0.8rem;
       display: block;
       overflow: hidden;
       text-overflow: ellipsis;
       white-space: nowrap;
 
+      @include properties($body-02-strong);
+
       &:hover,
       &:focus {
-        background: $ui-01;
+        color: $text-01;
       }
     }
 

@@ -1,0 +1,20 @@
+$light-shadow: (
+  -webkit-box-shadow: 0 1px 2px $shadow-01,
+  box-shadow: 0 1px 2px $shadow-01,
+);
+$solid-small-shadow: (
+  -webkit-box-shadow: 0 0 0 2px $ui-02,
+  box-shadow: 0 0 0 2px $ui-02,
+);
+$solid-regular-alt-shadow: (
+  -webkit-box-shadow: 0 0 0 2.5px $ui-02,
+  box-shadow: 0 0 0 2.5px $ui-02,
+);
+$solid-regular-shadow: (
+  -webkit-box-shadow: 0 0 0 3px $ui-02,
+  box-shadow: 0 0 0 3px $ui-02,
+);
+$solid-large-shadow: (
+  -webkit-box-shadow: 0 0 0 4px $ui-02,
+  box-shadow: 0 0 0 4px $ui-02,
+);

@@ -95,7 +95,9 @@ You can use <code>.dropup-content-left</code> to open a dropdown aligned to left
     Dropright
   </summary>
   <div class="dropdown-content dropright-content">
-    This dropdown open to the right.
+    <li><a class="dropdown-item" href="#">First item</a></li>
+    <li><a class="dropdown-item" href="#">Second item</a></li>
+    <li><a class="dropdown-item" href="#">Third item</a></li>
   </div>
 </details>
 {{</example>}}
@@ -111,7 +113,9 @@ You can use <code>.dropup-content-left</code> to open a dropdown aligned to left
     Dropleft
   </summary>
   <div class="dropdown-content dropleft-content">
-    This dropdown open to the left.
+    <li><a class="dropdown-item" href="#">First item</a></li>
+    <li><a class="dropdown-item" href="#">Second item</a></li>
+    <li><a class="dropdown-item" href="#">Third item</a></li>
   </div>
 </details>
 {{</example>}}
