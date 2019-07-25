@@ -3,6 +3,7 @@
   $interactive-02: #e9e9e9 !default !global;
   $interactive-03: #171717 !default !global;
   $interactive-04: #0062ff !default !global;
+  $interactive-01-lightest: #e5efff !default !global;
   $ui-background: #fff !default !global;
   $ui-alt-background: #171717 !default !global;
   $ui-alt-01: #282828 !default !global;
@@ -15,6 +16,8 @@
   $ui-03: #e9e9e9 !default !global;
   $ui-04: #8c8c8c !default !global;
   $ui-05: #171717 !default !global;
+  $ui-03-lightest: #e9e9e9 !default !global;
+  $ui-04-lighstest: #e9e9e9 !default !global;
   $text-alt-01: #f3f3f3 !default !global;
   $text-alt-02: #bebebe !default !global;
   $text-alt-03: #6f6f6f !default !global;
@@ -34,8 +37,12 @@
   $support-02: #24a148 !default !global;
   $support-03: #fdd13a !default !global;
   $support-04: #054ada !default !global;
+  $support-01-lightest: #fbe8e9 !default !global;
+  $support-02-lightest: #e8f5ec !default !global;
+  $support-03-lightest: #fffbeb !default !global;
   $overlay-01: rgba(23, 23, 23, 0.5) !default !global;
   $shadow-01: rgba(17, 17, 17, 0.075) !default !global;
+  $shadow-02: rgba(17, 17, 17, 0.095) !default !global;
   $focus: #0062ff !default !global;
   $hover-primary: #0353e9 !default !global;
   $active-primary: #0530ad !default !global;
