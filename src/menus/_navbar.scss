@@ -17,13 +17,11 @@
 
       &:hover {
         color: $text-01;
-        background: $ui-01;
       }
     }
 
     &.active > .nav-link {
       color: $text-01;
-      background: $ui-01;
       font-weight: 600;
     }
 

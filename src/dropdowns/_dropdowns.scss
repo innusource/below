@@ -17,7 +17,7 @@
     right: 0;
     z-index: 90;
 
-    @include properties($light-shadow);
+    @include properties($large-shadow);
     @include properties($body-02);
 
     &.dropup-content,
@@ -59,7 +59,7 @@
     .dropdown-item {
       max-width: 100%;
       color: $text-02;
-      padding: 0.55rem 0.8rem;
+      padding: 0.6em 0.8em;
       display: block;
       overflow: hidden;
       text-overflow: ellipsis;

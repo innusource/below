@@ -56,7 +56,6 @@
 
         .folding .folding-title {
           &:hover {
-            background: $ui-01;
             color: $text-01;
           }
         }
@@ -67,7 +66,6 @@
 
         &.active > .nav-link,
         &.active > .folding:not([open]) .nav-link.folding-title {
-          background: $ui-01;
           font-weight: 600;
           color: $text-01;
         }
@@ -75,10 +73,6 @@
         .folding[open] .folding-title {
           color: $text-01;
           background: $ui-02;
-
-          &:hover {
-            background: $ui-01;
-          }
         }
       }
 
