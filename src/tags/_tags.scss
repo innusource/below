@@ -1,50 +1,39 @@
 .tag {
-  padding: 0.15rem 0.3rem;
+  padding: 0.25em 0.5em;
   border-radius: $radius-size-01;
-  background: $interactive-01;
-  color: #fff;
+  background: $interactive-01-lightest;
+  color: $interactive-01;
   display: inline-block;
   margin: 2px;
   border: 1px solid transparent;
   vertical-align: middle;
 
-  @include properties($heading-06);
+  @include properties($body-small);
 
   &.tag-secondary {
-    background: $ui-03;
+    background: $ui-01;
     color: $text-03;
   }
 
   &.tag-outline {
     background: transparent;
-    border-color: $interactive-01;
     color: $interactive-01;
-  }
-
-  &.tag-tertiary {
-    background: $ui-04;
+    border-color: $interactive-01-lightest;
   }
 
   &.tag-success {
-    background: $support-02;
+    background: $support-02-lightest;
+    color: $support-02;
   }
 
   &.tag-warning {
-    background: $support-03;
+    background: $support-03-lightest;
+    color: $support-03;
   }
 
   &.tag-error {
-    background: $support-01;
-  }
-
-  &.tag-small {
-    padding: 0.1rem 0.25rem;
-    font-size: 0.6rem;
-  }
-
-  &.tag-big {
-    padding: 0.2rem 0.35rem;
-    font-size: 1rem;
+    background: $support-01-lightest;
+    color: $support-01;
   }
 
   &.tag-absolute {
