@@ -1,7 +1,7 @@
 .alert {
   width: 18rem;
   max-width: 100%;
-  background: $ui-01;
+  background: $ui-02;
   margin: 5px 0;
   padding: 12px;
   border-left: 5px solid $interactive-01;
@@ -12,6 +12,7 @@
   position: relative;
   vertical-align: bottom;
 
+  @include properties($regular-shadow);
   @include properties($body-02);
 
   .alert-info {

@@ -16,7 +16,7 @@ toc: true
       Downloading...
     </div>
     <div class="alert-description">
-      Your download is processing...
+      Your download is being processed...
     </div>
   </div>
 </div>
@@ -31,7 +31,7 @@ toc: true
       Success!
     </div>
     <div class="alert-description">
-      Your message was sent.
+      Your message was sent
     </div>
   </div>
 </div>
@@ -55,7 +55,7 @@ toc: true
       Error!
     </div>
     <div class="alert-description">
-      Incorrect password.
+      Incorrect password
     </div>
   </div>
 </div>
@@ -93,7 +93,7 @@ There is the <code>.alert-info</code> class to put extra content like avatars or
       Pull request.
     </div>
     <div class="alert-description">
-      New pull request on your respository.
+      New pull request on your respository
     </div>
   </div>
 </div>
@@ -121,7 +121,7 @@ Below uses <code>&lt;details&gt;</code> tag to make dismissible alerts.
       New comment
     </div>
     <div class="alert-description">
-      You have been mentioned in a comment.
+      You have been mentioned in a comment
     </div>
   </div>
 </details>
@@ -141,7 +141,7 @@ Below uses <code>&lt;details&gt;</code> tag to make dismissible alerts.
       Attached File.
     </div>
     <div class="alert-description">
-      You have attached 3 files.
+      You have attached 3 files
     </div>
   </div>
 </details>
