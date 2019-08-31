@@ -12,10 +12,6 @@
   padding: 0 1rem;
   border-bottom: 2px solid $ui-03;
 
-  @include media-breakpoint-down(sm) {
-    padding: 0.5rem 2rem;
-  }
-
   .navbar-menu {
     display: -ms-flexbox !important;
     display: flex !important;
@@ -67,11 +63,31 @@
     }
   }
 
+  .menu-toggle-button {
+    background: transparent;
+    color: $text-03;
+    padding: 0;
+    border: 0;
+    cursor: pointer;
+    display: none;
+    z-index: 10;
+    top: 0.6rem;
+
+    @include media-breakpoint-down(sm) {
+      display: block;
+    }
+
+    &.close {
+      display: none;
+      color: $text-03;
+    }
+  }
+
   .brand {
     display: inline-block;
     color: $text-alt-01;
     margin-right: 4.5rem;
-    padding: 0 0.5rem;
+    padding: 0;
 
     @include properties($body-01);
 
@@ -128,6 +144,16 @@
           padding-bottom: 0.5rem;
         }
       }
+    }
+  }
+}
+
+[data-navigation="open"] {
+  .menu-toggle-button {
+    display: none;
+
+    &.close {
+      display: block;
     }
   }
 }

@@ -1,14 +1,27 @@
+.content {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.3s ease-in;
+  -moz-transition: all 0.3s ease-in;
+  -o-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+}
 
 .sidebar {
+  width: 15rem;
   padding: 0;
+  -webkit-transition: all 0.3s ease-in;
+  -moz-transition: all 0.3s ease-in;
+  -o-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
 
   @include media-breakpoint-down(sm) {
-    background: $overlay-01;
+    left: -15rem;
     position: fixed;
-    top: 0;
+    top: 55.19px;
     bottom: 0;
-    display: none;
-    z-index: 1000;
+    z-index: 2;
   }
 
   .navbar-menu {
@@ -25,9 +38,9 @@
     z-index: 8;
 
     @include media-breakpoint-down(sm) {
-      width: 15rem;
+      width: 100%;
       height: 100%;
-      padding-top: 3.45rem;
+      padding-top: 1rem;
     }
 
     .navbar-nav {
@@ -94,56 +107,38 @@
       }
     }
   }
+}
+
+.sidebar-overlay {
+  background: $overlay-01;
+  border: 0;
+  display: none;
+  position: fixed;
+  top: 55.19px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  cursor: pointer;
+  width: 100vw;
+  height: 100%;
+  z-index: 1;
+}
+
+[data-navigation="open"] {
+  .sidebar {
+    left: 0;
+  }
+
+  .content {
+    margin-left: 15rem;
+  }
 
   .sidebar-overlay {
-    display: none;
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    cursor: pointer;
-    height: 100%;
-    z-index: 1;
-
-    @include media-breakpoint-down(sm) {
-      display: block;
-    }
-  }
-}
-
-.menu-toggle {
-  display: none;
-
-  &:checked + .sidebar {
-    display: block;
-  }
-}
-
-.menu-toggle-button {
-  color: $text-03;
-  padding: 0.3rem 0.8rem;
-  cursor: pointer;
-  display: none;
-  position: absolute;
-  z-index: 10;
-  top: 0.6rem;
-
-  @include media-breakpoint-down(sm) {
     display: block;
   }
 
-  &.close {
-    background: #fff;
-    color: $text-03;
-    width: 15rem;
-    padding: 0.9rem 0.8rem 0.3rem;
-    top: 0;
-    z-index: 10;
-    cursor: pointer;
-  }
-
-  &:hover {
-    color: $text-01;
+  body,
+  .container-fluid {
+    overflow: hidden;
   }
 }

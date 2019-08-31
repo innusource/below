@@ -1,16 +1,5 @@
-<label for="sidebar-docs" class="menu-toggle-button">
-  <svg class="icon icon-big">
-    <use xlink:href="/assets/icons/feather.svg#menu"/>
-  </svg>
-</label>
-<input type="checkbox" id="sidebar-docs" role="button" class="menu-toggle">
-<aside class="col-12 col-md-3 col-xl-2 sidebar">
-  <label class="sidebar-overlay" for="sidebar-docs"></label>
-  <label for="sidebar-docs" class="menu-toggle-button close">
-    <svg class="icon icon-big">
-      <use xlink:href="/assets/icons/feather.svg#arrow-left"/>
-    </svg>
-  </label>
+<button class="menu-toggle sidebar-overlay"></button>
+<aside id="menu" class="col-12 col-md-3 col-xl-2 sidebar">
   <nav class="navbar-menu">
     <ul class="navbar-nav">
       {{ $currentPage := . }}
