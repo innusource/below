@@ -40,7 +40,7 @@ Use the <code>.form-control</code> class to give properties to forms elements. B
       <input class="form-control" type="password" placeholder="Password">
     </div>
     <div class="col-4">
-      <button type="submit" class="btn">Sign in</button>
+      <button type="submit" class="btn btn-small">Sign in</button>
     </div>
   </div>
 </form>
