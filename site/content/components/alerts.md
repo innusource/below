@@ -36,6 +36,18 @@ toc: true
   </div>
 </div>
 
+<!-- Info Alert -->
+<div class="alert alert-info">
+  <div class="alert-content">
+    <div class="alert-title">
+      Info
+    </div>
+    <div class="alert-description">
+      Your calendar is up to date.
+    </div>
+  </div>
+</div>
+
 <!-- Warning Alert -->
 <div class="alert alert-warning">
   <div class="alert-content">
@@ -61,7 +73,7 @@ toc: true
 </div>
 {{</example>}}
 
-## Alert Info
+## Alert Item
 
 There is the <code>.alert-item</code> class to put extra content like avatars or icons.
 
@@ -105,7 +117,7 @@ Below uses <code>&lt;details&gt;</code> tag to make dismissible alerts.
 
 {{<example>}}
 <!-- Dismissible Default Alert with Avatar Small -->
-<details class="alert" open>
+<details class="alert alert-info" open>
   <summary>
     <div class="alert-close">
       <svg class="icon"><use xlink:href="/assets/icons/feather.svg#x"/></svg>
