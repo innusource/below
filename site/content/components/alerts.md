@@ -63,12 +63,12 @@ toc: true
 
 ## Alert Info
 
-There is the <code>.alert-info</code> class to put extra content like avatars or icons.
+There is the <code>.alert-item</code> class to put extra content like avatars or icons.
 
 {{<example>}}
 <!-- Alert with avatar -->
 <div class="alert">
-  <div class="alert-info">
+  <div class="alert-item">
     <span class="avatar avatar-small">
       <img src="/assets/img/avatar-02.jpeg">
     </span>
@@ -85,7 +85,7 @@ There is the <code>.alert-info</code> class to put extra content like avatars or
 
 <!-- Alert with icon -->
 <div class="alert">
-  <div class="alert-info">
+  <div class="alert-item">
     <svg class="icon"><use xlink:href="/assets/icons/feather.svg#git-pull-request"/></svg>
   </div>
   <div class="alert-content">
@@ -111,7 +111,7 @@ Below uses <code>&lt;details&gt;</code> tag to make dismissible alerts.
       <svg class="icon"><use xlink:href="/assets/icons/feather.svg#x"/></svg>
     </div>
   </summary>
-  <div class="alert-info">
+  <div class="alert-item">
     <span class="avatar avatar-small">
       <img src="/assets/img/avatar-02.jpeg">
     </span>
@@ -133,7 +133,7 @@ Below uses <code>&lt;details&gt;</code> tag to make dismissible alerts.
       <svg class="icon"><use xlink:href="/assets/icons/feather.svg#x"/></svg>
     </div>
   </summary>
-  <div class="alert-info">
+  <div class="alert-item">
     <svg class="icon"><use xlink:href="/assets/icons/feather.svg#paperclip"/></svg>
   </div>
   <div class="alert-content">

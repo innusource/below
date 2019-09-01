@@ -8,12 +8,12 @@
   }
 
   &:first-of-type {
-    border-radius: $radius-size-02-top;
+    border-radius: $radius-size-05-top;
   }
 
   &:last-of-type {
     border-bottom-width: 1px;
-    border-radius: $radius-size-02-bottom;
+    border-radius: $radius-size-05-bottom;
   }
 
   &.folding-borderless {

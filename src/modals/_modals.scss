@@ -28,7 +28,7 @@
     width: 600px;
     max-width: 100%;
     background: $ui-02;
-    border-radius: $radius-size-02;
+    border-radius: $radius-size-05;
     padding-top: 0.5em;
     position: relative;
     overflow-y: auto;
@@ -53,7 +53,7 @@
 
   .modal-footer {
     background: $ui-01;
-    border-radius: $radius-size-02-bottom;
+    border-radius: $radius-size-05-bottom;
     text-align: right;
   }
 

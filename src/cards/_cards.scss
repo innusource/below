@@ -1,11 +1,11 @@
 .card {
   width: 100%;
   background: $ui-02;
-  margin: 1rem 0;
-  border-radius: $radius-size-02;
+  margin: 2rem 0;
+  border-radius: $radius-size-05;
   position: relative;
 
-  @include properties($light-shadow);
+  @include properties($large-shadow);
   @include properties($body-02);
 
   .card-header,
@@ -31,12 +31,12 @@
   }
 
   .card-footer {
-    text-align: right;
     padding: 0.8rem 1.25rem;
+    text-align: right;
   }
 
   > img {
     max-width: 100%;
-    border-radius: $radius-size-02-top;
+    border-radius: $radius-size-05-top;
   }
 }
