@@ -3,8 +3,8 @@ $light-shadow: (
   box-shadow: 0 1px 2px $shadow-01,
 );
 $regular-shadow: (
-  -webkit-box-shadow: 0 1.5px 5px $shadow-01,
-  box-shadow: 0 1.5px 5px $shadow-01,
+  -webkit-box-shadow: 0 3px 15px $shadow-02,
+  box-shadow: 0 3px 15px $shadow-02,
 );
 $large-shadow: (
   -webkit-box-shadow: 0 12px 50px $shadow-02,
