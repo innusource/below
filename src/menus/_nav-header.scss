@@ -7,14 +7,9 @@
   -ms-flex-align: center;
   align-items: center;
   -ms-flex-pack: justify;
-  min-height: 3.45rem;
-  background: $ui-background;
+  min-height: 3.5rem;
+  background: $ui-alt-background;
   padding: 0 1rem;
-  border-bottom: 2px solid $ui-03;
-
-  @include media-breakpoint-down(sm) {
-    padding: 0.5rem 2rem;
-  }
 
   .navbar-menu {
     display: -ms-flexbox !important;
@@ -29,6 +24,11 @@
     @include media-breakpoint-down(sm) {
       display: none !important;
     }
+
+    .form .form-control {
+      background-color: $ui-alt-01;
+      color: $text-alt-02;
+    }
   }
 
   .navbar-nav {
@@ -36,19 +36,63 @@
     display: flex;
     -ms-flex-direction: row;
     flex-direction: row;
+
+    .nav-item {
+      .nav-link {
+        color: $text-alt-02;
+        background: $ui-alt-02;
+
+        &:hover {
+          color: $text-alt-01;
+          background: $ui-alt-01;
+        }
+      }
+
+      &.active > .nav-link {
+        color: $text-alt-01;
+        background: $ui-alt-01;
+      }
+
+      &.disabled .nav-link {
+        &:hover {
+          background: transparent;
+          color: $text-alt-02;
+        }
+      }
+    }
+  }
+
+  .menu-toggle-button {
+    background: transparent;
+    color: $text-03;
+    padding: 0;
+    border: 0;
+    cursor: pointer;
+    display: none;
+    z-index: 10;
+    top: 0.6rem;
+
+    @include media-breakpoint-down(sm) {
+      display: block;
+    }
+
+    &.close {
+      display: none;
+      color: $text-03;
+    }
   }
 
   .brand {
     display: inline-block;
-    color: $text-01;
+    color: $text-alt-01;
     margin-right: 4.5rem;
-    padding: 0 0.5rem;
+    padding: 0;
 
     @include properties($body-01);
 
     &:hover {
       background: transparent;
-      color: $text-02;
+      color: $text-alt-02;
     }
 
     @include media-breakpoint-down(md) {
@@ -99,6 +143,16 @@
           padding-bottom: 0.5rem;
         }
       }
+    }
+  }
+}
+
+[data-navigation="open"] {
+  .menu-toggle-button {
+    display: none;
+
+    &.close {
+      display: block;
     }
   }
 }

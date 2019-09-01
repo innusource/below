@@ -1,49 +1,38 @@
 .badge {
-  background: $interactive-01;
-  color: #fff;
+  background: $interactive-01-lightest;
+  color: $interactive-01;
   margin: 0 4px;
-  padding: 0 0.5rem;
+  padding: 0 0.5em;
   display: inline-block;
   border: 1px solid transparent;
-  border-radius: 45px;
+  border-radius: $radius-size-03;
   vertical-align: middle;
 
-  @include properties($heading-06);
+  @include properties($body-small);
 
   &.badge-secondary {
-    background: $ui-03;
+    background: $ui-01;
     color: $text-03;
   }
 
   &.badge-outline {
     background: transparent;
     color: $interactive-01;
-    border-color: $interactive-01;
-  }
-
-  &.badge-tertiary {
-    background: $ui-04;
+    border-color: $interactive-01-lightest;
   }
 
   &.badge-success {
-    background: $support-02;
+    background: $support-02-lightest;
+    color: $support-02;
   }
 
   &.badge-warning {
-    background: $support-03;
+    background: $support-03-lightest;
+    color: $support-03;
   }
 
   &.badge-error {
-    background: $support-01;
-  }
-
-  &.badge-small {
-    padding: 0 0.25rem;
-    font-size: 0.6rem;
-  }
-
-  &.badge-big {
-    padding: 0 1rem;
-    font-size: 1rem;
+    background: $support-01-lightest;
+    color: $support-01;
   }
 }

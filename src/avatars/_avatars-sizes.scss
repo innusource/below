@@ -25,7 +25,8 @@
 
   &.avatar-small.avatar-status::after,
   &.avatar-x-small.avatar-status::after {
-    box-shadow: 0 0 0 2px $ui-02;
+    @include properties($solid-small-shadow);
+
     bottom: 0.25px;
     right: 0.25px;
   }
@@ -53,9 +54,10 @@
     &.avatar-status::after {
       width: 22px;
       height: 22px;
-      box-shadow: 0 0 0 3px $ui-02;
       bottom: 8px;
       right: 8px;
+
+      @include properties($solid-regular-shadow);
     }
   }
 }

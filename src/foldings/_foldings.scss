@@ -1,11 +1,13 @@
 .folding {
   border: 1px solid $ui-03;
-  border-radius: 3px;
+  border-radius: $radius-size-05;
   margin: 0.1rem 0;
+  overflow: hidden;
 
   @include properties($body-02);
 
   .folding-content {
+    color: $text-02;
     padding: 1.5rem 1rem;
   }
 
@@ -25,7 +27,6 @@
   &[open] {
     .folding-title {
       background: $ui-01;
-      border-radius: 3px 3px 0 0;
       font-weight: 600;
     }
 

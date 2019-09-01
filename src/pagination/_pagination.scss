@@ -1,10 +1,10 @@
 .pagination {
   background: $ui-02;
   margin: 0.5rem 0;
-  padding: 1rem;
-  border-radius: 3px;
+  border-radius: $radius-size-02;
   display: flex;
   display: -ms-flexbox;
+  align-items: center;
 
   @include properties($body-02);
 
@@ -16,26 +16,22 @@
     justify-content: flex-end;
   }
 
-  .pagination-item,
-  .pagination-action {
-    color: $text-02;
-    margin: 0 3px;
-    padding: 0.45rem 0.8rem;
-    border-radius: 3px;
-    cursor: pointer;
-  }
-
   .pagination-item {
     background: $ui-01;
+    color: $text-03;
+    margin: 0 2px;
+    padding: 0.4rem 0.75rem;
+    border-radius: $radius-size-02;
+    cursor: pointer;
 
     &:hover {
-      background: $ui-03;
+      color: $text-02;
     }
-  }
 
-  .pagination-item.active {
-    background: $interactive-01;
-    color: $text-04;
-    font-weight: 600;
+    &.active {
+      background: $ui-03;
+      font-weight: 600;
+      color: $text-01;
+    }
   }
 }

@@ -3,10 +3,6 @@
     border: none;
     box-shadow: none;
 
-    .folding-title {
-      border-radius: 3px;
-    }
-
     &[open] .folding-title {
       background: $ui-01;
     }

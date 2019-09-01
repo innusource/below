@@ -1,5 +1,5 @@
 .avatar.avatar-square {
-  border-radius: 3px;
+  border-radius: $radius-size-02;
 
   &.avatar-status::after {
     top: -2px;
@@ -23,6 +23,6 @@
   }
 
   img {
-    border-radius: 3px;
+    border-radius: $radius-size-02;
   }
 }

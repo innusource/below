@@ -1,6 +1,6 @@
 {
   "name": "@hyphev/below",
-  "version": "1.0.9",
+  "version": "1.1.0",
   "description": "The CSS design system of hyphev projects",
   "homepage": "https://below.hyphev.com/",
   "scripts": {
@@ -36,7 +36,7 @@
     "test": "npm-run-all lint",
     "netlify": "npm run dist && npm run docs-production",
     "watch": "npm-run-all --parallel watch-*",
-    "watch-css-main": "nodemon --watch src/ --ext scss --exec \"npm run css-light-main\"",
+    "watch-css-main": "nodemon --watch src/ --ext scss --exec \"npm run css-main\"",
     "watch-css-docs": "nodemon --watch \"site/static/assets/scss/\" --ext scss --exec \"npm run css-docs\""
   },
   "style": "dist/below.css",

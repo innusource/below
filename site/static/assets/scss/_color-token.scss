@@ -2,7 +2,8 @@
   display: block;
   width: 5rem;
   height: 1rem;
-  border-radius: 3px;
+  border-radius: $radius-size-01;
   margin: 15px auto;
-  border: 1px solid $ui-03;
+
+  @include properties($light-shadow);
 }

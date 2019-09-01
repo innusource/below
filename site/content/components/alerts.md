@@ -16,7 +16,7 @@ toc: true
       Downloading...
     </div>
     <div class="alert-description">
-      Your download is processing...
+      Your download is being processed...
     </div>
   </div>
 </div>
@@ -31,7 +31,19 @@ toc: true
       Success!
     </div>
     <div class="alert-description">
-      Your message was sent.
+      Your message was sent
+    </div>
+  </div>
+</div>
+
+<!-- Info Alert -->
+<div class="alert alert-info">
+  <div class="alert-content">
+    <div class="alert-title">
+      Info
+    </div>
+    <div class="alert-description">
+      Your calendar is up to date.
     </div>
   </div>
 </div>
@@ -55,20 +67,20 @@ toc: true
       Error!
     </div>
     <div class="alert-description">
-      Incorrect password.
+      Incorrect password
     </div>
   </div>
 </div>
 {{</example>}}
 
-## Alert Info
+## Alert Item
 
-There is the <code>.alert-info</code> class to put extra content like avatars or icons.
+There is the <code>.alert-item</code> class to put extra content like avatars or icons.
 
 {{<example>}}
 <!-- Alert with avatar -->
 <div class="alert">
-  <div class="alert-info">
+  <div class="alert-item">
     <span class="avatar avatar-small">
       <img src="/assets/img/avatar-02.jpeg">
     </span>
@@ -85,7 +97,7 @@ There is the <code>.alert-info</code> class to put extra content like avatars or
 
 <!-- Alert with icon -->
 <div class="alert">
-  <div class="alert-info">
+  <div class="alert-item">
     <svg class="icon"><use xlink:href="/assets/icons/feather.svg#git-pull-request"/></svg>
   </div>
   <div class="alert-content">
@@ -93,7 +105,7 @@ There is the <code>.alert-info</code> class to put extra content like avatars or
       Pull request.
     </div>
     <div class="alert-description">
-      New pull request on your respository.
+      New pull request on your respository
     </div>
   </div>
 </div>
@@ -105,13 +117,13 @@ Below uses <code>&lt;details&gt;</code> tag to make dismissible alerts.
 
 {{<example>}}
 <!-- Dismissible Default Alert with Avatar Small -->
-<details class="alert" open>
+<details class="alert alert-info" open>
   <summary>
     <div class="alert-close">
       <svg class="icon"><use xlink:href="/assets/icons/feather.svg#x"/></svg>
     </div>
   </summary>
-  <div class="alert-info">
+  <div class="alert-item">
     <span class="avatar avatar-small">
       <img src="/assets/img/avatar-02.jpeg">
     </span>
@@ -121,7 +133,7 @@ Below uses <code>&lt;details&gt;</code> tag to make dismissible alerts.
       New comment
     </div>
     <div class="alert-description">
-      You have been mentioned in a comment.
+      You have been mentioned in a comment
     </div>
   </div>
 </details>
@@ -133,7 +145,7 @@ Below uses <code>&lt;details&gt;</code> tag to make dismissible alerts.
       <svg class="icon"><use xlink:href="/assets/icons/feather.svg#x"/></svg>
     </div>
   </summary>
-  <div class="alert-info">
+  <div class="alert-item">
     <svg class="icon"><use xlink:href="/assets/icons/feather.svg#paperclip"/></svg>
   </div>
   <div class="alert-content">
@@ -141,7 +153,7 @@ Below uses <code>&lt;details&gt;</code> tag to make dismissible alerts.
       Attached File.
     </div>
     <div class="alert-description">
-      You have attached 3 files.
+      You have attached 3 files
     </div>
   </div>
 </details>

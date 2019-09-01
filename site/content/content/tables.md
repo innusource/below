@@ -7,7 +7,7 @@ menu:
 toc: true
 ---
 
-### Default
+## Default
 
 {{<example>}}
 <table class="table">
@@ -44,9 +44,9 @@ toc: true
 
 
 
-### Bordered Tables
+## Bordered Tables
 
-#### Border Out
+### Border Out
 
 {{<example>}}
 <table class="table table-bordered">
@@ -81,7 +81,7 @@ toc: true
 </table>
 {{</example>}}
 
-#### Columns and Rows full bordered
+### Columns and Rows full bordered
 
 {{<example>}}
 <table class="table table-bordered-full">
@@ -116,7 +116,7 @@ toc: true
 </table>
 {{</example>}}
 
-#### Borderless Table
+## Borderless Table
 
 {{<example>}}
 <table class="table table-borderless">
@@ -151,7 +151,7 @@ toc: true
 </table>
 {{</example>}}
 
-### Striped Rows
+## Striped Rows
 
 {{<example>}}
 <table class="table table-striped">
@@ -186,7 +186,7 @@ toc: true
 </table>
 {{</example>}}
 
-### Hoverable Rows
+## Hoverable Rows
 
 {{<example>}}
 <table class="table table-hover">
@@ -221,7 +221,7 @@ toc: true
 </table>
 {{</example>}}
 
-### Small Table
+## Small Table
 
 {{<example>}}
 <table class="table table-small">

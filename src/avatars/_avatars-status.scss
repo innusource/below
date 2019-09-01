@@ -3,11 +3,12 @@
     content: '';
     width: 14px;
     height: 14px;
-    box-shadow: 0 0 0 2.5px $ui-02;
     position: absolute;
     border-radius: 50%;
     bottom: 2.5px;
     right: 2.5px;
+
+    @include properties($solid-regular-alt-shadow);
   }
 
   &.avatar-status-off::after {

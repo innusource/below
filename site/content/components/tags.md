@@ -16,9 +16,6 @@ toc: true
 <!-- Secondary Tag -->
 <div class="tag tag-secondary">Secondary</div>
 
-<!-- Tertiary Tag -->
-<div class="tag tag-tertiary">Tertiary</div>
-
 <!-- Outline Tag -->
 <div class="tag tag-outline">Outline</div>
 
@@ -38,41 +35,19 @@ toc: true
 <!-- Default Tag with icon -->
 <div class="tag">
   Default with icon
-  <svg class="icon"><use xlink:href="/assets/icons/feather.svg#x"/></svg>
+  <svg class="icon icon-small"><use xlink:href="/assets/icons/feather.svg#x"/></svg>
 </div>
 
 <!-- Secondary Tag with icon -->
 <div class="tag tag-secondary">
   Secondary with Icon
-  <svg class="icon"><use xlink:href="/assets/icons/feather.svg#x"/></svg>
+  <svg class="icon icon-small"><use xlink:href="/assets/icons/feather.svg#x"/></svg>
 </div>
 
 <!-- Outline Tag with icon -->
 <div class="tag tag-outline">
   Outline with icon
-  <svg class="icon"><use xlink:href="/assets/icons/feather.svg#x"/></svg>
-</div>
-{{</example>}}
-
-## Sizes
-
-{{<example>}}
-<!-- Small Tag -->
-<div class="tag tag-small">
-  Small
   <svg class="icon icon-small"><use xlink:href="/assets/icons/feather.svg#x"/></svg>
-</div>
-
-<!-- Default Tag -->
-<div class="tag">
-  Default
-  <svg class="icon"><use xlink:href="/assets/icons/feather.svg#x"/></svg>
-</div>
-
-<!-- Big Tag -->
-<div class="tag tag-big">
-  Big
-  <svg class="icon"><use xlink:href="/assets/icons/feather.svg#x"/></svg>
 </div>
 {{</example>}}
 

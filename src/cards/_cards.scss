@@ -1,10 +1,11 @@
 .card {
   width: 100%;
   background: $ui-02;
-  margin: 0.5rem 0;
-  border-radius: 3px;
+  margin: 2rem 0;
+  border-radius: $radius-size-05;
   position: relative;
 
+  @include properties($large-shadow);
   @include properties($body-02);
 
   .card-header,
@@ -20,18 +21,21 @@
       color: $text-01;
       position: relative;
 
-      @include properties($heading-06);
+      @include properties($heading-05);
     }
   }
 
+  .card-body {
+    color: $text-02;
+  }
+
   .card-footer {
-    text-align: right;
-    border-top: 1px solid $ui-03;
     padding: 0.8rem 1.25rem;
+    text-align: right;
   }
 
   > img {
     max-width: 100%;
-    border-radius: 3px 3px 0 0;
+    border-radius: $radius-size-05-top;
   }
 }

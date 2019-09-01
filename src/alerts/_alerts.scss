@@ -1,20 +1,20 @@
 .alert {
   width: 18rem;
   max-width: 100%;
-  background: $ui-01;
+  background: $ui-02;
   margin: 5px 0;
-  padding: 12px;
-  border-left: 5px solid $interactive-01;
-  border-radius: 3px;
+  padding: 0.75rem;
+  border-radius: $radius-size-01;
   display: -ms-inline-flexbox;
   display: inline-flex;
   align-items: center;
   position: relative;
   vertical-align: bottom;
 
+  @include properties($regular-shadow);
   @include properties($body-02);
 
-  .alert-info {
+  .alert-item {
     margin-right: 10px;
     align-self: flex-start;
     float: left;
@@ -34,21 +34,38 @@
     }
 
     .alert-description {
-      color: $text-02;
       font-size: 90%;
+      color: $text-02;
     }
   }
 
   &.alert-success {
-    border-left-color: $support-02;
+    color: $support-02;
+    background: $support-02-lightest;
+  }
+
+  &.alert-info {
+    color: $interactive-01;
+    background: $interactive-01-lightest;
   }
 
   &.alert-warning {
-    border-left-color: $support-03;
+    color: $support-03;
+    background: $support-03-lightest;
   }
 
   &.alert-error {
-    border-left-color: $support-01;
+    color: $support-01;
+    background: $support-01-lightest;
+  }
+
+  &.alert-success,
+  &.alert-info,
+  &.alert-warning,
+  &.alert-error {
+    .alert-description {
+      color: currentColor;
+    }
   }
 }
 

@@ -1,7 +1,7 @@
 .nav-tabs {
   background: $ui-02;
   padding: 0.5rem 0.5rem 0 0.5rem;
-  border-radius: 3px;
+  border-radius: $radius-size-02;
   display: -ms-flexbox;
   display: flex;
   flex-wrap: wrap;
@@ -58,6 +58,7 @@
   .tab-panel {
     width: 100%;
     background: $ui-02;
+    color: $text-02;
     padding: 15px;
     display: none;
     order: 99;
