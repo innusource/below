@@ -37,4 +37,6 @@ Thumbs.db
 
 # Folders to ignore
 node_modules
-**/dist/
+**/dist/css/
+**/dist/**.css
+**/dist/**.map
